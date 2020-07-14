@@ -1,0 +1,109 @@
+.highlightContainer{
+    height: auto;
+    background-color: blanchedalmond;
+}
+
+.hToolbar {
+    height: 35px;
+    background-color: #0C1344;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.toggleButton{
+    font-size: 35px;
+}
+
+.toggleButton:hover{
+    cursor: pointer;
+}
+
+.compareSourceLogo{
+    position: relative;
+    bottom: 31px;
+}
+
+.compareSourceLogoPic{
+    position: relative;
+    right: 32px;
+    bottom: 2px;
+}
+
+.compareBestBuyLogo{
+    background-color: cornflowerblue;
+    position: relative;
+    right: 0px;
+    bottom: -23px;
+    width: 60%;
+}
+
+.comparePicHolder {
+    margin: 30px 0px 0px 20px;
+}
+
+.imageContainer{
+    flex-direction: column;
+    float: left;
+}
+
+.itemName{
+    display: flex;
+    justify-content: center;
+}
+
+.itemLink{
+    font-size: small;
+}
+
+.fillerContent{
+    margin-left: 40px;
+}
+
+.itemSource {
+    font-size: x-large;
+    padding-top: 5px;
+    position: relative;
+    left: 60px;
+}
+
+.itemName2 {
+    font-size: x-large;
+}
+
+.watchContainer {
+    border-top: 3px solid #0C1344;
+    padding-bottom: 30px;
+}
+
+.priceTag {
+    font-weight: 600;
+    font-size: 30px;
+    color: #e64949;
+    padding-left: 50px !important;
+}
+
+@media screen and (max-width: 998px) {
+
+    .comparePicHolder{
+        position: relative;
+        left: 17px;
+    }
+
+    .info{
+        margin-top: 30px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        left: 20px;
+    }
+
+    .itemSource{
+        position: relative;
+        left: 90px;
+        bottom: 2px;
+    }
+
+    .priceTag{
+        position: relative;
+        left: 30px;
+    }
+}

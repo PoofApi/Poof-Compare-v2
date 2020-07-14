@@ -1,0 +1,1161 @@
+input::placeholder{
+    color: rgb(218, 95, 95)
+}
+
+.jumbo {
+    position: relative;
+    overflow: hidden;
+    height: 1000px;
+    background-color: black;
+}
+
+.jumbo2 {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    overflow: hidden;
+    min-height: 0px;
+    background-color: black;
+}
+
+.jumbo img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.38;
+}
+
+.mobileRouteLogin2{
+    color: white;
+    position: relative;
+    right: 20px;
+    top: 7px;
+}
+
+.desktopLoadWatchlist2{
+    font-size: 35px;
+}
+
+@media screen and (max-width: 998px) {
+    .poofLogo {
+        display: none;
+    }
+
+    .loadDesktopWatchlist{
+        display: none;
+    }
+
+    .newPoofLogo {
+        display: none !important;
+    }
+
+    .newPoofLogo2 {
+        display: none !important;
+    }
+
+    .label-icon{
+        display: none;
+    }
+
+    .searchBox {
+        display: none;
+    }
+
+    .watchlist-container {
+        display: none;
+    }
+
+    .watchtool-container {
+        display: none !important;
+    }
+
+    .resetUserLink {
+        margin-top: 12px !important;
+    }
+
+    /* .jumbo{
+        height: 744px;
+    } */
+
+    .jumbo{
+        height: 100vh;
+    }
+
+    .comparePicHolder{
+        position: relative;
+        left: 17px;
+    }
+
+    .info{
+        margin-top: 30px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        left: 20px;
+    }
+
+    .alertModal{
+        width: 85% !important;
+    }
+
+    .modal{
+        width: 85% !important;
+    }
+
+    .mobileRouteLogin2{
+        display: none;
+    }
+
+    .logOutUserWatchDesktop{
+        display: none;
+    }
+}
+
+.info{
+    margin-top: 30px;
+}
+
+.poofPic:hover {
+    cursor: pointer;
+}
+
+.mediaHolder {
+    position: absolute !important;
+    top: 1% !important;
+}
+
+.desktopButtonRow{
+    position: relative;
+    top: 10px;
+    right: 46px;
+}
+
+.desktopWatchlistItemTitle{
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+    max-height: 61px !important;
+}
+
+.loadDesktopWatchlist:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.loadDesktopWatchlist{
+    position: relative;
+    right: 20px;
+    top: 7px;
+    color: white;
+}
+
+.loadDesktopWatchlistIcon{
+    font-size: 35px;
+}
+
+@media screen and (min-width: 998px) {
+    .poofPic {
+        display: none !important;
+    }
+
+    .mobile-watchlist {
+        display: none !important;
+    }
+
+    .mobile-watchlist3 {
+        display: none !important;
+    }
+
+    .mediaLoadBtn {
+        display: none !important;
+    }
+
+    .mediaHolder {
+        display: none !important;
+    }
+
+    .mobile-watchlist-icon2{
+        display: none;
+    }
+
+    .mobile-watchlist-icon2{
+        display: none;
+    }
+
+    .desktopSignUp{
+        width: 29% !important;
+        height: 32% !important;
+        border-radius: 10px !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .logOutBtn {
+        padding-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .desktopFrontPage{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .poofLogo2 {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header1Load2{
+        position: absolute;
+        right: 0;
+        height: 55px !important;
+    }
+}
+
+.nav-wrapper{
+    background-color: transparent;
+}
+
+
+.header1Load {
+    padding-right: 8px !important;
+}
+
+.header1Load2 {
+    height: 65px;
+}
+
+.header1Load2:hover{
+    background-color: #806543;
+    cursor: pointer;
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+}
+
+.laptopIcon:hover {
+    background-color: #806543;
+    cursor: pointer
+}
+
+.bookIcon:hover {
+    background-color: #806543;
+    cursor: pointer
+}
+
+.toyIcon:hover {
+    background-color: #806543;
+    cursor: pointer
+}
+
+.houseIcon:hover {
+    background-color: #806543;
+    cursor: pointer
+}
+
+.compareToolbar {
+    height: 40px;
+    background: #0C1344;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 500px;
+    z-index: 3;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.navLinks:hover {
+    background-color: #806543;
+}
+
+.homeLink {
+    padding: 0px 15px;
+}
+
+.resetLink {
+    padding: 0px 15px;
+}
+
+.resetUserLink {
+    padding: 0px 15px;
+    margin-top: 22px;
+    color: white;
+}
+
+.homeLink:hover {
+    background-color: #806543;
+    cursor: pointer;
+}
+
+.logOutBtn {
+    height: 100%;
+}
+
+.logOutBtn:hover {
+    background-color: #806543;
+    cursor: pointer;
+}
+
+.resetLink:hover {
+    background-color: #806543;
+    cursor: pointer;
+}
+
+.brand-logo:hover {
+    background-color: #806543;
+}
+
+a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.toggleButton{
+    margin-left: 5px;
+    color: white;
+}
+
+.toggleButton:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.label-icon:hover {
+    cursor: pointer;
+}
+
+.purchaseLinkBtn{
+    position: relative;
+    top: 9px;
+    left: 25px;
+}
+
+
+.purchaseLinkIconBtn{
+    color: black;
+}
+
+.purchaseLinkIconBtn:hover{
+    color: #806543;
+}
+
+.watchlist-container {
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: fixed;
+    right: 0;
+    width: 310px;
+    z-index: 3;
+    top: 0;
+    margin-top: 65px;
+    overflow: auto;
+}
+
+.watchlist-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.toggle-watchlist {
+    font-weight: normal;
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+
+.toggle-watchlist:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.watchImage{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.watchtool-container {
+    height: 400px;
+    background-color: #0C1344;
+    position: fixed;
+    right: 0;
+    width: 40px;
+    z-index: 101;
+    margin-top: 120px;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-watchtoolbar{
+    font-size: 40px;
+    color: darkgoldenrod;
+}
+
+.toggle-watchtoolbar:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C1344;
+}
+
+.linksContainer {
+    margin-left: auto;
+}
+
+.save-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.saveWatch {
+    margin-top: 20px;
+}
+
+.watchContainer2 {
+    margin-top: 40px;
+}
+
+.watchlist-navbar{
+    display: flex;
+    border-top: white solid 1px;
+}
+
+.watchlist-title {
+    color: white;
+    display: inline;
+    position: relative;
+    left: 60px;
+    top: 5px;
+}
+
+.modal {
+    height: 400px;
+    max-height: 50% !important;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: unset !important;
+    background-color: white !important;
+    width: 60%;
+}
+
+.modal-content{
+    border: unset !important;
+}
+
+.btn {
+    background-color: #0C1344 !important;
+}
+
+.btn:hover {
+    background-color: #806543 !important;
+}
+
+.btn, .btn-large, .btn-small {
+    background-color: #0C1344 !important;
+    color: white !important;
+}
+
+.removeBtn{
+    margin-top: 8px;
+    margin-left: 20px;
+    color: black;
+    font-size: 26px;
+}
+
+.removeBtn:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.alertBtn{
+    font-size: 28px;
+    margin-left: 18px;
+    color: black;
+}
+
+.alertBtn:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.iconContainer {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.rangeslider {
+    margin-left: 50px !important;
+    margin-right: 10px !important;
+}
+
+.alertModal {
+    width: 40% !important;
+    height: 45% !important;
+    border-radius: 10px !important;
+}
+
+.alertInput {
+    width: 90% !important;
+}
+
+.rangeslider__fill, .rangeslider-vertical {
+    background-color: darkgoldenrod !important;
+}
+
+.saveBtn {
+    position: fixed;
+    margin-left: 8px;
+}
+
+.signUpUser {
+    height: 32% !important;
+    border-radius: 7px !important;
+}
+
+.progressBar2 {
+    margin: 12px 0px 0px 30px !important;
+    width: 80% !important;
+}
+
+.alertInput {
+    padding-left: 30px !important;
+    width: 15% !important;
+    position: relative;
+    left: 35%;
+}
+
+.alertModalMobile{
+    border-radius: 7px !important;
+    height: 45% !important;
+}
+
+.spacer {
+    margin-right: auto;
+    visibility: hidden;
+}
+
+.search2Btn:hover {
+    cursor: pointer;
+}
+
+.searchboot{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 9px;
+    margin: 30px 0px;
+}
+
+.searchboot2 {
+    height: 20px !important;
+    padding-top: 15px !important;
+    margin-left: 10px !important;
+    border-bottom: none !important;
+}
+
+.searchboot2:focus {
+    outline: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+
+.searchboot4 {
+    border-bottom: none !important;
+    padding-left: 15px !important;
+    height: 20px !important;
+    margin-top: 9px !important;
+}
+
+.searchboot4:focus {
+    outline: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.inputBox2 {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.inputBox {
+    width: 70vw !important;
+    right: 4px;
+}
+
+.inputBox3{
+    width: 62vw !important;
+    right: 23px;
+}
+
+.input-group-prepend:hover {
+    cursor: pointer;
+}
+
+.nav-wrapper2 {
+    background-color: #0C1344 !important;
+}
+
+.sidenav {
+    background-color: #806543 !important;
+}
+
+.sidenav-overlay {
+    left: 300px !important;
+}
+
+.sidenav li>a {
+    color: azure !important;
+    display: block !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    height: 48px !important;
+    line-height: 48px !important;
+    padding: 0 32px !important;
+}
+
+.sidenav li>a:hover {
+    background-color: #0C1344 !important;
+}
+
+.sidenavPoof {
+    background-color: black;
+    height: 6%;
+}
+
+.searchBox2 {
+    margin-top: 10px;
+}
+
+.sidenavHome {
+    margin-top: 10px;
+}
+
+.newNavBar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 1s;
+    z-index: 2;
+    height: 65px;
+    border-bottom: 1px solid;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C1344;
+}
+
+.newNavBar2{
+    visibility: hidden;
+    top: -50px;
+}
+
+.modalTitle2{
+    font-weight: 600;
+    color: #0C1344;
+}
+
+.desktopModalSignIn{
+    border-radius: 10px !important;
+    height: 30% !important;
+    width: 35% !important;
+}
+
+.desktopModalTitle{
+    font-weight: 600;
+    color: #0C1344;
+}
+
+.logOutUserWatchDesktop{
+    position: relative;
+    right: 15px;
+    top: 8px;
+    color: white;
+}
+
+.logOutUserWatchDesktop:hover{
+    cursor: pointer;
+    color: #806543
+}
+
+.logOutDesktop{
+    font-size: 40px;
+}
+
+.newPoofLogo {
+    padding-left: 20px !important;
+    padding-right: 23px !important;
+    font-size: xxx-large !important;
+}
+
+.newPoofLogo2 {
+    padding-left: 20px !important;
+    border-right: white solid 1px !important;
+    padding-right: 23px !important;
+    font-size: xxx-large !important;
+}
+
+.poofLogo {
+    padding: 0px 20px 0px 15px;
+    border-right: 1px solid;
+    height: vh !important;
+    color: white !important;
+    height: 100% !important;
+    font-size: xxx-large;
+}
+
+.poofLogo:hover {
+    background-color: #806543;
+}
+
+.mainHeaderLogo {
+    font-size: xxx-large;
+    padding-left: 20px;
+    border-right: white solid 1px;
+    width: 160px;
+}
+
+.mainHeaderLogo:hover {
+    background-color: #806543;
+    cursor: pointer;
+}
+
+a {
+    color: white !important;
+}
+
+.mobile-watchlist-icon2 {
+    font-size: 48px;
+}
+
+.keyboardReturnIcon:hover{
+    color: #806543;
+}
+
+.mobile-watchlist-icon2:hover{
+    color: #806543;
+}
+
+.mobile-watchlist3{
+    position: relative;
+    right: 2%;
+    top: 14%;
+}
+
+.mobile-watchlist {
+    height: 40px;
+    width: 40px;
+    background-color: #806543;
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+    display: flex;
+    justify-content: "center";
+    align-items: "center";
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.mobile-watchlist:hover {
+    cursor: pointer;
+    background-color: #0C1344;
+}
+
+.watchlistMobileTitle {
+    color: white;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.mobile-watchlist2 {
+    color: white;
+    margin: 8px 0px 0px 8px;
+}
+
+.watchlistContainerBar {
+    height: 50px;
+    background-color: #0C1344;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.returnToSearchIcon {
+    position: relative;
+    left: 2%;
+    top: 15%;
+}
+
+/* .returnToSearch {
+    height: 75px;
+    width: 82px;
+    background-color: #806543;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    border-radius: 7px;
+    z-index: 2;
+
+}
+
+.returnToSearch:hover {
+    cursor: pointer;
+    background-color: #0C1344;
+} */
+
+/* .returnTitle {
+    color: white !important;
+    text-align: center !important;
+    margin-top: 14px !important;
+} */
+
+.watchCard {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    margin: 20px 30px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    color: rgba(0, 0, 0, 0.87);
+    outline: none;
+}
+
+.watchCard:hover {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
+}
+
+
+
+.watchImage{
+    background-color: blue;
+}
+
+.watchContent {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.test1 {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+.test2 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.priceTag2 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #e64949;
+    left: 35px;
+    top: 5px;
+}
+
+.logInMobile {
+    color: white;
+    font-size: large;
+}
+
+.mobileLogin {
+    text-align: center;
+    padding: 5px 10px 0px 10px;
+}
+
+.mobileInput {
+    margin-top: 15px !important;
+}
+
+.submit-button:hover{
+    background-color: #806543 !important;
+}
+
+.close-button:hover{
+    background-color: #806543 !important;
+}
+
+.newSaveBtn {
+    margin-left: 100px;
+    background-color: #0C1344 !important;
+    position: fixed;
+    bottom: 20px;
+}
+
+.watchlistSaveBtn{
+    background-color: #0C1344 !important;
+}
+
+.loadListIcon{
+    position: relative;
+    right: 3%;
+    top: 17%;
+}
+
+.loadListIcon:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.mobileSearchProgress{
+    position: relative;
+    right: 3%;
+}
+
+.watchlistRouteContainer{
+    width: 90% !important;
+    margin-top: 25px !important;
+    margin-bottom: 30px !important;
+}
+
+.mobileRouteLogin{
+    position: relative;
+    right: 3%;
+    top: 14%;
+}
+
+/*WatchRoute Component */
+.watchRouteCard{
+    position: relative;
+    left: 17%;
+    top: -4%;
+}
+
+.logOutUserWatchRoute{
+    position: relative;
+    right: 2%;
+    top: 15%;
+}
+
+.logOutUserWatchRoute:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.watchRouteCardTitle{
+    font-size: 16px !important;
+}
+
+.modalTitle{
+    color: #0C1344;
+    font-size: 170%;
+    font-weight: 600;
+}
+
+.watchRouteImage{
+    margin: 6px 0px 0px 23px;
+}
+
+.mobileAlertModal{
+    position: relative !important;
+    left: -30px !important;
+}
+
+.fillerRoute{
+    width: 105px;
+}
+
+.purchaseLinkIconBtnMobile{
+    color: black;
+}
+
+.purchaseLinkIconBtnMobile:hover{
+    color: #806543;
+}
+
+.purchaseLinkBtnMobile{
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+}
+
+.watchlistButtons{
+    position: relative;
+    right: 0px;
+}
+
+
+
+.loadingUserItems{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileLoadingText{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+/*Mobile Front Page*/
+.mobileBanner{
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    background-color: #0C1344;
+}
+
+.mobileFooter{
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #0C1344;
+}
+
+.mobileFrontPage{
+    position: absolute;
+    top: 11%;
+}
+
+.mobileFrontPic{
+    position: absolute;
+    height: 92% !important;
+    width: 146% !important;
+    opacity: 0.38;
+    top: 7%;
+    left: -14%;
+}
+
+.mobileSearchForm{
+    margin: 25px 0px;
+    position: relative;
+    left: 8px;
+}
+
+form.mobileSearchForm input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #0C1344;
+  float: left;
+  height: 3vh;
+  width: 50%;
+  background: white;
+  border-radius: 10px 0px 0px 10px;
+}
+
+input::placeholder {
+    color: #6f7275;
+}
+
+form.mobileSearchForm button {
+    position: relative;
+    right: 15px;
+    left: left;
+    width: 15%;
+    height: 5.8vh;
+    padding: 10px;
+    background: #0C1344;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 0px 10px 10px 0px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.mobileSearchForm button:hover {
+    background: #806543;
+}
+
+.mobileSearchBar{
+    top: -18%;
+}
+
+.mobileProgressSearchBar{
+    margin-left: 35px;
+}
+
+.poofMobileLogo{
+    opacity: 1 !important;
+}
+
+.poofMobileLogo:hover{
+    cursor: pointer;
+}
+
+.progressMobile {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin: 25px 0px;
+  }
+  
+  .progress-value-mobile {
+    animation: load 1.5s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+    animation-iteration-count: infinite;
+  
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+
+/*Mobile Search Page*/
+
+
+.progressMobileSearchPage {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+  }
+  
+  .progress-value-mobileSearchPage {
+    animation: loadSearch 1.5s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+    animation-iteration-count: infinite;
+  
+  }
+  
+  @keyframes loadSearch {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+
+
