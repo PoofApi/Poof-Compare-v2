@@ -248,6 +248,8 @@ class Header extends Component {
                     //         </div>
                     //     </form>
                     // </div>
+
+                    // This className used to be searchboot
                         <div className="offset-2 col-11 col-sm-6 col-md-4">
                             {/* <form className="form-inline" onSubmit={this.handleSubmit}>
                                 <div style={{backgroundColor: "white", borderRadius: "5px"}} className="input-group inputBox">
