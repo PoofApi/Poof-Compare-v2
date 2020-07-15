@@ -157,14 +157,24 @@ class Header2 extends Component {
                     </div>
                     {!this.state.loading ? 
                         
-                            <div className="searchboot col-6 col-sm-6 col-md-4">
-                                <form className="form-inline" onSubmit={this.handleSubmit}>
+                        // Previously had a classname of searchboot
+                            <div className="col-9 col-sm-6 col-md-4">
+                                {/* <form className="form-inline" onSubmit={this.handleSubmit}>
                                     <div style={{backgroundColor: "white", borderRadius: "5px"}} className="input-group inputBox3">
                                         <input id="search" type="search" onChange={this.handleChange} value={this.state.value} required className="form-control searchboot2" placeholder="Search Item" aria-label="Search Item" aria-describedby="basic-addon1"></input>
                                         <div className="input-group-prepend" onClick={this.handleSubmit}>
                                             <span className="input-group-text" style={{paddingLeft: "20px"}} id="basic-addon1"><i style={{position:"absolute", right: "3px"}} className="material-icons">search</i></span>
                                         </div>
                                     </div>
+                                </form> */}
+
+                                <form onSubmit={this.handleSubmit} className="mobileSearchForm2">
+                                    <span>
+                                        <input type="text" onChange={this.handleChange} value={this.state.value} placeholder="Search for products..." name="search"/>
+                                    </span>
+                                    <span>
+                                        <button onClick={this.handleSubmit} type="submit"><i className="material-icons">search</i></button>
+                                    </span>
                                 </form>
                             </div>
 

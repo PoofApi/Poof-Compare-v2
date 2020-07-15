@@ -1045,21 +1045,29 @@ a {
     left: -14%;
 }
 
-.mobileSearchForm{
-    margin: 25px 0px;
+
+
+.mobileSearchForm {
+    margin: 30px 0px;
     position: relative;
-    left: 8px;
+    right: 15px;
 }
 
 form.mobileSearchForm input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid #0C1344;
-  float: left;
-  height: 3vh;
-  width: 50%;
-  background: white;
-  border-radius: 10px 0px 0px 10px;
+    margin-right: 4px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #0C1344;
+    float: left;
+    height: 3vh;
+    width: 58%;
+    background: white;
+    border-radius: 10px 0px 0px 10px;
+}
+
+form.mobileSearchForm input:focus{
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 input::placeholder {
@@ -1068,17 +1076,17 @@ input::placeholder {
 
 form.mobileSearchForm button {
     position: relative;
-    right: 15px;
+    top: -2px;
     left: left;
     width: 15%;
-    height: 5.8vh;
+    height: 7vh;
     padding: 10px;
     background: #0C1344;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
     border-radius: 0px 10px 10px 0px;
-    border-left: none; /* Prevent double borders */
+    border-left: none;
     cursor: pointer;
 }
 
@@ -1156,6 +1164,49 @@ form.mobileSearchForm button:hover {
     0% { width: 0; }
     100% { width: 100%; }
   }
+
+.mobileSearchForm2 {
+    position: relative;
+    top: 5px;
+    right: 6px;
+}
+
+form.mobileSearchForm2 input[type=text] {
+    margin-right: 4px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #0C1344;
+    float: left;
+    height: 3vh;
+    width: 72%;
+    background: white;
+    border-radius: 10px 0px 0px 10px;
+}
+
+form.mobileSearchForm2 input:focus{
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+form.mobileSearchForm2 button {
+    position: relative;
+    top: -3px;
+    left: left;
+    width: 15%;
+    height: 7vh;
+    padding: 10px;
+    background: #0C1344;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 0px 10px 10px 0px;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.mobileSearchForm2 button:hover {
+    background: #806543;
+}
 
 
 

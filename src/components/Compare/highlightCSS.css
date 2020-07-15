@@ -24,7 +24,7 @@
 
 .compareSourceLogoPic{
     position: relative;
-    right: 32px;
+    right: 60px;
     bottom: 2px;
 }
 
@@ -75,6 +75,7 @@
 }
 
 .priceTag {
+    top: 7px;
     font-weight: 600;
     font-size: 30px;
     color: #e64949;
@@ -98,7 +99,6 @@
 
     .itemSource{
         position: relative;
-        left: 90px;
         bottom: 2px;
     }
 
