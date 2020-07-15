@@ -31,7 +31,7 @@
 .compareBestBuyLogo{
     background-color: cornflowerblue;
     position: relative;
-    right: 0px;
+    right: 17px;
     bottom: -23px;
     width: 60%;
 }
@@ -104,6 +104,6 @@
 
     .priceTag{
         position: relative;
-        left: 30px;
+        left: 8px;
     }
 }

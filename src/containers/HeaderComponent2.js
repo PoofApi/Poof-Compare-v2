@@ -158,7 +158,7 @@ class Header2 extends Component {
                     {!this.state.loading ? 
                         
                         // Previously had a classname of searchboot
-                            <div className="col-9 col-sm-6 col-md-4">
+                            <div className="col-8 col-sm-6 col-md-4">
                                 {/* <form className="form-inline" onSubmit={this.handleSubmit}>
                                     <div style={{backgroundColor: "white", borderRadius: "5px"}} className="input-group inputBox3">
                                         <input id="search" type="search" onChange={this.handleChange} value={this.state.value} required className="form-control searchboot2" placeholder="Search Item" aria-label="Search Item" aria-describedby="basic-addon1"></input>
@@ -173,7 +173,7 @@ class Header2 extends Component {
                                         <input type="text" onChange={this.handleChange} value={this.state.value} placeholder="Search for products..." name="search"/>
                                     </span>
                                     <span>
-                                        <button onClick={this.handleSubmit} type="submit"><i className="material-icons">search</i></button>
+                                        <button onClick={this.handleSubmit} type="submit"><i className="material-icons mobileSearchPageIcon">search</i></button>
                                     </span>
                                 </form>
                             </div>
