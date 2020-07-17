@@ -179,7 +179,7 @@ class Header2 extends Component {
                             </div>
 
                         :
-                            <div className="col-8 col-sm-2 col-md-7 mobileSearchProgress">
+                            <div className="col-8 col-sm-2 col-md-4 mobileSearchProgress">
                                 <div className="progressMobileSearchPage">
                                     <div className="progress-value-mobileSearchPage"></div>
                                 </div>
