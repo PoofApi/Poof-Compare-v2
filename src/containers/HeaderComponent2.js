@@ -159,10 +159,10 @@ class Header2 extends Component {
                     }    
                         
                     {user == "" ? <MobileSignIn3 /> : <div className="logOutUserWatchDesktop" onClick={() => this.handleLogOut()}><p data-tip={"Click to log out"} ><i className="material-icons logOutDesktop">cloud_off</i></p></div>}<ReactTooltip />
-                    <div className="mobile-watchlist3">
+                    <span className="mobile-watchlist3">
                         <Link className="mobile-watchlist4" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon2">view_list</i></p></Link>
                         <ReactTooltip />
-                    </div>
+                    </span>
                 </div>
         )
     }
