@@ -75,8 +75,7 @@
 }
 
 .btnTool .btnTooltipText {
-  font-size: medium;
-  font-size: initial;
+  font-size: smaller;
   font-weight: 600;
   visibility: hidden;
   background-color: #0C1344;

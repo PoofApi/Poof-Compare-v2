@@ -188,6 +188,10 @@ input::placeholder{
         height: 38% !important;
         border-radius: 10px !important;
     }
+
+    .newNavBar{
+        left: -16px !important;
+    }
 }
 
 @media screen and (min-width: 576px) {
