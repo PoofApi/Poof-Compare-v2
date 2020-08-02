@@ -1179,11 +1179,11 @@ form.mobileSearchForm2 input[type=text] {
     font-size: 17px;
     border: 1px solid #0C1344;
     float: left;
-    height: 3vh;
+    height: 27px;
     width: 72%;
     background: white;
     border-radius: 10px 0px 0px 10px;
-    top: 3px;
+    top: 0px;
     position: relative;
 }
 
@@ -1197,7 +1197,7 @@ form.mobileSearchForm2 button {
     top: -4px;
     left: left;
     width: 15%;
-    height: 7vh;
+    height: 60px;
     padding: 10px;
     background: #0C1344;
     color: white;
@@ -1209,12 +1209,27 @@ form.mobileSearchForm2 button {
 }
 
 @media screen and (max-width: 998px){
+
+    form.mobileSearchForm2 input[type=text] {
+        margin-right: 4px;
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid #0C1344;
+        float: left;
+        height: 27px;
+        width: 72%;
+        background: white;
+        border-radius: 10px 0px 0px 10px;
+        top: 4px;
+        position: relative;
+    }
+
     form.mobileSearchForm2 button {
         position: relative;
         top: 0px;
         left: left;
         width: 15%;
-        height: 7vh;
+        height: 60px;
         padding: 10px;
         background: #0C1344;
         color: white;
@@ -1224,6 +1239,7 @@ form.mobileSearchForm2 button {
         border-left: none;
         cursor: pointer;
     }
+
 }
 
 form.mobileSearchForm2 button:hover {
