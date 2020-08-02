@@ -106,7 +106,6 @@ class AlertModal extends Component {
                         <div className="row">
                             <div className="input-field col s3 m3" style={{marginTop: "20px"}}>
                                 <input id="userId" type="text" className="validate alertInput alertInput" style={{paddingLeft: "30px"}} onChange={this.handleChange} value={this.state.targetPrice} required></input>
-                                {/* <label style={{textAlign: "center", paddingRight: "100px"}} for="userId">Please provide a target price for your item.</label> */}
                             </div>
                         </div>
                         <div className="row" style={{display:"flex", justifyContent: "center", marginRight: "70px"}}>

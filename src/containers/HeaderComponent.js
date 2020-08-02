@@ -23,7 +23,7 @@ const getItems2 = (payload) => ({
     payload: payload
   })
 
-//Previous code to fetch Eric's backend
+//Code to fetch items from backend
 
 async function getProductsForHome(keywords){
     console.log("Now fetching items.........")
@@ -54,17 +54,6 @@ async function getProductsForHome(keywords){
     }
   }
 
-// const getProducts3 = () =>
-
-//   alert("Get Products function called");
-  
-//     fetch(`products.json`)
-//       .then(response => response.json())
-//       .then(response => {
-//         console.log(response.items);
-//         store.dispatch(getItems2(response.items))
-//       })
-
 class Header extends Component {
 
     searchInput;
@@ -79,13 +68,6 @@ class Header extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    
-
-    // handleSubmit(event){
-    //     getProductsForHome(this.state.value);
-    //     this.setState({loading:true})
-    //     event.preventDefault();
-    // }
 
     async handleSubmit(event){
         
@@ -139,9 +121,6 @@ class Header extends Component {
                 <nav className="transparent d-none d-sm-block">
                     <div className="d-none d-sm-block nav-wrapper" style={{borderBottom: "1px solid"}}>
                         <a href="#" className="brand-logo newPoofLogo2">Poof!</a>
-                        {/* <ul id="nav-mobile" className="right header1Load2">
-                            <li className="header1Load"><MobileSignIn /></li>
-                        </ul> */}
                     </div>
                 </nav>
                 <div className="d-block d-sm-none mobileBanner">
@@ -150,15 +129,7 @@ class Header extends Component {
                     </div>
                 </div>
 
-                {/* <ul id="slide-out" className="sidenav">
-                    <li className="navLinks" style={{textAlign: "center"}}><Link to={'/'}>About</Link></li>
-                    <li className="navLinks" style={{textAlign: "center"}}><Link to={'/'}>Login</Link></li>
-                    <li className="navLinks" style={{textAlign: "center"}}><Link to={'/'}>Register</Link></li>               
-                </ul> */}
                 <div className="row desktopFrontPage" style={{paddingTop: "180px", display: "flex", justifyContent: "center"}}>
-                    {/* <div className="col-12 flow-text white-text mediaHolder" style={{textAlign: "center"}}>
-                        <MobileSignIn2 />
-                    </div> */}
                     <div className="col-12 d-none d-sm-block">
                         <h4 style={{textAlign: "center", fontSize: "48px", fontFamily: "Roboto"}} className="mb-3 flow-text white-text"><b>Welcome to Poof! Auto-Compare!</b></h4>
                     </div>
@@ -216,9 +187,6 @@ class Header extends Component {
                 {/*Display for mobile screens*/}
                 
                 <div className="row d-block d-sm-none mobileFrontPage" style={{display: "flex", justifyContent: "center"}}>
-                    {/* <div className="col-12 flow-text white-text mediaHolder" style={{textAlign: "center"}}>
-                        <MobileSignIn2 />
-                    </div> */}
                     <div className="col-12 d-none d-sm-block">
                         <h4 style={{textAlign: "center", fontSize: "35px", fontFamily: "Roboto"}} className="mb-3 flow-text white-text"><b>Welcome to Poof! Auto-Compare!</b></h4>
                     </div>
@@ -240,25 +208,7 @@ class Header extends Component {
                     
                     :
                 
-                    // <div className="col-12 col-md-12" style={{display: "flex", justifyContent: "center"}}>
-                    //     <form onSubmit={this.handleSubmit}>
-                    //         <div className="input-field searchBox mobileSearchBar" style={{display: "flex", justifyContent: "center"}}>
-                    //             <input className="browser-default search-field" style={{display: "flex", paddingLeft: "25px", width: "75vw", height: "6vh", marginTop: "20px"}} id="search" ref={(input) => {this.searchInput = input; }} type="search" onChange={this.handleChange} value={this.state.value} required></input>
-                    //             <label onClick={this.handleSubmit} type="submit" value="Submit" style={{top:"45%", left:"95%"}} className="label-icon" for="search"><i style={{position:"absolute"}} className="material-icons">search</i></label>
-                    //         </div>
-                    //     </form>
-                    // </div>
-
-                    // This className used to be searchboot
                         <div className="offset-2 col-11 col-sm-6 col-md-4">
-                            {/* <form className="form-inline" onSubmit={this.handleSubmit}>
-                                <div style={{backgroundColor: "white", borderRadius: "5px"}} className="input-group inputBox">
-                                    <input id="search" type="search" onChange={this.handleChange} value={this.state.value} required className="form-control searchboot2" placeholder="Search Products" aria-label="Search Item" aria-describedby="basic-addon1"></input>
-                                    <div className="input-group-prepend" onClick={this.handleSubmit}>
-                                        <span className="input-group-text" style={{paddingLeft: "20px"}} id="basic-addon1"><i style={{position:"absolute", right: "3px"}} className="material-icons">search</i></span>
-                                    </div>
-                                </div>
-                            </form> */}
                             <form onSubmit={this.handleSubmit} className="mobileSearchForm">
                                 <span>
                                     <input type="text" onChange={this.handleChange} value={this.state.value} placeholder="Search for products..." name="search"/>

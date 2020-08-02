@@ -25,18 +25,7 @@ class MobileSignIn extends Component {
         this.setState({userId: event.target.value});
     }
 
-    // unWatchProducts(){
-    //     let items = this.props.products;
-    //     for (let k = 0; k < items.length; k++){
-    //         items[k].watch = false;
-    //     }
-    // }
-
     handleSubmit() {
-        // let items = this.props.userItems;
-        // items.map( item => setWatchList(item));
-        // this.unWatchProducts();
-        // resetWatch();
         store.dispatch(saveUser(this.state.userId));
     }
 
@@ -97,8 +86,6 @@ class MobileSignIn extends Component {
                         <div className="row">
                             <div className="input-field col s12">
                                 <input placeholder="Please enter your email or phone #" id="userId" type="text" className="mobileInput validate" type="text" ref={(input) => {this.loginInput = input; }} onChange={this.handleChange} value={this.state.userId} required></input>
-                                {/* <label for="userId">Please provide the email or phone number that your Poof! account is linked to.</label> */}
-
                             </div>
                         </div>
                         <div className="row" style={{display:"flex", justifyContent: "center"}}>

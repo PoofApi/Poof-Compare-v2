@@ -21,7 +21,7 @@ const getItems2 = (payload) => ({
     payload: payload
   })
 
-//Previous code to fetch Eric's backend
+//Code to fetch items from backend
 
 async function getProductsForHome(keywords){
   console.log("Now fetching items.........")
@@ -64,7 +64,6 @@ class Header2 extends Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        // this.handleScroll = this.handleScroll.bind(this);
     } 
 
     unWatchProducts(){
@@ -112,21 +111,8 @@ class Header2 extends Component {
         this.props.resetEntireWatch();
     }
 
-    // handleScroll = () => {
-    //     const { prevScrollpos } = this.state;
-
-    //     const currentScrollPos = window.pageYOffset;
-    //     const visible = prevScrollpos > currentScrollPos;
-
-    //     this.setState({
-    //         prevScrollpos: currentScrollPos,
-    //         visible
-    //     });
-    // }
-
     
     componentDidMount(){
-        // window.addEventListener("scroll", this.handleScroll);
 
         var urlName = window.location.pathname;
         
@@ -135,11 +121,6 @@ class Header2 extends Component {
             M.Sidenav.init(sidenav, {});
         }
     }
-    
-    // componentWillUnmount(){
-    //     window.removeEventListener("scroll", this.handleScroll);
-    // }
-    
     
 
     render(){
@@ -157,17 +138,7 @@ class Header2 extends Component {
                     </div>
                     {!this.state.loading ? 
                         
-                        // Previously had a classname of searchboot
                             <div className="col-8 col-sm-6 col-md-4">
-                                {/* <form className="form-inline" onSubmit={this.handleSubmit}>
-                                    <div style={{backgroundColor: "white", borderRadius: "5px"}} className="input-group inputBox3">
-                                        <input id="search" type="search" onChange={this.handleChange} value={this.state.value} required className="form-control searchboot2" placeholder="Search Item" aria-label="Search Item" aria-describedby="basic-addon1"></input>
-                                        <div className="input-group-prepend" onClick={this.handleSubmit}>
-                                            <span className="input-group-text" style={{paddingLeft: "20px"}} id="basic-addon1"><i style={{position:"absolute", right: "3px"}} className="material-icons">search</i></span>
-                                        </div>
-                                    </div>
-                                </form> */}
-
                                 <form onSubmit={this.handleSubmit} className="mobileSearchForm2">
                                     <span>
                                         <input type="text" onChange={this.handleChange} value={this.state.value} placeholder="Search for products..." name="search"/>

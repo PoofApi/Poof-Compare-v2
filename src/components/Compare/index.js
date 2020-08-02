@@ -25,9 +25,6 @@ const Compare = ({items, toggleClick}) =>
                   <a href={`${item.link}`} target="_blank" className="compareSourceLogo"><img className={"img-fluid" + (item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Fbestbuy.png?alt=media&token=da783e57-802f-4a40-b609-3af1fd78098a" ? " compareBestBuyLogo" : " compareSourceLogoPic")} src={item.logo} alt={item.title}/></a>                
                 </div>
               </div>
-              {/* <div className="row">
-                <div className="col-12 itemLink" style={{textAlign: "center"}}>{item.link}</div>
-              </div> */}
             </div>
         )}
   </div>;

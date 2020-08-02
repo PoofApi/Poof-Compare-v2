@@ -230,36 +230,12 @@ class WatchList extends Component {
                                   </div>
                                 </div>
                               </div>
-
-                              {/* <div className="watchItemContainer">
-                                <img className="watchImage" src={item.image} alt={item.title} key={item.id}/>
-                                <span className="iconContainer">
-                                  <AlertModal item={item} alert={this.props.alert}/>
-                                  <i className="material-icons removeBtn" data-tip={"Remove from watchlist"} onClick={() => this.removeItem(this.props.watch, item)}>cancel</i>
-                                  <ReactTooltip />
-                                </span>
-                              </div>
-                              <div>
-                                <div className="itemName" style={{ textAlign: "center"}}>
-                                  {item.title}
-                                </div>
-                                <div className="itemPrice" style={{marginTop: "10px", textAlign: "center", fontWeight: "1000"}}>
-                                  {item.price}
-                                </div>
-                              </div> */}
                               
                         </div>
                     )}
                 </div>
 
-                {/* <a className="btn saveBtn" >Save</a> */}
-
                 <div>
-                  {/* <div className="saveBtn">
-                    {this.props.user == "" ? <Modal3 userItems={this.props.items} products={this.props.products} /> : <span></span>}
-                  </div> */}
-                    {/* <a className="btn test2" onClick={getWatchList}>Test</a>
-                    <a className="btn saveWatchBtn" onClick={() => this.saveWatchList(this.props.items)}>Save</a> */}
                     {this.props.user == "" ? <SaveUserModal /> : <div></div>}
                 </div>
             </div>

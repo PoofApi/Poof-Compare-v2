@@ -250,14 +250,11 @@ class WatchlistRoute extends Component {
                                     <div className="col-8 col-sm-9">
                                         <div className="card-body">
                                             <h5 className="card-title watchRouteCardTitle">{item.title}</h5>
-                                            {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                         <div className="col-5 priceTag2">{`$${item.price}`}</div>
-                                        {/* <div className="col-3" style={{fontSize: "large", paddingTop: "8px"}}>{item.source}</div> */}
                                         <div className="col-7 watchlistButtons">
                                             <AlertModal2 key={uuid()} item={item} alert={this.setAlert}/>
                                             

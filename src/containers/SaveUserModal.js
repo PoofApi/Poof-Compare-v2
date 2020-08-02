@@ -25,18 +25,7 @@ class SaveUserModal extends Component {
         this.setState({userId: event.target.value});
     }
 
-    // unWatchProducts(){
-    //     let items = this.props.products;
-    //     for (let k = 0; k < items.length; k++){
-    //         items[k].watch = false;
-    //     }
-    // }
-
     handleSubmit() {
-        // let items = this.props.userItems;
-        // items.map( item => setWatchList(item));
-        // this.unWatchProducts();
-        // resetWatch();
         store.dispatch(saveUser(this.state.userId));
         window.location.reload(false);
     }

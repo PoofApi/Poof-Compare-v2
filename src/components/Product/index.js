@@ -110,32 +110,6 @@ class Product extends Component{
             </div>
         </div>
         )}
-        // <div className="col-sm-6 col-md-3">
-        //     <div className={"product " + (this.props.item.compare ? "compare" : "")} >
-        //         <img style={{width: "100%", height: "400px"}} src={this.props.item.image} alt={this.props.item.title} />
-        //         <div className="image_overlay"/>
-        //         <div className="view_details" onClick={() => this.props.compare(this.props.item)}>
-        //         {this.props.item.compare ? "Hide Details" : "Details"}
-        //         </div>
-        //         <div className="stats">
-        //             <div className="stats-container">
-        //                 <span className="product_price">{this.props.item.price}</span>
-        //                 <div className="buttonContainer" style={{display: "flex", justifyContent: "center", marginLeft: "60px"}}>
-        //                     <p data-tip={(this.props.item.watch ? "This item is currently in your watchlist" : "Add to watchlist")} ><i className="material-icons watchButton" 
-        //                     style={{color: (this.props.item.watch? "darkgoldenrod" : "black")}} 
-        //                     onClick={(this.props.item.watch) ? () => console.log("If you would like to remove this item from your watchlist, please remove it through the watchlist tab") : () => this.handleWatch(this.props.watch, this.props.item)}>remove_red_eye</i></p>
-        //                     <ReactTooltip />
-        //                 </div>
-        //                 <div className="name-container" style={{display: "flex", textAlign: "center", marginLeft: "50px"}}>
-        //                     <span className="product_name" style={{position: "relative"}}>{this.props.item.title}</span>
-        //                     </div>
-        //                 {/* Previous line to allow for short details about the product */}
-        //                 {/* <p style={{position:"relative", top: "10px"}}>{item.short}</p> */}
-        //                 </div>
-        //         </div>
-        //     </div>
-        // </div>
-        // )}
 } 
     
 

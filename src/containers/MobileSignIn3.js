@@ -61,28 +61,9 @@ class MobileSignIn3 extends Component {
         this.setState({userId: event.target.value});
     }
 
-    // unWatchProducts(){
-    //     let items = this.props.products;
-    //     for (let k = 0; k < items.length; k++){
-    //         items[k].watch = false;
-    //     }
-    // }
-
     async handleSubmit() {
-        // let items = this.props.userItems;
-        // items.map( item => setWatchList(item));
-        // this.unWatchProducts();
-        // resetWatch();
         this.props.saveUser(this.state.userId);
         window.location.reload(false);
-        // console.log(this.props.storeUserId);
-        // if(this.props.storeUserId !== ""){
-        //     let signedUserItems = await getWatchList(this.props.storeUserId);
-        //     console.log(signedUserItems);
-        //     if(signedUserItems){
-        //         signedUserItems.map(item => this.props.addItemToWatch2(item));
-        //     }
-        // }
     }
 
     componentDidMount() {
