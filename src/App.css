@@ -1144,6 +1144,13 @@ form.mobileSearchForm button:hover {
 
 /*Second Mobile Front Page*/
 
+.poofMobileComponent {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .poofElectronics {
     display: flex;
     justify-content: center;
@@ -1272,12 +1279,21 @@ form.mobileSearchForm button:hover {
 
 .poofMobileContainer {
     margin-top: 15px !important;
+    position: relative;
+    top: 15px;
 }
 
 .poofMobileSearchIcon{
     position: relative;
     right: 30px;
     bottom: 5px;
+}
+
+.poofMobileFooter {
+    position: relative;
+    bottom: 0;
+    height: 15vh;
+    background-color: #0C1344;
 }
 
 /*Mobile Search Page*/
