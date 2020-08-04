@@ -59,7 +59,7 @@ class MobileHeader extends Component {
                             <div className="poofClothes">
                                 <div className="icon3">
                                     <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/>
-                                    <div>Electronics</div>
+                                    <div style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
                                 </div>
                             </div>
                         </div>
