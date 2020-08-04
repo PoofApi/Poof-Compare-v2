@@ -14,6 +14,7 @@ import {store} from '../../index.js';
 import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 import uuid from 'react-uuid';
+import MobileHeader from '../MobileHeader';
 
 
 const axios = require('axios');
@@ -336,7 +337,8 @@ class Home extends Component {
     watch={actions.watch} /> : <div></div>} {(this.props.storeUserId !== "" ? usersWatchedItems.length > 0 : storeWatchProducts.length > 0) 
     && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
         <div>
-          <Header />
+          {/* <Header /> */}
+          <MobileHeader />
         </div>
         }
 
