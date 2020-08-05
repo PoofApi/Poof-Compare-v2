@@ -3,7 +3,7 @@ import laptop from '../images/laptop.png';
 import study from '../images/study.png';
 import fashion from '../images/fashion.png';
 import gaming from '../images/gaming.png';
-import Poof_White from '../images/Poof_White.png';
+import Poof_Blue from '../images/Poof_Blue.png';
 import '../App.css';
 
 
@@ -24,7 +24,7 @@ class MobileHeader extends Component {
                     <div className="row">
                         <div className="col-7 mb-2">
                             <div className="poofMobileLogo2">
-                                <img className="img-fluid" src={Poof_White} alt="poofMobileLogo2"/>
+                                <img className="img-fluid" src={Poof_Blue} alt="poofMobileLogo2"/>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ class MobileHeader extends Component {
                                 <div className="poofElectronics">
                                     {/* <img className="img-fluid poofLaptopIcon2" src={laptop} alt="poofLaptopIcon2"/> */}
                                     <i className="medium material-icons">laptop_mac</i>
-                                    <div>Electronics</div>
+                                    <div className="poofIconName" >Electronics</div>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ class MobileHeader extends Component {
                                 <div className="icon2">
                                     {/* <img className="img-fluid poofStudyIcon2" src={study} alt="poofStudyIcon2"/> */}
                                     <i className="medium material-icons">book</i>
-                                    <div>Books</div>
+                                    <div className="poofIconName" >Books</div>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ class MobileHeader extends Component {
                                 <div className="icon3">
                                     {/* <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/> */}
                                     <i className="medium material-icons">store</i>
-                                    <div style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
+                                    <div className="poofIconName" style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ class MobileHeader extends Component {
                                 <div className="icon4">
                                     {/* <img className="img-fluid poofGamingIcon2" src={gaming} alt="poofGamingIcon2"/> */}
                                     <i className="medium material-icons">toys</i>
-                                    <div>Games/Toys</div>
+                                    <div className="poofIconName" >Games/Toys</div>
                                 </div>
                             </div>
                         </div>
