@@ -154,7 +154,11 @@ class Header extends Component {
                     <div className="col-12 col-md-5" style={{display: "flex", justifyContent: "center"}}>
                         <form style={{width: "100%"}} onSubmit={this.handleSubmit}>
                             <div className="input-field searchBox" style={{display: "flex", justifyContent: "center"}}>
-                                <input className="browser-default search-field" style={{display: "flex", paddingLeft: "25px", width: "100%", height: "6vh", marginTop: "20px"}} id="search" ref={(input) => {this.searchInput = input; }} type="search" onChange={this.handleChange} value={this.state.value} required></input>
+                                <input 
+                                    className="browser-default search-field" style={{display: "flex", paddingLeft: "25px", width: "100%", 
+                                    height: "6vh", marginTop: "20px"}} id="search" ref={(input) => {this.searchInput = input; }} type="search" 
+                                    onChange={this.handleChange} value={this.state.value} required>
+                                </input>
                                 <label onClick={this.handleSubmit} type="submit" value="Submit" style={{top:"45%", left:"95%"}} className="label-icon" for="search"><i style={{position:"absolute"}} className="material-icons">search</i></label>
                             </div>
                         </form>
