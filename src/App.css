@@ -1212,7 +1212,7 @@ form.mobileSearchForm button:hover {
 
 .icon4{
     display: flex;
-    padding: 30% 26%;
+    padding: 25% 26%;
     border: 4px solid #0C1344;
     border-radius: 25px;
     flex-direction: column;
@@ -1222,22 +1222,26 @@ form.mobileSearchForm button:hover {
 
 .icon1:hover {
     cursor: pointer;
-    background-color: #806543
+    background-color: #806543;
+    color: white;
 }
 
 .icon2:hover {
     cursor: pointer;
-    background-color: #806543
+    background-color: #806543;
+    color: white;
 }
 
 .icon3:hover {
     cursor: pointer;
-    background-color: #806543
+    background-color: #806543;
+    color: white;
 }
 
 .icon4:hover {
     cursor: pointer;
-    background-color: #806543
+    background-color: #806543;
+    color: white;
 }
 
 .poofLaptopIcon2 {
@@ -1294,6 +1298,21 @@ form.mobileSearchForm button:hover {
     bottom: 0;
     height: 12vh;
     background-color: #0C1344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poofMobileSignIn {
+    color: white;
+    font-size: 6vh;
+    position: relative;
+    top: 6px;
+}
+
+.poofMobileSignIn:hover {
+    cursor: pointer;
+    color: #806543;
 }
 
 /*Mobile Search Page*/
