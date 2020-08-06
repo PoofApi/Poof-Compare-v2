@@ -94,20 +94,36 @@ class MobileHeader extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
-                        <div className="col-9">
-                            <form onSubmit={this.handleSubmit}>
-                                <div className="poofMobileSearch mb-3">
-                                        <input 
-                                            className="poofMobileInput" type="text" placeholder="Search for products..." id="search" 
-                                            ref={(input) => {this.searchInput = input; }} type="search" 
-                                            onChange={this.handleChange} onSubmit={this.handleSubmit} value={this.state.value} name="search" required
-                                        />
-                                        <i className="material-icons poofMobileSearchIcon" onClick={this.handleSubmit}>search</i>
-                                </div>
-                            </form>
-                        </div>
+
+                    {
+                    this.state.loading ? 
+                    
+                        <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">
+                            <div className="mb-4" style={{fontSize: "20px", color: "black", fontWeight: "600", textAlign: "center"}}>
+                                Just one moment while Poof! finds you the best deals!....
+                            </div>
+                            <div className="exampleContainer mb-4">
+                                <div className="loadBar1"></div>
+                                <div className="loadBar2"></div>
+                            </div>
+                        </div>                   
+                    
+                    :
+                        <div className="row justify-content-center">
+                            <div className="col-9">
+                                <form onSubmit={this.handleSubmit}>
+                                    <div className="poofMobileSearch mb-3">
+                                            <input 
+                                                className="poofMobileInput" type="text" placeholder="Search for products..." id="search" 
+                                                ref={(input) => {this.searchInput = input; }} type="search" 
+                                                onChange={this.handleChange} onSubmit={this.handleSubmit} value={this.state.value} name="search" required
+                                            />
+                                            <i className="material-icons poofMobileSearchIcon" onClick={this.handleSubmit}>search</i>
+                                    </div>
+                                </form>
+                            </div>
                     </div>
+                    }
                     <div className="row justify-content-center">
                         <div className="col-5">
                             <div className="icon1">
