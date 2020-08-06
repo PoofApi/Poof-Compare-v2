@@ -1295,30 +1295,16 @@ form.mobileSearchForm button:hover {
     box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
+.pIcon {
+    transition: box-shadow .2s, border .1s;
+}
+
 .pIcon:hover {
     cursor: pointer;
     background-color: #806543;
     color: white !important;
-    box-shadow: 2px 8px 1px 0px rgba(0,0,0,0.14);
+    box-shadow: 3px 12px 3px 0px rgba(0,0,0,0.14);
 }
-
-/* .icon2:hover {
-    cursor: pointer;
-    background-color: #806543;
-    color: white !important;
-}
-
-.icon3:hover {
-    cursor: pointer;
-    background-color: #806543;
-    color: white !important;
-}
-
-.icon4:hover {
-    cursor: pointer;
-    background-color: #806543;
-    color: white !important;
-} */
 
 .poofLaptopIcon2 {
     width: 100%;
@@ -1408,6 +1394,21 @@ form.mobileSearchForm button:hover {
 .mobileProgress2 {
     background: #141B4D;
     height: 2vh;
+}
+
+.mobileRouteLogin3 {
+    position: relative;
+    top: 8px;
+    left: 4px;
+}
+
+.poofMobileSignInIcon {
+    color: white;
+}
+
+.poofMobileSignInIcon:hover {
+    cursor: pointer;
+    color: #806543;
 }
 
 /*Mobile Search Page*/

@@ -6,7 +6,7 @@ import ReactTooltip from 'react-tooltip';
 import {connect} from 'react-redux';
 
 
-class MobileSignIn3 extends Component {
+class PoofMobileSignIn extends Component {
 
     constructor(props){
         super(props);
@@ -25,7 +25,6 @@ class MobileSignIn3 extends Component {
 
     async handleSubmit() {
         await this.props.saveUser(this.state.userId);
-        window.location.reload(false);
     }
 
     componentDidMount() {
@@ -50,7 +49,7 @@ class MobileSignIn3 extends Component {
         startingTop: "4%",
         endingTop: "10%"
         };
-        M.Modal.init(this.MobileSignIn3, options);
+        M.Modal.init(this.PoofMobileSignIn, options);
         
     }
 
@@ -58,14 +57,14 @@ class MobileSignIn3 extends Component {
     render() {
 
         return (
-            <div className="mobileRouteLogin2">
-              <div className="loadListIcon modal-trigger" data-target="modal4"><p data-tip={"Load previously saved list"}><i className="material-icons desktopLoadWatchlist2">perm_identity</i></p></div>
+            <div className="mobileRouteLogin3">
+              <div className="loadListIcon modal-trigger" data-target="modal6"><p data-tip={"Load previously saved list"}><i className="material-icons desktopLoadWatchlist2 poofMobileSignInIcon">perm_identity</i></p></div>
                 <ReactTooltip />
               <div
-                ref={MobileSignIn3 => {
-                  this.MobileSignIn3 = MobileSignIn3;
+                ref={PoofMobileSignIn => {
+                  this.PoofMobileSignIn = PoofMobileSignIn;
                 }}
-                id="modal4"
+                id="modal6"
                 className="modal desktopSignUp"
               >
               <div className="modal-content">
@@ -111,4 +110,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MobileSignIn3);
+export default connect(mapStateToProps, mapDispatchToProps)(PoofMobileSignIn);

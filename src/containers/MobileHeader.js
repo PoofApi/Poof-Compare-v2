@@ -3,6 +3,7 @@ import Poof_Blue from '../images/Poof_Blue.png';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
+import PoofMobileSignIn from './PoofMobileSignIn';
 
 const axios = require('axios');
 
@@ -180,9 +181,7 @@ class MobileHeader extends Component {
                     </div>
                 </div>
                 <div className="poofMobileFooter">
-                    <ul>
-                        <li><i className="material-icons poofMobileSignIn">perm_identity</i></li>
-                    </ul>
+                    <PoofMobileSignIn />
                 </div>
             </div>
         )
