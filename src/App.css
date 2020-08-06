@@ -1254,8 +1254,9 @@ form.mobileSearchForm button:hover {
     border-radius: 25px;
     flex-direction: column;
     justify-content: center;
-    background-color: transparent;
+    background-color: white;
     color: #141B4D;
+    box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
 .icon2{
@@ -1265,8 +1266,9 @@ form.mobileSearchForm button:hover {
     border-radius: 25px;
     flex-direction: column;
     justify-content: center;
-    background-color: transparent;
+    background-color: white;
     color: #141B4D;
+    box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
 .icon3{
@@ -1276,8 +1278,9 @@ form.mobileSearchForm button:hover {
     border-radius: 25px;
     flex-direction: column;
     justify-content: center;
-    background-color: transparent;
+    background-color: white;
     color: #141B4D;
+    box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
 .icon4{
@@ -1287,17 +1290,19 @@ form.mobileSearchForm button:hover {
     border-radius: 25px;
     flex-direction: column;
     justify-content: center;
-    background-color: transparent;
+    background-color: white;
     color: #141B4D;
+    box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
-.icon1:hover {
+.pIcon:hover {
     cursor: pointer;
     background-color: #806543;
     color: white !important;
+    box-shadow: 2px 8px 1px 0px rgba(0,0,0,0.14);
 }
 
-.icon2:hover {
+/* .icon2:hover {
     cursor: pointer;
     background-color: #806543;
     color: white !important;
@@ -1313,7 +1318,7 @@ form.mobileSearchForm button:hover {
     cursor: pointer;
     background-color: #806543;
     color: white !important;
-}
+} */
 
 .poofLaptopIcon2 {
     width: 100%;
