@@ -59,6 +59,7 @@ class MobileHeader extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit2 = this.handleSubmit2.bind(this);
     }
 
     handleChange(event) {
@@ -76,6 +77,20 @@ class MobileHeader extends Component {
             event.preventDefault();
             this.setState({loading: false});
             this.setState({value: ""});
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+
+    async handleSubmit2(searchWord){
+
+        this.setState({loading: true});
+
+        try{
+            await getProductsForHome(searchWord);
+            this.setState({loading:false});
+
         }
         catch(err){
             console.log(err);
@@ -126,7 +141,7 @@ class MobileHeader extends Component {
                     }
                     <div className="row justify-content-center">
                         <div className="col-5">
-                            <div className="icon1">
+                            <div className="icon1" onClick={() => this.handleSubmit2("electronics")}>
                                 <div className="poofElectronics">
                                     {/* <img className="img-fluid poofLaptopIcon2" src={laptop} alt="poofLaptopIcon2"/> */}
                                     <i className="medium material-icons">laptop_mac</i>
@@ -136,7 +151,7 @@ class MobileHeader extends Component {
                         </div>
                         <div className="col-5">                       
                             <div className="poofBooks">
-                                <div className="icon2">
+                                <div className="icon2" onClick={() => this.handleSubmit2("books")}>
                                     {/* <img className="img-fluid poofStudyIcon2" src={study} alt="poofStudyIcon2"/> */}
                                     <i className="medium material-icons">book</i>
                                     <div className="poofIconName" >Books</div>
@@ -147,7 +162,7 @@ class MobileHeader extends Component {
                     <div className="row justify-content-center">
                         <div className="col-5">                       
                             <div className="poofClothes">
-                                <div className="icon3">
+                                <div className="icon3" onClick={() => this.handleSubmit2("clothes")}>
                                     {/* <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/> */}
                                     <i className="medium material-icons">store</i>
                                     <div className="poofIconName" style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
@@ -156,7 +171,7 @@ class MobileHeader extends Component {
                         </div>
                         <div className="col-5">
                             <div className="poofGames">
-                                <div className="icon4">
+                                <div className="icon4" onClick={() => this.handleSubmit2("games")}>
                                     {/* <img className="img-fluid poofGamingIcon2" src={gaming} alt="poofGamingIcon2"/> */}
                                     <i className="medium material-icons">toys</i>
                                     <div className="poofIconName" >Games/Toys</div>

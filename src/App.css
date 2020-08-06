@@ -1153,7 +1153,7 @@ form.mobileSearchForm button:hover {
   .loadBar2 {
     height: 20px;
     width: 100px;
-    background: #141B4D;
+    background: #141B4D ;
     border-radius: 25px;
     position: relative;
     animation: slide 1.3s linear forwards;
