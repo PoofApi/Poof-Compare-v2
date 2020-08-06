@@ -65,7 +65,7 @@ class PoofMobileSignIn extends Component {
                   this.PoofMobileSignIn = PoofMobileSignIn;
                 }}
                 id="modal6"
-                className="modal desktopSignUp"
+                className="modal desktopSignUp poofModalBody"
               >
               <div className="modal-content">
                 <div className="headerContainer" style={{display: "flex", justifyContent: "center"}}>

@@ -1322,6 +1322,11 @@ form.mobileSearchForm button:hover {
     width: 100%
 }
 
+.poofModalBody {
+    height: 40vh !important;
+    border-radius: 40px !important;
+}
+
 
 .poofMobileInput{
     background-color: white !important;
