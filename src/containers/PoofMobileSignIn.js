@@ -4,6 +4,7 @@ import '../App.css';
 import {saveUser} from '../actions/product';
 import ReactTooltip from 'react-tooltip';
 import {connect} from 'react-redux';
+import { withRouter } from "react-router-dom";
 
 
 class PoofMobileSignIn extends Component {
@@ -25,6 +26,10 @@ class PoofMobileSignIn extends Component {
 
     async handleSubmit() {
         await this.props.saveUser(this.state.userId);
+        console.log(this.props.storeUserId);
+        if(this.props.storeUserId !== ""){
+            await this.props.history.push("/watchlist"); 
+        }
     }
 
     componentDidMount() {
@@ -110,4 +115,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PoofMobileSignIn);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(PoofMobileSignIn));

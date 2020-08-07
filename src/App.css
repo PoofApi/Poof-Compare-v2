@@ -1323,7 +1323,7 @@ form.mobileSearchForm button:hover {
 }
 
 .poofModalBody {
-    height: 40vh !important;
+    height: 35vh !important;
     border-radius: 40px !important;
 }
 
@@ -1413,6 +1413,14 @@ form.mobileSearchForm button:hover {
 
 .poofMobileSignInIcon:hover {
     cursor: pointer;
+    color: #806543;
+}
+
+.poofMobileWatchlistIcon {
+    font-size: 7vh;
+}
+
+.poofMobileWatchlistIcon:hover {
     color: #806543;
 }
 

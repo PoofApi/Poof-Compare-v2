@@ -4,6 +4,9 @@ import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
 import PoofMobileSignIn from './PoofMobileSignIn';
+import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+
 
 const axios = require('axios');
 
@@ -99,6 +102,10 @@ class MobileHeader extends Component {
 
     render(){
 
+        let urlName = window.location.pathname;
+
+
+
         return(
             <div className="poofMobileComponent">
                 <div className="container poofMobileContainer">
@@ -181,11 +188,32 @@ class MobileHeader extends Component {
                     </div>
                 </div>
                 <div className="poofMobileFooter">
-                    <PoofMobileSignIn />
+
+                 <PoofMobileSignIn /> 
+                        
+                {/* {
+                
+                this.props.storeUserId !== "" && urlName === "/" ?
+                    
+                <Link className="poof-mobile-watchlist" to={'/watchlist'}>
+                    <i className="material-icons poofMobileWatchlistIcon">view_list</i>
+                </Link> 
+                
+                :
+
+                <div></div>
+                } */}
+                    
                 </div>
             </div>
         )
     }
 }
 
-export default MobileHeader;
+const mapStateToProps = (state) => {
+    return {
+        storeUserId: state.item.storeUserId
+    }
+}
+
+export default connect(mapStateToProps)(MobileHeader);
