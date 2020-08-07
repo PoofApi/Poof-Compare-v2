@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 import uuid from 'react-uuid';
 import MobileHeader from '../MobileHeader';
+import DesktopHeader from '../DesktopHeader';
 
 
 const axios = require('axios');
@@ -338,7 +339,8 @@ class Home extends Component {
     && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
         <div>
           {/* <Header /> */}
-          <MobileHeader />
+          {/* <MobileHeader /> */}
+          <DesktopHeader />
         </div>
         }
 

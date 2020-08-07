@@ -1424,6 +1424,36 @@ form.mobileSearchForm button:hover {
     color: #806543;
 }
 
+/*Desktop Header v2*/
+
+.poofDesktopInput{
+    background: white !important;
+    border-radius: 25px !important;
+    padding-left: 20px !important;
+}
+
+.desktopImage {
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    background-position-y: 635px;
+    background-size: cover;
+    background-color: #555;
+    margin: 0 0 20px;
+    text-align: center;
+    transition: .8s;
+}
+
+.desktopContent {
+    position: relative;
+    top: 40px;
+}
+
+.dIcon {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
 /*Mobile Search Page*/
 
 
