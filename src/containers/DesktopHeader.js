@@ -152,7 +152,7 @@ class DesktopHeader extends Component {
                                 </div>
                         </div>
                         }
-                        <div className="fillerBody1"></div>
+                        {/* <div className="fillerBody1"></div> */}
                         <div className="iconContent mb-4">
                             <div className="row justify-content-center">
                                 <div className="col-3">

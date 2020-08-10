@@ -1426,6 +1426,14 @@ form.mobileSearchForm button:hover {
 
 /*Desktop Header v2*/
 
+.poofDesktopContainer {
+    height: 100vh;
+}
+
+.poofDesktopComponent {
+    height: 100vh;
+}
+
 .poofDesktopInput{
     background: white !important;
     border-radius: 25px !important;
@@ -1445,8 +1453,10 @@ form.mobileSearchForm button:hover {
 }
 
 .desktopContent {
-    position: relative;
-    top: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dIcon {

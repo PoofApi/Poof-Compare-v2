@@ -12,8 +12,8 @@ class App extends Component {
   render() {
 
     return (
-      <div className="app">
-        <div className="container-fluid">
+      <div className="app" style={{height: "100vh"}}>
+        <div className="container-fluid" style={{height: "100vh"}}>
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/watchlist" component={WatchlistRoute} />

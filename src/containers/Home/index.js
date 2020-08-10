@@ -330,14 +330,14 @@ class Home extends Component {
 
     return (
       
-      <div>
+      <div style={{height: "100vh"}}>
 
     {this.props.items.length > 0 ? <div><Header2 user={this.props.storeUserId} items={this.props.items} /> {(storeWatchProducts.length > 0 || usersWatchedItems.length > 0)
     && (this.state.watchListOpen) ? <WatchList alert={this.setAlert} items={this.props.storeUserId !== "" ? 
     usersWatchedItems : storeWatchProducts} products={this.props.items} user={this.props.storeUserId} toggleClick={this.closeWatchList} saveClick={this.saveList} 
     watch={actions.watch} /> : <div></div>} {(this.props.storeUserId !== "" ? usersWatchedItems.length > 0 : storeWatchProducts.length > 0) 
     && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
-        <div>
+        <div style={{height: "100vh"}}>
           {/* <Header /> */}
           {/* <MobileHeader /> */}
           <DesktopHeader />
