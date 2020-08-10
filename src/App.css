@@ -1452,6 +1452,15 @@ form.mobileSearchForm button:hover {
 .dIcon {
     border: 2px solid black;
     border-radius: 20px;
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fillerBody1 {
+    height: 300px;
 }
 
 /*Mobile Search Page*/

@@ -110,9 +110,9 @@ class DesktopHeader extends Component {
         return(
             <div className="poofDesktopComponent">
                 <div className="container-fluid poofDesktopContainer">
-                    <div className="desktopImage" style={{backgroundImage: `url(${bookBackground})`}}>
+                    {/* <div className="desktopImage" style={{backgroundImage: `url(${bookBackground})`}}>
 
-                    </div>
+                    </div> */}
                     <div className="desktopContent">
 
                         <div className="row justify-content-center">
@@ -152,42 +152,43 @@ class DesktopHeader extends Component {
                                 </div>
                         </div>
                         }
-                        <div className="row justify-content-center">
-                            <div className="col-5">
-                                <div className="desktopIcon1 pIcon dIcon" onClick={() => this.handleSubmit2("electronics")}>
-                                    <div className="poofElectronics">
-                                        {/* <img className="img-fluid poofLaptopIcon2" src={laptop} alt="poofLaptopIcon2"/> */}
-                                        <i className="medium material-icons">laptop_mac</i>
-                                        <div className="poofIconName" >Electronics</div>
+                        <div className="fillerBody1"></div>
+                        <div className="iconContent mb-4">
+                            <div className="row justify-content-center">
+                                <div className="col-3">
+                                    <div className="desktopIcon1 pIcon dIcon ml-4" onClick={() => this.handleSubmit2("electronics")}>
+                                        <div className="poofElectronics">
+                                            {/* <img className="img-fluid poofLaptopIcon2" src={laptop} alt="poofLaptopIcon2"/> */}
+                                            <i className="medium material-icons">laptop_mac</i>
+                                            <div className="poofIconName" >Electronics</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-5">                       
-                                <div className="poofBooks">
-                                    <div className="desktopIcon2 pIcon dIcon" onClick={() => this.handleSubmit2("books")}>
-                                        {/* <img className="img-fluid poofStudyIcon2" src={study} alt="poofStudyIcon2"/> */}
-                                        <i className="medium material-icons">book</i>
-                                        <div className="poofIconName" >Books</div>
+                                <div className="col-3">                       
+                                    <div className="poofBooks">
+                                        <div className="desktopIcon2 pIcon dIcon" onClick={() => this.handleSubmit2("books")}>
+                                            {/* <img className="img-fluid poofStudyIcon2" src={study} alt="poofStudyIcon2"/> */}
+                                            <i className="medium material-icons">book</i>
+                                            <div className="poofIconName" >Books</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="row justify-content-center">
-                            <div className="col-5">                       
-                                <div className="poofClothes">
-                                    <div className="desktopIcon3 pIcon dIcon" onClick={() => this.handleSubmit2("clothes")}>
-                                        {/* <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/> */}
-                                        <i className="medium material-icons">store</i>
-                                        <div className="poofIconName" style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
+                                <div className="col-3">                       
+                                    <div className="poofClothes">
+                                        <div className="desktopIcon3 pIcon dIcon" onClick={() => this.handleSubmit2("clothes")}>
+                                            {/* <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/> */}
+                                            <i className="medium material-icons">store</i>
+                                            <div className="poofIconName" style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-5">
-                                <div className="poofGames">
-                                    <div className="desktopIcon4 pIcon dIcon" onClick={() => this.handleSubmit2("games")}>
-                                        {/* <img className="img-fluid poofGamingIcon2" src={gaming} alt="poofGamingIcon2"/> */}
-                                        <i className="medium material-icons">toys</i>
-                                        <div className="poofIconName" >Games/Toys</div>
+                                <div className="col-3">
+                                    <div className="poofGames">
+                                        <div className="desktopIcon4 pIcon dIcon mr-4" onClick={() => this.handleSubmit2("games")}>
+                                            {/* <img className="img-fluid poofGamingIcon2" src={gaming} alt="poofGamingIcon2"/> */}
+                                            <i className="medium material-icons">toys</i>
+                                            <div className="poofIconName" >Games/Toys</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
