@@ -1493,6 +1493,11 @@ form.mobileSearchForm button:hover {
     top: 14px;
 }
 
+.poofDesktopSearch:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
 .desktopProgressSearchBar {
     position: relative;
     bottom: 30px;

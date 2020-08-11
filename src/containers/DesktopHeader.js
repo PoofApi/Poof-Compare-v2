@@ -117,7 +117,7 @@ class DesktopHeader extends Component {
                         <div className="desktopContent">
 
                             <div className="row justify-content-center">
-                                <div className="col-5 mb-2">
+                                <div className="col-5 mb-2 mt-4">
                                     <div className="poofDesktopLogo2">
                                         <img className="img-fluid" src={Poof_White} alt="poofDesktopLogo2"/>
                                     </div>
