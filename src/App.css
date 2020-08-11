@@ -1260,6 +1260,10 @@ form.mobileSearchForm button:hover {
     text-align: center;
 }
 
+.mobilePoofIcon {
+    align-items: center;
+}
+
 
 .icon1{
     display: flex;
@@ -1285,6 +1289,10 @@ form.mobileSearchForm button:hover {
     box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
+.mobileIcon2 {
+    padding: 25% 11vw !important;
+}
+
 .icon3{
     display: flex;
     padding: 25%;
@@ -1297,6 +1305,10 @@ form.mobileSearchForm button:hover {
     box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
 }
 
+.mobileIcon3 {
+    padding: 25% 11.3vw !important;
+}
+
 .icon4{
     display: flex;
     padding: 25% 26%;
@@ -1307,6 +1319,10 @@ form.mobileSearchForm button:hover {
     background-color: white;
     color: #141B4D;
     box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
+}
+
+.mobileIcon4 {
+    padding: 25% 11vw !important;
 }
 
 .pIcon {
