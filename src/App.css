@@ -1432,12 +1432,31 @@ form.mobileSearchForm button:hover {
 
 .poofDesktopComponent {
     height: 100vh;
+    background-image: url(./images/bookBackground.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: initial !important;
+    background-size: 100vw 78vh !important;
+    background-position-y: -109px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;     
+}
+
+.poofOverlay {
+    width: 100vw;
+    height: 63.5vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .poofDesktopInput{
     background: white !important;
     border-radius: 25px !important;
     padding-left: 20px !important;
+    height: 7vh !important;
 }
 
 .desktopImage {
@@ -1450,6 +1469,28 @@ form.mobileSearchForm button:hover {
     margin: 0 0 20px;
     text-align: center;
     transition: .8s;
+}
+
+.poofHeadline{
+    position: relative;
+    bottom: 25px;
+}
+
+.poofTitleText {
+    color: white;
+    text-align: center;
+    width: 100% !important;
+}
+
+.poofDesktopSearch {
+    position: relative;
+    bottom: 35px;
+}
+
+.poofDesktopSearchIcon {
+    position: absolute;
+    right: 15px;
+    top: 14px;
 }
 
 .desktopContent {

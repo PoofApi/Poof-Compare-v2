@@ -18,23 +18,23 @@
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+        font-family: "Open Sans",sans-serif !important;
         /* background: #e6f0e9 !important; */
-      }
-
-      body{
-        background-image: url(./images/bookBackground.jpg) !important;
-        background-repeat: no-repeat !important;
-        background-attachment: initial !important;
-        background-size: 100vw 78vh !important;
-        background-position-y: -109px !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
       }
 
       #root {
         height: 100vh;
       }
+
+      /* #bodyOverlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.3);
+        background-size: 100vw 78vh !important;
+      } */
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -89,5 +89,7 @@
             }
         }
     </script>
+    <div id="bodyOverlay">
+    </div>
   </body>
 </html>
