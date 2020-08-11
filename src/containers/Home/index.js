@@ -27,32 +27,8 @@ const getTitles = (list) => {
   
   return titles;
 }
-// Part of previous code that used Eric's backend
 
-// async function getItems(){
-//   console.log("Now fetching items.........")
 
-//   try{
-//     let response = await axios({
-//       method: 'post',
-//       url: "https://us-central1-poofapibackend.cloudfunctions.net/search-bestprice",
-//       headers: {
-//         "Authorization": "Bearer b99d951c8ffb64135751b3d423badeafac9cfe1f54799c784619974c29e277ec",
-//         "Accept" : "application/json",
-//         "Content-Type" : "application/json",
-//       },
-//       data: {"keywords" : "gamecube controller"},
-//     })
-  
-//     let items = await response.data;
-//     console.log(items);
-//   }
-
-//   catch(err){
-//     alert(err);
-//     console.log("An error occurred!!!!!: ", err);
-//   }
-// }
 
 async function setWatchList(item, storedList){
 
@@ -229,7 +205,6 @@ class Home extends Component {
       
       if(this.props.watchedItems){
         let previousWatchItems = this.props.watchedItems;
-        // let previousWatchItems = this.props.watchedItems;
         await previousWatchItems.map(item => setWatchList(item, this.props.usersWatchedItems));
       }
       
@@ -249,7 +224,7 @@ class Home extends Component {
     }
   }
 
-  //Ready to be implemented once Eric deploys this function
+
   async setAlert(targetPrice, item){
 
     const user = store.getState().item.storeUserId;
@@ -285,26 +260,6 @@ class Home extends Component {
     }
   }
 
-//   async componentDidUpdate(previousProps, previousState) {
-//     this.checkIfInWatch();
-
-//     console.log("ComponentDidUpdate called!");
-
-//     // This was previously backslashed out
-//     // store.dispatch(this.props.actions.addSignInWatch());
-
-//     if (previousProps.data !== this.props.data && this.props.storeUserId !== "") {
-
-//       let previousWatchItems = this.props.watchedItems;
-//       console.log(previousWatchItems);
-//       console.log(store.getState().item.storeUserId);
-//       await previousWatchItems.map(item => setWatchList(item));
-
-//       let items = await this.getUsersItems();
-//       store.dispatch(this.props.actions.loadUsersItems(items));
-//     }
-// }
-
   componentDidUpdate(){
     // console.log("Product items: ", this.props.items);
   }
@@ -312,18 +267,13 @@ class Home extends Component {
 
   render() {
 
-    // getItems();
-
     
     const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId} = this.props;
 
     let revisedItems = this.addId(items);
-    // console.log("Revised items WITH ids: ", revisedItems);
     
     const compareProducts = items.filter(item => item.compare);
     const storeWatchProducts = watchedItems;
-
-    // console.log(usersWatchedItems);
 
     this.checkIfInWatch();
     this.checkIfInWatch2();
@@ -339,8 +289,12 @@ class Home extends Component {
     && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
         <div style={{height: "100vh"}}>
           {/* <Header /> */}
-          {/* <MobileHeader /> */}
-          <DesktopHeader />
+          <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer">
+              <MobileHeader />
+          </div>
+          <div className="d-none d-sm-none d-md-block desktopHeaderContainer">
+              <DesktopHeader />
+          </div>
         </div>
         }
 
