@@ -1217,6 +1217,19 @@ form.mobileSearchForm button:hover {
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url(/static/media/rainbowPoof.bbcb8de2.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-attachment: initial !important;
+    background-size: 100vw 46rem;
+    background-position-y: -100px !important;
+    background-color: white;
+}
+
+.mobileTitleText {
+    text-align: center;
+    font-weight: 700;
+    color: #141B4D;
 }
 
 .poofElectronics {
@@ -1443,17 +1456,18 @@ form.mobileSearchForm button:hover {
     justify-content: space-around;     
 }
 
+@media screen and (max-width: 1199px){
+    .poofDesktopComponent{
+        background-size: 100vw 39.3rem;
+    } 
+}
+
 @media screen and (max-width: 991px){
     .poofDesktopComponent{
-        background-size: 100vw 39.6rem !important;
+        background-size: 100vw 39.6rem;
     } 
  }
 
-@media screen and (max-width: 1199px){
-   .poofDesktopComponent{
-       background-size: 100vw 39.3rem;
-   } 
-}
 
 .poofOverlay {
     width: 100vw;

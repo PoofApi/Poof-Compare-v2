@@ -186,7 +186,7 @@ class DesktopHeader extends Component {
                                             <div className="desktopIcon3 pIcon dIcon" onClick={() => this.handleSubmit2("clothes")}>
                                                 {/* <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/> */}
                                                 <i className="medium material-icons">store</i>
-                                                <div className="poofIconName" style={{position: "relative", right: "8px"}}>Clothes/Apparel</div>
+                                                <div className="poofIconName">Clothes/Apparel</div>
                                             </div>
                                         </div>
                                     </div>

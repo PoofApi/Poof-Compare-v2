@@ -109,13 +109,16 @@ class MobileHeader extends Component {
         return(
             <div className="poofMobileComponent">
                 <div className="container poofMobileContainer">
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className="col-7 mb-2">
                             <div className="poofMobileLogo2">
                                 <img className="img-fluid" src={Poof_Blue} alt="poofMobileLogo2"/>
                             </div>
                         </div>
                     </div>
+                    <h6 className="row justify-content-center mobileTitleText" style={{textAlign: "center"}}>
+                        Search your favorite big box retailers all at once!
+                    </h6>
 
                     {
                     this.state.loading ? 
