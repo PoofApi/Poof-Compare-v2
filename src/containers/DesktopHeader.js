@@ -132,15 +132,17 @@ class DesktopHeader extends Component {
                             {
                             this.state.loading ? 
                             
-                                <div className="col-10 col-sm-8 col-md-4 desktopProgressSearchBar">
-                                    <div className="mb-4" style={{fontSize: "20px", color: "black", fontWeight: "600", textAlign: "center"}}>
-                                        Just one moment while Poof! finds you the best deals!....
-                                    </div>
-                                    <div className="exampleContainer mb-4">
-                                        <div className="loadBar1"></div>
-                                        <div className="loadBar2"></div>
-                                    </div>
-                                </div>                   
+                                <div className="row justify-content-center">
+                                    <div className="col-10 desktopProgressSearchBar">
+                                        <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
+                                            Just one moment while Poof! finds you the best deals!....
+                                        </div>
+                                        <div className="exampleContainer justify-content-center mb-4">
+                                            <div className="desktopLoadBar1"></div>
+                                            <div className="desktopLoadBar2"></div>
+                                        </div>
+                                    </div>                   
+                                </div>
                             
                             :
                                 <div className="row justify-content-center">
@@ -156,7 +158,7 @@ class DesktopHeader extends Component {
                                             </div>
                                         </form>
                                     </div>
-                            </div>
+                                </div>
                             }
                             {/* <div className="fillerBody1"></div> */}
                             <div className="iconContent mb-4">

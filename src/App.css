@@ -1493,6 +1493,52 @@ form.mobileSearchForm button:hover {
     top: 14px;
 }
 
+.desktopProgressSearchBar {
+    position: relative;
+    bottom: 30px;
+}
+
+.desktopLoadBar1 {
+    height: 20px;
+    width: 100%;
+    background: #806543;
+    border-radius: 25px;
+    position: absolute;
+  }
+
+  .desktopLoadBar2 {
+    height: 20px;
+    width: 100px;
+    background: #141B4D ;
+    border-radius: 25px;
+    position: relative;
+    animation: move 1.3s linear forwards;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes move {
+    0% {
+        left:0%;
+        right:100%;
+        width:0%;
+      }
+      10% {
+        left:0%;
+        right:75%;
+        width:25%;
+      }
+      90% {
+        right:0%;
+        left:75%;
+        width:25%;
+      }
+      100% {
+        left:103%;
+        right:0%;
+        width:0%;
+      }
+  }
+
 .desktopContent {
     height: 100vh;
     display: flex;
