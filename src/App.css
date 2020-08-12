@@ -1218,14 +1218,11 @@ form.mobileSearchForm button:hover {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+      
     .mobileIcon1{
         padding: 25% 18.7vw !important;
         position: relative;
         right: 10px;
-    }
-
-    .poofMobileComponent{
-        overflow: auto;
     }
 }
 
@@ -1241,7 +1238,6 @@ form.mobileSearchForm button:hover {
     background-size: 100vw 46rem;
     background-position-y: -100px !important;
     background-color: white;
-    overflow: hidden;
 }
 
 .mobileTitleText {
