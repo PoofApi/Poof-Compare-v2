@@ -1217,8 +1217,8 @@ form.mobileSearchForm button:hover {
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-      
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
     .mobileIcon1{
         padding: 25% 18.7vw !important;
         position: relative;
@@ -1226,9 +1226,38 @@ form.mobileSearchForm button:hover {
     }
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .mobileIcon1{
+        padding: 25% 15vw !important;
+        position: relative;
+        right: 10px;
+    }
+
+    .mobileRouteLogin3 {
+        position: relative;
+        top: 8px;
+        right: 5px;
+    }
+
+    .poofModalBody {
+        height: 50vh !important;
+        width: 55vw !important;
+        border-radius: 40px !important;
+    }
+
+    .poofModalLandscape {
+        position: relative;
+        bottom: 25px;
+    }
+}
+
 .poofMobileComponent {
     display: flex;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     background-image: url(./images/rainbowPoofReduced.jpg) !important;

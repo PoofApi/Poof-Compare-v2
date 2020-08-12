@@ -84,7 +84,7 @@ class PoofMobileSignIn extends Component {
                                 <label for="userId">Please provide the email or phone number that your Poof! account is linked to.</label>
                             </div>
                         </div>
-                        <div className="row" style={{display:"flex", justifyContent: "center"}}>
+                        <div className="row poofModalLandscape" style={{display:"flex", justifyContent: "center"}}>
                             <div >
                                 <a onClick={this.handleSubmit} className="btn submit-button modal-close" style={{marginRight: "20px"}}>Submit</a>
                             </div>
