@@ -1212,6 +1212,22 @@ form.mobileSearchForm button:hover {
 
 /*Second Mobile Front Page*/
 
+/*media query for iphone X*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .mobileIcon1{
+        padding: 25% 18.7vw !important;
+        position: relative;
+        right: 10px;
+    }
+
+    .poofMobileComponent{
+        overflow: auto;
+    }
+}
+
 .poofMobileComponent {
     display: flex;
     height: 100vh;
@@ -1445,9 +1461,10 @@ form.mobileSearchForm button:hover {
 }
 
 .poofMobileFooter {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    height: 12vh;
+    left: 0;
+    height: 13vh;
     width: 100vw;
     background-color: #0C1344;
     display: flex;

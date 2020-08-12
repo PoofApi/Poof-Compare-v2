@@ -189,24 +189,24 @@ class MobileHeader extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="poofMobileFooter">
+                    <div className="poofMobileFooter">
 
-                 <PoofMobileSignIn /> 
+                    <PoofMobileSignIn /> 
+                            
+                    {/* {
+                    
+                    this.props.storeUserId !== "" && urlName === "/" ?
                         
-                {/* {
-                
-                this.props.storeUserId !== "" && urlName === "/" ?
+                    <Link className="poof-mobile-watchlist" to={'/watchlist'}>
+                        <i className="material-icons poofMobileWatchlistIcon">view_list</i>
+                    </Link> 
                     
-                <Link className="poof-mobile-watchlist" to={'/watchlist'}>
-                    <i className="material-icons poofMobileWatchlistIcon">view_list</i>
-                </Link> 
-                
-                :
+                    :
 
-                <div></div>
-                } */}
-                    
+                    <div></div>
+                    } */}
+                        
+                    </div>
                 </div>
             </div>
         )

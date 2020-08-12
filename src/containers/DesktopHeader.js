@@ -49,6 +49,32 @@ async function getProductsForHome(keywords){
     }
   }
 
+//Call to backend code which return most popular (aka most "searched") items
+
+async function getMostPopular(){
+    console.log("Now fetching most popular items.........")
+  
+    try{
+      let response = await axios({
+        method: 'get',
+        url: "https://us-central1-poofapibackend.cloudfunctions.net/search-getMostPopular",
+        headers: {
+          "Authorization": "Bearer b99d951c8ffb64135751b3d423badeafac9cfe1f54799c784619974c29e277ec",
+          "Accept" : "application/json",
+          "Content-Type" : "application/json",
+        }
+      })
+    
+      let items = await response.data;
+      console.log("Most popular items: ",items);
+      return items;
+  
+    }
+  
+    catch(err){
+      console.log("An error occurred with getMostPopular function: ", err);
+    }
+  }
 
 class DesktopHeader extends Component {
 
@@ -99,6 +125,11 @@ class DesktopHeader extends Component {
         catch(err){
             console.log(err);
         }
+    }
+
+    async componentDidMount(){
+        let popularItems = await getMostPopular();
+        console.log(popularItems);
     }
 
     render(){
