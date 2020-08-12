@@ -1106,7 +1106,8 @@ form.mobileSearchForm button:hover {
 }
 
 .mobileProgressSearchBar{
-    margin-left: 35px;
+    position: relative;
+    left: 12px;
 }
 
 .poofMobileLogo{
@@ -1145,7 +1146,7 @@ form.mobileSearchForm button:hover {
 
   .loadBar1 {
     height: 20px;
-    width: 370px;
+    width: 86%;
     background: #806543;
     border-radius: 25px;
     position: absolute;
@@ -1174,11 +1175,11 @@ form.mobileSearchForm button:hover {
       }
       90% {
         right:0%;
-        left:75%;
+        left:70%;
         width:25%;
       }
       100% {
-        left:101%;
+        left:95%;
         right:0%;
         width:0%;
       }

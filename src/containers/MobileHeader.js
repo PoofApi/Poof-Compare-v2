@@ -116,22 +116,24 @@ class MobileHeader extends Component {
                             </div>
                         </div>
                     </div>
-                    <h6 className="row justify-content-center mobileTitleText" style={{textAlign: "center"}}>
+                    {!this.state.loading && <h6 className="row justify-content-center mobileTitleText" style={{textAlign: "center"}}>
                         Search your favorite big box retailers all at once!
-                    </h6>
+                    </h6>}
 
                     {
                     this.state.loading ? 
                     
-                        <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">
-                            <div className="mb-4" style={{fontSize: "20px", color: "black", fontWeight: "600", textAlign: "center"}}>
-                                Just one moment while Poof! finds you the best deals!....
-                            </div>
-                            <div className="exampleContainer mb-4">
-                                <div className="loadBar1"></div>
-                                <div className="loadBar2"></div>
-                            </div>
-                        </div>                   
+                        <div className="row justify-content-center">
+                            <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">
+                                <div className="mb-4" style={{fontSize: "18px", color: "#141B4D", fontWeight: "600", textAlign: "center", position: "relative", right: "9px"}}>
+                                    Just one moment while Poof! finds you the best deals!....
+                                </div>
+                                <div className="exampleContainer mb-4">
+                                    <div className="loadBar1"></div>
+                                    <div className="loadBar2"></div>
+                                </div>
+                            </div>                   
+                        </div>
                     
                     :
                         <div className="row justify-content-center">
