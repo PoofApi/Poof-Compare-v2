@@ -1445,8 +1445,6 @@ form.mobileSearchForm button:hover {
 
 .poofMobileContainer {
     margin-top: 15px !important;
-    position: relative;
-    top: 15px;
 }
 
 .poofMobileSearchIcon{
@@ -1461,10 +1459,7 @@ form.mobileSearchForm button:hover {
 }
 
 .poofMobileFooter {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 13vh;
+    height: 14vh;
     width: 100vw;
     background-color: #0C1344;
     display: flex;
