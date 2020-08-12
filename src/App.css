@@ -1217,13 +1217,14 @@ form.mobileSearchForm button:hover {
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/static/media/rainbowPoof.bbcb8de2.jpg) !important;
+    background-image: url(./images/rainbowPoofReduced.jpg) !important;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
     background-attachment: initial !important;
     background-size: 100vw 46rem;
     background-position-y: -100px !important;
     background-color: white;
+    overflow: hidden;
 }
 
 .mobileTitleText {
@@ -1275,6 +1276,54 @@ form.mobileSearchForm button:hover {
     background-color: white;
     color: #141B4D;
     box-shadow: 0 6px 2px 0 rgba(0,0,0,0.14);
+}
+
+@media screen and (min-width: 650px) {
+
+    .mobileIcon1 {
+        position: relative;
+        right: 6px;
+        padding: 25% 15.5vw;
+    }
+}
+
+@media screen and (min-width: 675px) {
+
+    .mobileIcon1 {
+        position: relative;
+        right: 15px;
+    }
+
+    .mobileIcon3 {
+        position: relative;
+        right: 5px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .mobileIcon1 {
+        position: relative;
+        right: 30px;
+    }
+
+    .mobileIcon3 {
+        position: relative;
+        right: 14px;
+    }
+}
+
+@media screen and (min-width: 740px) {
+
+    .mobileIcon1 {
+        position: relative;
+        right: 45px;
+    }
+
+    .mobileIcon3 {
+        position: relative;
+        right: 23px;
+    }
 }
 
 .icon2{
@@ -1396,9 +1445,10 @@ form.mobileSearchForm button:hover {
 }
 
 .poofMobileFooter {
-    position: relative;
+    position: absolute;
     bottom: 0;
     height: 12vh;
+    width: 100vw;
     background-color: #0C1344;
     display: flex;
     justify-content: center;
