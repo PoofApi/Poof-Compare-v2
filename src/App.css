@@ -1791,13 +1791,12 @@ form.mobileSearchForm2 button:hover {
     .mobileIcon1{
         padding: 25% 15vw !important;
         position: relative;
-        right: 10px;
     }
 
     .mobileRouteLogin3 {
         position: relative;
         top: 8px;
-        right: 5px;
+        left: -5px;
     }
 
     .poofModalBody {
