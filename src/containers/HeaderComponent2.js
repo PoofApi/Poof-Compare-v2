@@ -7,6 +7,8 @@ import {resetSearch, resetWatchList, logOutUser, resetEntireWatch} from '../acti
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import poofWithBackground from '../images/poofWithBackground.jpg';
+import pinkPurplePoofLogo from '../images/pinkPurplePoofLogo.png';
+import Poof_White from '../images/Poof_White.png';
 import MobileSignIn from './MobileSignIn';
 import ReactTooltip from 'react-tooltip';
 import MobileSignIn3 from "./MobileSignIn3";
@@ -131,10 +133,10 @@ class Header2 extends Component {
             <div className="newNavBar">
                     
                     <div onClick={() => this.returnHome()} className="poofLogo">
-                        <Link className="newPoofLogo" to={'/'}>Poof!</Link>
+                        <Link className="newPoofLogo" to={'/'}><img src={Poof_White} alt="poofWhiteLogo" style={{width:"85%"}}></img></Link>
                     </div>
                     <div onClick={() => this.returnHome()} className="poofPic">
-                        <img src={poofWithBackground} alt="poofPicture" style={{width: "80px", marginBottom: "5px"}}/>
+                        <img src={pinkPurplePoofLogo} alt="pinkPoofPicture" style={{width: "55%", marginBottom: "5px"}}/>
                     </div>
                     {!this.state.loading ? 
                         
