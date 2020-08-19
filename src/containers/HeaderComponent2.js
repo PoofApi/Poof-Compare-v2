@@ -6,8 +6,7 @@ import '../App.css';
 import {resetSearch, resetWatchList, logOutUser, resetEntireWatch} from '../actions/product';
 import {store} from '../index.js';
 import * as types from '../constants/types';
-import poofWithBackground from '../images/poofWithBackground.jpg';
-import pinkPurplePoofLogo from '../images/pinkPurplePoofLogo.png';
+import poofMobileLogoWhiteGradient from '../images/poofMobileLogoWhiteGradient.png';
 import Poof_White from '../images/Poof_White.png';
 import MobileSignIn from './MobileSignIn';
 import ReactTooltip from 'react-tooltip';
@@ -136,7 +135,7 @@ class Header2 extends Component {
                         <Link className="newPoofLogo" to={'/'}><img src={Poof_White} alt="poofWhiteLogo" style={{width:"85%"}}></img></Link>
                     </div>
                     <div onClick={() => this.returnHome()} className="poofPic">
-                        <img src={pinkPurplePoofLogo} alt="pinkPoofPicture" style={{width: "55%", marginBottom: "5px"}}/>
+                        <img src={poofMobileLogoWhiteGradient} alt="gradientPoofPicture" style={{width: "55%", marginBottom: "5px"}}/>
                     </div>
                     {!this.state.loading ? 
                         
