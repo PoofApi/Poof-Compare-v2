@@ -140,6 +140,7 @@ class DesktopHeader extends Component {
 
         return(
             <div className="poofDesktopComponent">
+                <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
                         {/* <div className="desktopImage" style={{backgroundImage: `url(${bookBackground})`}}>

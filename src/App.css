@@ -1518,7 +1518,10 @@ form.mobileSearchForm button:hover {
 }
 
 .poofDesktopComponent {
-    height: 100vh;
+    height: 100vh;  
+}
+
+.poofDesktopBackground {
     background-image: url(./images/bookBackgroundReduced2.jpg) !important;
     background-repeat: no-repeat !important;
     background-attachment: initial !important;
@@ -1526,7 +1529,7 @@ form.mobileSearchForm button:hover {
     background-position-y: -109px !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;     
+    justify-content: space-around;   
 }
 
 @media screen and (max-width: 1199px){
