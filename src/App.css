@@ -1522,14 +1522,16 @@ form.mobileSearchForm button:hover {
 }
 
 .poofDesktopBackground {
-    background-image: url(./images/bookBackgroundReduced2.jpg) !important;
+    height: 65vh;
+    background-image: url(/static/media/bookBackgroundReduced2.76f1c7d8.jpg) !important;
+    background-size: cover;
     background-repeat: no-repeat !important;
-    background-attachment: initial !important;
-    background-size: 100vw 39rem;
-    background-position-y: -109px !important;
+    background-attachment: scroll !important;
+    background-attachment: initial;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;   
+    justify-content: space-around; 
 }
 
 @media screen and (max-width: 1199px){
@@ -1547,7 +1549,7 @@ form.mobileSearchForm button:hover {
 
 .poofOverlay {
     width: 100vw;
-    height: 31.8rem;
+    height: 65vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
