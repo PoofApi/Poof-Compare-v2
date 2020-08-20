@@ -1523,7 +1523,7 @@ form.mobileSearchForm button:hover {
 
 .poofDesktopBackground {
     height: 65vh;
-    background-image: url(/static/media/bookBackgroundReduced2.76f1c7d8.jpg) !important;
+    background-image: url(./images/bookBackgroundReduced2.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
