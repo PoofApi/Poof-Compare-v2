@@ -289,7 +289,7 @@ class Home extends Component {
     && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
         <div style={{height: "100vh"}}>
           {/* <Header /> */}
-          <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer">
+          <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer" style={{height: "100vh"}}>
               <MobileHeader />
           </div>
           <div className="d-none d-sm-none d-md-block desktopHeaderContainer">
