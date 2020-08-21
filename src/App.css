@@ -363,12 +363,12 @@ a:hover{
     height: 100vh;
     background-color: blanchedalmond;
     position: fixed;
-    right: 0;
     width: 310px;
     z-index: 3;
     top: 7px;
-    margin-top: 65px;
+    margin-top: 66px;
     overflow: auto;
+    right: 16px;
 }
 
 .watchlist-container::-webkit-scrollbar {
@@ -447,12 +447,25 @@ a:hover{
     border-top: white solid 1px;
 }
 
+.watchlistNav {
+    height: 50px;
+    background: #0C1344;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: white solid 1px;
+}
+
+.watchCardsContainer {
+    height: 125vh;
+}
+
 .watchlist-title {
     color: white;
     display: inline;
     position: relative;
-    left: 60px;
-    top: 5px;
+    top: 1px;
+    right: 5px;
 }
 
 .modal {
@@ -918,7 +931,7 @@ a {
 }
 
 .newSaveBtn {
-    margin-left: 100px;
+    margin-left: 111px;
     background-color: #0C1344 !important;
     position: fixed;
     bottom: 20px;

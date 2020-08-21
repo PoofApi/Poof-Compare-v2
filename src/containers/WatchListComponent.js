@@ -182,14 +182,20 @@ class WatchList extends Component {
 
         return(
             <div className="watchlist-container">
-                <div className="watchlist-navbar" style={{height: "30px", backgroundColor: "#0C1344", position: "fixed", width: "100%"}}>
+                {/* <div className="watchlist-navbar" style={{height: "30px", backgroundColor: "#0C1344", position: "fixed", width: "100%"}}>
                     <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >chevron_right</i>
                     <div className="watchlist-title">
                         My Poof! WatchList
                     </div>
+                </div> */}
+                <div className="watchlistNav">
+                  <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >chevron_right</i>
+                  <div className="watchlist-title">
+                      My Poof! WatchList
+                  </div>
+                  <div className="fillerNav"></div>
                 </div>
-
-                <div className="watchContainer2">
+                  <div className="watchCardsContainer">
                     {this.props.items.map(item =>
                         <div className="container">
                               <div className="card mb-3 watchlistCardDesktop" style={{maxWidth: "540px", height: "150px"}}>
@@ -233,7 +239,8 @@ class WatchList extends Component {
                               
                         </div>
                     )}
-                </div>
+                  </div>
+                
 
                 <div>
                     {this.props.user == "" ? <SaveUserModal /> : <div></div>}
