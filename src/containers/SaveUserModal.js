@@ -78,7 +78,7 @@ class SaveUserModal extends Component {
               >
               <div className="modal-content">
                 <div className="headerContainer" style={{display: "flex", justifyContent: "center", color: "black"}}>
-                    <h5 className="desktopModalTitle">Save your list for future visits and for additional features!</h5>
+                    <h5 className="desktopModalTitle">Save your list for future visits and additional features!</h5>
                 </div>
                 <div className="row">
                     <form className="col s12">
