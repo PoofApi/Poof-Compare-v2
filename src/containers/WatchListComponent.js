@@ -193,11 +193,11 @@ class WatchList extends Component {
                   <div className="watchlist-title">
                       My Poof! WatchList
                   </div>
-                  <div className="fillerNav"></div>
+                  <div className="fillerWatchNav"></div>
                 </div>
                   <div className="watchCardsContainer">
                     {this.props.items.map(item =>
-                        <div className="container">
+                        <div className="container productCardContainer">
                               <div className="card mb-3 watchlistCardDesktop" style={{maxWidth: "540px", height: "150px"}}>
                                 <div className="row no-gutters">
                                   <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
