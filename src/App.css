@@ -1586,6 +1586,11 @@ form.mobileSearchForm button:hover {
     height: 3.5rem !important;
 }
 
+.poofDesktopInput:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
 .desktopImage {
     position: absolute;
     height: 70vh;
