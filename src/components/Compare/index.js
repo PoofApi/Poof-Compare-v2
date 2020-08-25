@@ -7,6 +7,7 @@ const Compare = ({items, toggleClick}) =>
     <div className="hToolbar">
         <i className="material-icons toggleButton" onClick={() => toggleClick()} >expand_more</i>
     </div>
+    <div className="compareTableContainer">
         {items.map(item =>
             <div className="watchContainer compareContainer" key={uuid()}>
               <div className="row">
@@ -27,6 +28,7 @@ const Compare = ({items, toggleClick}) =>
               </div>
             </div>
         )}
+    </div>
   </div>;
 
 export default Compare
