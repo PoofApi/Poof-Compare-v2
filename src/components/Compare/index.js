@@ -8,7 +8,7 @@ const Compare = ({items, toggleClick}) =>
         <i className="material-icons toggleButton" onClick={() => toggleClick()} >expand_more</i>
     </div>
         {items.map(item =>
-            <div className="watchContainer" key={uuid()}>
+            <div className="watchContainer compareContainer" key={uuid()}>
               <div className="row">
                 <div className="col-3 col-md-3 comparePicHolder">
                   <img className="img-fluid compareImage" src={item.image} alt={item.title} key={item.id}/>

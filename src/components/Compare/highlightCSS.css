@@ -7,6 +7,9 @@
     height: 35px;
     background-color: #0C1344;
     border-radius: 0px 10px 0px 0px;
+    position: fixed;
+    width: 500px;
+    z-index: 1;
 }
 
 .toggleButton{
@@ -72,6 +75,11 @@
 .watchContainer {
     border-top: 3px solid #0C1344;
     padding-bottom: 30px;
+}
+
+.compareContainer:first-child {
+    position: relative !important;
+    top: 25px !important;
 }
 
 .priceTag {
