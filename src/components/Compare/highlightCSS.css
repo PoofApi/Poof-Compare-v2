@@ -78,8 +78,8 @@
 }
 
 .compareContainer:first-child {
-    position: relative !important;
-    top: 25px !important;
+    position: relative;
+    top: 25px;
 }
 
 .priceTag {
