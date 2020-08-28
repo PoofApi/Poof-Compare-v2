@@ -63,6 +63,10 @@
 }
 
 .productCard:hover {
+    -moz-transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
 }
 
