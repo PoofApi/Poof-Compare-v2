@@ -1604,10 +1604,6 @@ form.mobileSearchForm button:hover {
 
 .poofDesktopInput:hover {
     box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.16) !important;
-    -moz-transform: scale(1.02);
-			-webkit-transform: scale(1.02);
-			-ms-transform: scale(1.02);
-			transform: scale(1.02);
 }
 
 .poofDesktopInput:focus {
@@ -1626,7 +1622,6 @@ form.mobileSearchForm button:hover {
     text-align: center;
     transition: .8s;
 }
-
 
 .poofHeadline{
     position: relative;
@@ -1653,6 +1648,10 @@ form.mobileSearchForm button:hover {
 .poofDesktopSearch:hover{
     cursor: pointer;
     color: #806543;
+    -moz-transform: scale(1.01);
+			-webkit-transform: scale(1.01);
+			-ms-transform: scale(1.01);
+            transform: scale(1.01);
 }
 
 .desktopProgressSearchBar {
