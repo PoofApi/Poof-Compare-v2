@@ -1452,6 +1452,10 @@ form.mobileSearchForm button:hover {
 
 .poofMobileInput:hover {
     box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.16) !important;
+    -moz-transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
 }
 
 .poofMobileSearch {
@@ -1588,6 +1592,10 @@ form.mobileSearchForm button:hover {
 
 .poofDesktopInput:hover {
     box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.16) !important;
+    -moz-transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
 }
 
 .poofDesktopInput:focus {
