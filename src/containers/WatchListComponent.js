@@ -189,7 +189,7 @@ class WatchList extends Component {
                     </div>
                 </div> */}
                 <div className="watchlistNav">
-                  <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >chevron_right</i>
+                  <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >expand_more</i>
                   <div className="watchlist-title">
                       My Poof! WatchList
                   </div>

@@ -6,6 +6,8 @@ const Compare = ({items, toggleClick}) =>
   <div className="highlightContainer">
     <div className="hToolbar">
         <i className="material-icons toggleButton" onClick={() => toggleClick()} >expand_more</i>
+        <div className="detailsTitle">Details</div>
+        <div className="detailsFiller"></div>
     </div>
     <div className="compareTableContainer">
         {items.map(item =>

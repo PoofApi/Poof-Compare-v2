@@ -10,6 +10,15 @@
     position: fixed;
     width: 500px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.detailsFiller {
+    width: 45px;
 }
 
 .toggleButton{

@@ -282,6 +282,14 @@ input::placeholder{
     width: 500px;
     z-index: 3;
     border-radius: 0px 5px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.detailsFiller2 {
+    width: 50px;
 }
 
 .navLinks:hover {
@@ -396,22 +404,30 @@ a:hover{
 }
 
 .watchtool-container {
-    height: 375px;
+    display: flex;
+    height: 50px;
     background-color: #0C1344;
     position: fixed;
     width: 50px;
     z-index: 101;
-    margin-top: 120px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 10px 0px 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    right: 16px;
+    right: 36px;
+    bottom: 0px;
+    width: 344px;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
 }
 
 .toggle-watchtoolbar{
     font-size: 40px;
     color: darkgoldenrod;
+}
+
+.fillerToggle {
+    width: 34px;
 }
 
 .toggle-watchtoolbar:hover{
