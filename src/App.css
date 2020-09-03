@@ -367,8 +367,9 @@ a:hover{
     z-index: 3;
     top: 7px;
     margin-top: 66px;
-    overflow: auto;
     right: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .watchlist-container::-webkit-scrollbar {
