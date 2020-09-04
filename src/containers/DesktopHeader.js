@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Poof_White from '../images/Poof_White.png';
+import Poof_White_edited from '../images/Poof_White_edited.png';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
@@ -158,14 +159,14 @@ class DesktopHeader extends Component {
 
                             <div className="poofHeadline row justify-content-center">
                                 <h1 className="poofTitleText col-12">Welcome to Poof! Price Compare.</h1>
-                                <h4 className="poofTitleText col-8">The best way to search the web for the best deals! Search your favorite big box retailers all at once!</h4>
+                                <h5 className="poofTitleText col-8">The best way to search the web for the best deals! Search your favorite big box retailers all at once!</h5>
                             </div>
 
                             {
                             this.state.loading ? 
                             
                                 <div className="row justify-content-center">
-                                    <div className="col-10 desktopProgressSearchBar">
+                                    <div className="col-6 desktopProgressSearchBar">
                                         <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
                                             Just one moment while Poof! finds you the best deals!....
                                         </div>
@@ -178,7 +179,7 @@ class DesktopHeader extends Component {
                             
                             :
                                 <div className="row justify-content-center">
-                                    <div className="col-9">
+                                    <div className="searchContent col-6">
                                         <form onSubmit={this.handleSubmit}>
                                             <div className="poofDesktopSearch mb-3">
                                                     <input 
@@ -189,6 +190,7 @@ class DesktopHeader extends Component {
                                                     <i className="material-icons poofDesktopSearchIcon" onClick={this.handleSubmit}>search</i>
                                             </div>
                                         </form>
+                                        <span><img className="poofExclamation" src={Poof_White_edited} alt="poofExclamation"/></span>
                                     </div>
                                 </div>
                             }

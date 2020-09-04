@@ -282,10 +282,18 @@ input::placeholder{
     width: 500px;
     z-index: 3;
     border-radius: 0px 5px 0px 0px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.compareToolbar:hover {
+    cursor: pointer;
+    background-color: black;
+    border: darkgoldenrod solid 4px;
+    border-bottom: none;
+    border-left: none;
 }
 
 .detailsFiller2 {
@@ -415,10 +423,17 @@ a:hover{
     align-items: center;
     right: 36px;
     bottom: 0px;
-    width: 344px;
+    width: 310px;
     justify-content: space-between;
     color: white;
     font-size: 16px;
+}
+
+.watchtool-container:hover {
+    cursor: pointer;
+    background-color: black;
+    border: darkgoldenrod solid 4px;
+    border-bottom: none;
 }
 
 .toggle-watchtoolbar{
@@ -1578,16 +1593,28 @@ form.mobileSearchForm button:hover {
 
 .poofDesktopBackground {
     height: 65vh;
-    background-image: url(./images/bookBackgroundReduced2.jpg) !important;
-    background-size: cover;
+    background-image: url(./images/fireworksPoof.png) !important;
+    background-size: 100vw 113vh;
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
     background-attachment: initial;
-    background-position: bottom;
+    background-position-y: -116px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
 }
+
+/* @media screen and (max-width: 1350px) {
+    .poofDesktopBackground {
+        background-position-y: -30px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .poofDesktopBackground {
+        background-position-y: 0px;
+    }
+}  */
 
 @media screen and (max-width: 1199px){
     .poofDesktopComponent{
@@ -1605,7 +1632,7 @@ form.mobileSearchForm button:hover {
 .poofOverlay {
     width: 100vw;
     height: 65vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     position: absolute;
     top: 0;
     left: 0;
@@ -1616,7 +1643,7 @@ form.mobileSearchForm button:hover {
     background: white !important;
     border-radius: 25px !important;
     padding-left: 20px !important;
-    height: 3.5rem !important;
+    height: 4.5rem !important;
 }
 
 .poofDesktopInput:hover {
@@ -1651,6 +1678,11 @@ form.mobileSearchForm button:hover {
     width: 100% !important;
 }
 
+.searchContent {
+    position: relative;
+    right: 25px;
+}
+
 .poofDesktopSearch {
     position: relative;
     bottom: 35px;
@@ -1658,8 +1690,16 @@ form.mobileSearchForm button:hover {
 
 .poofDesktopSearchIcon {
     position: absolute;
-    right: 15px;
-    top: 14px;
+    right: 0px;
+    top: 13px;
+    font-size: 40px;
+}
+
+.poofExclamation {
+    height: 4.5rem;
+    position: absolute;
+    top: -36px;
+    right: -50px;
 }
 
 .poofDesktopSearch:hover{
@@ -1687,7 +1727,7 @@ form.mobileSearchForm button:hover {
   .desktopLoadBar2 {
     height: 20px;
     width: 100px;
-    background: #141B4D ;
+    background: white ;
     border-radius: 25px;
     position: relative;
     animation: move 1.3s linear forwards;
@@ -1706,12 +1746,12 @@ form.mobileSearchForm button:hover {
         width:25%;
       }
       90% {
-        right:0%;
         left:75%;
+        right:0%;
         width:25%;
       }
       100% {
-        left:103%;
+        left:104.5%;
         right:0%;
         width:0%;
       }
