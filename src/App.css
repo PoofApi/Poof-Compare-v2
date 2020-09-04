@@ -286,12 +286,15 @@ input::placeholder{
     align-items: center;
     color: white;
     font-size: 20px;
+    border: grey double 5px;
+    border-bottom: none;
+    border-left: none;
 }
 
 .compareToolbar:hover {
     cursor: pointer;
     background-color: black;
-    border: darkgoldenrod solid 4px;
+    border: darkgoldenrod double 4px;
     border-bottom: none;
     border-left: none;
 }
@@ -427,12 +430,14 @@ a:hover{
     justify-content: space-between;
     color: white;
     font-size: 16px;
+    border: grey double 5px;
+    border-bottom: none;
 }
 
 .watchtool-container:hover {
     cursor: pointer;
     background-color: black;
-    border: darkgoldenrod solid 4px;
+    border: darkgoldenrod double 4px;
     border-bottom: none;
 }
 
@@ -1714,6 +1719,11 @@ form.mobileSearchForm button:hover {
 .desktopProgressSearchBar {
     position: relative;
     bottom: 30px;
+}
+
+.exampleContainer {
+    position: relative;
+    right: 10px;
 }
 
 .desktopLoadBar1 {

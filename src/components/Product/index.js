@@ -97,6 +97,10 @@ class Product extends Component{
                                         <div className={(this.props.item.compare ? "card-overlay2" : "card-overlay")}></div>
                                         <div className="detailsBtn" onClick={() => this.props.compare(this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{this.props.item.compare ? "Hide Details" : "View Details"}</div>
                                     </div>
+                                    {/* this.props.item.featured && */}
+                                    {/* <div className="featuredProduct">
+                                        Featured
+                                    </div> */}
                                     <div className="card-content" style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
                                         <div className="card-title" style={{ lineHeight:"1.3em" ,fontSize:"18px", overflow:"hidden", position: "relative", bottom: "30%", textAlign: "center"}}>{this.props.item.title}</div>
                                         <div className="itemPrice">{`$${this.props.item.price}`}</div>

@@ -74,6 +74,17 @@
   opacity: 0.5 !important;
 }
 
+.featuredProduct {
+  font-weight: 800;
+    position: absolute;
+    padding: 5px 10px;
+    border: white double 5px;
+    background-color: #0C1344;
+    color: white;
+    left: 10px;
+    top: 10px;
+}
+
 .floatingWatchBtn {
     bottom: 5px !important;
 }
