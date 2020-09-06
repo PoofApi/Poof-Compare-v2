@@ -242,7 +242,7 @@ class DesktopHeader extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="iconContent mb-4 ml-4">
+                            <div className="iconContent iconContent2 mb-4 ml-4">
                                 <div className="row">
                                     <div className="col-3 topSearch">
                                         <div className="topCategoryTitle">Top Electronics Searched this Week: </div>
@@ -250,16 +250,17 @@ class DesktopHeader extends Component {
                                             <div className="row no-gutters">
                                                 <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
                                                     <img className="topSearchPic" src={this.props.popularItems[0].imageUrl} alt="topElectricPic"/>
-                                                </div> 
-                                                <div className="price">
-                                                    {/* <b>{`$${item.price}`}</b> */}
                                                 </div>
                                                 <div className="col-md-8">
-                                                    <div className="card-body">
-                                                    <h5 className="card-title"></h5>
-                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-                                                    <div className="card-text">
-                                                    </div>
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[0].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,16 +272,17 @@ class DesktopHeader extends Component {
                                             <div className="row no-gutters">
                                                 <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
                                                     <img className="topSearchPic" src={this.props.popularItems[1].imageUrl} alt="topBookPic"/>                                                
-                                                </div> 
-                                                <div className="price">
-                                                    {/* <b>{`$${item.price}`}</b> */}
                                                 </div>
                                                 <div className="col-md-8">
-                                                    <div className="card-body">
-                                                    <h5 className="card-title"></h5>
-                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-                                                    <div className="card-text">
-                                                    </div>
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[1].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,15 +295,16 @@ class DesktopHeader extends Component {
                                                 <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
                                                     <img className="topSearchPic" src={this.props.popularItems[2].imageUrl} alt="topClothesPic"/>                                                
                                                 </div> 
-                                                <div className="price">
-                                                    {/* <b>{`$${item.price}`}</b> */}
-                                                </div>
                                                 <div className="col-md-8">
-                                                    <div className="card-body">
-                                                    <h5 className="card-title"></h5>
-                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-                                                    <div className="card-text">
-                                                    </div>
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[2].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -314,15 +317,16 @@ class DesktopHeader extends Component {
                                                 <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
                                                     <img className="topSearchPic" src={this.props.popularItems[3].imageUrl} alt="topGamePic"/>                                                
                                                 </div> 
-                                                <div className="price">
-                                                    {/* <b>{`$${item.price}`}</b> */}
-                                                </div>
                                                 <div className="col-md-8">
-                                                    <div className="card-body">
-                                                    <h5 className="card-title"></h5>
-                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-                                                    <div className="card-text">
-                                                    </div>
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[3].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

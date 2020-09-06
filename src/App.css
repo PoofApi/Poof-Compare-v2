@@ -1343,6 +1343,11 @@ form.mobileSearchForm button:hover {
     text-align: center;
 }
 
+.iconContent2 {
+    position: relative;
+    left: 9px;
+}
+
 .topSearch {
     width: 50px;
     height: 175px;
@@ -1350,6 +1355,14 @@ form.mobileSearchForm button:hover {
     border-radius: 20px;
     margin-left: 36px;
     max-width: 21.8% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topSearchBody {
+    margin-left: 21px;
     display: flex;
     flex-direction: column;
     justify-content: center;
