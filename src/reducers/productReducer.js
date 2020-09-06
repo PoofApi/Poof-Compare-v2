@@ -5,7 +5,8 @@ const INITIAL_STATE = {
   isLoading: true,
   storeUserId: "",
   watchedItems: [],
-  usersWatchedItems: []
+  usersWatchedItems: [],
+  popularItems: []
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -19,6 +20,13 @@ export default function (state = INITIAL_STATE, action) {
     case types.FETCH_PRODUCTS2:
       return {
         ...state, isLoading: false, items: action.payload.map(item =>
+          ({...item, compare: false, watch: false})
+        )
+      };
+
+    case types.GET_POPULAR:
+      return {
+        ...state, isLoading: false, popularItems: action.payload.map(item =>
           ({...item, compare: false, watch: false})
         )
       };
