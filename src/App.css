@@ -1343,8 +1343,41 @@ form.mobileSearchForm button:hover {
     text-align: center;
 }
 
+.topElectronics {
+    width: 50px;
+    height: 175px;
+    border: black solid 2px;
+    border-radius: 20px;
+    margin-left: 36px;
+    max-width: 21.8% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topElectronicsTitle {
+    position: relative;
+    top: 12px;
+}
+
 .mobilePoofIcon {
     align-items: center;
+}
+
+/*topSearchCards*/
+
+.topSearchCard {
+    width: 225px !important;
+    max-width: 540px;
+    height: 150px !important;
+    border-radius: 8px !important;
+    margin-top: 25px !important;
+}
+
+.topSearchCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
 }
 
 
@@ -1768,7 +1801,7 @@ form.mobileSearchForm button:hover {
   }
 
 .desktopContent {
-    height: 100vh;
+    height: 133vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

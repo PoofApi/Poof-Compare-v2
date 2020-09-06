@@ -235,6 +235,94 @@ class DesktopHeader extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="iconContent mb-4">
+                                <div className="row">
+                                    <div className="col-3 topElectronics">
+                                        <div className="topElectronicsTitle">Top Electronics Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img src="" alt=""/>
+                                                </div> 
+                                                <div className="price">
+                                                    {/* <b>{`$${item.price}`}</b> */}
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                    <h5 className="card-title"></h5>
+                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
+                                                    <div className="card-text">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3 topElectronics">
+                                        <div className="topElectronicsTitle">Top Book Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img src="" alt=""/>
+                                                </div> 
+                                                <div className="price">
+                                                    {/* <b>{`$${item.price}`}</b> */}
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                    <h5 className="card-title"></h5>
+                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
+                                                    <div className="card-text">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3 topElectronics">
+                                        <div className="topElectronicsTitle">Top Clothes Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img src="" alt=""/>
+                                                </div> 
+                                                <div className="price">
+                                                    {/* <b>{`$${item.price}`}</b> */}
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                    <h5 className="card-title"></h5>
+                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
+                                                    <div className="card-text">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3 topElectronics">
+                                        <div className="topElectronicsTitle">Top Game Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img src="" alt=""/>
+                                                </div> 
+                                                <div className="price">
+                                                    {/* <b>{`$${item.price}`}</b> */}
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body">
+                                                    <h5 className="card-title"></h5>
+                                                    {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
+                                                    <div className="card-text">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
