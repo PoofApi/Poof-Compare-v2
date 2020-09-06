@@ -50,6 +50,12 @@ async function getProductsForHome(keywords){
     }
   }
 
+//Part of getMostPopular function
+const getPopItems = (payload) => ({
+    type: types.GET_POPULAR,
+    payload: payload
+})
+
 //Call to backend code which return most popular (aka most "searched") items
 
 async function getMostPopular(){
@@ -67,7 +73,7 @@ async function getMostPopular(){
       })
     
       let items = await response.data;
-      console.log("Most popular items: ",items);
+      store.dispatch(getPopItems(items));
       return items;
   
     }
@@ -129,13 +135,14 @@ class DesktopHeader extends Component {
     }
 
     async componentDidMount(){
-        let popularItems = await getMostPopular();
-        console.log(popularItems);
+        getMostPopular();
     }
 
     render(){
 
         let urlName = window.location.pathname;
+
+        console.log("Store's popular items", this.props.popularItems);
 
 
 
@@ -195,7 +202,7 @@ class DesktopHeader extends Component {
                                 </div>
                             }
                             {/* <div className="fillerBody1"></div> */}
-                            <div className="iconContent mb-4">
+                            <div className="iconContent mb-4 ml-4">
                                 <div className="row justify-content-center">
                                     <div className="col-3">
                                         <div className="desktopIcon1 pIcon dIcon ml-4" onClick={() => this.handleSubmit2("electronics")}>
@@ -235,6 +242,98 @@ class DesktopHeader extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="iconContent iconContent2 mb-4 ml-4">
+                                <div className="row">
+                                    <div className="col-3 topSearch">
+                                        <div className="topCategoryTitle">Top Electronics Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img className="topSearchPic" src={this.props.popularItems[0].imageUrl} alt="topElectricPic"/>
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[0].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3 topSearch">
+                                        <div className="topCategoryTitle">Top Book Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img className="topSearchPic" src={this.props.popularItems[1].imageUrl} alt="topBookPic"/>                                                
+                                                </div>
+                                                <div className="col-md-8">
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[1].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3 topSearch">
+                                        <div className="topCategoryTitle">Top Clothes Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img className="topSearchPic" src={this.props.popularItems[2].imageUrl} alt="topClothesPic"/>                                                
+                                                </div> 
+                                                <div className="col-md-8">
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[2].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-3 topSearch">
+                                        <div className="topCategoryTitle">Top Game Searched this Week: </div>
+                                        <div className="card topSearchCard" style={{maxWidth: "540px", height: "150px"}}>
+                                            <div className="row no-gutters">
+                                                <div className="col-md-4" style={{position: "relative", left: "5%", top: "3%"}}>
+                                                    <img className="topSearchPic" src={this.props.popularItems[3].imageUrl} alt="topGamePic"/>                                                
+                                                </div> 
+                                                <div className="col-md-8">
+                                                    <div className="card-body topSearchBody">
+                                                        <h5 className="card-title">
+                                                            {this.props.popularItems[3].title}
+                                                        </h5>
+                                                        <div className="card-text">
+                                                            <div className="price">
+                                                                $10
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -248,7 +347,8 @@ class DesktopHeader extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        storeUserId: state.item.storeUserId
+        storeUserId: state.item.storeUserId,
+        popularItems: state.item.popularItems
     }
 }
 
