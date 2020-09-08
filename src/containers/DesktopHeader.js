@@ -242,7 +242,7 @@ class DesktopHeader extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="iconContent iconContent2 mb-4 ml-4">
+                            {/* <div className="iconContent iconContent2 mb-4 ml-4">
                                 <div className="row">
                                     <div className="col-3 topSearch">
                                         <div className="topCategoryTitle">Top Electronics Searched this Week: </div>
@@ -333,7 +333,7 @@ class DesktopHeader extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
