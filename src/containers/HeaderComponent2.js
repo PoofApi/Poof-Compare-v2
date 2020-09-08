@@ -129,6 +129,7 @@ class Header2 extends Component {
         const user = this.props.storeUserId;
         
         return (
+            
             <div className="newNavBar">
                     
                     <div onClick={() => this.returnHome()} className="poofLogo">

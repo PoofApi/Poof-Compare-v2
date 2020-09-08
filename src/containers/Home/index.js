@@ -288,7 +288,7 @@ class Home extends Component {
     watch={actions.watch} /> : <div></div>} {(this.props.storeUserId !== "" ? usersWatchedItems.length > 0 : storeWatchProducts.length > 0) 
     && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
         <div style={{height: "100vh"}}>
-          {/* <Header /> */}
+          
           <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer" style={{height: "100vh"}}>
               <MobileHeader />
           </div>
@@ -298,14 +298,7 @@ class Home extends Component {
         </div>
         }
 
-        {/* Previous "Reset Button" used to return home and reset search items */}
-        {/* {this.props.items.length > 0 && 
-          <div className="resetButton" onClick={() => this.props.actions.resetSearch()} style={{cursor: "pointer", borderColor: "black", zIndex: "99", border: "3px solid white", position: "fixed", top: "11%", right: "2%", marginLeft: "10px", marginTop: "10px", backgroundColor: "black", padding: "5px", fontWeight: "770", color: "white", borderRadius: "10px"}}>
-            <div style={{float:"right"}}>
-              Click to Reset Search
-            </div>
-          </div>
-        } */}
+        
         
         {this.props.items.length > 0 && 
         <div className="productHome">

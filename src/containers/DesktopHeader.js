@@ -166,7 +166,7 @@ class DesktopHeader extends Component {
 
                             <div className="poofHeadline row justify-content-center">
                                 <h1 className="poofTitleText col-12">Welcome to Poof! Price Compare.</h1>
-                                <h5 className="poofTitleText col-8">The best way to search the web for the best deals! Search your favorite big box retailers all at once!</h5>
+                                <h5 className="poofTitleText col-8 col-md-6">The best way to search the web for the best deals! Search your favorite big box retailers all at once!</h5>
                             </div>
 
                             {
