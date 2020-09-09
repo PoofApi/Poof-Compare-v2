@@ -119,14 +119,20 @@ async function getWatchList(){
 
 
 class Home extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      compareTableOpen: true,
+      compareToolbarOpen: false,
+      watchListOpen: true,
+      watchToolbarOpen: false,
+      watchItemsState: this.props.items.filter(item => item.watch),
+      storeFilter: [],
+      filteredItems: []
+    };
+  }
   
-  state = {
-    compareTableOpen: true,
-    compareToolbarOpen: false,
-    watchListOpen: true,
-    watchToolbarOpen: false,
-    watchItemsState: this.props.items.filter(item => item.watch)
-  };
 
   toggleCompare = () => {
     this.toggleCompareToolbar();
@@ -224,6 +230,79 @@ class Home extends Component {
     }
   }
 
+  async handleCheckChange(e) {
+    let isChecked = e.target.checked;
+    let value = e.target.value;
+    console.log("value: ", value);
+    console.log( typeof value);
+
+    if(isChecked){
+      await this.setState(state => {
+        const storeFilter = [...state.storeFilter, value];
+
+        return {
+          storeFilter
+        }
+      });
+    }
+
+    else if (!isChecked){
+
+      await this.setState(state => {
+        const storeFilter = state.storeFilter.filter( source => 
+        source !== value);
+
+        return {
+          storeFilter
+        }
+      })
+    }
+
+    console.log(isChecked);
+    console.log("state's store filter: ", this.state.storeFilter);
+  }
+
+  filterItems(i){
+
+    console.log("filterItems fxn called");
+
+    let filtered = [];
+
+    if(this.state.storeFilter.includes("amazon")){
+      console.log("filterItems fxn for amazon REACHED");
+      for (let item of i){
+        if (item.source === "amazon"){
+          filtered.push(item);
+        }
+      }
+    }
+    
+    if(this.state.storeFilter.includes("bestbuy")){
+      for (let item of i){
+        if (item.source === "bestbuy"){
+          filtered.push(item);
+        }
+      }
+    }
+
+    if(this.state.storeFilter.includes("ebay")){
+      for (let item of i){
+        if (item.source === "ebay"){
+          filtered.push(item);
+        }
+      }
+    }
+
+
+    if(filtered.length > 0){
+      return filtered;
+    }
+
+    else{
+      return i;
+    }
+  }
+
 
   async setAlert(targetPrice, item){
 
@@ -278,6 +357,10 @@ class Home extends Component {
     this.checkIfInWatch();
     this.checkIfInWatch2();
 
+    let filtered = this.filterItems(items);
+
+    console.log(filtered);
+
     return (
       
       <div style={{height: "100vh"}}>
@@ -303,7 +386,25 @@ class Home extends Component {
         {this.props.items.length > 0 && 
         <div className="productHome">
           <div className="home mt-5">
-            <ProductList items={items} compare={actions.compare} watch={actions.watch}/>
+            <div className="filterAndSort">
+                <label class="container">Price desc. (lowest to highest)
+                    <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="cheapest"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Amazon
+                    <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="amazon"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Ebay
+                    <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="ebay"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Best Buy
+                    <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="bestbuy"/>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <ProductList items={filtered} compare={actions.compare} watch={actions.watch}/>
             {/* <div className="mobile-watchlist">
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />

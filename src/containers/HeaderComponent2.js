@@ -111,7 +111,6 @@ class Header2 extends Component {
         this.props.logOutUser();
         this.props.resetEntireWatch();
     }
-
     
     componentDidMount(){
 
@@ -130,8 +129,8 @@ class Header2 extends Component {
         
         return (
             
-            <div className="newNavBar">
-                    
+                <div className="newNavBar">
+                        
                     <div onClick={() => this.returnHome()} className="poofLogo">
                         <Link className="newPoofLogo" to={'/'}><img src={Poof_White} alt="poofWhiteLogo" style={{width:"85%"}}></img></Link>
                     </div>
