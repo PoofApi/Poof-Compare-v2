@@ -121,7 +121,7 @@ class MobileHeader extends Component {
                     </h6>}
 
                     {
-                    !this.state.loading ? 
+                    this.state.loading ? 
                     
                         <div className="row justify-content-center">
                             <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">

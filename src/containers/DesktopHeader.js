@@ -170,7 +170,7 @@ class DesktopHeader extends Component {
                             </div>
 
                             {
-                            !this.state.loading ? 
+                            this.state.loading ? 
                             
                                 <div className="row justify-content-center">
                                     <div className="col-6 desktopProgressSearchBar">
