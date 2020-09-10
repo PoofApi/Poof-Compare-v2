@@ -16,6 +16,24 @@
     left: 0;
 }
 
+.filterAndSort {
+    position: relative;
+    left: 25px;
+    bottom: 10px;
+}
+
+.filterTitle {
+    position: relative;
+    bottom: 15px;
+    font-size: 17.5px;
+    font-weight: 900;
+    color: #0C1344;
+}
+
+.poofCheckBox {
+    left: 8px;
+}
+
 @media screen and (max-width: 998px){
     .compareTable{
         height: 78% !important;
@@ -24,6 +42,14 @@
 
     .hToolbar{
         border-radius: 0px !important;
+    }
+
+    .filterAndSort {
+        bottom: 0px;
+    }
+
+    .filterTitle {
+        bottom: 8px;
     }
 }
 
