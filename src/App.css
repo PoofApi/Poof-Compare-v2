@@ -1258,11 +1258,11 @@ form.mobileSearchForm button:hover {
       }
       90% {
         right:0%;
-        left:70%;
+        left:62%;
         width:25%;
       }
       100% {
-        left:95%;
+        left:86%;
         right:0%;
         width:0%;
       }
@@ -1776,6 +1776,11 @@ form.mobileSearchForm button:hover {
 .exampleContainer {
     position: relative;
     right: 10px;
+}
+
+.exampleContainerMobile {
+    position: relative;
+    left: 15px;
 }
 
 .desktopLoadBar1 {

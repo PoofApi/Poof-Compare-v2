@@ -121,14 +121,14 @@ class MobileHeader extends Component {
                     </h6>}
 
                     {
-                    this.state.loading ? 
+                    !this.state.loading ? 
                     
                         <div className="row justify-content-center">
                             <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">
                                 <div className="mb-4" style={{fontSize: "18px", color: "#141B4D", fontWeight: "600", textAlign: "center", position: "relative", right: "9px"}}>
                                     Just one moment while Poof! finds you the best deals!....
                                 </div>
-                                <div className="exampleContainer mb-4">
+                                <div className="exampleContainerMobile mb-4">
                                     <div className="loadBar1"></div>
                                     <div className="loadBar2"></div>
                                 </div>
