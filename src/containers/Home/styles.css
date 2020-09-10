@@ -87,5 +87,50 @@
     justify-content: center;
 }
 
+.topScrollerSide {
+    height: 50px;
+    width: 53px;
+    position: absolute;
+    bottom: 8px;
+    right: 338px;
+    background: #0C1344;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.topScrollerSide:hover {
+    cursor: pointer;
+    background-color: black;
+    border: darkgoldenrod double 4px;
+}
+
+.topScroller {
+    height: 50px;
+    width: 53px;
+    position: absolute;
+    bottom: 55px;
+    right: 38px;
+    background: #0C1344;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.topScroller:hover {
+    cursor: pointer;
+    background-color: black;
+    border: darkgoldenrod double 4px;
+}
+
+#top {
+    position: relative;
+    top: -130px;
+}
+
 
 

@@ -128,8 +128,7 @@ class Home extends Component {
       watchListOpen: true,
       watchToolbarOpen: false,
       watchItemsState: this.props.items.filter(item => item.watch),
-      storeFilter: [],
-      filteredItems: []
+      storeFilter: []
     };
   }
   
@@ -385,9 +384,10 @@ class Home extends Component {
         
         {this.props.items.length > 0 && 
         <div className="productHome">
+          <div id="top"></div>
           <div className="home mt-5">
             <div className="filterAndSort">
-              <span className="filterTitle">Display items only from: </span>
+              <span className="filterTitle">Filter: </span>
                 <label class="container">Amazon
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="amazon"/>
                     <span className="poofCheckBox"></span>
@@ -418,6 +418,7 @@ class Home extends Component {
 
            {this.state.compareToolbarOpen && compareProducts.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
+          <a href="#top"><div className={this.state.watchListOpen ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
         </div>
         }
       </div>
