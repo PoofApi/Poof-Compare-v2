@@ -387,21 +387,18 @@ class Home extends Component {
         <div className="productHome">
           <div className="home mt-5">
             <div className="filterAndSort">
-                <label class="container">Price desc. (lowest to highest)
-                    <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="cheapest"/>
-                    <span class="checkmark"></span>
-                </label>
+              <span className="filterTitle">Display items only from: </span>
                 <label class="container">Amazon
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="amazon"/>
-                    <span class="checkmark"></span>
+                    <span className="poofCheckBox"></span>
                 </label>
                 <label class="container">Ebay
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="ebay"/>
-                    <span class="checkmark"></span>
+                    <span className="poofCheckBox"></span>
                 </label>
                 <label class="container">Best Buy
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="bestbuy"/>
-                    <span class="checkmark"></span>
+                    <span className="poofCheckBox"></span>
                 </label>
             </div>
             <ProductList items={filtered} compare={actions.compare} watch={actions.watch}/>
