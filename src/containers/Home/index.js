@@ -418,7 +418,10 @@ class Home extends Component {
 
            {this.state.compareToolbarOpen && compareProducts.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
-          <a href="#top"><div className={this.state.watchListOpen ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
+          <div className={this.state.watchListOpen ? "topSideTool" : "topTool"}>
+            <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}>Return to top</span>
+            <a href="#top"><div className={this.state.watchListOpen ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
+          </div>
         </div>
         }
       </div>

@@ -550,8 +550,79 @@ a:hover{
     color: white !important;
 }
 
+.removeTool .removeTooltipText {
+    width: 160px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 68%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
+
+.removeTool .removeTooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.removeTool:hover .removeTooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.purchaseTool .purchaseTooltipText {
+    width: 90px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 115.7%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
+
+.purchaseTool .purchaseTooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.purchaseTool:hover .purchaseTooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .removeBtn{
-    margin-top: 8px;
     margin-left: 20px;
     color: black;
     font-size: 26px;
@@ -960,6 +1031,78 @@ a {
     background-color: red;
 }
 
+.removeToolMobile .removeTooltipTextMobile {
+    width: 90px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 123%;
+    left: 58.6%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
+
+.removeToolMobile .removeTooltipTextMobile::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .removeToolMobile:hover .removeTooltipTextMobile {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.purchaseToolMobile .purchaseTooltipTextMobile {
+    width: 90px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 121%;
+    left: 88.8%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
+
+.purchaseToolMobile .purchaseTooltipTextMobile::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .purchaseToolMobile:hover .purchaseTooltipTextMobile {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .priceTag2 {
     font-weight: 600;
     font-size: 22px;
@@ -1082,12 +1225,12 @@ a {
 .purchaseLinkBtnMobile{
     position: relative;
     left: 20px;
-    bottom: 2px;
 }
 
 .watchlistButtons{
-    position: relative;
-    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

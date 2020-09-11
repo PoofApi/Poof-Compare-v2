@@ -258,7 +258,7 @@ class WatchlistRoute extends Component {
                                         <div className="col-7 watchlistButtons">
                                             <AlertModal2 key={uuid()} item={item} alert={this.setAlert}/>
                                             
-                                            <span><i className="material-icons removeBtn" data-tip={"Remove from watchlist"} onClick={() => this.handleRemove2(item)}>cancel</i></span>
+                                            <span><i className="material-icons" onClick={() => this.handleRemove2(item)}>cancel</i></span>
                                             <ReactTooltip />
                                             <span className="purchaseLinkBtnMobile">
                                                 <a href={`${item.itemUrl ? item.itemUrl : item.link}`}  target="_blank" className="purchaseLinkBtnAnchorMobile"><i className="material-icons purchaseLinkIconBtnMobile" data-tip={"Go to product source"}>launch</i></a>
@@ -290,12 +290,16 @@ class WatchlistRoute extends Component {
                                         {/* <div className="col-3" style={{fontSize: "large", paddingTop: "8px"}}>{item.source}</div> */}
                                         {/* <div className="fillerRoute"></div> */}
                                         <div className="col-4 watchlistButtons">
-                                            <span><i className="material-icons removeBtn" data-tip={"Remove from watchlist"} onClick={() => this.handleRemove(item)}>cancel</i></span>
-                                            <ReactTooltip />
-                                            <span className="purchaseLinkBtnMobile">
-                                                <a href={`${item.itemUrl ? item.itemUrl : item.link}`}  target="_blank" className="purchaseLinkBtnAnchorMobile"><i className="material-icons purchaseLinkIconBtnMobile" data-tip={"Go to product source"}>launch</i></a>
-                                                <ReactTooltip />
-                                            </span>
+                                            <div className="removeToolMobile">
+                                                <span className="removeTooltipTextMobile">Remove from watchlist</span>
+                                                <span><i className="material-icons removeBtn" onClick={() => this.handleRemove(item)}>cancel</i></span>
+                                            </div>
+                                            <div className="purchaseToolMobile">
+                                                <span className="purchaseTooltipTextMobile">Go to product source</span>
+                                                <span className="purchaseLinkBtnMobile">
+                                                    <a href={`${item.itemUrl ? item.itemUrl : item.link}`}  target="_blank" className="purchaseLinkBtnAnchorMobile"><i className="material-icons purchaseLinkIconBtnMobile">launch</i></a>
+                                                </span>
+                                            </div>
                                         </div>
                                 </div>
                             </div>

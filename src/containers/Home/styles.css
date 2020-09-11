@@ -87,6 +87,78 @@
     justify-content: center;
 }
 
+.topTool .topTooltipText {
+    width: 65px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 16%;
+    left: 97.6%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
+
+.topTool .topTooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .topTool:hover .topTooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.topSideTool .topSideTooltipText {
+    width: 68px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 77.97%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
+
+.topSideTool .topSideTooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .topSideTool:hover .topSideTooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .topScrollerSide {
     height: 50px;
     width: 53px;

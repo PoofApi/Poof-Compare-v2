@@ -221,15 +221,16 @@ class WatchList extends Component {
                                                 :
                                                 <div></div>
                                               }
-                                                <div>
-                                                  <i className="material-icons removeBtn" data-tip={"Remove from watchlist"} onClick={() => this.removeItem(this.props.watch, item)}>cancel</i>
-                                                  <ReactTooltip />
+                                                <div className="removeTool">
+                                                  <span className="removeTooltipText">Remove from watchlist</span>
+                                                  <i className="material-icons removeBtn" onClick={() => this.removeItem(this.props.watch, item)}>cancel</i>
                                                 </div>
-                                                <div className="purchaseLinkBtn">
-                                                    <a href={`${item.itemUrl ? item.itemUrl : item.link}`}  target="_blank" className="purchaseLinkBtnAnchor"><i className="material-icons purchaseLinkIconBtn" data-tip={"Go to product source"}>launch</i></a>
-                                                    <ReactTooltip />
+                                                <div className="purchaseTool">
+                                                  <span className="purchaseTooltipText">Go to product source</span>
+                                                  <div className="purchaseLinkBtn">
+                                                      <a href={`${item.itemUrl ? item.itemUrl : item.link}`}  target="_blank" className="purchaseLinkBtnAnchor"><i className="material-icons purchaseLinkIconBtn">launch</i></a>
+                                                  </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
