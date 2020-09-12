@@ -179,6 +179,51 @@
     border: darkgoldenrod double 4px;
 }
 
+@media screen and (max-width: 998px){
+
+    .topScrollerSide {
+        display: none;
+    }
+
+    .topTool .topTooltipText {
+        left: 93%;
+    }
+
+    .topSideTool {
+        display: none;
+    }
+
+    .topTool {
+        display: none;
+    }
+}
+
+
+.topScrollerMobile {
+    position: absolute;
+    bottom: 48px;
+    right: 26px;
+    height: 50px;
+    width: 53px;
+    background: #0C1344;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topScrollerMobile:hover {
+    cursor: pointer;
+    background: black !important;
+    border: darkgoldenrod double 4px;
+}
+
+@media screen and (min-width: 998px) {
+    .topScrollerMobile {
+        display: none;
+    }
+}
+
 .topScroller {
     height: 50px;
     width: 53px;

@@ -422,6 +422,10 @@ class Home extends Component {
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}>Return to top</span>
             <a href="#top"><div className={this.state.watchListOpen ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
           </div>
+          <div className="topToolMobile">
+            <span className="topTooltipTextMobile">Return to Top</span>
+            <a href="#top"><div className="topScrollerMobile" ><i className="material-icons">expand_less</i></div></a>
+          </div>
         </div>
         }
       </div>
