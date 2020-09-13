@@ -16,6 +16,8 @@ import ReactTooltip from 'react-tooltip';
 import uuid from 'react-uuid';
 import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
+import MultiSelectComponent from '../MultiSelectComponent';
+
 
 
 const axios = require('axios');
@@ -128,7 +130,8 @@ class Home extends Component {
       watchListOpen: true,
       watchToolbarOpen: false,
       watchItemsState: this.props.items.filter(item => item.watch),
-      storeFilter: []
+      storeFilter: [],
+      plainArray: ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]
     };
   }
   
@@ -345,7 +348,8 @@ class Home extends Component {
 
   render() {
 
-    
+    const { plainArray } = this.state;
+
     const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId} = this.props;
 
     let revisedItems = this.addId(items);
@@ -380,7 +384,7 @@ class Home extends Component {
         </div>
         }
 
-        
+        < MultiSelectComponent />
         
         {this.props.items.length > 0 && 
         <div className="productHome">
