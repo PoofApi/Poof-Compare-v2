@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
+import '../App.css';
 
 
 class MultiSelectComponent extends Component {
@@ -10,46 +11,47 @@ class MultiSelectComponent extends Component {
   }
 
   componentDidMount() {
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('select');
-      elems.onchange = selectThem;
-
-      var instances = M.FormSelect.init(elems, {});
-
-      function selectThem() {
-        var selectedOne = instances.getSelectedValues();
-        console.log(selectedOne);
-    }
+    var elems = document.querySelectorAll('select');
+    M.FormSelect.init(elems, {});
+  
+    var filterSelect = document.getElementById("filterSelect");
+    filterSelect.addEventListener("change", function() {
+      let instance =  M.FormSelect.getInstance(filterSelect);
+      console.log("instance value")
+      console.log(instance.getSelectedValues())
     });
     
 }
+
+  handleChange(event){
+    console.log(event);
+    console.log(event.target.value);
+  }
 
   render() {
 
     
 
     return (
-      <div
-          ref={FormSelect => {
-            this.FormSelect = FormSelect;
-          }}
-          id="select"
-          className="select"
-      >
-
+      <div className="multiSelectComponent">
+        <div
+            ref={FormSelect => {
+              this.FormSelect = FormSelect;
+            }}
+            id="select"
+            className="select"
+        >
           <div className="input-field col s12">
-            <select multiple>
-              <option value="" disabled selected>Filter stores</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
+            <select id="filterSelect" className="storeOptions" multiple>
+              <option value="" disabled selected>Not Selected</option>
+              <option value="amazon">Amazon</option>
+              <option value="bestbuy">Bestbuy</option>
+              <option value="ebay">Ebay</option>
             </select>
-            <label>Materialize Multiple Select</label>
+            <label>Store Filter</label>
           </div>
-
-
-    </div>
+        </div>
+      </div>
     );
   }
 }

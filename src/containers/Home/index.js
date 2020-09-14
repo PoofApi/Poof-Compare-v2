@@ -390,7 +390,7 @@ class Home extends Component {
         <div className="productHome">
           <div id="top"></div>
           <div className="home mt-5">
-            <div className="filterAndSort">
+            {/* <div className="filterAndSort">
               <span className="filterTitle">Filter: </span>
                 <label class="container">Amazon
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="amazon"/>
@@ -404,7 +404,7 @@ class Home extends Component {
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="bestbuy"/>
                     <span className="poofCheckBox"></span>
                 </label>
-            </div>
+            </div> */}
             <ProductList items={filtered} compare={actions.compare} watch={actions.watch}/>
             {/* <div className="mobile-watchlist">
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>

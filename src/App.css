@@ -797,6 +797,15 @@ a:hover{
     margin-top: 10px;
 }
 
+/*Mobile Multi-Select Filter*/
+
+.multiSelectComponent {
+    position: relative;
+    top: 100px;
+    height: 100px;
+    width: 100%;
+}
+
 /*HeaderComponent2 Styling*/
 
 .newNavBar{
