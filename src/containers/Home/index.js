@@ -383,8 +383,6 @@ class Home extends Component {
           </div>
         </div>
         }
-
-        < MultiSelectComponent />
         
         {this.props.items.length > 0 && 
         <div className="productHome">
