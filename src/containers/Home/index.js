@@ -424,7 +424,7 @@ class Home extends Component {
           </div>
           <div className={this.state.watchListOpen ? "topSideTool" : "topTool"}>
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}>Return to top</span>
-            <a href="#top"><div className={this.state.watchListOpen ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
+            <a href="#top"><div className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
           </div>
           <div className="topToolMobile">
             <span className="topTooltipTextMobile">Return to Top</span>
