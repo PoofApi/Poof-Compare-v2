@@ -267,8 +267,8 @@ class Home extends Component {
   filterMobileItems(items) {
     let filtered = [];
 
-    if(this.props.mobileStoreFilter.length > 0) {
-      
+    if(this.props.mobileStoreFilter) {
+
       if(this.props.mobileStoreFilter.includes("amazon")){
         for (let item of items){
           if (item.source === "amazon"){
