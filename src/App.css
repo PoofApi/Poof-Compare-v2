@@ -806,6 +806,16 @@ a:hover{
     left: 5px;
 }
 
+.multiSelectRow {
+    justify-content: center;
+}
+
+@media screen and (max-width: 998px) {
+    .multiSelectComponent {
+        top: -3px;
+    }
+}
+
 /*HeaderComponent2 Styling*/
 
 .newNavBar{
@@ -2030,6 +2040,12 @@ form.mobileSearchForm button:hover {
     position: relative;
     top: 5px;
     right: 6px;
+}
+
+@media screen and (min-width: 800px) {
+    .mobileSearchForm2 {
+        right: 60px;
+    }
 }
 
 form.mobileSearchForm2 input[type=text] {

@@ -50,8 +50,8 @@ class MultiSelectComponent extends Component {
     
 
     return (
-      <div className="row">
-        <div className="col-lg-5 col-md-4 col-sm-10">
+      <div className="row multiSelectRow">
+        <div className="col-lg-5 col-md-5 col-sm-8 col-8">
           <div className="multiSelectComponent">
             <div
                 ref={FormSelect => {
