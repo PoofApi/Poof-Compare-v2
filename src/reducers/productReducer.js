@@ -6,7 +6,8 @@ const INITIAL_STATE = {
   storeUserId: "",
   watchedItems: [],
   usersWatchedItems: [],
-  popularItems: []
+  popularItems: [],
+  mobileStoreFilter: []
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -29,6 +30,11 @@ export default function (state = INITIAL_STATE, action) {
         ...state, isLoading: false, popularItems: action.payload.map(item =>
           ({...item, compare: false, watch: false})
         )
+      };
+
+    case types.SET_MOBILE_FILTER:
+      return {
+        ...state, isLoading: false, mobileStoreFilter: action.payload
       };
 
     case types.RESET_PRODUCTS:

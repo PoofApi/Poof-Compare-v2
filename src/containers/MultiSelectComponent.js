@@ -2,7 +2,15 @@ import React, { Component } from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import '../App.css';
+import * as types from '../constants/types';
+import {store} from '../index.js';
 
+
+//set mobile filter function
+const setMobileSelect = (payload) => ({
+  type: types.SET_MOBILE_FILTER,
+  payload: payload
+})
 
 class MultiSelectComponent extends Component {
   constructor(props) {
@@ -11,14 +19,23 @@ class MultiSelectComponent extends Component {
   }
 
   componentDidMount() {
+
+    console.log(this.props);
+
+
     var elems = document.querySelectorAll('select');
     M.FormSelect.init(elems, {});
   
     var filterSelect = document.getElementById("filterSelect");
     filterSelect.addEventListener("change", function() {
       let instance =  M.FormSelect.getInstance(filterSelect);
-      console.log("instance value")
-      console.log(instance.getSelectedValues())
+      console.log("Current multi select values: ",instance.getSelectedValues());
+
+      const filters = instance.getSelectedValues();
+
+      console.log(filters);
+
+      store.dispatch(setMobileSelect(filters));
     });
     
 }
@@ -33,22 +50,26 @@ class MultiSelectComponent extends Component {
     
 
     return (
-      <div className="multiSelectComponent">
-        <div
-            ref={FormSelect => {
-              this.FormSelect = FormSelect;
-            }}
-            id="select"
-            className="select"
-        >
-          <div className="input-field col s12">
-            <select id="filterSelect" className="storeOptions" multiple>
-              <option value="" disabled selected>Not Selected</option>
-              <option value="amazon">Amazon</option>
-              <option value="bestbuy">Bestbuy</option>
-              <option value="ebay">Ebay</option>
-            </select>
-            <label>Store Filter</label>
+      <div className="row">
+        <div className="col-lg-5 col-md-4 col-sm-10">
+          <div className="multiSelectComponent">
+            <div
+                ref={FormSelect => {
+                  this.FormSelect = FormSelect;
+                }}
+                id="select"
+                className="select"
+            >
+              <div className="input-field col s12">
+                <select id="filterSelect" className="storeOptions" multiple>
+                  <option value="" disabled selected>Show items from</option>
+                  <option value="amazon">Amazon</option>
+                  <option value="bestbuy">BestBuy</option>
+                  <option value="ebay">Ebay</option>
+                </select>
+                <label>Store Filter</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
