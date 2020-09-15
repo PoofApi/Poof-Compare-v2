@@ -267,28 +267,32 @@ class Home extends Component {
   filterMobileItems(items) {
     let filtered = [];
 
-    if(this.props.mobileStoreFilter.includes("amazon")){
-      for (let item of items){
-        if (item.source === "amazon"){
-          filtered.push(item);
+    if(this.props.mobileStoreFilter.length > 0) {
+      
+      if(this.props.mobileStoreFilter.includes("amazon")){
+        for (let item of items){
+          if (item.source === "amazon"){
+            filtered.push(item);
+          }
         }
       }
-    }
-    
-    if(this.props.mobileStoreFilter.includes("bestbuy")){
-      for (let item of items){
-        if (item.source === "bestbuy"){
-          filtered.push(item);
+      
+      if(this.props.mobileStoreFilter.includes("bestbuy")){
+        for (let item of items){
+          if (item.source === "bestbuy"){
+            filtered.push(item);
+          }
         }
       }
-    }
+  
+      if(this.props.mobileStoreFilter.includes("ebay")){
+        for (let item of items){
+          if (item.source === "ebay"){
+            filtered.push(item);
+          }
+        }
+      }
 
-    if(this.props.mobileStoreFilter.includes("ebay")){
-      for (let item of items){
-        if (item.source === "ebay"){
-          filtered.push(item);
-        }
-      }
     }
 
 
