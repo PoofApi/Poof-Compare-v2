@@ -130,9 +130,9 @@ class Home extends Component {
       watchListOpen: true,
       watchToolbarOpen: false,
       watchItemsState: this.props.items.filter(item => item.watch),
-      storeFilter: [],
-      plainArray: ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]
+      storeFilter: []
     };
+
   }
   
 
@@ -220,7 +220,7 @@ class Home extends Component {
       if(items){
         store.dispatch(this.props.actions.loadUsersItems(items));
       }
-    }
+    }    
   }
 
   handleLogOut(){
@@ -264,9 +264,44 @@ class Home extends Component {
     console.log("state's store filter: ", this.state.storeFilter);
   }
 
-  filterItems(i){
+  filterMobileItems(items) {
+    let filtered = [];
 
-    console.log("filterItems fxn called");
+    if(this.props.mobileStoreFilter.includes("amazon")){
+      for (let item of items){
+        if (item.source === "amazon"){
+          filtered.push(item);
+        }
+      }
+    }
+    
+    if(this.props.mobileStoreFilter.includes("bestbuy")){
+      for (let item of items){
+        if (item.source === "bestbuy"){
+          filtered.push(item);
+        }
+      }
+    }
+
+    if(this.props.mobileStoreFilter.includes("ebay")){
+      for (let item of items){
+        if (item.source === "ebay"){
+          filtered.push(item);
+        }
+      }
+    }
+
+
+    if(filtered.length > 0){
+      return filtered;
+    }
+
+    else{
+      return items;
+    }
+  }
+
+  filterItems(i){
 
     let filtered = [];
 
@@ -348,8 +383,6 @@ class Home extends Component {
 
   render() {
 
-    const { plainArray } = this.state;
-
     const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId} = this.props;
 
     let revisedItems = this.addId(items);
@@ -360,9 +393,8 @@ class Home extends Component {
     this.checkIfInWatch();
     this.checkIfInWatch2();
 
-    let filtered = this.filterItems(items);
 
-    console.log(filtered);
+    let mobileFiltered = this.filterMobileItems(items);
 
     return (
       
@@ -384,11 +416,14 @@ class Home extends Component {
         </div>
         }
         
+
         {this.props.items.length > 0 && 
+        
         <div className="productHome">
+          < MultiSelectComponent />
           <div id="top"></div>
-          <div className="home mt-5">
-            <div className="filterAndSort">
+          <div className="home mt-5" style={{position: "relative", bottom: "35px"}}>
+            {/* <div className="filterAndSort">
               <span className="filterTitle">Filter: </span>
                 <label class="container">Amazon
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="amazon"/>
@@ -402,8 +437,8 @@ class Home extends Component {
                     <input onChange={e => this.handleCheckChange(e)} type="checkbox" value="bestbuy"/>
                     <span className="poofCheckBox"></span>
                 </label>
-            </div>
-            <ProductList items={filtered} compare={actions.compare} watch={actions.watch}/>
+            </div> */}
+            <ProductList items={mobileFiltered} compare={actions.compare} watch={actions.watch}/>
             {/* <div className="mobile-watchlist">
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
@@ -425,7 +460,7 @@ class Home extends Component {
             <a href="#top"><div className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
           </div>
           <div className="topToolMobile">
-            <span className="topTooltipTextMobile">Return to Top</span>
+            <span className="topTooltipTextMobile"></span>
             <a href="#top"><div className="topScrollerMobile" ><i className="material-icons">expand_less</i></div></a>
           </div>
         </div>
@@ -441,7 +476,8 @@ export default connect(
     items: state.item.items,
     watchedItems: state.item.watchedItems,
     usersWatchedItems: state.item.usersWatchedItems,
-    storeUserId: state.item.storeUserId
+    storeUserId: state.item.storeUserId,
+    mobileStoreFilter: state.item.mobileStoreFilter
   }),
   dispatch => ({
     actions: bindActionCreators(productActions, dispatch)

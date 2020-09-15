@@ -155,7 +155,7 @@
   }
   
   .topSideTool:hover .topSideTooltipText {
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
   }
 
@@ -246,7 +246,7 @@
 
 #top {
     position: relative;
-    top: -130px;
+    top: -250px;
 }
 
 
