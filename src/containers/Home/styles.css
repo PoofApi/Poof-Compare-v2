@@ -171,9 +171,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    opacity: 0.8;
 }
 
 .topScrollerSide:hover {
+    opacity: 1 !important;
     cursor: pointer;
     background-color: black;
     border: darkgoldenrod double 4px;
@@ -210,9 +212,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
 }
 
 .topScrollerMobile:hover {
+    opacity: 1 !important;
     cursor: pointer;
     background: black !important;
     border: darkgoldenrod double 4px;
@@ -236,9 +240,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    opacity: 0.8;
 }
 
 .topScroller:hover {
+    opacity: 1 !important;
     cursor: pointer;
     background-color: black;
     border: darkgoldenrod double 4px;
