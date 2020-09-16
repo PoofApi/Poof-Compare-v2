@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import Modal from './Modal.js';
 import Modal2 from './Modal2.js';
-import piggy3 from '../images/piggy3.jpg';
 import loadingBarBrown from '../images/loadingBarBrown.gif';
 import {store} from '../index.js';
 import * as types from '../constants/types';
@@ -116,8 +115,8 @@ class Header extends Component {
 
         return (
             <div className="jumbo">
-                <img className="d-none d-sm-block" src={piggy3} />
-                <img className="d-block d-sm-none mobileFrontPic" src={piggy3} />
+                {/* <img className="d-none d-sm-block" src={piggy3} />
+                <img className="d-block d-sm-none mobileFrontPic" src={piggy3} /> */}
                 <nav className="transparent d-none d-sm-block">
                     <div className="d-none d-sm-block nav-wrapper" style={{borderBottom: "1px solid"}}>
                         <a href="#" className="brand-logo newPoofLogo2">Poof!</a>
