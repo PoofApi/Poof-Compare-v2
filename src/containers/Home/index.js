@@ -17,7 +17,7 @@ import uuid from 'react-uuid';
 import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
-
+// import { TransitionGroup } from 'react-transition-group';
 
 
 const axios = require('axios');
@@ -207,7 +207,32 @@ class Home extends Component {
     return usersItems;
   }
 
+  myScrollFunc() {
+    // var myID = document.getElementById("myID");
+    
+    // var y = window.scrollY;
+    //   console.log(y);
+    //   if (y >= 800) {
+    //       myID.className = "bottomMenu show"
+    //   } else {
+    //       myID.className = "bottomMenu hide"
+    //   }
+
+    console.log(window.scrollY);
+  };
+
   async componentDidMount(){
+
+    // let ele = document.querySelector("body");
+    // let menu = document.getElementById("myID");
+    // ele.addEventListener("scroll", () => {
+    //   let y = ele.scrollTop;
+    //   if (y >= 100) {
+    //     menu.className = "bottomMenu show"
+    // } else {
+    //     menu.className = "bottomMenu hide"
+    // }
+    // }, true);
 
     if(this.props.storeUserId !== ""){
       
@@ -220,8 +245,12 @@ class Home extends Component {
       if(items){
         store.dispatch(this.props.actions.loadUsersItems(items));
       }
-    }    
+    }
+
+
   }
+
+  
 
   handleLogOut(){
     const searchItems = this.props.items
@@ -387,6 +416,8 @@ class Home extends Component {
 
   render() {
 
+    
+
     const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId} = this.props;
 
     let revisedItems = this.addId(items);
@@ -419,11 +450,18 @@ class Home extends Component {
           </div>
         </div>
         }
+
+        {/* <TransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          <div id="myID" className="bottomMenu hide"></div>
+        </TransitionGroup> */}
         
 
         {this.props.items.length > 0 && 
         
-        <div className="productHome">
+        <div id="home" className="productHome">
           < MultiSelectComponent />
           <div id="top"></div>
           <div className="home mt-5" style={{position: "relative", bottom: "35px"}}>

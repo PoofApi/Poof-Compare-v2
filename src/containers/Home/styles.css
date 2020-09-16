@@ -249,5 +249,43 @@
     top: -250px;
 }
 
+.bottomMenu {
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    height: 60px;
+    border-top: 1px solid #000;
+    background: red;
+    z-index: 5;
+}
+.hide {
+    width: 0%;
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    transition: width 2s;
+}
+
+.example-enter {
+    opacity: 0.01;
+  }
+  
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .example-leave {
+    opacity: 1;
+  }
+  
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
 
 

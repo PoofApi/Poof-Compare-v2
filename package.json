@@ -43,6 +43,7 @@
     "react-scripts": "2.0.5",
     "react-simple-tooltip": "^2.6.1",
     "react-tooltip": "^4.2.5",
+    "react-transition-group": "^4.4.1",
     "react-uuid": "^1.0.2",
     "redux": "^3.0.0",
     "redux-logger": "^3.0.6",
