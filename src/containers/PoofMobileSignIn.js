@@ -63,8 +63,7 @@ class PoofMobileSignIn extends Component {
 
         return (
             <div className="mobileRouteLogin3">
-              <div className="loadListIcon modal-trigger" data-target="modal6"><p data-tip={"Load previously saved list"}><i className="material-icons desktopLoadWatchlist2 poofMobileSignInIcon">perm_identity</i></p></div>
-                <ReactTooltip />
+              <div className="loadListIcon modal-trigger" data-target="modal6"><p><i className="material-icons desktopLoadWatchlist2 poofMobileSignInIcon">perm_identity</i></p></div>
               <div
                 ref={PoofMobileSignIn => {
                   this.PoofMobileSignIn = PoofMobileSignIn;
