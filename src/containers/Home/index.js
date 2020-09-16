@@ -455,9 +455,9 @@ class Home extends Component {
           transitionName="example"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}>
-          <div id="myID" className="bottomMenu hide"></div>
         </TransitionGroup> */}
         
+          {/* <div id="myID" className="bottomMenu hide"></div> */}
 
         {this.props.items.length > 0 && 
         
