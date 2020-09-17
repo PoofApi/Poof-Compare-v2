@@ -224,16 +224,16 @@ class Home extends Component {
 
   async componentDidMount(){
 
-    // let ele = document.querySelector("body");
-    // let menu = document.getElementById("myID");
-    // ele.addEventListener("scroll", () => {
-    //   let y = ele.scrollTop;
-    //   if (y >= 100) {
-    //     menu.className = "bottomMenu show"
-    // } else {
-    //     menu.className = "bottomMenu hide"
-    // }
-    // }, true);
+    let ele = document.querySelector("body");
+    let menu = document.getElementById("myID");
+    ele.addEventListener("scroll", () => {
+      let y = ele.scrollTop;
+      if (y >= 100) {
+        menu.className = "show"
+    } else {
+        menu.className = "hide"
+    }
+    }, true);
 
     if(this.props.storeUserId !== ""){
       
@@ -436,7 +436,7 @@ class Home extends Component {
 
     let mobileFiltered = this.filterMobileItems(items);
 
-    
+
 
     return (
       
@@ -514,13 +514,9 @@ class Home extends Component {
 
            {this.state.compareToolbarOpen && compareProducts.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
-          <div className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topSideTool" : "topTool"}>
+          <div id="myID" className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topSideTool hide" : "topTool hide"}>
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}>Return to top</span>
             <a href="#top"><div className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topScrollerSide" : "topScroller"}><i className="material-icons">expand_less</i></div></a>
-          </div>
-          <div className="topToolMobile">
-            <span className="topTooltipTextMobile"></span>
-            <a href="#top"><div className="topScrollerMobile" ><i className="material-icons">expand_less</i></div></a>
           </div>
         </div>
         }

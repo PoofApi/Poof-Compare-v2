@@ -1682,7 +1682,8 @@ form.mobileSearchForm button:hover {
     cursor: pointer;
     background-color: #806543;
     color: white !important;
-    box-shadow: 3px 12px 3px 0px rgba(0,0,0,0.14);
+    box-shadow: 3px 6px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .poofLaptopIcon2 {
