@@ -17,6 +17,7 @@ import uuid from 'react-uuid';
 import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
+import MultiSelectDisabledComponent from '../MultiSelectDisabledComponent';
 // import { TransitionGroup } from 'react-transition-group';
 
 
@@ -296,6 +297,10 @@ class Home extends Component {
   filterMobileItems(items) {
     let filtered = [];
 
+    if(this.props.mobileStoreFilter && this.props.mobileStoreFilter.includes("all")){
+      return items;
+    }
+
     if(this.props.mobileStoreFilter) {
 
       if(this.props.mobileStoreFilter.includes("amazon")){
@@ -418,7 +423,7 @@ class Home extends Component {
 
     
 
-    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId} = this.props;
+    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter } = this.props;
 
     let revisedItems = this.addId(items);
     
@@ -430,6 +435,8 @@ class Home extends Component {
 
 
     let mobileFiltered = this.filterMobileItems(items);
+
+    
 
     return (
       
@@ -462,7 +469,17 @@ class Home extends Component {
         {this.props.items.length > 0 && 
         
         <div id="home" className="productHome">
+
+          {mobileStoreFilter.includes("all") ?
+
+          < MultiSelectDisabledComponent />
+          
+          :
+          
           < MultiSelectComponent />
+
+          }
+
           <div id="top"></div>
           <div className="home mt-5" style={{position: "relative", bottom: "35px"}}>
             {/* <div className="filterAndSort">

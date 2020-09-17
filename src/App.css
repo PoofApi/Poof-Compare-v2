@@ -798,6 +798,10 @@ a:hover{
 
 /*Mobile Multi-Select Filter*/
 
+.disabled {
+    background-color: lightgrey !important;
+}
+
 .multiSelectComponent {
     position: relative;
     top: -10px;

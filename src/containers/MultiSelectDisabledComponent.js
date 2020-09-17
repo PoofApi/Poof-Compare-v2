@@ -13,7 +13,7 @@ const setMobileSelect = (payload) => ({
   payload: payload
 })
 
-class MultiSelectComponent extends Component {
+class MultiSelectDisabledComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -46,10 +46,6 @@ class MultiSelectComponent extends Component {
 
   render() {
 
-    const { mobileStoreFilter } = this.props;
-
-    console.log(mobileStoreFilter);
-
 
     return (
       <div className="row multiSelectRow">
@@ -65,10 +61,10 @@ class MultiSelectComponent extends Component {
               <div className="input-field col s12">
                 <select id="filterSelect" className="storeOptions" multiple>
                   <option value="" disabled selected>Show items from</option>
-                  <option value="all">All Stores</option>
-                  <option value="amazon">Amazon</option>
-                  <option value="bestbuy">BestBuy</option>
-                  <option value="ebay">Ebay</option>
+                  <option value="all" selected>All Stores</option>
+                  <option value="amazon" disabled selected>Amazon</option>
+                  <option value="bestbuy" disabled selected>BestBuy</option>
+                  <option value="ebay" disabled selected>Ebay</option>
                 </select>
                 <label>Store Filter</label>
               </div>
@@ -80,4 +76,4 @@ class MultiSelectComponent extends Component {
   }
 }
 
-export default MultiSelectComponent;
+export default MultiSelectDisabledComponent;
