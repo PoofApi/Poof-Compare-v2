@@ -294,6 +294,34 @@ class Home extends Component {
     console.log("state's store filter: ", this.state.storeFilter);
   }
 
+  storeItemCounter(items){
+    let amazon = 0;
+    let bestbuy = 0;
+    let ebay = 0;
+
+    let itemCount = {};
+
+    for (const item of items) {
+      if (item.source === "amazon"){
+        amazon++;
+      }
+      if (item.source === "bestbuy"){
+        bestbuy++;
+      }
+      if (item.source === "ebay"){
+        ebay++;
+      }
+    }
+
+    itemCount = {
+      "amazon": amazon,
+      "bestbuy": bestbuy,
+      "ebay" : ebay
+    }
+
+    return itemCount;
+  }
+
   filterMobileItems(items) {
     let filtered = [];
 
@@ -416,6 +444,20 @@ class Home extends Component {
 
   componentDidUpdate(){
     // console.log("Product items: ", this.props.items);
+    let ele = document.querySelector("body");
+    let menu = document.getElementById("myID");
+    ele.addEventListener("scroll", () => {
+      let y = ele.scrollTop;
+      if (y >= 100) {
+        if(menu){
+          menu.className = "show"
+        }
+    } else {
+        if(menu){
+          menu.className = "hide"
+        }
+    }
+    }, true);
   }
 
 
@@ -436,6 +478,24 @@ class Home extends Component {
 
     let mobileFiltered = this.filterMobileItems(items);
 
+    console.log(items);
+    let storeItems = this.storeItemCounter(items);
+    console.log(storeItems);
+
+    let ele = document.querySelector("body");
+    let menu = document.getElementById("myID");
+    ele.addEventListener("scroll", () => {
+      let y = ele.scrollTop;
+      if (y >= 100) {
+        if(menu){
+          menu.className = "show"
+        }
+    } else {
+        if(menu){
+          menu.className = "hide"
+        }
+    }
+    }, true);
 
 
     return (
@@ -469,6 +529,17 @@ class Home extends Component {
         {this.props.items.length > 0 && 
         
         <div id="home" className="productHome">
+
+          <div className="itemsPerStore">
+            <div className="itemsPerStoreContent">
+              <span style={{position: "relative", left: "7px"}}>Total Items:</span>
+              <ol>
+                <li>{`Amazon (${storeItems.amazon})`}</li>
+                <li>{`BestBuy (${storeItems.bestbuy})`}</li>
+                <li>{`Ebay (${storeItems.ebay})`}</li>
+              </ol>
+            </div>
+          </div>
 
           {mobileStoreFilter.includes("all") ?
 

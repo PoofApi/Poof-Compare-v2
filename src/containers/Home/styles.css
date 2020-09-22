@@ -30,6 +30,24 @@
     color: #0C1344;
 }
 
+.itemsPerStore {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 75px;
+    width: 150px;
+    background: #d6ddda;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.itemsPerStoreContent {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    font-size: 12.8px;
+}
+
 .poofCheckBox {
     left: 8px;
 }
