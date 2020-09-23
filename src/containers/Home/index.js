@@ -555,17 +555,6 @@ class Home extends Component {
         
         <div id="home" className="productHome">
 
-          <div id="counter" className="itemsPerStore show2">
-            <div className="itemsPerStoreContent">
-              <span style={{position: "relative", left: "7px"}}>Total Items:</span>
-              <ol>
-                <li>{`Amazon (${storeItems.amazon})`}</li>
-                <li>{`BestBuy (${storeItems.bestbuy})`}</li>
-                <li>{`Ebay (${storeItems.ebay})`}</li>
-              </ol>
-            </div>
-          </div>
-
           {mobileStoreFilter.includes("all") ?
 
           < MultiSelectDisabledComponent />
@@ -575,6 +564,17 @@ class Home extends Component {
           < MultiSelectComponent />
 
           }
+
+          <div id="counter" className="itemsPerStore show2">
+            <div className="itemsPerStoreContent">
+              <span style={{position: "relative", left: "7px"}}>Total Items:</span>
+              <ol className="storeList">
+                <li className="storeListItem">{`Amazon (${storeItems.amazon})`}</li>
+                <li className="storeListItem">{`BestBuy (${storeItems.bestbuy})`}</li>
+                <li className="storeListItem">{`Ebay (${storeItems.ebay})`}</li>
+              </ol>
+            </div>
+          </div>
 
           <div id="top"></div>
           <div className="home mt-5" style={{position: "relative", bottom: "35px"}}>
