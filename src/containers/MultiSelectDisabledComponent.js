@@ -61,10 +61,10 @@ class MultiSelectDisabledComponent extends Component {
               <div className="input-field col s12">
                 <select id="filterSelect" className="storeOptions" multiple>
                   <option value="" disabled selected>Show items from</option>
-                  <option value="all" selected>All Stores</option>
-                  <option value="amazon" disabled selected>Amazon</option>
-                  <option value="bestbuy" disabled selected>BestBuy</option>
-                  <option value="ebay" disabled selected>Ebay</option>
+                  <option value="all" selected>{`All Stores (${this.props.storeItems.all})`}</option>
+                  <option value="amazon" disabled selected>{`Amazon (${this.props.storeItems.amazon})`}</option>
+                  <option value="bestbuy" disabled selected>{`BestBuy (${this.props.storeItems.bestbuy})`}</option>
+                  <option value="ebay" disabled selected>{`Ebay (${this.props.storeItems.ebay})`}</option>
                 </select>
                 <label>Store Filter</label>
               </div>

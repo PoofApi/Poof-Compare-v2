@@ -65,10 +65,10 @@ class MultiSelectComponent extends Component {
               <div className="input-field col s12">
                 <select id="filterSelect" className="storeOptions" multiple>
                   <option value="" disabled selected>Show items from</option>
-                  <option value="all">All Stores</option>
-                  <option value="amazon">Amazon</option>
-                  <option value="bestbuy">BestBuy</option>
-                  <option value="ebay">Ebay</option>
+                  <option value="all">{`All Stores (${this.props.storeItems.all})`}</option>
+                  <option value="amazon">{`Amazon (${this.props.storeItems.amazon})`}</option>
+                  <option value="bestbuy">{`BestBuy (${this.props.storeItems.bestbuy})`}</option>
+                  <option value="ebay">{`Ebay (${this.props.storeItems.ebay})`}</option>
                 </select>
                 <label>Store Filter</label>
               </div>
