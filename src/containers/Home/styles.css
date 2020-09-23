@@ -288,25 +288,36 @@
 @media screen and (max-width: 780px){
     .show2 {
         top: unset;
-        bottom: 75px;
+        bottom: 28px;
         opacity: 0.77;
-        position: absolute;
+        position: relative;
         z-index: 2;
-        left: 20px;
-        width: 120px;
+        left: 25px;
+        width: 90%;
         background: #d6ddda;
         border-radius: 8px;
         border: black 2px solid;
         background: #0C1344;
         color: white;
-        height: 100px;
+        display: flex;
+        justify-content: center;
     }
 
     .itemsPerStoreContent {
         position: relative;
         top: 4px;
-        left: -3px;
         font-size: 12.8px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .storeList {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .storeListItem {
+        margin-right: 25px;
     }
 }
 
