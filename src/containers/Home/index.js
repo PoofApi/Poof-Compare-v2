@@ -226,12 +226,23 @@ class Home extends Component {
 
     let ele = document.querySelector("body");
     let menu = document.getElementById("myID");
+    const itemCounter = document.getElementById("counter")
     ele.addEventListener("scroll", () => {
       let y = ele.scrollTop;
       if (y >= 100) {
-        menu.className = "show"
+        if(menu){
+          menu.className = "show"
+        }
+        if (itemCounter) {
+          itemCounter.className = "hide"
+        }
     } else {
-        menu.className = "hide"
+        if(menu){
+          menu.className = "hide"
+        }
+        if (itemCounter) {
+          itemCounter.className = "show2"
+        }
     }
     }, true);
 
@@ -446,15 +457,22 @@ class Home extends Component {
     // console.log("Product items: ", this.props.items);
     let ele = document.querySelector("body");
     let menu = document.getElementById("myID");
+    const itemCounter = document.getElementById("counter")
     ele.addEventListener("scroll", () => {
       let y = ele.scrollTop;
       if (y >= 100) {
         if(menu){
           menu.className = "show"
         }
+        if (itemCounter) {
+          itemCounter.className = "hide"
+        }
     } else {
         if(menu){
           menu.className = "hide"
+        }
+        if (itemCounter) {
+          itemCounter.className = "show2"
         }
     }
     }, true);
@@ -484,15 +502,22 @@ class Home extends Component {
 
     let ele = document.querySelector("body");
     let menu = document.getElementById("myID");
+    const itemCounter = document.getElementById("counter")
     ele.addEventListener("scroll", () => {
       let y = ele.scrollTop;
       if (y >= 100) {
         if(menu){
           menu.className = "show"
         }
+        if (itemCounter) {
+          itemCounter.className = "hide"
+        }
     } else {
         if(menu){
           menu.className = "hide"
+        }
+        if (itemCounter) {
+          itemCounter.className = "show2"
         }
     }
     }, true);
@@ -530,7 +555,7 @@ class Home extends Component {
         
         <div id="home" className="productHome">
 
-          <div className="itemsPerStore">
+          <div id="counter" className="itemsPerStore show2">
             <div className="itemsPerStoreContent">
               <span style={{position: "relative", left: "7px"}}>Total Items:</span>
               <ol>
