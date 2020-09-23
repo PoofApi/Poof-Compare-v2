@@ -288,11 +288,11 @@
 @media screen and (max-width: 780px){
     .show2 {
         top: unset;
-        bottom: 28px;
+        bottom: 50px;
         opacity: 0.77;
-        position: relative;
+        position: absolute;
         z-index: 2;
-        left: 25px;
+        left: 18px;
         width: 90%;
         background: #d6ddda;
         border-radius: 8px;
