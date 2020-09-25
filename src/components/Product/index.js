@@ -4,6 +4,7 @@ import './newStyles.css';
 import ReactTooltip from 'react-tooltip';
 import {store} from '../../index.js';
 import {addItemToWatch, removeFromWatch} from '../../actions/product.js';
+import {Fade} from 'react-animation-components';
 
 const axios = require('axios');
 
