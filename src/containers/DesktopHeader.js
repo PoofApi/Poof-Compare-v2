@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Poof_White from '../images/Poof_White.png';
 import Poof_White_edited from '../images/Poof_White_edited.png';
+import Poof_Brown from '../images/poof_logo_brown.png';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
 import PoofMobileSignIn from './PoofMobileSignIn';
 import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
-import bookBackground from '../images/bookBackground.jpg';
-
+import { FadeTransform } from 'react-animation-components';
 
 const axios = require('axios');
 
@@ -156,18 +156,41 @@ class DesktopHeader extends Component {
                         </div> */}
                         <div className="desktopContent">
 
-                            <div className="row justify-content-center">
-                                <div className="col-5 mb-2 mt-4">
-                                    <div className="poofDesktopLogo2">
-                                        <img className="img-fluid" src={Poof_White} alt="poofDesktopLogo2"/>
+                        <FadeTransform in
+                            transformProps={{
+                                exitTransform: 'scale(0.5)',
+                            }}
+                            
+                            duration={800}>
+                                    <div className="row justify-content-center">
+                                        <div className="col-5 mb-2 mt-4">
+                                            <div className="poofDesktopLogo2">
+                                                <img className="img-fluid" src={Poof_White} alt="poofDesktopLogo2"/>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                    {/* <div className="showPoofLogo">
+                                        <div className="row justify-content-center">
+                                            <div className="col-5 mb-2 mt-4">
+                                                <div className="poofDesktopLogo3">
+                                                    <img className="img-fluid" src={Poof_Brown} alt="poofDesktopLogo3"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                        </FadeTransform>
 
+                        <FadeTransform in
+                            transformProps={{
+                                exitTransform: 'scale(0.5)',
+                            }}
+                            
+                            duration={800}>
                             <div className="poofHeadline row justify-content-center">
                                 <h1 className="poofTitleText col-12">Welcome to Poof! Price Compare.</h1>
                                 <h5 className="poofTitleText col-8 col-md-6">The best way to search the web for the best deals! Search your favorite big box retailers all at once!</h5>
                             </div>
+                        </FadeTransform>
 
                             {
                             this.state.loading ? 
@@ -185,21 +208,28 @@ class DesktopHeader extends Component {
                                 </div>
                             
                             :
-                                <div className="row justify-content-center">
-                                    <div className="searchContent col-6">
-                                        <form onSubmit={this.handleSubmit}>
-                                            <div className="poofDesktopSearch mb-3">
-                                                    <input 
-                                                        className="poofDesktopInput" type="text" placeholder="Search for products..." id="search" 
-                                                        ref={(input) => {this.searchInput = input; }} type="search" 
-                                                        onChange={this.handleChange} onSubmit={this.handleSubmit} value={this.state.value} name="search" required
-                                                    />
-                                                    <i className="material-icons poofDesktopSearchIcon" onClick={this.handleSubmit}>search</i>
+                                <FadeTransform in
+                                    transformProps={{
+                                        exitTransform: 'scale(0.5)',
+                                    }}
+                                    
+                                    duration={800}>
+                                        <div className="row justify-content-center">
+                                            <div className="searchContent col-6">
+                                                <form onSubmit={this.handleSubmit}>
+                                                    <div className="poofDesktopSearch mb-3">
+                                                            <input 
+                                                                className="poofDesktopInput" type="text" placeholder="Search for products..." id="search" 
+                                                                ref={(input) => {this.searchInput = input; }} type="search" 
+                                                                onChange={this.handleChange} onSubmit={this.handleSubmit} value={this.state.value} name="search" required
+                                                            />
+                                                            <i className="material-icons poofDesktopSearchIcon" onClick={this.handleSubmit}>search</i>
+                                                    </div>
+                                                </form>
+                                                <span><img className="poofExclamation" src={Poof_White_edited} alt="poofExclamation"/></span>
                                             </div>
-                                        </form>
-                                        <span><img className="poofExclamation" src={Poof_White_edited} alt="poofExclamation"/></span>
-                                    </div>
-                                </div>
+                                        </div>
+                                </FadeTransform>
                             }
                             {/* <div className="fillerBody1"></div> */}
                             <div className="iconContent mb-4 ml-4">

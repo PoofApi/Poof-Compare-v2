@@ -268,7 +268,7 @@
 }
 .show {
     opacity: 1;
-    transition: width 2s;
+    transition: opacity 4s;
 }
 
 .show2 {
