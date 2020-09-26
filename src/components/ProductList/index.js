@@ -6,10 +6,10 @@ import { FadeTransform } from 'react-animation-components';
 const ProductList = ({items, compare, watch}) =>
       <FadeTransform in
           transformProps={{
-              exitTransform: 'scale(0.6) translateX(-1000px) translateY(-500px)',
+              exitTransform: 'scale(0.6) translateX(-1000px) translateY(-1000px)',
           }}
           
-          duration={700}>
+          duration={600}>
 
         <div className="productList" style={{paddingRight: "45px", paddingLeft: "45px", position: "relative", bottom: "25px"}}>
           <div className="row mt-3">

@@ -179,6 +179,7 @@
     align-items: center;
     border-radius: 10px;
     opacity: 0.8;
+    animation: enlarge 0.8s;
 }
 
 .topScrollerSide:hover {
@@ -235,6 +236,11 @@
     }
 }
 
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
 .topScroller {
     height: 50px;
     width: 53px;
@@ -248,7 +254,9 @@
     align-items: center;
     border-radius: 10px;
     opacity: 0.8;
+    animation: enlarge 0.8s;
 }
+
 
 .topScroller:hover {
     opacity: 1 !important;

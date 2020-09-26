@@ -161,7 +161,7 @@ class DesktopHeader extends Component {
                                 exitTransform: 'scale(0.5)',
                             }}
                             
-                            duration={800}>
+                            duration={600}>
                                     <div className="row justify-content-center">
                                         <div className="col-5 mb-2 mt-4">
                                             <div className="poofDesktopLogo2">
@@ -185,7 +185,7 @@ class DesktopHeader extends Component {
                                 exitTransform: 'scale(0.5)',
                             }}
                             
-                            duration={800}>
+                            duration={600}>
                             <div className="poofHeadline row justify-content-center">
                                 <h1 className="poofTitleText col-12">Welcome to Poof! Price Compare.</h1>
                                 <h5 className="poofTitleText col-8 col-md-6">The best way to search the web for the best deals! Search your favorite big box retailers all at once!</h5>
@@ -213,7 +213,7 @@ class DesktopHeader extends Component {
                                         exitTransform: 'scale(0.5)',
                                     }}
                                     
-                                    duration={800}>
+                                    duration={600}>
                                         <div className="row justify-content-center">
                                             <div className="searchContent col-6">
                                                 <form onSubmit={this.handleSubmit}>
