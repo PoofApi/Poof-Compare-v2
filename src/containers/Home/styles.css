@@ -248,6 +248,7 @@
     align-items: center;
     border-radius: 10px;
     opacity: 0.8;
+    animation: enlarge 0.8s;
 }
 
 .topScroller:hover {
@@ -266,6 +267,12 @@
     width: 0%;
     opacity: 0;
 }
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
 .show {
     opacity: 1;
     transition: opacity 4s;
