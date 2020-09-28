@@ -9,9 +9,9 @@ const ProductList = ({items, compare, watch}) =>
           <div className="row mt-3">
                 {items.map((item) =>
                     <div className="col-sm-12 col-md-6 col-lg-3">
-          <Stagger duration={700} in>
+          <Stagger duration={1000} in>
 
-                    <Fade in enterOpacity={1} delay={10000} duration={5000}>
+                    <Fade duration={5000} enterOpacity={1} in>
                     
                           <Product key={uuid()} item={item} compare={compare} watch={watch}/>
                     
