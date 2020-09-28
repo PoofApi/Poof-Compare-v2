@@ -6,6 +6,7 @@ import {store} from '../../index.js';
 import {addItemToWatch, removeFromWatch} from '../../actions/product.js';
 import {FadeTransform} from 'react-animation-components';
 
+
 const axios = require('axios');
 
 
@@ -85,14 +86,6 @@ class Product extends Component{
         return(
 
 
-                <FadeTransform in
-                    transformProps={{
-                        exitTransform: 'scale(0.6) translateX(-1000px) translateY(-500px)',
-                    }}
-                    
-                    duration={700}>
-            <div className="col-sm-12 col-md-6 col-lg-3">
-
                     <div className="row">
                         <div className="col s12 m6">
                             <div className={" " + (this.props.item.compare ? "compare" : "")} >
@@ -121,9 +114,6 @@ class Product extends Component{
                             </div>
                         </div>
                     </div>
-
-            </div>
-                </FadeTransform>
         )}
 } 
     
