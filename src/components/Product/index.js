@@ -85,13 +85,13 @@ class Product extends Component{
         return(
 
 
-            <div className="col-sm-12 col-md-6 col-lg-3">
                 <FadeTransform in
                     transformProps={{
                         exitTransform: 'scale(0.6) translateX(-1000px) translateY(-500px)',
                     }}
                     
                     duration={700}>
+            <div className="col-sm-12 col-md-6 col-lg-3">
 
                     <div className="row">
                         <div className="col s12 m6">
@@ -122,8 +122,8 @@ class Product extends Component{
                         </div>
                     </div>
 
-                </FadeTransform>
             </div>
+                </FadeTransform>
         )}
 } 
     
