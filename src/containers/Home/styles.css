@@ -274,6 +274,12 @@
     width: 0%;
     opacity: 0;
 }
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
 .show {
     opacity: 1;
     transition: opacity 4s;
