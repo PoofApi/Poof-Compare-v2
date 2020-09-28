@@ -1,7 +1,7 @@
 import React from 'react';
 import {Product} from '../';
 import uuid from 'react-uuid';
-import {FadeTransform, Stagger, Fade} from 'react-animation-components';
+import {Stagger, Fade} from 'react-animation-components';
 
 const ProductList = ({items, compare, watch}) =>
 
