@@ -1271,6 +1271,14 @@ a {
     margin-bottom: 35px;
 }
 
+/*Compare Table Route*/
+
+.compareLinkHolder {
+    position: relative;
+    top: 3px;
+    right: 10px;
+}
+
 /*Mobile Front Page*/
 .mobileBanner{
     height: 60px;

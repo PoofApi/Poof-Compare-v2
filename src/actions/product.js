@@ -80,6 +80,11 @@ export const saveUser = (payload) => ({
   payload: payload
 })
 
+export const addToCompare = (payload) => ({
+  type: types.ADD_TO_COMPARE,
+  payload: payload
+})
+
 export const addToWatch = (payload) => ({
   type: types.ADD_WATCH,
   payload: payload

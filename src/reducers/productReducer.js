@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   items: [],
   isLoading: true,
   storeUserId: "",
+  comparedItems: [],
   watchedItems: [],
   usersWatchedItems: [],
   popularItems: [],
@@ -89,6 +90,14 @@ export default function (state = INITIAL_STATE, action) {
       return {
         ...state, storeUserId: "", usersWatchedItems: []
       }
+    
+    case types.ADD_TO_COMPARE:
+      return {
+        ...state, comparedItems: state.comparedItems.concat(action.payload.map(item => 
+            ({...item, compare: true})
+          )
+        )
+      };
 
     case types.ADD_WATCH:
       return {

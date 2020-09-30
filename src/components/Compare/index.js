@@ -1,13 +1,16 @@
 import React from 'react';
 import './highlightCSS.css';
 import uuid from 'react-uuid';
+import { Link } from 'react-router-dom';
 
 const Compare = ({items, toggleClick}) =>
   <div className="highlightContainer">
     <div className="hToolbar">
         <i className="material-icons toggleButton" onClick={() => toggleClick()} >expand_more</i>
         <div className="detailsTitle">Details</div>
-        <div className="detailsFiller"></div>
+        <div className="compareLinkHolder">
+          <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link>
+        </div>
     </div>
     <div className="compareTableContainer">
         {items.map(item =>
