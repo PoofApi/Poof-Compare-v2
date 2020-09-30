@@ -378,7 +378,7 @@ a:hover{
 }
 
 .watchlist-container {
-    height: 90vh;
+    height: 100vh;
     background-color: blanchedalmond;
     position: fixed;
     width: 310px;
@@ -510,7 +510,7 @@ a:hover{
 }
 
 .watchCardsContainer {
-    height: 125vh;
+    height: 150vh;
 }
 
 .watchlist-title {
