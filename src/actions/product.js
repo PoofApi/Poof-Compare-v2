@@ -85,6 +85,11 @@ export const addToCompare = (payload) => ({
   payload: payload
 })
 
+export const removeFromCompare = (payload) => ({
+  type: types.REMOVE_COMPARE,
+  payload: payload
+})
+
 export const addToWatch = (payload) => ({
   type: types.ADD_WATCH,
   payload: payload

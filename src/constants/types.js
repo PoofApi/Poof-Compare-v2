@@ -8,6 +8,7 @@ export const WATCH_PRODUCT = 'WATCH_PRODUCT';
 export const WATCH_USER_PRODUCT = 'WATCH_USER_PRODUCT';
 export const ADD_USER = "ADD_USER";
 export const ADD_TO_COMPARE = "ADD_TO_COMPARE";
+export const REMOVE_COMPARE = "REMOVE_COMPARE";
 export const ADD_WATCH = "ADD_WATCH";
 export const ADD_WATCH_ITEM = "ADD_WATCH_ITEM";
 export const ADD_WATCH_ITEM2 = "ADD_WATCH_ITEM2";

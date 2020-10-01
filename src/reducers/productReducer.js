@@ -93,10 +93,13 @@ export default function (state = INITIAL_STATE, action) {
     
     case types.ADD_TO_COMPARE:
       return {
-        ...state, comparedItems: state.comparedItems.concat(action.payload.map(item => 
-            ({...item, compare: true})
-          )
-        )
+        ...state, comparedItems: state.comparedItems.concat(action.payload)
+      };
+
+    //Caused A LOT of confusion because some items have "id" and others have "itemId"
+    case types.REMOVE_COMPARE:
+      return {
+        ...state, comparedItems: state.comparedItems.filter(item => item.id !== action.payload.id)
       };
 
     case types.ADD_WATCH:

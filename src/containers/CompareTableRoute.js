@@ -15,19 +15,31 @@ class CompareTableRoute extends Component {
 
     render() {
 
-        let comparedItems = this.props.items.filter(item => item.compare)
+        let comparedItemsRoute = this.props.comparedItems
+        console.log("Compared items in redux state: ", comparedItemsRoute)
 
         return (
-            <div>
-                <Link to={'/'}><i className="material-icons" style={{color: "black"}}>keyboard_return</i></Link>
-                <ol>
-                    {comparedItems.map((item) => 
-                        <li onClick={() => this.props.compare(item)}>
-                            {item.title}
-                        </li>
-                    )}
-                </ol>
-            </div>
+            
+            comparedItemsRoute ? 
+            
+                <div>
+                    <Link to={'/'}><i className="material-icons" style={{color: "black"}}>keyboard_return</i></Link>
+                    <ol>
+                        {comparedItemsRoute.map((item) => 
+                            <li onClick={() => this.props.compare(item)}>
+                                {item.title}
+                            </li>
+                        )}
+                    </ol>
+                </div>
+
+                :
+
+                <div>
+                    <Link to={'/'}><i className="material-icons" style={{color: "black"}}>keyboard_return</i></Link>
+                    <div className="">There are no compared items</div>
+                </div>
+            
         )
     }
 }
@@ -35,6 +47,7 @@ class CompareTableRoute extends Component {
 const mapStateToProps = (state) => {
     return {
         items: state.item.items,
+        comparedItems: state.item.comparedItems,
         watchedItems: state.item.watchedItems,
         usersWatchedItems: state.item.usersWatchedItems,
         storeUserId: state.item.storeUserId

@@ -3,7 +3,7 @@ import './styles.css';
 import './newStyles.css';
 import ReactTooltip from 'react-tooltip';
 import {store} from '../../index.js';
-import {addItemToWatch, removeFromWatch} from '../../actions/product.js';
+import {addItemToWatch, removeFromWatch, addToCompare, removeFromCompare} from '../../actions/product.js';
 import {FadeTransform} from 'react-animation-components';
 
 
@@ -63,6 +63,20 @@ class Product extends Component{
           };
     }
 
+    handleCompare(compareFxn, product) {
+        if(!product.compare){
+            console.log("add to compare called");
+            compareFxn(product);
+            store.dispatch(addToCompare(product));
+        }
+        else{
+            console.log("remove from compare called");
+            console.log("remove called on: ", product);
+            store.dispatch(removeFromCompare(product));
+            compareFxn(product)
+        }
+    }
+
     itemInList(item){
         const watchListItems = store.getState().item.watchedItems
         for (let k = 0; k<(watchListItems.length); k++){
@@ -97,7 +111,7 @@ class Product extends Component{
                                                         <a className="btn-floating halfway-fab floatingWatchBtn indigo darken-4"><i className="material-icons" style={{color: (this.props.item.watch? "red" : "white")}} onClick={(this.props.item.watch) ? () => console.log("If you would like to remove this item from your watchlist, please remove it through the watchlist tab") : () => this.handleWatch(this.props.watch, this.props.item)}>{this.props.item.watch? "favorite" : "remove_red_eye"} </i></a>
                                                     </div>             
                                                 <div className={(this.props.item.compare ? "card-overlay2" : "card-overlay")}></div>
-                                                <div className="detailsBtn" onClick={() => this.props.compare(this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{this.props.item.compare ? "Hide Details" : "View Details"}</div>
+                                                <div className="detailsBtn" onClick={() => this.handleCompare(this.props.compare, this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{this.props.item.compare ? "Hide Details" : "View Details"}</div>
                                             </div>
                                             {/* this.props.item.featured && */}
                                             {/* <div className="featuredProduct">
