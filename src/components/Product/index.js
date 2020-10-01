@@ -5,6 +5,7 @@ import ReactTooltip from 'react-tooltip';
 import {store} from '../../index.js';
 import {addItemToWatch, removeFromWatch, addToCompare, removeFromCompare} from '../../actions/product.js';
 import {FadeTransform} from 'react-animation-components';
+import {connect} from 'react-redux';
 
 
 const axios = require('axios');
@@ -63,17 +64,15 @@ class Product extends Component{
           };
     }
 
-    handleCompare(compareFxn, product) {
-        if(!product.compare){
-            console.log("add to compare called");
-            compareFxn(product);
-            store.dispatch(addToCompare(product));
-        }
-        else{
+    handleCompare(product) {
+        if(this.props.comparedItems.some(item => item.title.includes(product.title))){
             console.log("remove from compare called");
             console.log("remove called on: ", product);
             store.dispatch(removeFromCompare(product));
-            compareFxn(product)
+        }
+        else{
+            console.log("add to compare called");
+            store.dispatch(addToCompare(product));
         }
     }
 
@@ -97,12 +96,14 @@ class Product extends Component{
 
     render(){
 
+        let { comparedItems } = this.props;
+
         return(
 
 
                     <div className="row">
                         <div className="col s12 m6">
-                            <div className={" " + (this.props.item.compare ? "compare" : "")} >
+                            <div className={" " + (comparedItems.some(item => item.title.includes(this.props.item.title)) ? "compare" : "")} >
                                     <div className="card productCard" >
                                             <div className="card-image itemImage" style={{display: "flex", justifyContent: "center"}}>
                                                     <img src={this.props.item.image} alt={this.props.item.title} style={{height:"250px", width: "60%", marginTop: "25px"}}/>
@@ -110,8 +111,8 @@ class Product extends Component{
                                                         <span className={!this.props.item.watch? "btnTooltipText" : ""}>{!this.props.item.watch? "Add to Watchlist" : ""}</span>
                                                         <a className="btn-floating halfway-fab floatingWatchBtn indigo darken-4"><i className="material-icons" style={{color: (this.props.item.watch? "red" : "white")}} onClick={(this.props.item.watch) ? () => console.log("If you would like to remove this item from your watchlist, please remove it through the watchlist tab") : () => this.handleWatch(this.props.watch, this.props.item)}>{this.props.item.watch? "favorite" : "remove_red_eye"} </i></a>
                                                     </div>             
-                                                <div className={(this.props.item.compare ? "card-overlay2" : "card-overlay")}></div>
-                                                <div className="detailsBtn" onClick={() => this.handleCompare(this.props.compare, this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{this.props.item.compare ? "Hide Details" : "View Details"}</div>
+                                                <div className={(comparedItems.some(item => item.title.includes(this.props.item.title)) ? "card-overlay2" : "card-overlay")}></div>
+                                                <div className="detailsBtn" onClick={() => this.handleCompare(this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{comparedItems.some(item => item.title.includes(this.props.item.title)) ? "Hide Details" : "View Details"}</div>
                                             </div>
                                             {/* this.props.item.featured && */}
                                             {/* <div className="featuredProduct">
@@ -130,6 +131,12 @@ class Product extends Component{
                     </div>
         )}
 } 
+
+const mapStateToProps = (state) => {
+    return {
+        comparedItems: state.item.comparedItems
+    }
+}
     
 
-export default Product
+export default connect(mapStateToProps)(Product);

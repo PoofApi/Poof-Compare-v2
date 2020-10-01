@@ -475,7 +475,7 @@ class Home extends Component {
 
     
 
-    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter } = this.props;
+    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter, comparedItems } = this.props;
 
     let revisedItems = this.addId(items);
     
@@ -584,9 +584,9 @@ class Home extends Component {
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
             </div> */}
-            <div className={compareProducts.length >= 1 ? "compareTable" : "filler"} style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
-              {compareProducts.length >= 1 && (this.state.compareTableOpen) ? 
-                <Compare items={compareProducts} toggleClick={this.toggleCompare} 
+            <div className={comparedItems.length > 0 ? "compareTable" : "filler"} style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
+              {comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+                <Compare items={comparedItems} toggleClick={this.toggleCompare} 
               />
 
               :
@@ -611,6 +611,7 @@ class Home extends Component {
 export default connect(
   state => ({
     items: state.item.items,
+    comparedItems: state.item.comparedItems,
     watchedItems: state.item.watchedItems,
     usersWatchedItems: state.item.usersWatchedItems,
     storeUserId: state.item.storeUserId,
