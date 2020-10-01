@@ -378,16 +378,27 @@ a:hover{
 }
 
 .watchlist-container {
-    height: 100vh;
+    height: 80vh;
     background-color: blanchedalmond;
     position: fixed;
     width: 310px;
     z-index: 3;
-    top: 7px;
+    top: 58px;
     margin-top: 66px;
     right: 16px;
     overflow-x: hidden;
     overflow-y: auto;
+    border-radius: 12px 0px 0px 0px;
+}
+
+.watchlist-container-bottom {
+    position: fixed;
+    height: 35px;
+    bottom: 0;
+    background: #0C1344;
+    width: 310px;
+    right: 16px;
+    z-index: 4;
 }
 
 .watchlist-container::-webkit-scrollbar {
@@ -495,6 +506,7 @@ a:hover{
     width: 310px;
     right: 16px;
     z-index: 1;
+    border-radius: 12px 0px 0px 0px;
 }
 
 .watchlistCardDesktop:hover {
@@ -509,9 +521,9 @@ a:hover{
     margin-top: 60px;
 }
 
-.watchCardsContainer {
+/* .watchCardsContainer {
     height: 150vh;
-}
+} */
 
 .watchlist-title {
     color: white;
@@ -1160,7 +1172,7 @@ a {
     margin-left: 111px;
     background-color: #0C1344 !important;
     position: fixed;
-    bottom: 20px;
+    bottom: 42px;
 }
 
 .watchlistSaveBtn{

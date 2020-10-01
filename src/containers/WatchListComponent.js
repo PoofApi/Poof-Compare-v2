@@ -181,20 +181,21 @@ class WatchList extends Component {
         const user = this.props.storeUserId;
 
         return(
-            <div className="watchlist-container">
-                {/* <div className="watchlist-navbar" style={{height: "30px", backgroundColor: "#0C1344", position: "fixed", width: "100%"}}>
-                    <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >chevron_right</i>
+            <div className="watchlist">
+              <div className="watchlist-container">
+                  {/* <div className="watchlist-navbar" style={{height: "30px", backgroundColor: "#0C1344", position: "fixed", width: "100%"}}>
+                      <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >chevron_right</i>
+                      <div className="watchlist-title">
+                          My Poof! WatchList
+                      </div>
+                  </div> */}
+                  <div className="watchlistNav">
+                    <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >expand_more</i>
                     <div className="watchlist-title">
                         My Poof! WatchList
                     </div>
-                </div> */}
-                <div className="watchlistNav">
-                  <i className="material-icons toggle-watchlist" onClick={() => this.props.toggleClick()} >expand_more</i>
-                  <div className="watchlist-title">
-                      My Poof! WatchList
+                    <div className="fillerWatchNav"></div>
                   </div>
-                  <div className="fillerWatchNav"></div>
-                </div>
                   <div className="watchCardsContainer">
                     {this.props.items.map(item =>
                         <div className="container productCardContainer">
@@ -211,7 +212,7 @@ class WatchList extends Component {
                                       <h5 className="card-title desktopWatchlistItemTitle" style={{ height:"3.5em" , fontSize:"18px", overflow:"hidden"}}>{item.title}</h5>
                                       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
                                       <div className="card-text">
-                                         
+                                          
                                             <div className="row desktopButtonRow" style={{display: "flex", justifyContent: "flex-end"}}>
                                               
                                               {user !== "" ? 
@@ -241,11 +242,11 @@ class WatchList extends Component {
                         </div>
                     )}
                   </div>
-                
-
-                <div>
-                    {this.props.user == "" ? <SaveUserModal /> : <div></div>}
-                </div>
+                  <div>
+                      {this.props.user == "" ? <SaveUserModal /> : <div></div>}
+                  </div>
+              </div>
+              <div className="watchlist-container-bottom"></div>
             </div>
         )
     }
