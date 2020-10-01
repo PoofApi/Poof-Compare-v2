@@ -64,11 +64,11 @@
     display: block;
     overflow: scroll;
     overflow-x: hidden;
-    height: 43%;
+    height: 32vh;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 500px;
+    width: 100vw;
     z-index: 2;
     background-color: blanchedalmond;
     border-radius: 0px 10px 0px 0px;
