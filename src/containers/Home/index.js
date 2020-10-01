@@ -479,7 +479,6 @@ class Home extends Component {
 
     let revisedItems = this.addId(items);
     
-    const compareProducts = items.filter(item => item.compare);
     const storeWatchProducts = watchedItems;
 
     this.checkIfInWatch();
@@ -594,7 +593,7 @@ class Home extends Component {
               <div></div> }
            </div>
 
-           {this.state.compareToolbarOpen && compareProducts.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
+           {this.state.compareToolbarOpen && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
           <div id="myID" className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topSideTool hide" : "topTool hide"}>
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}></span>
