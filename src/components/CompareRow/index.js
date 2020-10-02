@@ -1,4 +1,9 @@
-const CompareRow = (store) => 
+import React from 'react';
+import uuid from 'react-uuid';
+import './style.css';
+
+
+const CompareRow = (items) => 
     <div className="compareTableContainer">
         <div className="container-fluid container-scroll watchContainer compareContainer" key={uuid()}>
             <div className="row">
