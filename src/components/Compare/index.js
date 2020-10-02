@@ -51,7 +51,7 @@ class Compare extends Component {
         <div className="highlightContainer">
           <div className="hToolbar">
               <i className="material-icons toggleButton" onClick={() => this.props.toggleClick()} >expand_more</i>
-              <div className="detailsTitle">Poof! Compare Table</div>
+              <div className="detailsTitle">Poof! Compare</div>
               <div className="compareLinkHolder">
                 <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link>
               </div>
@@ -60,11 +60,19 @@ class Compare extends Component {
                   <div className="container-fluid container-scroll watchContainer compareContainer" key={uuid()}>
                     <div className="row">
               {this.props.items.map(item =>
-                      <div className="col-md-2">
+                      <div className="col-4 col-md-2">
                         <div className="card poofCompareCard">
                           <div className="row">
                             <div className="col-md-4">
                               <img src={item.image} alt={item.title} key={item.id} style={{width: "50px", height: "70px"}}/>
+                            </div>
+                            <div className="card-price" style={{position: "absolute", left: "4%", bottom: "4%", color: "#e64949"}}>
+                              <b>{`$${item.price}`}</b>
+                            </div>
+                            <div className="col-2 col-md-7">
+                              <div className="card-body">
+                                <div className="poofCardTitle">{item.title}</div>
+                              </div>
                             </div>
                           </div>
                         </div>

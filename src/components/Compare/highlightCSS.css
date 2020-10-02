@@ -132,6 +132,9 @@
     flex-wrap: unset;
     margin-right: unset;
     margin-left: unset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   
 .container-scroll > .row > .col-md-2 {
@@ -142,3 +145,14 @@
 .poofCompareCard {
     height: 110px !important;
 }
+
+.poofCardTitle {
+    font-size: 12px;
+    overflow: hidden;
+    height: 33px;
+    white-space: break-spaces;
+    position: relative;
+    bottom: 15px;
+}
+
+/*End of Compare Table Row*/
