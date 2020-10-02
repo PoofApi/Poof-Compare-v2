@@ -1,0 +1,216 @@
+.highlightContainer{
+    height: auto;
+}
+
+.hToolbar2 {
+    height: 35px;
+    background-color: #0C1344;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    border-top: solid 1px;
+}
+
+.detailsFiller {
+    width: 45px;
+}
+
+.toggleButton2{
+    font-size: 35px;
+    position: relative;
+    left: 20px;
+}
+
+.toggleButton2:hover{
+    cursor: pointer;
+    color: #806543;
+}
+
+.compareSourceLogo{
+    position: relative;
+    bottom: 31px;
+}
+
+.compareSourceLogoPic{
+    position: relative;
+    right: 60px;
+    bottom: 2px;
+}
+
+.compareBestBuyLogo{
+    background-color: cornflowerblue;
+    position: relative;
+    right: 17px;
+    bottom: -23px;
+    width: 60%;
+}
+
+.comparePicHolder {
+    margin: 30px 0px 0px 20px;
+}
+
+.imageContainer{
+    flex-direction: column;
+    float: left;
+}
+
+.itemName{
+    display: flex;
+    justify-content: center;
+}
+
+.itemLink{
+    font-size: small;
+}
+
+.fillerContent{
+    margin-left: 40px;
+}
+
+.itemSource {
+    font-size: x-large;
+    padding-top: 5px;
+    position: relative;
+    left: 60px;
+}
+
+.itemName2 {
+    font-size: x-large;
+}
+
+.watchContainer {
+    border-top: 3px solid #0C1344;
+    padding-bottom: 30px;
+}
+
+.compareContainer:first-child {
+    position: relative;
+    top: 25px;
+}
+
+.priceTag {
+    top: 7px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #e64949;
+    padding-left: 50px !important;
+}
+
+@media screen and (max-width: 998px) {
+
+    .comparePicHolder{
+        position: relative;
+        left: 17px;
+    }
+
+    .info{
+        margin-top: 30px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        left: 20px;
+    }
+
+    .itemSource{
+        position: relative;
+        bottom: 2px;
+    }
+
+    .priceTag{
+        position: relative;
+        left: 8px;
+    }
+}
+
+/*Compare table row*/
+
+
+.container-scroll > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 32px;
+    padding-bottom: 27px;
+    flex-wrap: unset;
+    margin-right: unset;
+    margin-left: unset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.container-scroll > .row:after {
+    content: none;
+    display: none; 
+    clear: none;
+}
+  
+.container-scroll > .row > .col-md-2 {
+    display: inline-block;
+    float: none;
+  }
+
+.poofCompareCard {
+    height: 135px !important;
+    width: 245px;
+}
+
+.poofCompareCard:hover {
+    transform: scale(1.21);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
+}
+
+.poofCompareImage {
+    position: relative;
+    left: 22px;
+    top: 8px;
+}
+
+.poofCardTitle {
+    font-size: 12px;
+    overflow: hidden;
+    height: 52px;
+    white-space: break-spaces;
+    position: relative;
+    bottom: 15px;
+}
+
+.poofCompareCardBody {
+    position: relative;
+    left: 20px;
+    top: 12px;
+}
+
+.poofCardText {
+    position: relative;
+    top: 25px;
+}
+
+.compareBtnRow {
+    position: relative;
+    top: -9px;
+}
+
+.removeBtnCompare:hover {
+    cursor: pointer;
+    color: #806543;
+}
+
+.purchaseToolCompare {
+    margin-left: 10px;
+}
+
+.purchaseLinkIconBtnCompare {
+    color: black !important;
+}
+
+.purchaseLinkIconBtnCompare:hover {
+    color: #806543 !important;
+}
+
+
+/*End of Compare Table Row*/
