@@ -59,9 +59,9 @@ class CompareFull extends Component {
                 {/* <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link> */}
               </div>
           </div>
-          {filteredItems.amazon ? <CompareRow items={filteredItems.amazon}/> : <div></div>}
-          {filteredItems.bestbuy ? <CompareRow items={filteredItems.bestbuy}/> : <div></div>}    
-          {filteredItems.ebay ? <CompareRow items={filteredItems.ebay}/> : <div></div>}    
+          {filteredItems.amazon.length > 0 ? <CompareRow items={filteredItems.amazon}/> : <div></div>}
+          {filteredItems.bestbuy.length > 0 ? <CompareRow items={filteredItems.bestbuy}/> : <div></div>}
+          {filteredItems.ebay.length > 0 ? <CompareRow items={filteredItems.ebay}/> : <div></div>}
         </div>
     )
   }
