@@ -70,7 +70,7 @@
     left: 0;
     width: 100vw;
     z-index: 2;
-    background-color: blanchedalmond;
+    background-color: rgba(9, 9, 9, 0.8);
     border-radius: 0px 10px 0px 0px;
 }
 
