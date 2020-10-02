@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import './highlightCSS.css';
+import './style.css';
 import uuid from 'react-uuid';
 import { Link } from 'react-router-dom';
 import {store} from '../../index.js';
 import {removeFromCompare} from '../../actions/product.js';
 
-class Compare extends Component {
+class CompareFull extends Component {
   constructor(props){
     super(props);
   }
@@ -51,8 +51,8 @@ class Compare extends Component {
     
     return(
         <div className="highlightContainer">
-          <div className="hToolbar">
-              <i className="material-icons toggleButton" onClick={() => this.props.toggleClick()} >expand_more</i>
+          <div className="hToolbar2">
+              <i className="material-icons toggleButton2" onClick={() => this.props.toggleClick()} >expand_more</i>
               <div className="detailsTitle">Poof! Compare</div>
               <div className="compareLinkHolder">
                 {/* <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link> */}
@@ -100,4 +100,4 @@ class Compare extends Component {
   }
 }  
 
-export default Compare
+export default CompareFull;

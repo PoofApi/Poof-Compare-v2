@@ -74,6 +74,20 @@
     border-radius: 0px 10px 0px 0px;
 }
 
+.compareTable2 {
+    display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 90.4vh;
+    position: fixed;
+    bottom: 0;
+    right: 16px;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(9, 9, 9, 0.8);
+    border-radius: 0px 10px 0px 0px;
+}
+
 .compareTable::-webkit-scrollbar {
     display: none;
   }

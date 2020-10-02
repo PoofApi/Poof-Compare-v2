@@ -18,6 +18,7 @@ import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
 import MultiSelectDisabledComponent from '../MultiSelectDisabledComponent';
+import CompareFull from '../../components/CompareFullScreen';
 // import { TransitionGroup } from 'react-transition-group';
 
 
@@ -583,11 +584,11 @@ class Home extends Component {
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
             </div> */}
-            <div className={comparedItems.length > 0 ? "compareTable" : "filler"} style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
+            <div className={comparedItems.length > 0 ? "compareTable2" : "filler"} style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
               {comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
-                <Compare items={comparedItems} toggleClick={this.toggleCompare} 
-              />
-
+                // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
+                <CompareFull items={comparedItems} toggleClick={this.toggleCompare}/>
+              
               :
 
               <div></div> }
