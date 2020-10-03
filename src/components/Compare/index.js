@@ -42,6 +42,57 @@ class Compare extends Component {
     return filteredItems;
   }
 
+  renderPurchaseLogo(item) {
+
+    if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Fbestbuy.png?alt=media&token=da783e57-802f-4a40-b609-3af1fd78098a"){
+      return (
+        <div className="card-text poofCardText2">
+          <div className="compareBtnRowBB">
+            <span className="purchaseToolCompare2">
+                <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productBestBuyLogo2" src={item.logo} alt={item.title}/></a>
+            </span>
+            <span className="removeToolCompare">
+              {/* <span className="removeTooltipText">Remove from watchlist</span> */}
+              <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
+            </span>
+          </div>
+        </div>
+      )
+    }
+
+    if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Febay.png?alt=media&token=53bf23b1-af93-4de3-b4ed-a2c0f22ff4b6"){
+      return (
+        <div className="card-text poofCardText2">
+          <div className="compareBtnRow">
+            <span className="purchaseToolCompare2">
+                <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productEbayLogo2" src={item.logo} alt={item.title}/></a>
+            </span>
+            <span className="removeToolCompare">
+              {/* <span className="removeTooltipText">Remove from watchlist</span> */}
+              <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
+            </span>
+          </div>
+        </div>
+      )
+    }
+
+    if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Famazon.png?alt=media&token=e73286c5-d2b5-4474-a20c-acde9beea4ad"){
+      return (
+        <div className="card-text poofCardText2">
+          <div className="compareBtnRow">
+            <span className="purchaseToolCompare2">
+                <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productSourceLogoPic2" src={item.logo} alt={item.title}/></a>
+            </span>
+            <span className="removeToolCompare">
+              {/* <span className="removeTooltipText">Remove from watchlist</span> */}
+              <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
+            </span>
+          </div>
+        </div>
+      )
+    }
+  }
+
 
   render(){
 
@@ -74,18 +125,7 @@ class Compare extends Component {
                             <div className="col-2 col-md-7 poofCompareCardBody">
                               <div className="card-body">
                                 <div className="poofCardTitle">{item.title}</div>
-                                <div className="card-text poofCardText">
-                                  <div className="compareBtnRow">
-                                    <span className="removeToolCompare">
-                                      {/* <span className="removeTooltipText">Remove from watchlist</span> */}
-                                      <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
-                                    </span>
-                                    <span className="purchaseToolCompare">
-                                      {/* <span className="purchaseTooltipTextCompare">Go to product source</span> */}
-                                      <a href={`${item.itemUrl ? item.itemUrl : item.link}`}  target="_blank" className="purchaseLinkBtnAnchorCompare"><i className="material-icons purchaseLinkIconBtnCompare">launch</i></a>
-                                    </span>
-                                  </div>
-                                </div>
+                                {this.renderPurchaseLogo(item)}
                               </div>
                             </div>
                           </div>
