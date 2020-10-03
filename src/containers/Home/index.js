@@ -129,7 +129,7 @@ class Home extends Component {
     this.state = {
       compareTableOpen: true,
       compareToolbarOpen: false,
-      watchListOpen: true,
+      watchListOpen: false,
       watchToolbarOpen: false,
       watchItemsState: this.props.items.filter(item => item.watch),
       storeFilter: []
@@ -146,6 +146,7 @@ class Home extends Component {
   };
 
   toggleCompareToolbar = () => {
+    this.closeWatchList();
     this.setState({compareTableOpen: true});
     this.setState((prevState) => {
       return {compareToolbarOpen: !prevState.compareToolbarOpen};
