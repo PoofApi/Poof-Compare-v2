@@ -17,6 +17,35 @@
     border-bottom: solid white 1px;
 }
 
+.expandAndReset {
+    display: flex;
+    align-items: center;
+}
+
+.clear-compare-btn {
+    font-size: 14px;
+    position: relative;
+    left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.clearCompareMaterialIcon {
+    position: relative;
+    left: 10px;
+}
+
+.clear-compare-btn:hover {
+    cursor: pointer;
+    color: #806543;
+    transform: scale(1.05);
+}
+
+.detailsTitle {
+    position: relative;
+    right: 50px;
+}
+
 .detailsFiller {
     width: 45px;
 }

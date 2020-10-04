@@ -102,6 +102,11 @@ export default function (state = INITIAL_STATE, action) {
         ...state, comparedItems: state.comparedItems.filter(item => item.id !== action.payload.id)
       };
 
+    case types.RESET_COMPARE:
+      return {
+        ...state, comparedItems: []
+      }
+
     case types.ADD_WATCH:
       return {
         ...state, watchedItems: state.watchedItems.concat(action.payload.map(item => 

@@ -3,7 +3,7 @@ import './highlightCSS.css';
 import uuid from 'react-uuid';
 import { Link } from 'react-router-dom';
 import {store} from '../../index.js';
-import {removeFromCompare} from '../../actions/product.js';
+import {removeFromCompare, resetCompare} from '../../actions/product.js';
 
 class Compare extends Component {
   constructor(props){
@@ -40,6 +40,10 @@ class Compare extends Component {
     }
 
     return filteredItems;
+  }
+
+  resetList(){
+    store.dispatch(resetCompare());
   }
 
   renderPurchaseLogo(item) {
@@ -103,7 +107,10 @@ class Compare extends Component {
     return(
         <div className="highlightContainer">
           <div className="hToolbar">
-              <i className="material-icons toggleButton" onClick={() => this.props.toggleClick()} >expand_more</i>
+              <div className="expandAndReset">
+                <i className="material-icons toggleButton" onClick={() => this.props.toggleClick()} >expand_more</i>
+                <span className="clear-compare-btn" onClick={() => this.resetList()}>Clear Compare List<i className="material-icons clearCompareMaterialIcon">indeterminate_check_box</i></span>
+              </div>
               <div className="detailsTitle">Poof! Compare</div>
               <div className="compareLinkHolder">
                 {/* <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link> */}

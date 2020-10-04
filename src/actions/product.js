@@ -90,6 +90,10 @@ export const removeFromCompare = (payload) => ({
   payload: payload
 })
 
+export const resetCompare = () => ({
+  type: types.RESET_COMPARE
+})
+
 export const addToWatch = (payload) => ({
   type: types.ADD_WATCH,
   payload: payload
