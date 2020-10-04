@@ -293,8 +293,8 @@ input::placeholder{
 
 .compareToolbar:hover {
     cursor: pointer;
-    background-color: black;
-    border: darkgoldenrod double 4px;
+    background-color: #806543;
+    border: black double 4px;
     border-bottom: none;
     border-left: none;
 }
@@ -444,16 +444,21 @@ a:hover{
     border-bottom: none;
 }
 
+/*Inactive class for disabled elements/components*/
+.inactive {
+    display: none;
+}
+
 .watchtool-container:hover {
     cursor: pointer;
-    background-color: black;
-    border: darkgoldenrod double 4px;
+    background-color: #806543;
+    border: black double 4px;
     border-bottom: none;
 }
 
 .toggle-watchtoolbar{
     font-size: 40px;
-    color: darkgoldenrod;
+    color: white;
 }
 
 .fillerToggle {

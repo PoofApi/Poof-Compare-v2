@@ -7,8 +7,12 @@ class WatchToolbar extends Component {
     }
 
     render(){
+        let className="watchtool-container";
+        if(this.props.isCompareActive){
+            className += " inactive"
+        }
         return(
-            <div className="watchtool-container" onClick={() => this.props.toggleClick()}>
+            <div className={className} onClick={() => this.props.toggleClick()}>
                 <i className="material-icons toggle-watchtoolbar" onClick={() => this.props.toggleClick()} >expand_less</i>
                 <div className="toggleTitle">My Poof! Watchlist</div>
                 <div className="fillerToggle"></div>

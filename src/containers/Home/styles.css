@@ -186,7 +186,7 @@
     position: absolute;
     bottom: 8px;
     right: 338px;
-    background: #0C1344;
+    background: #806543;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -199,8 +199,8 @@
 .topScrollerSide:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background-color: black;
-    border: darkgoldenrod double 4px;
+    background-color: #0C1344;
+    border: white double 4px;
 }
 
 @media screen and (max-width: 998px){
@@ -229,7 +229,7 @@
     right: 26px;
     height: 50px;
     width: 53px;
-    background: #0C1344;
+    background: #806543;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -240,8 +240,8 @@
 .topScrollerMobile:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background: black !important;
-    border: darkgoldenrod double 4px;
+    background: #0C1344 !important;
+    border: white double 4px;
 }
 
 @media screen and (min-width: 998px) {
@@ -261,7 +261,7 @@
     position: absolute;
     bottom: 55px;
     right: 38px;
-    background: #0C1344;
+    background: #806543;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -275,8 +275,8 @@
 .topScroller:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background-color: black;
-    border: darkgoldenrod double 4px;
+    background-color: #0C1344;
+    border: white double 4px;
 }
 
 #top {
