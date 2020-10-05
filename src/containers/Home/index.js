@@ -416,7 +416,7 @@ class Home extends Component {
             
       return(
         <div className="compareTable" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
-          {this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+          {this.props.comparedItems && this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
             // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
             <Compare items={this.props.comparedItems} toggleClick={this.toggleCompare}/>
           
@@ -429,7 +429,7 @@ class Home extends Component {
     else{
       return (
         <div className="filler" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
-          {this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+          {this.props.comparedItems && this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
             // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
             <Compare items={this.props.comparedItems} toggleClick={this.toggleCompare}/>
           
