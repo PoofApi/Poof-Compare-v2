@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   items: [],
   isLoading: true,
   storeUserId: "",
-  comparedItems: [],
+  comparedItems: new Array(30),
   watchedItems: [],
   usersWatchedItems: [],
   popularItems: [],

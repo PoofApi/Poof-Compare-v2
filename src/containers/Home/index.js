@@ -546,6 +546,8 @@ class Home extends Component {
     }
     }, true);
 
+    console.log(this.props.comparedItems);
+
     return (
       
       <div style={{height: "100vh"}}>

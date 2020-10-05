@@ -17,17 +17,24 @@
     border-bottom: solid white 1px;
 }
 
+
 .expandAndReset {
     display: flex;
     align-items: center;
 }
 
 .clear-compare-btn {
+    right: 20px;
     font-size: 14px;
     position: relative;
-    left: 30px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 998px) {
+    .clear-compare-btn {
+        font-size: 10px;
+    }
 }
 
 .clearCompareMaterialIcon {
@@ -39,11 +46,6 @@
     cursor: pointer;
     color: #806543;
     transform: scale(1.05);
-}
-
-.detailsTitle {
-    position: relative;
-    right: 25px;
 }
 
 .detailsFiller {

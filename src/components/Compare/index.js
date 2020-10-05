@@ -109,10 +109,10 @@ class Compare extends Component {
           <div className="hToolbar">
               <div className="expandAndReset">
                 <i className="material-icons toggleButton" onClick={() => this.props.toggleClick()} >expand_more</i>
-                <span className="clear-compare-btn" onClick={() => this.resetList()}>Clear List<i className="material-icons clearCompareMaterialIcon">indeterminate_check_box</i></span>
               </div>
               <div className="detailsTitle">Poof! Compare</div>
               <div className="compareLinkHolder">
+                <span className="clear-compare-btn" onClick={() => this.resetList()}>Clear List<i className="material-icons clearCompareMaterialIcon">indeterminate_check_box</i></span>
                 {/* <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link> */}
               </div>
           </div>
@@ -120,11 +120,11 @@ class Compare extends Component {
                   <div className="container-fluid container-scroll watchContainer compareContainer" key={uuid()}>
                     <div className="row">
               {this.props.items.map(item =>
-                      <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+                      <div className="col-6 col-sm-5 col-md-4 col-lg-2">
                         <div className="card poofCompareCard">
                           <div className="row">
                             <div className="col-4 col-md-4 poofCompareImage">
-                              <img src={item.image} alt={item.title} key={item.id} style={{width: "50px", height: "70px"}}/>
+                              <img className="img-fluid poofComparePic2" src={item.image} alt={item.title} key={item.id} />
                             </div>
                             <div className="card-price" style={{position: "absolute", left: "10%", bottom: "8%", color: "#e64949"}}>
                               <b>{`$${item.price}`}</b>
