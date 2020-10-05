@@ -18,6 +18,7 @@ import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
 import MultiSelectDisabledComponent from '../MultiSelectDisabledComponent';
+import CompareFull from '../../components/CompareFullScreen';
 // import { TransitionGroup } from 'react-transition-group';
 
 
@@ -128,7 +129,7 @@ class Home extends Component {
     this.state = {
       compareTableOpen: true,
       compareToolbarOpen: false,
-      watchListOpen: true,
+      watchListOpen: false,
       watchToolbarOpen: false,
       watchItemsState: this.props.items.filter(item => item.watch),
       storeFilter: []
@@ -136,6 +137,11 @@ class Home extends Component {
 
   }
   
+  toggleCompareItem = () => {
+    if(this.state.compareTableOpen && !this.state.compareToolbarOpen){
+      this.closeWatchList();
+    }
+  }
 
   toggleCompare = () => {
     this.toggleCompareToolbar();
@@ -144,7 +150,10 @@ class Home extends Component {
     })
   };
 
+
+
   toggleCompareToolbar = () => {
+    this.closeWatchList();
     this.setState({compareTableOpen: true});
     this.setState((prevState) => {
       return {compareToolbarOpen: !prevState.compareToolbarOpen};
@@ -207,20 +216,6 @@ class Home extends Component {
     let usersItems = await getWatchList();
     return usersItems;
   }
-
-  myScrollFunc() {
-    // var myID = document.getElementById("myID");
-    
-    // var y = window.scrollY;
-    //   console.log(y);
-    //   if (y >= 800) {
-    //       myID.className = "bottomMenu show"
-    //   } else {
-    //       myID.className = "bottomMenu hide"
-    //   }
-
-    console.log(window.scrollY);
-  };
 
   async componentDidMount(){
 
@@ -415,6 +410,38 @@ class Home extends Component {
     }
   }
 
+  renderCompare(){
+
+    if(this.props.comparedItems.length > 0){
+
+            
+      return(
+        <div className="compareTable" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
+          {this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+            // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
+            <Compare items={this.props.comparedItems} toggleClick={this.toggleCompare}/>
+          
+          :
+  
+          <div></div> }
+        </div>
+      )
+    }
+    else{
+      return (
+        <div className="filler" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
+          {this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+            // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
+            <Compare items={this.props.comparedItems} toggleClick={this.toggleCompare}/>
+          
+          :
+
+          <div></div> }
+        </div>
+      )
+    }
+  }
+
 
   async setAlert(targetPrice, item){
 
@@ -470,16 +497,17 @@ class Home extends Component {
     }, true);
   }
 
+  
+
 
   render() {
 
     
 
-    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter } = this.props;
+    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter, comparedItems } = this.props;
 
     let revisedItems = this.addId(items);
     
-    const compareProducts = items.filter(item => item.compare);
     const storeWatchProducts = watchedItems;
 
     this.checkIfInWatch();
@@ -508,7 +536,6 @@ class Home extends Component {
     }
     }, true);
 
-
     return (
       
       <div style={{height: "100vh"}}>
@@ -517,7 +544,7 @@ class Home extends Component {
     && (this.state.watchListOpen) ? <WatchList alert={this.setAlert} items={this.props.storeUserId !== "" ? 
     usersWatchedItems : storeWatchProducts} products={this.props.items} user={this.props.storeUserId} toggleClick={this.closeWatchList} saveClick={this.saveList} 
     watch={actions.watch} /> : <div></div>} {(this.props.storeUserId !== "" ? usersWatchedItems.length > 0 : storeWatchProducts.length > 0) 
-    && !this.state.watchListOpen ? <WatchToolbar toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
+    && !this.state.watchListOpen ? <WatchToolbar isCompareActive={this.state.compareTableOpen && comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
         <div style={{height: "100vh"}}>
           
           <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer" style={{height: "100vh"}}>
@@ -579,22 +606,14 @@ class Home extends Component {
                     <span className="poofCheckBox"></span>
                 </label>
             </div> */}
-            <ProductList items={mobileFiltered} compare={actions.compare} watch={actions.watch}/>
+            <ProductList items={mobileFiltered} compare={this.toggleCompareItem} watch={actions.watch}/>
             {/* <div className="mobile-watchlist">
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
             </div> */}
-            <div className={compareProducts.length >= 1 ? "compareTable" : "filler"} style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
-              {compareProducts.length >= 1 && (this.state.compareTableOpen) ? 
-                <Compare items={compareProducts} toggleClick={this.toggleCompare} 
-              />
+            {this.renderCompare()}
 
-              :
-
-              <div></div> }
-           </div>
-
-           {this.state.compareToolbarOpen && compareProducts.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
+           {this.state.compareToolbarOpen && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
           <div id="myID" className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topSideTool hide" : "topTool hide"}>
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}></span>
@@ -611,6 +630,7 @@ class Home extends Component {
 export default connect(
   state => ({
     items: state.item.items,
+    comparedItems: state.item.comparedItems,
     watchedItems: state.item.watchedItems,
     usersWatchedItems: state.item.usersWatchedItems,
     storeUserId: state.item.storeUserId,
