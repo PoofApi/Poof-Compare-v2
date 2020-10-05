@@ -65,6 +65,9 @@ class Product extends Component{
     }
 
     handleCompare(product) {
+
+        this.props.compare();
+
         if(this.props.comparedItems.some(item => item.title.includes(product.title))){
             console.log("remove from compare called");
             console.log("remove called on: ", product);

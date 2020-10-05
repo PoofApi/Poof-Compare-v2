@@ -137,6 +137,11 @@ class Home extends Component {
 
   }
   
+  toggleCompareItem = () => {
+    if(this.state.compareTableOpen && !this.state.compareToolbarOpen){
+      this.closeWatchList();
+    }
+  }
 
   toggleCompare = () => {
     this.toggleCompareToolbar();
@@ -144,6 +149,8 @@ class Home extends Component {
       return {compareTableOpen: !prevState.compareTableOpen};
     })
   };
+
+
 
   toggleCompareToolbar = () => {
     this.closeWatchList();
@@ -157,16 +164,6 @@ class Home extends Component {
     this.setState({watchListOpen: false});
     this.setState({watchToolbarOpen: true});
   };
-
-  closeWatchList2 = () => {
-
-    console.log("closewatchlist2 called")
-    if(this.props.watchedItems.length > 0 || this.props.usersWatchedItems.length > 0){
-      if(!this.state.watchListOpen && !this.state.watchToolbarOpen){
-        this.closeWatchList();
-      }
-    }
-  }
 
   toggleWatchToolbar = () => {
     this.setState({watchListOpen: true});
@@ -219,20 +216,6 @@ class Home extends Component {
     let usersItems = await getWatchList();
     return usersItems;
   }
-
-  myScrollFunc() {
-    // var myID = document.getElementById("myID");
-    
-    // var y = window.scrollY;
-    //   console.log(y);
-    //   if (y >= 800) {
-    //       myID.className = "bottomMenu show"
-    //   } else {
-    //       myID.className = "bottomMenu hide"
-    //   }
-
-    console.log(window.scrollY);
-  };
 
   async componentDidMount(){
 
@@ -431,7 +414,6 @@ class Home extends Component {
 
     if(this.props.comparedItems.length > 0){
 
-      this.closeWatchList2();
             
       return(
         <div className="compareTable" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
@@ -624,7 +606,7 @@ class Home extends Component {
                     <span className="poofCheckBox"></span>
                 </label>
             </div> */}
-            <ProductList items={mobileFiltered} compare={actions.compare} watch={actions.watch}/>
+            <ProductList items={mobileFiltered} compare={this.toggleCompareItem} watch={actions.watch}/>
             {/* <div className="mobile-watchlist">
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
