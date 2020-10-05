@@ -18,7 +18,6 @@ import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
 import MultiSelectDisabledComponent from '../MultiSelectDisabledComponent';
-import CompareFull from '../../components/CompareFullScreen';
 // import { TransitionGroup } from 'react-transition-group';
 
 

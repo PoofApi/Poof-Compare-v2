@@ -67,7 +67,7 @@ class Compare extends Component {
     if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Febay.png?alt=media&token=53bf23b1-af93-4de3-b4ed-a2c0f22ff4b6"){
       return (
         <div className="card-text poofCardText2">
-          <div className="compareBtnRow">
+          <div className="compareBtnRowEbay">
             <span className="purchaseToolCompare2">
                 <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productEbayLogo2" src={item.logo} alt={item.title}/></a>
             </span>
@@ -120,16 +120,16 @@ class Compare extends Component {
                   <div className="container-fluid container-scroll watchContainer compareContainer" key={uuid()}>
                     <div className="row">
               {this.props.items.map(item =>
-                      <div className="col-4 col-md-2">
+                      <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                         <div className="card poofCompareCard">
                           <div className="row">
-                            <div className="col-md-4 poofCompareImage">
+                            <div className="col-4 col-md-4 poofCompareImage">
                               <img src={item.image} alt={item.title} key={item.id} style={{width: "50px", height: "70px"}}/>
                             </div>
                             <div className="card-price" style={{position: "absolute", left: "10%", bottom: "8%", color: "#e64949"}}>
                               <b>{`$${item.price}`}</b>
                             </div>
-                            <div className="col-2 col-md-7 poofCompareCardBody">
+                            <div className="col-8 col-2 col-md-7 poofCompareCardBody">
                               <div className="card-body">
                                 <div className="poofCardTitle">{item.title}</div>
                                 {this.renderPurchaseLogo(item)}

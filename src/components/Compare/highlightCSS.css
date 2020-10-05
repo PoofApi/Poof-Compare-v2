@@ -160,7 +160,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    margin-top: 12px;
+    margin-top: 16px;
     padding-bottom: 27px;
     flex-wrap: unset;
     margin-right: unset;
@@ -182,8 +182,8 @@
   }
 
 .poofCompareCard {
-    height: 120px !important;
-    width: 230px;
+    height: 115px !important;
+    width: 100%;
 }
 
 .poofCompareCard:hover {
@@ -209,7 +209,6 @@
 .poofCompareCardBody {
     position: relative;
     left: 20px;
-    top: 12px;
 }
 
 .poofCardText2 {
@@ -221,6 +220,14 @@
 .compareBtnRow {
     position: relative;
     top: -9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compareBtnRowEbay {
+    position: relative;
+    top: -3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,12 +261,19 @@
   }
   
 .productSourceLogoPic2{
-    max-width: 100% !important;
+    max-width: 125% !important;
+}
+
+.productEbayLogo2 {
+    position: relative;
+    bottom: 3px;
 }
 
 .productBestBuyLogo2{
     background-color: cornflowerblue;
     max-width: 60% !important;
+    position: relative;
+    bottom: 3px;
 }
 
 

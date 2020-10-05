@@ -141,7 +141,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    margin-top: 6px;
+    margin-top: 16px;
     padding-bottom: 27px;
     flex-wrap: unset;
     margin-right: unset;
@@ -162,9 +162,9 @@
     float: none;
   }
 
-.poofCompareCard {
-    height: 135px !important;
-    width: 245px;
+  .poofCompareCard {
+    height: 115px !important;
+    width: 100%;
 }
 
 .poofCompareCard:hover {
@@ -190,7 +190,6 @@
 .poofCompareCardBody {
     position: relative;
     left: 20px;
-    top: 12px;
 }
 
 .poofCardText {
