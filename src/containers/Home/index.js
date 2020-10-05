@@ -218,6 +218,21 @@ class Home extends Component {
 
   async componentDidMount(){
 
+    //Logic to prevent compareTable and watchlist from being open at the same time on load/re-load
+      if(this.state.compareTableOpen && this.props.comparedItems && this.props.comparedItems.length > 0 && this.state.watchListOpen){
+        this.closeWatchList();
+      }
+      
+    /* iOS re-orientation fix */
+      if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+      /* iOS hides Safari address bar */
+      window.addEventListener("load",function() {
+          setTimeout(function() {
+              window.scrollTo(0, 1);
+          }, 1000);
+      });
+    }
+
     let ele = document.querySelector("body");
     let menu = document.getElementById("myID");
     // const itemCounter = document.getElementById("counter")
@@ -526,9 +541,7 @@ class Home extends Component {
 
     let mobileFiltered = this.filterMobileItems(items);
 
-    console.log(items);
     let storeItems = this.storeItemCounter(items);
-    console.log(storeItems);
 
     let ele = document.querySelector("body");
     let menu = document.getElementById("myID");
@@ -546,7 +559,6 @@ class Home extends Component {
     }
     }, true);
 
-    console.log(this.props.comparedItems);
 
     return (
       
