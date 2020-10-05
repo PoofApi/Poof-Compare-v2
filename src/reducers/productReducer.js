@@ -94,7 +94,7 @@ export default function (state = INITIAL_STATE, action) {
     case types.ADD_TO_COMPARE:
       return {
         ...state, 
-        comparedItems: [...state.comparedItems, action.payload]
+        comparedItems: (state.comparedItems ? state.comparedItems.concat(action.payload) : [action.payload])
       };
 
     //Caused A LOT of confusion because some items have "id" and others have "itemId"
