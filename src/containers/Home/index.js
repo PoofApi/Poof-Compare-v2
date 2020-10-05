@@ -411,7 +411,7 @@ class Home extends Component {
 
   renderCompare(){
 
-    if(this.props.comparedItems.length > 0){
+    if(this.props.comparedItems && this.props.comparedItems.length > 0){
 
             
       return(
