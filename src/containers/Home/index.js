@@ -441,6 +441,17 @@ class Home extends Component {
     }
   }
 
+  renderWatchToolbar(){
+    if(this.props.comparedItems){
+      return(
+        <WatchToolbar isCompareActive={this.state.compareTableOpen && this.props.comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} />
+      )
+    }
+    else{
+      return <div></div>
+    }
+  }
+
 
   async setAlert(targetPrice, item){
 
@@ -543,7 +554,7 @@ class Home extends Component {
     && (this.state.watchListOpen) ? <WatchList alert={this.setAlert} items={this.props.storeUserId !== "" ? 
     usersWatchedItems : storeWatchProducts} products={this.props.items} user={this.props.storeUserId} toggleClick={this.closeWatchList} saveClick={this.saveList} 
     watch={actions.watch} /> : <div></div>} {(this.props.storeUserId !== "" ? usersWatchedItems.length > 0 : storeWatchProducts.length > 0) 
-    && !this.state.watchListOpen ? <WatchToolbar isCompareActive={this.state.compareTableOpen && comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} /> : <div></div> } </div>: 
+    && !this.state.watchListOpen ? (this.props.comparedItems ? <WatchToolbar isCompareActive={this.state.compareTableOpen && comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} /> : <div></div>) : <div></div> } </div>: 
         <div style={{height: "100vh"}}>
           
           <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer" style={{height: "100vh"}}>
