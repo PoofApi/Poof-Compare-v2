@@ -109,7 +109,7 @@ class Compare extends Component {
           <div className="hToolbar">
               <div className="expandAndReset">
                 <i className="material-icons toggleButton" onClick={() => this.props.toggleClick()} >expand_more</i>
-                <span className="clear-compare-btn" onClick={() => this.resetList()}>Clear Compare List<i className="material-icons clearCompareMaterialIcon">indeterminate_check_box</i></span>
+                <span className="clear-compare-btn" onClick={() => this.resetList()}>Clear List<i className="material-icons clearCompareMaterialIcon">indeterminate_check_box</i></span>
               </div>
               <div className="detailsTitle">Poof! Compare</div>
               <div className="compareLinkHolder">

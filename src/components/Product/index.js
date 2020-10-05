@@ -112,7 +112,7 @@ class Product extends Component{
                                                         <a className="btn-floating halfway-fab floatingWatchBtn indigo darken-4"><i className="material-icons" style={{color: (this.props.item.watch? "red" : "white")}} onClick={(this.props.item.watch) ? () => console.log("If you would like to remove this item from your watchlist, please remove it through the watchlist tab") : () => this.handleWatch(this.props.watch, this.props.item)}>{this.props.item.watch? "favorite" : "remove_red_eye"} </i></a>
                                                     </div>             
                                                 <div className={(comparedItems.some(item => item.title.includes(this.props.item.title)) ? "card-overlay2" : "card-overlay")}></div>
-                                                <div className="detailsBtn" onClick={() => this.handleCompare(this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{comparedItems.some(item => item.title.includes(this.props.item.title)) ? "Hide Details" : "View Details"}</div>
+                                                <div className="detailsBtn" onClick={() => this.handleCompare(this.props.item)} style={{color: "black", display: "flex", justifyContent: "center", alignItems:"center"}}>{comparedItems.some(item => item.title.includes(this.props.item.title)) ? "Remove Compare" : "Compare"}</div>
                                             </div>
                                             {/* this.props.item.featured && */}
                                             {/* <div className="featuredProduct">

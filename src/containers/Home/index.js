@@ -158,6 +158,16 @@ class Home extends Component {
     this.setState({watchToolbarOpen: true});
   };
 
+  closeWatchList2 = () => {
+
+    console.log("closewatchlist2 called")
+    if(this.props.watchedItems.length > 0 || this.props.usersWatchedItems.length > 0){
+      if(!this.state.watchListOpen && !this.state.watchToolbarOpen){
+        this.closeWatchList();
+      }
+    }
+  }
+
   toggleWatchToolbar = () => {
     this.setState({watchListOpen: true});
     this.setState({watchToolbarOpen: false});
@@ -417,6 +427,39 @@ class Home extends Component {
     }
   }
 
+  renderCompare(){
+
+    if(this.props.comparedItems.length > 0){
+
+      this.closeWatchList2();
+            
+      return(
+        <div className="compareTable" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
+          {this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+            // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
+            <Compare items={this.props.comparedItems} toggleClick={this.toggleCompare}/>
+          
+          :
+  
+          <div></div> }
+        </div>
+      )
+    }
+    else{
+      return (
+        <div className="filler" style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
+          {this.props.comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
+            // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
+            <Compare items={this.props.comparedItems} toggleClick={this.toggleCompare}/>
+          
+          :
+
+          <div></div> }
+        </div>
+      )
+    }
+  }
+
 
   async setAlert(targetPrice, item){
 
@@ -472,6 +515,8 @@ class Home extends Component {
     }, true);
   }
 
+  
+
 
   render() {
 
@@ -508,7 +553,6 @@ class Home extends Component {
         }
     }
     }, true);
-
 
     return (
       
@@ -585,15 +629,7 @@ class Home extends Component {
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
             </div> */}
-            <div className={comparedItems.length > 0 ? "compareTable" : "filler"} style={{display: (this.state.compareToolbarOpen ? "none" : "block")}}>
-              {comparedItems.length >= 1 && (this.state.compareTableOpen) ? 
-                // <Compare items={comparedItems} toggleClick={this.toggleCompare} />
-                <Compare items={comparedItems} toggleClick={this.toggleCompare}/>
-              
-              :
-
-              <div></div> }
-           </div>
+            {this.renderCompare()}
 
            {this.state.compareToolbarOpen && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
