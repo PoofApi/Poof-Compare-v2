@@ -188,7 +188,7 @@ class DesktopHeader extends Component {
                             duration={600}>
                             <div className="poofHeadline row justify-content-center">
                                 <h1 className="poofTitleText col-12">Welcome to Poof! Price Compare.</h1>
-                                <h5 className="poofTitleText col-8 col-md-6">The best way to search the web for the best deals! Search your favorite big box retailers, such as Amazon, BestBuy, Ebay, and more, all at once!</h5>
+                                <h5 className="poofTitleText col-8 col-md-6">Search and compare items from your favorite big box retailers like Amazon, BestBuy, Ebay, and more, all at the same time!</h5>
                             </div>
                         </FadeTransform>
 
