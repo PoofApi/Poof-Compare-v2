@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   items: [],
   isLoading: true,
   storeUserId: "",
-  comparedItems: new Array(30),
+  comparedItems: [],
   watchedItems: [],
   usersWatchedItems: [],
   popularItems: [],
@@ -93,7 +93,8 @@ export default function (state = INITIAL_STATE, action) {
     
     case types.ADD_TO_COMPARE:
       return {
-        ...state, comparedItems: state.comparedItems.concat(action.payload)
+        ...state, 
+        comparedItems: [...state.comparedItems, action.payload]
       };
 
     //Caused A LOT of confusion because some items have "id" and others have "itemId"

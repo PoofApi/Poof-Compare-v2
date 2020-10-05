@@ -128,7 +128,7 @@ class Home extends Component {
     this.state = {
       compareTableOpen: true,
       compareToolbarOpen: false,
-      watchListOpen: false,
+      watchListOpen: true,
       watchToolbarOpen: false,
       watchItemsState: this.props.items.filter(item => item.watch),
       storeFilter: []

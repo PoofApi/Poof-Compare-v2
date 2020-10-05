@@ -60,6 +60,10 @@
     cursor: pointer;
 }
 
+.poofComparePic2 {
+    max-height: 65px;
+}
+
 .compareSourceLogo{
     position: relative;
     bottom: 31px;
