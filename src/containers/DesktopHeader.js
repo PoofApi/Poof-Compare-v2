@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Poof_White from '../images/Poof_White.png';
 import Poof_White_edited from '../images/Poof_White_edited.png';
-import Poof_Brown from '../images/poof_logo_brown.png';
+import poofSloth from '../images/poofSloth.png';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
@@ -206,6 +206,9 @@ class DesktopHeader extends Component {
                                         </div>
                                     </div>                   
                                 </div>
+                                // <div className="poofSlothPic">
+                                //     <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+                                // </div>
                             
                             :
                                 <FadeTransform in
