@@ -148,6 +148,14 @@ class DesktopHeader extends Component {
 
         return(
             <div className="poofDesktopComponent">
+            {this.state.loading ? 
+
+            <div className="poofSlothPic">
+                <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+            </div>
+            
+            :
+            <div className="non-loading-desktop">
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
@@ -192,25 +200,20 @@ class DesktopHeader extends Component {
                             </div>
                         </FadeTransform>
 
-                            {
-                            this.state.loading ? 
                             
-                                <div className="row justify-content-center">
+                                {/* <div className="row justify-content-center">
                                     <div className="col-6 desktopProgressSearchBar">
-                                        <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
-                                            Just one moment while Poof! finds you the best deals!....
-                                        </div>
-                                        <div className="exampleContainer justify-content-center mb-4">
-                                            <div className="desktopLoadBar1"></div>
-                                            <div className="desktopLoadBar2"></div>
-                                        </div>
+                                         <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
+                                             Just one moment while Poof! finds you the best deals!....
+                                         </div>
+                                         <div className="exampleContainer justify-content-center mb-4">
+                                             <div className="desktopLoadBar1"></div>
+                                             <div className="desktopLoadBar2"></div>
+                                         </div>
                                     </div>                   
-                                </div>
-                                // <div className="poofSlothPic">
-                                //     <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
-                                // </div>
+                                </div> */}
                             
-                            :
+                            
                                 <FadeTransform in
                                     transformProps={{
                                         exitTransform: 'scale(0.5)',
@@ -233,7 +236,7 @@ class DesktopHeader extends Component {
                                             </div>
                                         </div>
                                 </FadeTransform>
-                            }
+
                             {/* <div className="fillerBody1"></div> */}
                             <div className="iconContent mb-4 ml-4">
                                 <div className="row justify-content-center">
@@ -373,7 +376,11 @@ class DesktopHeader extends Component {
                 <div className="poofDesktopFooter">
                     
                 </div>
+
             </div>
+
+}
+</div>
         )
     }
 }
