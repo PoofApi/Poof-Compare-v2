@@ -6,7 +6,6 @@ import WatchlistRoute from '../WatchlistRoute.js';
 import CompareTableRoute from '../CompareTableRoute.js';
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
-import Div100vh from 'react-div-100vh';
 
 
 class App extends Component {
@@ -14,7 +13,6 @@ class App extends Component {
   render() {
 
     return (
-      <Div100vh>
         <div className="app" style={{height: "100vh"}}>
           <div className="container-fluid" style={{height: "100vh"}}>
             <Switch>
@@ -25,7 +23,6 @@ class App extends Component {
             </Switch>
           </div>
         </div>
-      </Div100vh>
     )
   }
 }
