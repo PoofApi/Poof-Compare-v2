@@ -231,12 +231,39 @@
     align-items: center;
 }
 
+/*media query for iphone*/
+
+@media screen and (max-width: 650px){
+    .poofCompareCardBody {
+        position: relative;
+        left: 0px;
+    }
+
+    .compareBtnRow {
+        position: relative;
+        top: -24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .compareBtnRowEbay {
     position: relative;
     top: -3px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 998px){
+    .compareBtnRowEbay {
+        position: relative;
+        top: -14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .compareBtnRowBB {

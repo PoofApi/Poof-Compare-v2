@@ -66,8 +66,35 @@ input::placeholder{
         display: none;
     }
 
+    .watchlist-container-bottom {
+        display: none;
+    }
+
     .watchtool-container {
         display: none !important;
+    }
+
+    .compareToolbar {
+        height: 40px;
+        background: #0C1344;
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        width: 102vw !important;
+        z-index: 3;
+        border-radius: 0px 0px 0px 0px !important;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        border: grey double 5px;
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .detailsTitle2 {
+        position: relative;
+        right: 10px;
     }
 
     .resetUserLink {

@@ -271,8 +271,30 @@
     animation: enlarge 0.8s;
 }
 
+.topScrollerUp {
+    height: 50px;
+    width: 53px;
+    position: absolute;
+    bottom: 210px;
+    right: 38px;
+    background: #806543;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: enlarge 0.8s;
+}
 
 .topScroller:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: #0C1344;
+    border: white double 4px;
+}
+
+.topScrollerUp:hover {
     opacity: 1 !important;
     cursor: pointer;
     background-color: #0C1344;
