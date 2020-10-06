@@ -154,9 +154,22 @@ class DesktopHeader extends Component {
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
                         <div className="desktopContent">
-                            <div className="poofSlothRow">
-                                <div className="poofSlothPic">
-                                    <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+                            <div className="loading-content">
+                                <div className="poofSlothRow">
+                                    <div className="poofSlothPic">
+                                        <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+                                    </div>
+                                </div>
+                                <div className="row justify-content-center">
+                                    <div className="col-6 desktopProgressSearchBar">
+                                        <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
+                                            Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
+                                        </div>
+                                        <div className="exampleContainer justify-content-center mb-4">
+                                            <div className="desktopLoadBar1"></div>
+                                            <div className="desktopLoadBar2"></div>
+                                        </div>
+                                    </div>                   
                                 </div>
                             </div>
                             
