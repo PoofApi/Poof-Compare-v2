@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 998px){
     .compareTable{
-        height: 25% !important;
+        height: 28% !important;
         border-radius: 0px !important;
     }
 
@@ -299,6 +299,24 @@
     cursor: pointer;
     background-color: #0C1344;
     border: white double 4px;
+}
+
+@media screen and (max-width: 998px) {
+    .topScrollerUp {
+        height: 50px;
+        width: 53px;
+        position: absolute;
+        bottom: 220px;
+        right: 38px;
+        background: #806543;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        opacity: 0.8;
+        animation: enlarge 0.8s;
+    }
 }
 
 #top {
