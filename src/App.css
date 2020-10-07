@@ -409,7 +409,7 @@ a:hover{
     background-color: blanchedalmond;
     position: fixed;
     width: 310px;
-    z-index: 3;
+    z-index: 4;
     top: 58px;
     margin-top: 66px;
     right: 16px;
@@ -420,12 +420,12 @@ a:hover{
 
 .watchlist-container-bottom {
     position: fixed;
-    height: 35px;
+    height: 20vh;
     bottom: 0;
     background: #0C1344;
     width: 310px;
     right: 16px;
-    z-index: 4;
+    z-index: 3;
 }
 
 .watchlist-container::-webkit-scrollbar {
@@ -1202,9 +1202,16 @@ a {
 
 .newSaveBtn {
     margin-left: 111px;
-    background-color: #0C1344 !important;
     position: fixed;
     bottom: 42px;
+    background-color: #806543 !important;
+    border: 2px black solid !important;
+}
+
+.newSaveBtn:hover {
+    background-color: black !important;
+    color: darkgoldenrod;
+    border: 2px white solid !important;
 }
 
 .watchlistSaveBtn{
