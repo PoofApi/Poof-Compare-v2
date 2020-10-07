@@ -646,7 +646,7 @@ class Home extends Component {
           </div>
           <div id="myID" className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topSideTool hide" : "topTool hide"}>
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}></span>
-            <a href="#top"><div className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topScrollerSide" : (this.state.compareTableOpen 
+            <a href="#top"><div className={this.state.watchListOpen && (storeWatchProducts && storeWatchProducts.length > 0 || (usersWatchedItems && usersWatchedItems.length > 0) ) ? "topScrollerSide" : (this.state.compareTableOpen 
               && this.props.comparedItems.length > 0 ? "topScrollerUp" : "topScroller")}><i className="material-icons">expand_less</i></div></a>
           </div>
         </div>
