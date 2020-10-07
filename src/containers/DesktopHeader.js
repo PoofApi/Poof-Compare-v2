@@ -148,7 +148,7 @@ class DesktopHeader extends Component {
 
         return(
             
-            (!this.state.loading ? 
+            (this.state.loading ? 
                 <div className="poofDesktopComponent">
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
