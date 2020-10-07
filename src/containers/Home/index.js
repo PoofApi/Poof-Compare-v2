@@ -590,15 +590,22 @@ class Home extends Component {
         
         <div id="home" className="productHome">
 
-          {mobileStoreFilter.includes("all") ?
-
-          < MultiSelectDisabledComponent storeItems={storeItems}/>
+          {mobileStoreFilter ? 
           
-          :
-          
-          < MultiSelectComponent storeItems={storeItems}/>
+            (mobileStoreFilter.includes("all") ?
 
-          }
+                < MultiSelectDisabledComponent storeItems={storeItems}/>
+
+                :
+
+                < MultiSelectComponent storeItems={storeItems}/>
+
+            ) 
+            
+            : 
+           
+            < MultiSelectComponent storeItems={storeItems}/>}
+          
 
           {/* <div id="counter" className="itemsPerStore show2">
             <div className="itemsPerStoreContent">
