@@ -259,7 +259,7 @@
     height: 50px;
     width: 53px;
     position: absolute;
-    bottom: 55px;
+    bottom: 8vh;
     right: 38px;
     background: #806543;
     z-index: 2;
@@ -275,7 +275,7 @@
     height: 50px;
     width: 53px;
     position: absolute;
-    bottom: 210px;
+    bottom: 28vh;
     right: 38px;
     background: #806543;
     z-index: 2;

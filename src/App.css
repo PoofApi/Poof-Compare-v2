@@ -409,7 +409,7 @@ a:hover{
     background-color: blanchedalmond;
     position: fixed;
     width: 310px;
-    z-index: 3;
+    z-index: 4;
     top: 58px;
     margin-top: 66px;
     right: 16px;
@@ -420,12 +420,12 @@ a:hover{
 
 .watchlist-container-bottom {
     position: fixed;
-    height: 35px;
+    height: 20vh;
     bottom: 0;
     background: #0C1344;
     width: 310px;
     right: 16px;
-    z-index: 4;
+    z-index: 3;
 }
 
 .watchlist-container::-webkit-scrollbar {
@@ -1202,9 +1202,16 @@ a {
 
 .newSaveBtn {
     margin-left: 111px;
-    background-color: #0C1344 !important;
     position: fixed;
     bottom: 42px;
+    background-color: #806543 !important;
+    border: 2px black solid !important;
+}
+
+.newSaveBtn:hover {
+    background-color: black !important;
+    color: darkgoldenrod;
+    border: 2px white solid !important;
 }
 
 .watchlistSaveBtn{
@@ -1862,7 +1869,7 @@ form.mobileSearchForm button:hover {
 }
 
 .poofDesktopBackground {
-    height: 65vh;
+    height: 80vh;
     background-image: url(./images/fireworksPoof.png) !important;
     background-size: 100vw 113vh;
     background-repeat: no-repeat !important;
@@ -1873,18 +1880,6 @@ form.mobileSearchForm button:hover {
     flex-direction: column;
     justify-content: space-around; 
 }
-
-/* @media screen and (max-width: 1350px) {
-    .poofDesktopBackground {
-        background-position-y: -30px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .poofDesktopBackground {
-        background-position-y: 0px;
-    }
-}  */
 
 @media screen and (max-width: 1199px){
     .poofDesktopComponent{
@@ -1901,7 +1896,7 @@ form.mobileSearchForm button:hover {
 
 .poofOverlay {
     width: 100vw;
-    height: 65vh;
+    height: 80vh;
     /* background-color: rgba(0, 0, 0, 0.5); */
     position: absolute;
     top: 0;
