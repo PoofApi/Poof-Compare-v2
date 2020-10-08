@@ -46,6 +46,7 @@ class MultiSelectDisabledComponent extends Component {
 
   render() {
 
+    const { searchWord, items } = this.props;
 
     return (
       <div className="row multiSelectRow">
@@ -71,9 +72,22 @@ class MultiSelectDisabledComponent extends Component {
             </div>
           </div>
         </div>
+        <div className="col-lg-5 col-md-5 searchAndCountContainer">
+          <div className="searchAndCountGroup">
+            <div className="searchWordAndItemCount">{searchWord ? `Displaying search results for keyword: "${searchWord}"` : "no search"}</div>
+            {items ? <div className="searchCount">{`Total items found: ${items.length}`}</div> : <div></div> }
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default MultiSelectDisabledComponent;
+const mapStateToProps = (state) => {
+  return {
+      searchWord: state.item.searchWord,
+      items: state.item.items
+  }
+}
+
+export default connect(mapStateToProps)(MultiSelectDisabledComponent);

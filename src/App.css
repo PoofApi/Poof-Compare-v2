@@ -855,7 +855,30 @@ a:hover{
 }
 
 .multiSelectRow {
-    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+    left: 2vw;
+}
+
+.searchAndCountContainer {
+    position: relative;
+    top: 0.4vh;
+}
+
+.searchAndCountGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchWordAndItemCount {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchCount {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3vw;
 }
 
 @media screen and (max-width: 998px) {
@@ -1210,8 +1233,6 @@ a {
 
 .newSaveBtn:hover {
     background-color: black !important;
-    color: darkgoldenrod;
-    border: 2px white solid !important;
 }
 
 .watchlistSaveBtn{

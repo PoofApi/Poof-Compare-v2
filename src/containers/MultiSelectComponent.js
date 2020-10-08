@@ -46,9 +46,7 @@ class MultiSelectComponent extends Component {
 
   render() {
 
-    const { mobileStoreFilter } = this.props;
-
-    console.log(mobileStoreFilter);
+    const { searchWord, items } = this.props;
 
 
     return (
@@ -75,9 +73,22 @@ class MultiSelectComponent extends Component {
             </div>
           </div>
         </div>
+        <div className="col-lg-5 col-md-5 searchAndCountContainer">
+          <div className="searchAndCountGroup">
+            <div className="searchWordAndItemCount">{searchWord ? `Displaying search results for keyword: "${searchWord}"` : "no search"}</div>
+            {items ? <div className="searchCount">{`Total items found: ${items.length}`}</div> : <div></div> }
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default MultiSelectComponent;
+const mapStateToProps = (state) => {
+  return {
+      searchWord: state.item.searchWord,
+      items: state.item.items
+  }
+}
+
+export default connect(mapStateToProps)(MultiSelectComponent);

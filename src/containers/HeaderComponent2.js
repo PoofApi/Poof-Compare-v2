@@ -3,7 +3,7 @@ import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from 'react-router-dom';
 import '../App.css';
-import {resetSearch, resetWatchList, logOutUser, resetEntireWatch} from '../actions/product';
+import {resetSearch, resetWatchList, logOutUser, resetEntireWatch, addSearchWord} from '../actions/product';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import poofMobileLogoWhiteGradient from '../images/poofMobileLogoWhiteGradient.png';
@@ -94,6 +94,7 @@ class Header2 extends Component {
 
         try{
             await getProductsForHome(this.state.value);
+            this.props.addSearchWord(this.state.value);
             event.preventDefault();
             this.setState({loading: false});
             this.setState({value: ""});
@@ -179,7 +180,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         logOutUser: () => {dispatch(logOutUser())},
-        resetEntireWatch: () => {dispatch(resetEntireWatch())}
+        resetEntireWatch: () => {dispatch(resetEntireWatch())},
+        addSearchWord: (word) => {dispatch(addSearchWord(word))}
     }
 }
 
