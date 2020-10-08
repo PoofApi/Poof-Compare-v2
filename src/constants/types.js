@@ -6,6 +6,7 @@ export const COMPARE_PRODUCT = 'COMPARE_PRODUCT';
 export const RESET_PRODUCTS = 'RESET_PRODUCTS';
 export const WATCH_PRODUCT = 'WATCH_PRODUCT';
 export const WATCH_USER_PRODUCT = 'WATCH_USER_PRODUCT';
+export const SEARCH_WORD = "SEARCH_WORD";
 export const ADD_USER = "ADD_USER";
 export const ADD_TO_COMPARE = "ADD_TO_COMPARE";
 export const REMOVE_COMPARE = "REMOVE_COMPARE";

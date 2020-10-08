@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   items: [],
   isLoading: true,
   storeUserId: "",
+  searchWord: "",
   comparedItems: [],
   watchedItems: [],
   usersWatchedItems: [],
@@ -79,6 +80,11 @@ export default function (state = INITIAL_STATE, action) {
             ({...item, watch: !item.watch}) :
             item
         )
+      };
+    
+    case types.SEARCH_WORD:
+      return {
+        ...state, searchWord: action.payload
       };
 
     case types.ADD_USER:

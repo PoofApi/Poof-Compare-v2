@@ -3,6 +3,7 @@ import Poof_White from '../images/Poof_White.png';
 import Poof_White_edited from '../images/Poof_White_edited.png';
 import poofSloth from '../images/poofSloth.png';
 import {store} from '../index.js';
+import {addSearchWord} from '../actions/product';
 import * as types from '../constants/types';
 import '../App.css';
 import PoofMobileSignIn from './PoofMobileSignIn';
@@ -111,6 +112,7 @@ class DesktopHeader extends Component {
 
         try{
             await getProductsForHome(this.state.value);
+            this.props.addSearchWord(this.state.value);
             event.preventDefault();
             this.setState({loading: false});
             this.setState({value: ""});
@@ -354,4 +356,10 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(DesktopHeader);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addSearchWord: (word) => { dispatch(addSearchWord(word)) }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DesktopHeader);

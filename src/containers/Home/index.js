@@ -527,7 +527,7 @@ class Home extends Component {
 
     
 
-    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter, comparedItems } = this.props;
+    const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter, comparedItems, searchWord } = this.props;
 
     let revisedItems = this.addId(items);
     
@@ -590,21 +590,24 @@ class Home extends Component {
         
         <div id="home" className="productHome">
 
-          {mobileStoreFilter ? 
-          
-            (mobileStoreFilter.includes("all") ?
-
-                < MultiSelectDisabledComponent storeItems={storeItems}/>
-
-                :
-
-                < MultiSelectComponent storeItems={storeItems}/>
-
-            ) 
+          <div className="filterAndSearchWord">
+            {mobileStoreFilter ? 
             
-            : 
-           
-            < MultiSelectComponent storeItems={storeItems}/>}
+              (mobileStoreFilter.includes("all") ?
+
+                  < MultiSelectDisabledComponent storeItems={storeItems}/>
+
+                  :
+
+                  < MultiSelectComponent storeItems={storeItems}/>
+
+              ) 
+              
+              : 
+            
+              < MultiSelectComponent storeItems={storeItems}/>}
+            {/* <span className="searchWordAndItemCount">{searchWord ? `${searchWord}` : "no search"}</span> */}
+          </div>
           
 
           {/* <div id="counter" className="itemsPerStore show2">
@@ -664,7 +667,8 @@ export default connect(
     watchedItems: state.item.watchedItems,
     usersWatchedItems: state.item.usersWatchedItems,
     storeUserId: state.item.storeUserId,
-    mobileStoreFilter: state.item.mobileStoreFilter
+    mobileStoreFilter: state.item.mobileStoreFilter,
+    searchWord: state.item.searchWord
   }),
   dispatch => ({
     actions: bindActionCreators(productActions, dispatch)

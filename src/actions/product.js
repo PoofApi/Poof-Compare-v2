@@ -75,6 +75,11 @@ export const resetSearch = () => ({
   type: types.RESET_PRODUCTS
 })
 
+export const addSearchWord = (payload) => ({
+  type: types.SEARCH_WORD,
+  payload: payload
+})
+
 export const saveUser = (payload) => ({
   type: types.ADD_USER,
   payload: payload
