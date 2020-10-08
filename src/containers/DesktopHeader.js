@@ -128,6 +128,7 @@ class DesktopHeader extends Component {
 
         try{
             await getProductsForHome(searchWord);
+            this.props.addSearchWord(searchWord);
             this.setState({loading:false});
 
         }
