@@ -594,17 +594,17 @@ class Home extends Component {
             
               (mobileStoreFilter.includes("all") ?
 
-                  < MultiSelectDisabledComponent storeItems={storeItems}/>
+                  < MultiSelectDisabledComponent key={uuid()} storeItems={storeItems}/>
 
                   :
 
-                  < MultiSelectComponent storeItems={storeItems}/>
+                  < MultiSelectComponent key={uuid()} storeItems={storeItems}/>
 
               ) 
               
               : 
             
-              < MultiSelectComponent storeItems={storeItems}/>}
+              < MultiSelectComponent key={uuid()} storeItems={storeItems}/>}
             {/* <span className="searchWordAndItemCount">{searchWord ? `${searchWord}` : "no search"}</span> */}          
 
           {/* <div id="counter" className="itemsPerStore show2">

@@ -49,7 +49,7 @@ class MultiSelectDisabledComponent extends Component {
     const { searchWord, items } = this.props;
 
     return (
-      <div className="row multiSelectRow">
+      <div key={this.props.key} className="row multiSelectRow">
         <div className="col-lg-5 col-md-5 col-sm-8 col-8">
           <div className="multiSelectComponent">
             <div

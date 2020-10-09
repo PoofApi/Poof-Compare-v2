@@ -139,6 +139,16 @@ input::placeholder{
     }
 }
 
+@media screen and (max-width: 800px) {
+    .compareToolbar {
+        width: 100%;
+    }
+
+    .detailsTitle2 {
+        right: 0px;
+    }
+}
+
 .info{
     margin-top: 30px;
 }
