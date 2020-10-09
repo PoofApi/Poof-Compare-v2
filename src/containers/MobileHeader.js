@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Poof_Blue from '../images/Poof_Blue.png';
 import poof_sloth_blue from '../images/poof_sloth_blue.PNG';
 import {store} from '../index.js';
+import {addSearchWord} from '../actions/product';
 import * as types from '../constants/types';
 import '../App.css';
 import PoofMobileSignIn from './PoofMobileSignIn';
@@ -78,6 +79,7 @@ class MobileHeader extends Component {
 
         try{
             await getProductsForHome(this.state.value);
+            this.props.addSearchWord(this.state.value);
             event.preventDefault();
             this.setState({loading: false});
             this.setState({value: ""});
@@ -93,6 +95,7 @@ class MobileHeader extends Component {
 
         try{
             await getProductsForHome(searchWord);
+            this.props.addSearchWord(searchWord);
             this.setState({loading:false});
 
         }
@@ -295,4 +298,10 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(MobileHeader);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addSearchWord: (word) => { dispatch(addSearchWord(word)) }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MobileHeader);
