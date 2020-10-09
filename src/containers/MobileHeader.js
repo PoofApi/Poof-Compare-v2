@@ -109,7 +109,7 @@ class MobileHeader extends Component {
 
         return(
             (
-            !this.state.loading?
+            this.state.loading?
             
                 <div className="poofMobileComponent">
                 <div className="container poofMobileContainer">                
