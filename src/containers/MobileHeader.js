@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Poof_Blue from '../images/Poof_Blue.png';
+import poofSloth from '../images/poofSloth.png';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
@@ -107,7 +108,10 @@ class MobileHeader extends Component {
 
 
         return(
-            <div className="poofMobileComponent">
+            (
+            this.state.loading?
+            
+                <div className="poofMobileComponent">
                 <div className="container poofMobileContainer">
                     <div className="row justify-content-center">
                         <div className="col-7 mb-2">
@@ -120,37 +124,26 @@ class MobileHeader extends Component {
                         Search your favorite big box retailers all at once!
                     </h6>}
 
-                    {
-                    this.state.loading ? 
                     
+                    <div className="loading-content">
+                        <div className="poofSlothRow">
+                            <div className="poofSlothPic">
+                                <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+                            </div>
+                        </div>
                         <div className="row justify-content-center">
-                            <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">
-                                <div className="mb-4" style={{fontSize: "18px", color: "#141B4D", fontWeight: "600", textAlign: "center", position: "relative", right: "9px"}}>
-                                    Just one moment while Poof! finds you the best deals!....
+                            <div className="col-6 desktopProgressSearchBar">
+                                <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
+                                    Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
                                 </div>
-                                <div className="exampleContainerMobile mb-4">
-                                    <div className="loadBar1"></div>
-                                    <div className="loadBar2"></div>
+                                <div className="exampleContainer justify-content-center mb-4">
+                                    <div className="desktopLoadBar1"></div>
+                                    <div className="desktopLoadBar2"></div>
                                 </div>
                             </div>                   
                         </div>
-                    
-                    :
-                        <div className="row justify-content-center">
-                            <div className="col-9">
-                                <form onSubmit={this.handleSubmit}>
-                                    <div className="poofMobileSearch mb-3">
-                                            <input 
-                                                className="poofMobileInput" type="text" placeholder="Search for products..." id="search" 
-                                                ref={(input) => {this.searchInput = input; }} type="search" 
-                                                onChange={this.handleChange} onSubmit={this.handleSubmit} value={this.state.value} name="search" required
-                                            />
-                                            <i className="material-icons poofMobileSearchIcon" onClick={this.handleSubmit}>search</i>
-                                    </div>
-                                </form>
-                            </div>
                     </div>
-                    }
+                    
                     <div className="row justify-content-center">
                         <div className="col-5">
                             <div className="icon1 mobileIcon1 pIcon" onClick={() => this.handleSubmit2("electronics")}>
@@ -211,6 +204,99 @@ class MobileHeader extends Component {
                     
                 </div>
             </div>
+
+            :
+
+            <div className="poofMobileComponent">
+                <div className="container poofMobileContainer">
+                    <div className="row justify-content-center">
+                        <div className="col-7 mb-2">
+                            <div className="poofMobileLogo2">
+                                <img className="img-fluid" src={Poof_Blue} alt="poofMobileLogo2"/>
+                            </div>
+                        </div>
+                    </div>
+                    {!this.state.loading && <h6 className="row justify-content-center mobileTitleText" style={{textAlign: "center"}}>
+                        Search your favorite big box retailers all at once!
+                    </h6>}
+
+                    
+                    <div className="row justify-content-center">
+                        <div className="col-9">
+                            <form onSubmit={this.handleSubmit}>
+                                <div className="poofMobileSearch mb-3">
+                                        <input 
+                                            className="poofMobileInput" type="text" placeholder="Search for products..." id="search" 
+                                            ref={(input) => {this.searchInput = input; }} type="search" 
+                                            onChange={this.handleChange} onSubmit={this.handleSubmit} value={this.state.value} name="search" required
+                                        />
+                                        <i className="material-icons poofMobileSearchIcon" onClick={this.handleSubmit}>search</i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div className="row justify-content-center">
+                        <div className="col-5">
+                            <div className="icon1 mobileIcon1 pIcon" onClick={() => this.handleSubmit2("electronics")}>
+                                <div className="poofElectronics mobilePoofIcon">
+                                    {/* <img className="img-fluid poofLaptopIcon2" src={laptop} alt="poofLaptopIcon2"/> */}
+                                    <i className="medium material-icons">laptop_mac</i>
+                                    <div className="poofIconName" >Electronics</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-5">                       
+                            <div className="poofBooks mobilePoofIcon">
+                                <div className="icon2 mobileIcon2 pIcon" onClick={() => this.handleSubmit2("books")}>
+                                    {/* <img className="img-fluid poofStudyIcon2" src={study} alt="poofStudyIcon2"/> */}
+                                    <i className="medium material-icons">book</i>
+                                    <div className="poofIconName" >Books</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="col-5">                       
+                            <div className="poofClothes mobilePoofIcon">
+                                <div className="icon3 mobileIcon3 pIcon" onClick={() => this.handleSubmit2("clothes")}>
+                                    {/* <img className="img-fluid poofFashionIcon2" src={fashion} alt="poofFashionIcon2"/> */}
+                                    <i className="medium material-icons">store</i>
+                                    <div className="poofIconName">Apparel</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-5">
+                            <div className="poofGames mobilePoofIcon">
+                                <div className="icon4 mobileIcon4 pIcon" onClick={() => this.handleSubmit2("games")}>
+                                    {/* <img className="img-fluid poofGamingIcon2" src={gaming} alt="poofGamingIcon2"/> */}
+                                    <i className="medium material-icons">toys</i>
+                                    <div className="poofIconName" >Games</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="poofMobileFooter">
+
+                <PoofMobileSignIn /> 
+                        
+                {/* {
+                
+                this.props.storeUserId !== "" && urlName === "/" ?
+                    
+                <Link className="poof-mobile-watchlist" to={'/watchlist'}>
+                    <i className="material-icons poofMobileWatchlistIcon">view_list</i>
+                </Link> 
+                
+                :
+
+                <div></div>
+                } */}
+                    
+                </div>
+            </div>
+            ) 
         )
     }
 }
