@@ -112,33 +112,21 @@ class MobileHeader extends Component {
             this.state.loading?
             
                 <div className="poofMobileComponent">
-                <div className="container poofMobileContainer">
-                    <div className="row justify-content-center">
-                        <div className="col-7 mb-2">
-                            <div className="poofMobileLogo2">
-                                <img className="img-fluid" src={Poof_Blue} alt="poofMobileLogo2"/>
-                            </div>
-                        </div>
-                    </div>
-                    {!this.state.loading && <h6 className="row justify-content-center mobileTitleText" style={{textAlign: "center"}}>
-                        Search your favorite big box retailers all at once!
-                    </h6>}
-
-                    
-                    <div className="loading-content">
+                <div className="container poofMobileContainer">                
+                    <div className="loading-content-mobile">
                         <div className="poofSlothRow">
-                            <div className="poofSlothPic">
+                            <div className="poofSlothPicMobile">
                                 <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
                             </div>
                         </div>
                         <div className="row justify-content-center">
-                            <div className="col-6 desktopProgressSearchBar">
-                                <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
-                                    Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
+                            <div className="col-10 col-sm-8 col-md-4 mobileProgressSearchBar">
+                                <div className="mb-4 loadingMobileTitle" style={{fontSize: "18px", color: "#141B4D", fontWeight: "600", textAlign: "center", position: "relative", right: "9px"}}>
+                                    Just one moment while Poof! Sloth surfs the web to find you the best deals!....
                                 </div>
-                                <div className="exampleContainer justify-content-center mb-4">
-                                    <div className="desktopLoadBar1"></div>
-                                    <div className="desktopLoadBar2"></div>
+                                <div className="exampleContainerMobile mb-4">
+                                    <div className="loadBar1"></div>
+                                    <div className="loadBar2"></div>
                                 </div>
                             </div>                   
                         </div>
