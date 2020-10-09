@@ -75,7 +75,7 @@
   display: flex;
   justify-content: center;
   color: white;
-  border-bottom: solid 2px white;
+  border-bottom: solid 5px #806543;
   background-color: #0C1344;
   position: absolute;
   z-index: 2;
