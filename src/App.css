@@ -860,26 +860,48 @@ a:hover{
     left: 2vw;
 }
 
-.searchAndCountContainer {
-    position: relative;
-    top: 0.4vh;
+@media screen and (min-width: 800px) {
+    .multiSelectRow {
+        justify-content: space-between;
+        position: relative;
+        left: 7vw;
+    }
 }
 
-.searchAndCountGroup {
+.searchAndCountContainer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.searchWordAndItemCount {
-    display: flex;
-    justify-content: flex-end;
+@media screen and (max-width: 800px) {
+    .searchAndCountContainer {
+        font-size: 10.9px;
+    }
 }
 
-.searchCount {
+.searchAndCountGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+}
+
+.searchWordAndItemCount {
+    text-align: center;
+    word-break: break-all;
+    display: flex;
+    justify-content: center !important;
+}
+
+/* .searchCount {
     display: flex;
     justify-content: flex-end;
     padding-right: 3vw;
-}
+} */
 
 @media screen and (max-width: 998px) {
     .multiSelectComponent {

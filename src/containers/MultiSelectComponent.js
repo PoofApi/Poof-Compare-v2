@@ -47,7 +47,7 @@ class MultiSelectComponent extends Component {
   renderSearchWord = (word) => {
     if(word === "electronics" || word === "books" || word === "clothes" || word === "games"){
       return (
-        <div className="col-lg-5 col-md-5 searchAndCountContainer">
+        <div className="col-lg-5 col-md-5 col-sm-5 col-5 searchAndCountContainer">
           <div className="searchAndCountGroup">
             <div className="searchWordAndItemCount">{`Displaying search results for category: "${word}"`}</div>
             {this.props.items ? <div className="searchCount">{`Total items found: ${this.props.items.length}`}</div> : <div></div> }
@@ -57,7 +57,7 @@ class MultiSelectComponent extends Component {
     }
     else{
       return (
-        <div className="col-lg-5 col-md-5 searchAndCountContainer">
+        <div className="col-lg-5 col-md-5 col-sm-5 col-5 searchAndCountContainer">
           <div className="searchAndCountGroup">
             <div className="searchWordAndItemCount">{`Displaying search results for keyword: "${word}"`}</div>
             {this.props.items ? <div className="searchCount">{`Total items found: ${this.props.items.length}`}</div> : <div></div> }
@@ -74,7 +74,7 @@ class MultiSelectComponent extends Component {
 
     return (
       <div className="row multiSelectRow">
-        <div className="col-lg-5 col-md-5 col-sm-8 col-8">
+        <div className="col-lg-5 col-md-5 col-sm-5 col-6">
           <div className="multiSelectComponent">
             <div
                 ref={FormSelect => {
