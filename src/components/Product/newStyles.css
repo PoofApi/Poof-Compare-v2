@@ -70,6 +70,17 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
 }
 
+.addedToCompare {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-bottom: solid 2px white;
+  background-color: #0C1344;
+  position: absolute;
+  z-index: 2;
+}
+
 .itemImage:hover .card-overlay{
   opacity: 0.5 !important;
 }

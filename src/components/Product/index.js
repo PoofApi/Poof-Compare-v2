@@ -102,6 +102,7 @@ class Product extends Component{
             return(
                 <div className={" " + (this.props.comparedItems.some(item => item.title.includes(this.props.item.title)) ? "compare" : "")} >
                     <div className="card productCard" >
+                            {this.props.comparedItems.some(item => item.title.includes(this.props.item.title)) ? <div className="addedToCompare">Added to Compare</div> : <div></div>}
                             <div className="card-image itemImage" style={{display: "flex", justifyContent: "center"}}>
                                     <img src={this.props.item.image} alt={this.props.item.title} style={{height:"250px", width: "60%", marginTop: "25px"}}/>
                                     <div className="btnTool">
