@@ -1561,8 +1561,8 @@ form.mobileSearchForm button:hover {
 .poofSlothPicMobile {
     z-index: 1;
     width: 53vw;
-    -webkit-animation: surf 1.5s infinite;
-    animation: surf 1.5s infinite;
+    -webkit-animation: surf 2s infinite;
+    animation: surf 2s infinite;
 }
 
 .loadingMobileTitle {
