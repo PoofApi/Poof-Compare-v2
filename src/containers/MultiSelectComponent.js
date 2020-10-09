@@ -73,7 +73,7 @@ class MultiSelectComponent extends Component {
 
 
     return (
-      <div className="row multiSelectRow">
+      <div key={this.props.key} className="row multiSelectRow">
         <div className="col-lg-5 col-md-5 col-sm-5 col-6">
           <div className="multiSelectComponent">
             <div
