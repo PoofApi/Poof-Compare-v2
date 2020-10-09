@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Poof_White from '../images/Poof_White.png';
 import Poof_White_edited from '../images/Poof_White_edited.png';
-import poofSloth from '../images/poofSloth.png';
+import poof_sloth_white from '../images/poof_sloth_white.PNG';
 import {store} from '../index.js';
 import {addSearchWord} from '../actions/product';
 import * as types from '../constants/types';
@@ -160,7 +160,7 @@ class DesktopHeader extends Component {
                             <div className="loading-content">
                                 <div className="poofSlothRow">
                                     <div className="poofSlothPic">
-                                        <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+                                        <img className="img-fluid" src={poof_sloth_white} alt="poofSloth"/>
                                     </div>
                                 </div>
                                 <div className="row justify-content-center">

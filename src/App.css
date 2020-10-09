@@ -1574,6 +1574,7 @@ form.mobileSearchForm button:hover {
     right: 9px;
     background-color: white;
     border-radius: 15px;
+    opacity: 0.79;
 }
 
 .mobileTitleText {

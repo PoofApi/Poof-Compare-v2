@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Poof_Blue from '../images/Poof_Blue.png';
-import poofSloth from '../images/poofSloth.png';
+import poof_sloth_blue from '../images/poof_sloth_blue.PNG';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import '../App.css';
@@ -116,7 +116,7 @@ class MobileHeader extends Component {
                     <div className="loading-content-mobile">
                         <div className="poofSlothRow">
                             <div className="poofSlothPicMobile">
-                                <img className="img-fluid" src={poofSloth} alt="poofSloth"/>
+                                <img className="img-fluid" src={poof_sloth_blue} alt="poofSloth"/>
                             </div>
                         </div>
                         <div className="row justify-content-center">
