@@ -44,13 +44,36 @@ class MultiSelectDisabledComponent extends Component {
     console.log(event.target.value);
   }
 
+  renderSearchWord = (word) => {
+    if(word === "electronics" || word === "books" || word === "clothes" || word === "games"){
+      return (
+        <div className="col-lg-5 col-md-5 col-sm-5 col-5 searchAndCountContainer">
+          <div className="searchAndCountGroup">
+            <div className="searchWordAndItemCount">{`Displaying search results for category: "${word}"`}</div>
+            {this.props.items ? <div className="searchCount">{`Total items found: ${this.props.items.length}`}</div> : <div></div> }
+          </div>
+        </div>
+      )
+    }
+    else{
+      return (
+        <div className="col-lg-5 col-md-5 col-sm-5 col-5 searchAndCountContainer">
+          <div className="searchAndCountGroup">
+            <div className="searchWordAndItemCount">{`Displaying search results for keyword: "${word}"`}</div>
+            {this.props.items ? <div className="searchCount">{`Total items found: ${this.props.items.length}`}</div> : <div></div> }
+          </div>
+        </div>
+      )
+    }
+  }
+
   render() {
 
     const { searchWord, items } = this.props;
 
     return (
       <div key={this.props.key} className="row multiSelectRow">
-        <div className="col-lg-5 col-md-5 col-sm-8 col-8">
+        <div className="col-lg-5 col-md-5 col-sm-5 col-6">
           <div className="multiSelectComponent">
             <div
                 ref={FormSelect => {
@@ -72,12 +95,7 @@ class MultiSelectDisabledComponent extends Component {
             </div>
           </div>
         </div>
-        <div className="col-lg-5 col-md-5 searchAndCountContainer">
-          <div className="searchAndCountGroup">
-            <div className="searchWordAndItemCount">{searchWord ? `Displaying search results for keyword: "${searchWord}"` : "no search"}</div>
-            {items ? <div className="searchCount">{`Total items found: ${items.length}`}</div> : <div></div> }
-          </div>
-        </div>
+        {this.renderSearchWord(searchWord)}
       </div>
     );
   }

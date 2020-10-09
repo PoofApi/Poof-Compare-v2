@@ -867,7 +867,7 @@ a:hover{
 .multiSelectRow {
     justify-content: space-around;
     position: relative;
-    left: 2vw;
+    left: 1vw;
 }
 
 @media screen and (min-width: 800px) {
@@ -902,7 +902,7 @@ a:hover{
 
 .searchWordAndItemCount {
     text-align: center;
-    word-break: break-all;
+    word-break: break-word;
     display: flex;
     justify-content: center !important;
 }
