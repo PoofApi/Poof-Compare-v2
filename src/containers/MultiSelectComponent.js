@@ -59,7 +59,7 @@ class MultiSelectComponent extends Component {
       return (
         <div className="col-lg-5 col-md-5 col-sm-5 col-5 searchAndCountContainer">
           <div className="searchAndCountGroup">
-            <div className="searchWordAndItemCount">{`Displaying search results for keyword: "${word}"`}</div>
+            <div className="searchWordAndItemCount">{`Displaying search for: "${word}"`}</div>
             {this.props.items ? <div className="searchCount">{`Total items found: ${this.props.items.length}`}</div> : <div></div> }
           </div>
         </div>
