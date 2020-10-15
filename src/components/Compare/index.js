@@ -126,11 +126,11 @@ class Compare extends Component {
                             <div className="col-4 col-md-4 poofCompareImage">
                               <img className="img-fluid poofComparePic2" src={item.image} alt={item.title} key={item.id} />
                             </div>
-                            <div className="card-price" style={{position: "absolute", left: "10%", bottom: "8%", color: "#e64949"}}>
+                            <div className="card-price" style={{position: "absolute", left: "14%", bottom: "21%", color: "#e64949"}}>
                               <b>{`$${item.price}`}</b>
                             </div>
                             <div className="col-8 col-2 col-md-7 poofCompareCardBody">
-                              <div className="card-body">
+                              <div className="card-body poof-card-body">
                                 <div className="poofCardTitle">{item.title}</div>
                                 {this.renderPurchaseLogo(item)}
                               </div>

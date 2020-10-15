@@ -188,7 +188,7 @@
   }
 
 .poofCompareCard {
-    height: 115px !important;
+    height: 100% !important;
     width: 100%;
 }
 
@@ -219,9 +219,20 @@
     bottom: 15px;
 }
 
+.poof-card-body {
+    padding: unset !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+
 .poofCompareCardBody {
+    height: 100%;
     position: relative;
-    left: 20px;
+    top: 28px;
+    left: 6px;
 }
 
 .poofCardText2 {
