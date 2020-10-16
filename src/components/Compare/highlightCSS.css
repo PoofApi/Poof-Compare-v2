@@ -1,5 +1,5 @@
 .highlightContainer{
-    height: auto;
+    height: 100%;
 }
 
 .hToolbar {
@@ -30,6 +30,20 @@
     display: flex;
     align-items: center;
 }
+
+.compareTableRow {
+    height: 100%;
+    width: 100%;
+    flex-wrap: unset !important;
+}
+
+.compareCardCol {
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
+
+
 
 @media screen and (max-width: 998px) {
     .clear-compare-btn {
@@ -188,13 +202,19 @@
   }
 
 .poofCompareCard {
-    height: 100% !important;
+    height: 70% !important;
     width: 100%;
+    top: 0.5vh !important;
 }
 
 .poofCompareCard:hover {
-    transform: scale(1.21);
+    transform: scale(1.06);
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
+}
+
+.poofCardRowContent {
+    height: 100% !important;
+    margin-bottom: unset !important;
 }
 
 @media screen and (max-width: 800px) {
@@ -211,12 +231,7 @@
 }
 
 .poofCardTitle {
-    font-size: 12px;
     overflow: hidden;
-    height: 52px;
-    white-space: break-spaces;
-    position: relative;
-    bottom: 15px;
 }
 
 .poof-card-body {
@@ -231,8 +246,9 @@
 .poofCompareCardBody {
     height: 100%;
     position: relative;
-    top: 28px;
-    left: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .poofCardText2 {
@@ -243,10 +259,10 @@
 
 .compareBtnRow {
     position: relative;
-    top: -9px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5vh !important;
 }
 
 .compareBtnRowEbay {
@@ -315,12 +331,7 @@
 @media screen and (max-width: 650px){
 
     .poofCardTitle {
-        font-size: 12px;
         overflow: hidden;
-        height: 35px;
-        white-space: break-spaces;
-        position: relative;
-        bottom: 15px;
     }
 
     .poofCompareCardBody {
@@ -346,11 +357,11 @@
 
     .compareBtnRow {
         position: relative;
-        top: -36px;
         display: flex;
         justify-content: center;
         align-items: center;
-        }
+        height: 5vh !important;
+    }
 }
 
 

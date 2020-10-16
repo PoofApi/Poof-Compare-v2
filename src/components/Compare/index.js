@@ -82,7 +82,6 @@ class Compare extends Component {
 
     if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Famazon.png?alt=media&token=e73286c5-d2b5-4474-a20c-acde9beea4ad"){
       return (
-        <div className="card-text poofCardText2">
           <div className="compareBtnRow">
             <span className="purchaseToolCompare2">
                 <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productSourceLogoPic2" src={item.logo} alt={item.title}/></a>
@@ -92,7 +91,6 @@ class Compare extends Component {
               <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
             </span>
           </div>
-        </div>
       )
     }
   }
@@ -116,13 +114,11 @@ class Compare extends Component {
                 {/* <Link className="compareRoute" to={'/compare-table'}><i className="material-icons">view_list</i></Link> */}
               </div>
           </div>
-          <div className="compareTableContainer">
-                  <div className="container-fluid container-scroll watchContainer compareContainer" key={uuid()}>
-                    <div className="row">
+              <div className="row compareTableRow">
               {this.props.items.map(item =>
-                      <div className="col-6 col-sm-5 col-md-4 col-lg-2">
+                      <div className="col-6 col-sm-5 col-md-4 col-lg-2 compareCardCol">
                         <div className="card poofCompareCard">
-                          <div className="row">
+                          <div className="row poofCardRowContent">
                             <div className="col-4 col-md-4 poofCompareImage">
                               <img className="img-fluid poofComparePic2" src={item.image} alt={item.title} key={item.id} />
                             </div>
@@ -130,18 +126,14 @@ class Compare extends Component {
                               <b>{`$${item.price}`}</b>
                             </div>
                             <div className="col-8 col-2 col-md-7 poofCompareCardBody">
-                              <div className="card-body poof-card-body">
                                 <div className="poofCardTitle">{item.title}</div>
                                 {this.renderPurchaseLogo(item)}
-                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
               )}
                     </div>
-                  </div>
-          </div>
         </div>
     )
   }
