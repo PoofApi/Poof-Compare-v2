@@ -36,7 +36,7 @@
     width: 100%;
     flex-wrap: unset !important;
     position: relative;
-    left: 1vw;
+    left: 0.5vw;
 }
 
 .compareCardCol {
