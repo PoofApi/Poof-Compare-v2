@@ -243,6 +243,24 @@
     height: 7vh;
 }
 
+.priceSourceAndRemoveBB {
+    align-items: center;
+    margin-bottom: unset !important;
+    height: 7vh;
+}
+
+@media screen and (max-width: 992px) {
+    .priceSourceAndRemove {
+        position: relative;
+        bottom: 1vh;
+    }
+
+    .priceSourceAndRemoveBB {
+        position: relative;
+        bottom: -1vh;
+    }
+}
+
 .compareCol {
     display: flex;
     justify-content: center;

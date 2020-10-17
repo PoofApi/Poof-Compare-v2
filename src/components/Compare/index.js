@@ -50,18 +50,18 @@ class Compare extends Component {
 
     if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Fbestbuy.png?alt=media&token=da783e57-802f-4a40-b609-3af1fd78098a"){
       return (
-          <div className="row priceSourceAndRemove no-gutters">
-            <div className="col-lg-4 compareCol">
+          <div className="row priceSourceAndRemoveBB no-gutters">
+            <div className="col-4 col-md-4 col-lg-4 compareCol">
               <div className="card-price">
                 <b>{`$${item.price}`}</b>
               </div>
             </div>
-            <div className="col-lg-5 compareCol">
+            <div className="col-5 col-md-5 col-lg-5 compareCol">
               <span className="purchaseToolCompare2">
                   <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productBestBuyLogo2" src={item.logo} alt={item.title}/></a>
               </span>
             </div>
-            <div className="col-lg-3 compareCol">
+            <div className="col-3 col-md-3 col-lg-3 compareCol">
               <span className="removeToolCompare">
                 {/* <span className="removeTooltipText">Remove from watchlist</span> */}
                 <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
@@ -74,17 +74,17 @@ class Compare extends Component {
     if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Febay.png?alt=media&token=53bf23b1-af93-4de3-b4ed-a2c0f22ff4b6"){
       return (
         <div className="row priceSourceAndRemove no-gutters">
-          <div className="col-lg-4 compareCol">
+          <div className="col-4 col-md-4 col-lg-4 compareCol">
             <div className="card-price">
               <b>{`$${item.price}`}</b>
             </div>
           </div>
-          <div className="col-lg-5 compareCol">
+          <div className="col-5 col-md-5 col-lg-5 compareCol">
             <span className="purchaseToolCompare2">
                 <a href={`${item.link}`}  target="_blank" className="productSourceLogo2"><img className="img-fluid productEbayLogo2" src={item.logo} alt={item.title}/></a>
             </span>
           </div>
-          <div className="col-lg-3 compareCol">
+          <div className="col-3 col-md-3 col-lg-3 compareCol">
               <span className="removeToolCompare">
                 {/* <span className="removeTooltipText">Remove from watchlist</span> */}
                 <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
@@ -97,17 +97,17 @@ class Compare extends Component {
     if(item.logo == "https://firebasestorage.googleapis.com/v0/b/poofapibackend.appspot.com/o/icons%2Famazon.png?alt=media&token=e73286c5-d2b5-4474-a20c-acde9beea4ad"){
       return (
         <div className="row priceSourceAndRemove no-gutters">
-          <div className="col-lg-4 compareCol">
+          <div className="col-4 col-md-4 col-lg-4 compareCol">
             <div className="card-price">
               <b>{`$${item.price}`}</b>
             </div>
           </div>
-          <div className="col-lg-5 compareCol">
+          <div className="col-5 col-md-5 col-lg-5 compareCol">
             <span className="purchaseToolCompareAmazon">
                 <a href={`${item.link}`}  target="_blank"><img className="img-fluid amazonPic" src={item.logo} alt={item.title}/></a>
             </span>
           </div>
-          <div className="col-lg-3 compareCol">
+          <div className="col-3 col-md-3 col-lg-3 compareCol">
               <span className="removeToolCompare">
                 {/* <span className="removeTooltipText">Remove from watchlist</span> */}
                 <i className="material-icons removeBtnCompare" onClick={() => store.dispatch(removeFromCompare(item))}>cancel</i>
@@ -145,7 +145,7 @@ class Compare extends Component {
                             <div className="col-4 col-md-4 col-lg-5 poofCompareImage">
                               <img className="img-fluid poofComparePic2" src={item.image} alt={item.title} key={item.id} />
                             </div>
-                            <div className="col-8 col-2 col-md-7 col-lg-6 poofCompareCardBody">
+                            <div className="col-7 col-md-7 col-lg-6 poofCompareCardBody">
                                 <div className="poofCardTitle">{item.title}</div>
                             </div>
                           </div>
