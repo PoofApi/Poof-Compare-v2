@@ -205,6 +205,7 @@
     height: 70% !important;
     width: 100%;
     top: 0.5vh !important;
+    justify-content: space-around;
 }
 
 .poofCompareCard:hover {
@@ -213,8 +214,8 @@
 }
 
 .poofCardRowContent {
-    height: 100% !important;
     margin-bottom: unset !important;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 800px) {
@@ -225,15 +226,51 @@
 }
 
 .poofCompareImage {
-    position: relative;
-    left: 22px;
-    top: 8px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
 }
 
 .poofCardTitle {
     overflow: hidden;
     font-size: 12px;
     height: 7vh;
+}
+
+.priceSourceAndRemove {
+    align-items: center;
+    margin-bottom: unset !important;
+    height: 7vh;
+}
+
+.compareCol {
+    display: flex;
+    justify-content: center;
+}
+
+.card-price {
+    color: rgb(230, 73, 73);
+    height: 3vh;
+}
+
+.card-price-amazon {
+    color: rgb(230, 73, 73);
+    height: 3vh;
+    bottom: 2vh;
+}
+
+.card-priceBB {
+    position: absolute;
+    left: -3.3vw;
+    bottom: 2.2vh;
+    color: rgb(230, 73, 73);
+}
+
+.card-price-ebay {
+    position: absolute;
+    left: -3.3vw;
+    bottom: 3.5vh;
+    color: rgb(230, 73, 73);
 }
 
 .poof-card-body {
@@ -246,11 +283,7 @@
 }
 
 .poofCompareCardBody {
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    height: 7vh;
 }
 
 .poofCardText2 {
@@ -265,6 +298,18 @@
     justify-content: center;
     align-items: center;
     height: 5vh !important;
+}
+
+.compareBtnRowAmazon {
+    align-items: center;
+    position: relative;
+    bottom: 3vh;
+    margin-bottom: unset !important;
+    height: 5vh;
+}
+
+.amazonPic {
+    height: 10vh;
 }
 
 .compareBtnRowEbay {
@@ -311,10 +356,6 @@
 .productSourceLogo2{
     display: flex;
     justify-content: center;
-  }
-  
-.productSourceLogoPic2{
-    max-width: 125% !important;
 }
 
 .productEbayLogo2 {
