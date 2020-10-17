@@ -232,6 +232,8 @@
 
 .poofCardTitle {
     overflow: hidden;
+    font-size: 12px;
+    height: 7vh;
 }
 
 .poof-card-body {
@@ -285,10 +287,11 @@
 
 .compareBtnRowBB {
     position: relative;
-    top: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 7vh;
+    bottom: 1vh;
 }
 
 .removeBtnCompare:hover {
@@ -329,10 +332,6 @@
 /*media query for iphone*/
 
 @media screen and (max-width: 650px){
-
-    .poofCardTitle {
-        overflow: hidden;
-    }
 
     .poofCompareCardBody {
         position: relative;
