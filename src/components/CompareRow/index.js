@@ -20,7 +20,7 @@ class CompareRow extends Component {
                                 <div className="card poofCompareCard">
                                 <div className="row">
                                     <div className="col-md-4 poofCompareImage">
-                                    <img src={item.image} alt={item.title} key={item.id} style={{width: "50px", height: "70px"}}/>
+                                    <img src={item.image1} alt={item.title} key={item.id} style={{width: "50px", height: "70px"}}/>
                                     </div>
                                     <div className="card-price" style={{position: "absolute", left: "10%", bottom: "8%", color: "#e64949"}}>
                                     <b>{`$${item.price}`}</b>

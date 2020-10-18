@@ -143,7 +143,7 @@ class Compare extends Component {
                         <div className="card poofCompareCard">
                           <div className="row poofCardRowContent no-gutters">
                             <div className="col-4 col-md-4 col-lg-5 poofCompareImage">
-                              <img className="img-fluid poofComparePic2" src={item.image} alt={item.title} key={item.id} />
+                              <img className="img-fluid poofComparePic2" src={item.image1} alt={item.title} key={item.id} />
                             </div>
                             <div className="col-7 col-md-7 col-lg-6 poofCompareCardBody">
                                 <div className="poofCardTitle">{item.title}</div>

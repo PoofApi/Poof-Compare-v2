@@ -244,7 +244,7 @@ class WatchlistRoute extends Component {
                             <div className="card watchCard">
                                 <div className="row">
                                     <div className="col-4 col-sm-3">
-                                        <img src={item.image} className="img-fluid watchRouteImage" alt={item.title}/>
+                                        <img src={item.image1} className="img-fluid watchRouteImage" alt={item.title}/>
                                     </div>
                                     <div className="col-8 col-sm-9">
                                         <div className="card-body">
@@ -276,7 +276,7 @@ class WatchlistRoute extends Component {
                             <div className="card watchCard">
                                 <div className="row">
                                     <div className="col-4 col-sm-3">
-                                        <img src={item.image} className="img-fluid watchRouteImage" alt={item.title}/>
+                                        <img src={item.image1} className="img-fluid watchRouteImage" alt={item.title}/>
                                     </div>
                                     <div className="col-8 col-sm-9">
                                         <div className="card-body">

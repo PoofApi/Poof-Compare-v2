@@ -56,7 +56,7 @@ async function setWatchList(item, storedList){
             "title" : item.title,
             "itemUrl" : item.link,
             "price" : item.price,   
-            "image" : item.image,
+            "image1" : item.image1,
             "itemId": item.id         
         },
       })

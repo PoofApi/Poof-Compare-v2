@@ -27,13 +27,11 @@ async function getProductsForHome(keywords){
     try{
       let response = await axios({
         method: 'post',
-        url: "https://us-central1-poofapibackend.cloudfunctions.net/search-bestprice",
+        url: "http://207.244.254.216:8080/search",
         headers: {
-          "Authorization": "Bearer b99d951c8ffb64135751b3d423badeafac9cfe1f54799c784619974c29e277ec",
-          "Accept" : "application/json",
-          "Content-Type" : "application/json",
+          "Content-Type" : "application/json"
         },
-        data: {"keywords" : keywords},
+        data: {"keyword" : keywords},
       })
     
       let items = await response.data;

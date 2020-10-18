@@ -27,8 +27,8 @@ async function setWatchList(item){
             "title" : item.title,
             "itemUrl" : item.link,
             "price" : item.price,   
-            "image" : item.image,
-            "itemId": item.id    
+            "image1" : item.image1,
+            "itemId": item.image1 + item.title    
         },
       })
     
@@ -104,7 +104,7 @@ class Product extends Component{
                     <div className="card productCard" >
                             {this.props.comparedItems.some(item => item.title.includes(this.props.item.title)) ? <div className="addedToCompare">Added to Compare</div> : <div></div>}
                             <div className="card-image itemImage" style={{display: "flex", justifyContent: "center"}}>
-                                    <img src={this.props.item.image} alt={this.props.item.title} style={{height:"250px", width: "60%", marginTop: "25px"}}/>
+                                    <img src={this.props.item.image1} alt={this.props.item.title} style={{height:"250px", width: "60%", marginTop: "25px"}}/>
                                     <div className="btnTool">
                                         <span className={!this.props.item.watch? "btnTooltipText" : ""}>{!this.props.item.watch? "Add to Watchlist" : ""}</span>
                                         <a className="btn-floating halfway-fab floatingWatchBtn indigo darken-4"><i className="material-icons" style={{color: (this.props.item.watch? "red" : "white")}} onClick={(this.props.item.watch) ? () => console.log("If you would like to remove this item from your watchlist, please remove it through the watchlist tab") : () => this.handleWatch(this.props.watch, this.props.item)}>{this.props.item.watch? "favorite" : "remove_red_eye"} </i></a>
@@ -132,7 +132,7 @@ class Product extends Component{
                 <div className={" "} >
                     <div className="card productCard" >
                             <div className="card-image itemImage" style={{display: "flex", justifyContent: "center"}}>
-                                    <img src={this.props.item.image} alt={this.props.item.title} style={{height:"250px", width: "60%", marginTop: "25px"}}/>
+                                    <img src={this.props.item.image1} alt={this.props.item.title} style={{height:"250px", width: "60%", marginTop: "25px"}}/>
                                     <div className="btnTool">
                                         <span className={!this.props.item.watch? "btnTooltipText" : ""}>{!this.props.item.watch? "Add to Watchlist" : ""}</span>
                                         <a className="btn-floating halfway-fab floatingWatchBtn indigo darken-4"><i className="material-icons" style={{color: (this.props.item.watch? "red" : "white")}} onClick={(this.props.item.watch) ? () => console.log("If you would like to remove this item from your watchlist, please remove it through the watchlist tab") : () => this.handleWatch(this.props.watch, this.props.item)}>{this.props.item.watch? "favorite" : "remove_red_eye"} </i></a>
