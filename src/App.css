@@ -870,6 +870,10 @@ a:hover{
     left: 1vw;
 }
 
+.select-wrapper input.select-dropdown {
+    font-size: 0.88rem !important;
+}
+
 @media screen and (min-width: 800px) {
     .multiSelectRow {
         justify-content: space-between;

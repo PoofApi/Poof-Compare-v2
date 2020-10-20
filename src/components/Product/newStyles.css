@@ -63,11 +63,20 @@
 }
 
 .productCard:hover {
-    -moz-transform: scale(1.05);
-			-webkit-transform: scale(1.05);
-			-ms-transform: scale(1.05);
-			transform: scale(1.05);
+    -moz-transform: scale(1.04);
+			-webkit-transform: scale(1.04);
+			-ms-transform: scale(1.04);
+			transform: scale(1.04);
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
+}
+
+@media screen and (max-width: 700px) {
+  .productCard:hover {
+    -moz-transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
+  }
 }
 
 .addedToCompare {
