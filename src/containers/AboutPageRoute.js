@@ -4,8 +4,11 @@ import HeaderComponent2 from './HeaderComponent2'
 export default function AboutPageRoute() {
     return (
         <div>
-            <div className="aboutPoofNavBar"></div>
+            <HeaderComponent2 />
             <div className="container aboutContainer">
+                <div className="aboutTitle">
+                    About Us / FAQ
+                </div>
                 <ul className="aboutListItems">
                     <li>Hello and Welcome to Poof!</li>
                     <li>Your first stop to find the best deals</li>

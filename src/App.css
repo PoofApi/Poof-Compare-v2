@@ -2193,6 +2193,15 @@ form.mobileSearchForm button:hover {
     background-color: black;
     height: 10vh;
     z-index: 1;
+    top: 0;
+    right: 15px;
+}
+
+.aboutTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: serif;
+    margin-top: 2vh;
 }
 
 .aboutContainer {
@@ -2203,8 +2212,15 @@ form.mobileSearchForm button:hover {
 
 .aboutListItems {
     margin-bottom: 0 !important;
-    height: 100%;
+    height: 130%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutListItems li {
+    margin-top: 5vh;
 }
 
 /*Mobile Search Page*/
