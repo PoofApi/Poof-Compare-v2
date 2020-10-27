@@ -233,9 +233,9 @@ class DesktopHeader extends Component {
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
-                        {/* <div className="desktopImage" style={{backgroundImage: `url(${bookBackground})`}}>
-
-                        </div> */}
+                        <Link className="aboutLink" to={'/aboutPoof'} >
+                            About
+                        </Link>
                         <div className="desktopContent">
 
                         <FadeTransform in
@@ -244,22 +244,13 @@ class DesktopHeader extends Component {
                             }}
                             
                             duration={600}>
-                                    <div className="row justify-content-center">
-                                        <div className="col-5 mb-2 mt-4">
-                                            <div className="poofDesktopLogo2">
-                                                <img className="img-fluid" src={Poof_White} alt="poofDesktopLogo2"/>
-                                            </div>
+                                <div className="row justify-content-center">
+                                    <div className="col-5 mb-2 mt-4">
+                                        <div className="poofDesktopLogo2">
+                                            <img className="img-fluid" src={Poof_White} alt="poofDesktopLogo2"/>
                                         </div>
                                     </div>
-                                    {/* <div className="showPoofLogo">
-                                        <div className="row justify-content-center">
-                                            <div className="col-5 mb-2 mt-4">
-                                                <div className="poofDesktopLogo3">
-                                                    <img className="img-fluid" src={Poof_Brown} alt="poofDesktopLogo3"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+                                </div>
                         </FadeTransform>
 
                         <FadeTransform in

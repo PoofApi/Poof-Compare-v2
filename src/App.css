@@ -1953,6 +1953,16 @@ form.mobileSearchForm button:hover {
     height: 100vh;  
 }
 
+.aboutLink {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
 .poofDesktopBackground {
     height: 80vh;
     background-image: url(./images/fireworksPoof.png) !important;
@@ -2173,6 +2183,28 @@ form.mobileSearchForm button:hover {
 
 .fillerBody1 {
     height: 300px;
+}
+
+/*About Poof Page*/
+
+.aboutPoofNavBar {
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    height: 10vh;
+    z-index: 1;
+}
+
+.aboutContainer {
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+}
+
+.aboutListItems {
+    margin-bottom: 0 !important;
+    height: 100%;
+    width: 100%;
 }
 
 /*Mobile Search Page*/
