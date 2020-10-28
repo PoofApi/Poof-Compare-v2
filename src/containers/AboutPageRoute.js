@@ -23,7 +23,7 @@ export default function AboutPageRoute() {
                     <div className="row aboutRow">
                         <div className="offset-2 col-9">
                             <li>
-                                <h4 className="listItemTitle">Your first stop to find the best deals</h4>
+                                <h4 className="listItemTitle">Your first stop in finding the best deals</h4>
                                 <p className="listItemContent">
                                     Think of Poof! as your first stop in finding a product online. Poof! helps ensure confidence in making the right purchase for the right price.
                                 </p>
@@ -35,7 +35,7 @@ export default function AboutPageRoute() {
                             <li>
                                 <h4 className="listItemTitle">Save time and avoid shopping headaches</h4>
                                 <p className="listItemContent">
-                                    Rather than search for the same item on 10 different sites and compare said item on 10 different tabs, just do it all in one place and with just one search!
+                                    Rather than search for the same item on 10 different sites and compare that item on 10 different tabs, just do it all in one place and with <b>JUST ONE</b> search!
                                 </p>
                             </li>
                         </div>
@@ -43,11 +43,11 @@ export default function AboutPageRoute() {
                     <div className="row aboutRow">
                         <div className="offset-2 col-9">
                             <li>
-                                <h4 className="listItemTitle">So........What's in it for Poof? How does this all work?</h4>
+                                <h4 className="listItemTitle">So........What's in it for Poof? Do I have to paything? How does this all work?</h4>
                                 <p className="listItemContent">
-                                    Poof's mission is to provide you with the smoothest online shopping experience. We aim to get you from searching for a product to checkout in the fastest, most reliable way possible, while ensuring you're paying a minimal price. 
+                                    Using Poof! is <b>100% FREE! </b>Poof's mission is to provide you with the smoothest online shopping experience. We aim to get you from searching for a product to checking out in the fastest, most reliable way possible, while ensuring you're paying a minimal price. 
                                     By directing you to a product and consequently a 
-                                    seller, Poof! is able to receive an affiliate commision from the seller, with no extra cost, whatsoever, to you the buyer.
+                                    seller, Poof! is able to receive an affiliate commision from the seller, with <b>NO EXTRA COST</b>, whatsoever, to you the buyer.
                                 </p>
                             </li>
                         </div>

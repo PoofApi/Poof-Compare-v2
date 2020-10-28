@@ -99,7 +99,6 @@ class Header2 extends Component {
             
             let urlName = window.location.pathname;
                 if (urlName == "/aboutPoof" ){
-                    console.log("Yes, we are in about route")
                     this.props.history.push("/")
                 }
 
