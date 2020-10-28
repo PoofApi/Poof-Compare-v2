@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import '../App.css';
 import {resetSearch, resetWatchList, logOutUser, resetEntireWatch, addSearchWord} from '../actions/product';
 import {store} from '../index.js';
@@ -96,6 +96,12 @@ class Header2 extends Component {
             await getProductsForHome(this.state.value);
             this.props.addSearchWord(this.state.value);
             event.preventDefault();
+            
+            let urlName = window.location.pathname;
+                if (urlName == "/aboutPoof" ){
+                    this.props.history.push("/")
+                }
+
             this.setState({loading: false});
             this.setState({value: ""});
         }
@@ -185,4 +191,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header2);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header2));

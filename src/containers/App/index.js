@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import '../../App.css';
 import {Home, NotFound} from '../';
 import WatchlistRoute from '../WatchlistRoute.js';
+import AboutPageRoute from '../AboutPageRoute.js';
 import CompareTableRoute from '../CompareTableRoute.js';
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
@@ -19,6 +20,7 @@ class App extends Component {
               <Route exact path="/" component={Home}/>
               <Route exact path="/watchlist" component={WatchlistRoute} />
               <Route exact path="/compare-table" component={CompareTableRoute} />
+              <Route exact path="/aboutPoof" component={AboutPageRoute} />
               <Route component={NotFound}/>
             </Switch>
           </div>
