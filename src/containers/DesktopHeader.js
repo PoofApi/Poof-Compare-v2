@@ -222,7 +222,12 @@ class DesktopHeader extends Component {
                     </div>
                 </div>
                 <div className="poofDesktopFooter">
-                    
+                    <div className="container">
+                        <ul className="footerTitles">
+                            <li><h4>Search Categories</h4></li>
+                            <li><h4>Links</h4></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -333,7 +338,34 @@ class DesktopHeader extends Component {
                     </div>
                 </div>
                 <div className="poofDesktopFooter">
-                    
+                    <div className="container footerContainer">
+                        <ul className="footerTitles">
+                            <li>
+                                <h4>Search Categories</h4>
+                                <ul>
+                                    <li>Electronics</li>
+                                    <li>Books</li>
+                                    <li>Clothes</li>
+                                    <li>Games</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Links</h4>
+                                <ul>
+                                    <li>About</li>
+                                    <li>Features</li>
+                                    <li>Contact Us</li>
+                                    <li>Terms</li>
+                                    <li>Privacy</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className="row justify-content-center">             
+                            <div className="col-auto">
+                                <p>© 2020 Poof! Price Compare</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             )
