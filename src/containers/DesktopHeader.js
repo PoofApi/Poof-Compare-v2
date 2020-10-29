@@ -398,7 +398,7 @@ class DesktopHeader extends Component {
                             <li>
                                 <h4>Links</h4>
                                 <ul>
-                                    <li>About</li>
+                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
                                     <li>Features</li>
                                     <li>Contact Us</li>
                                     <li>Terms</li>

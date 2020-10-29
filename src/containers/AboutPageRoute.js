@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import HeaderComponent2 from './HeaderComponent2'
+import { withRouter } from 'react-router-dom';
 
-export default function AboutPageRoute() {
-    return (
-        <div>
+
+class AboutPageRoute extends Component {
+
+    render() {
+        return (
+            <div>
             <HeaderComponent2 />
             <div className="container aboutContainer">
                 <h2 className="aboutTitle">
@@ -55,5 +59,9 @@ export default function AboutPageRoute() {
                 </ul>
             </div>
         </div>
-    )
+        )
+    }
 }
+
+export default withRouter(AboutPageRoute)
+

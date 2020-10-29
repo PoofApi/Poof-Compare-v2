@@ -1968,6 +1968,18 @@ form.mobileSearchForm button:hover {
     z-index: 1;
 }
 
+.aboutLink:hover {
+    cursor: pointer !important;
+    color: #806543 !important;
+    z-index: 1;
+}
+
+.aboutLink2:hover {
+    cursor: pointer !important;
+    color: #806543 !important;
+    z-index: 1;
+}
+
 .poofDesktopBackground {
     height: 80vh;
     background-image: url(./images/fireworksPoof.png) !important;
@@ -2215,6 +2227,11 @@ form.mobileSearchForm button:hover {
 
 .footerContainer {
     padding: 45px 0px 12px 0px;
+}
+
+.aboutLinkFooter:hover {
+    cursor: pointer;
+    color: #806543 !important;
 }
 
 /*About Poof Page*/
