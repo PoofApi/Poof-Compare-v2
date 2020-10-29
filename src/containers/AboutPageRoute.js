@@ -47,7 +47,7 @@ class AboutPageRoute extends Component {
                     <div className="row aboutRow">
                         <div className="offset-2 col-9">
                             <li>
-                                <h4 className="listItemTitle">So........What's in it for Poof? Do I have to paything? How does this all work?</h4>
+                                <h4 className="listItemTitle">So........What's in it for Poof? Do I have to pay anything? How does this all work?</h4>
                                 <p className="listItemContent">
                                     Using Poof! is <b>100% FREE! </b>Poof's mission is to provide you with the smoothest online shopping experience. We aim to get you from searching for a product to checking out in the fastest, most reliable way possible, while ensuring you're paying a minimal price. 
                                     By directing you to a product and consequently a 

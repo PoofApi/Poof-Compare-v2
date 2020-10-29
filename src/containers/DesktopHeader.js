@@ -202,7 +202,7 @@ class DesktopHeader extends Component {
                             
                             
                             {/* <div className="fillerBody1"></div> */}
-                            <div className="iconContent mb-4 ml-4">
+                            <div className="iconContent mb-4">
                                 <div className="row justify-content-center">
                                     <div className="col-3">
                                         <div className="desktopIcon1 pIcon dIcon ml-4" onClick={() => this.handleSubmit2("electronics")}>
@@ -284,10 +284,19 @@ class DesktopHeader extends Component {
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
-                        <Link className="aboutLink" to={'/aboutPoof'} >
-                            About
-                        </Link>
                         <div className="desktopContent">
+                        <FadeTransform in
+                            transformProps={{
+                                exitTransform: 'scale(0.5)',
+                            }}
+                            
+                            duration={1000}>
+
+                            <Link className="aboutLink" to={'/aboutPoof'} >
+                                About
+                            </Link>
+
+                        </FadeTransform>
 
                         <FadeTransform in
                             transformProps={{
@@ -340,7 +349,7 @@ class DesktopHeader extends Component {
                         </FadeTransform>
                             
                             {/* <div className="fillerBody1"></div> */}
-                            <div className="iconContent mb-4 ml-4">
+                            <div className="iconContent mb-4">
                                 <div className="row justify-content-center">
                                     <div className="col-3">
                                         <div className="desktopIcon1 pIcon dIcon ml-4" onClick={() => this.handleSubmit2("electronics")}>

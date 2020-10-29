@@ -1960,8 +1960,7 @@ form.mobileSearchForm button:hover {
 
 .aboutLink {
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    right: 3vw;
     color: white;
     font-size: 2rem;
     font-weight: 600;
@@ -1969,12 +1968,6 @@ form.mobileSearchForm button:hover {
 }
 
 .aboutLink:hover {
-    cursor: pointer !important;
-    color: #806543 !important;
-    z-index: 1;
-}
-
-.aboutLink2:hover {
     cursor: pointer !important;
     color: #806543 !important;
     z-index: 1;
