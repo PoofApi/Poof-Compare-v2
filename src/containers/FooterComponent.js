@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import {store} from '../index.js';
 import * as types from '../constants/types';
 import { withRouter } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {addSearchWord} from '../actions/product';
 
 
 const axios = require('axios');
@@ -63,6 +65,7 @@ class FooterComponent extends Component {
                     this.props.history.push("/")
                 }
 
+            this.props.addSearchWord(keyword);
             this.setState({loading: false});
         }
         catch(err){
@@ -131,4 +134,16 @@ class FooterComponent extends Component {
     }
 }
 
-export default withRouter(FooterComponent)
+const mapStateToProps = (state) => {
+    return {
+        searchWord: state.item.searchWord
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addSearchWord: (word) => {dispatch(addSearchWord(word))}
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(FooterComponent))
