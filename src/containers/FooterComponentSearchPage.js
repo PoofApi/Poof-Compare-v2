@@ -41,7 +41,7 @@ async function getProductsForHome(keywords){
   }
 }
 
-class FooterComponent extends Component {
+class FooterComponentSearchPage extends Component {
     constructor(props){
         super(props);
 
@@ -64,6 +64,13 @@ class FooterComponent extends Component {
                 }
 
             this.setState({loading: false});
+
+            document.querySelector("body").scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'auto'
+            });
+
         }
         catch(err){
             console.log(err);
@@ -73,7 +80,7 @@ class FooterComponent extends Component {
 
     render() {
         return (
-            <div className="poofDesktopFooter">
+            <div className="poofSearchPageFooter">
                 <div className="container footerContainer">
                     <ul className="footerTitles">
                         <li>
@@ -131,4 +138,4 @@ class FooterComponent extends Component {
     }
 }
 
-export default withRouter(FooterComponent)
+export default withRouter(FooterComponentSearchPage)

@@ -4,7 +4,7 @@
 
 .hToolbar {
     height: 35px;
-    background-color: #0C1344;
+    background-color: var(--cool-gray-80,#283e4a);
     position: fixed;
     width: 100vw;
     z-index: 1;

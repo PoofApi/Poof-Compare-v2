@@ -199,7 +199,7 @@
 .topScrollerSide:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background-color: #0C1344;
+    background-color: var(--cool-gray-80,#283e4a);
     border: white double 4px;
 }
 
@@ -240,7 +240,7 @@
 .topScrollerMobile:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background: #0C1344 !important;
+    background: var(--cool-gray-80,#283e4a) !important;
     border: white double 4px;
 }
 
@@ -290,14 +290,14 @@
 .topScroller:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background-color: #0C1344;
+    background-color: var(--cool-gray-80,#283e4a);
     border: white double 4px;
 }
 
 .topScrollerUp:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background-color: #0C1344;
+    background-color: var(--cool-gray-80,#283e4a);
     border: white double 4px;
 }
 

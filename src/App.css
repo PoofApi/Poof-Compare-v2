@@ -76,7 +76,7 @@ input::placeholder{
 
     .compareToolbar {
         height: 40px;
-        background: #0C1344;
+        background: var(--cool-gray-80,#283e4a);
         position: fixed;
         display: flex;
         bottom: 0;
@@ -312,7 +312,7 @@ input::placeholder{
 
 .compareToolbar {
     height: 40px;
-    background: #0C1344;
+    background: var(--cool-gray-80,#283e4a);
     position: fixed;
     display: flex;
     bottom: 0;
@@ -432,7 +432,7 @@ a:hover{
     position: fixed;
     height: 20vh;
     bottom: 0;
-    background: #0C1344;
+    background: var(--cool-gray-80,#283e4a);
     width: 310px;
     right: 16px;
     z-index: 3;
@@ -464,7 +464,7 @@ a:hover{
 .watchtool-container {
     display: flex;
     height: 50px;
-    background-color: #0C1344;
+    background-color: var(--cool-gray-80,#283e4a);
     position: fixed;
     width: 50px;
     z-index: 101;
@@ -539,7 +539,7 @@ a:hover{
 
 .watchlistNav {
     height: 50px;
-    background: #0C1344;
+    background: var(--cool-gray-80,#283e4a);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1268,7 +1268,7 @@ a {
 }
 
 .newSaveBtn:hover {
-    background-color: black !important;
+    background-color: var(--cool-gray-80,#283e4a) !important;
 }
 
 .watchlistSaveBtn{
@@ -2281,6 +2281,13 @@ form.mobileSearchForm button:hover {
 
 .aboutRow {
     margin-bottom: unset !important;
+}
+
+/*FooterSearchPage Component*/
+
+.poofSearchPageFooter {
+    background-color: #0C1344;
+    color: white;
 }
 
 /*Mobile Search Page*/
