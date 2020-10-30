@@ -6,6 +6,14 @@ import FooterComponent from './FooterComponent';
 
 class AboutPageRoute extends Component {
 
+    componentDidMount(){
+        document.querySelector('body').scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+        });
+    }
+
     render() {
         return (
             <div>

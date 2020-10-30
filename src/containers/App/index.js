@@ -7,6 +7,7 @@ import AboutPageRoute from '../AboutPageRoute.js';
 import CompareTableRoute from '../CompareTableRoute.js';
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
+import ContactComponent from '../Contact/ContactComponent';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
               <Route exact path="/watchlist" component={WatchlistRoute} />
               <Route exact path="/compare-table" component={CompareTableRoute} />
               <Route exact path="/aboutPoof" component={AboutPageRoute} />
+              <Route exact path="/contactPoof" component={ContactComponent} />
               <Route component={NotFound}/>
             </Switch>
           </div>

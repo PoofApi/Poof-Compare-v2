@@ -124,7 +124,7 @@ class FooterComponentSearchPage extends Component {
                             <ul>
                                 <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
                                 <li>Features</li>
-                                <li>Contact Us</li>
+                                <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
                                 <li>Terms</li>
                                 <li>Privacy</li>
                             </ul>

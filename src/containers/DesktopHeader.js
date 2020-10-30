@@ -100,6 +100,16 @@ class DesktopHeader extends Component {
         this.handleSubmit2 = this.handleSubmit2.bind(this);
     }
 
+    scrollUp(){
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+        });
+
+        console.log("scroller called")
+    }
+
     handleChange(event) {
         this.setState({value: event.target.value});
     }
@@ -260,9 +270,9 @@ class DesktopHeader extends Component {
                             <li>
                                 <h4>Links</h4>
                                 <ul>
-                                    <li>About</li>
+                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
                                     <li>Features</li>
-                                    <li>Contact Us</li>
+                                    <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
                                     <li>Terms</li>
                                     <li>Privacy</li>
                                 </ul>
@@ -407,9 +417,9 @@ class DesktopHeader extends Component {
                             <li>
                                 <h4>Links</h4>
                                 <ul>
-                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
+                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'} onClick={this.scrollUp}>About</Link></li>
                                     <li>Features</li>
-                                    <li>Contact Us</li>
+                                    <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
                                     <li>Terms</li>
                                     <li>Privacy</li>
                                 </ul>

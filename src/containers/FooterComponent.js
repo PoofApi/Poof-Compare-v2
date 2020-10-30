@@ -74,6 +74,10 @@ class FooterComponent extends Component {
         }
     }
 
+    scrollUp(){
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <div className="poofDesktopFooter">
@@ -115,9 +119,9 @@ class FooterComponent extends Component {
                         <li>
                             <h4>Links</h4>
                             <ul>
-                                <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
+                                <li><Link className="aboutLinkFooter" to={'/aboutPoof'} onClick={() => this.scrollUp()}>About</Link></li>
                                 <li>Features</li>
-                                <li>Contact Us</li>
+                                <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
                                 <li>Terms</li>
                                 <li>Privacy</li>
                             </ul>
