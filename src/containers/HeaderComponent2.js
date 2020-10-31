@@ -98,7 +98,7 @@ class Header2 extends Component {
             event.preventDefault();
             
             let urlName = window.location.pathname;
-                if (urlName == "/aboutPoof" ){
+                if (urlName == "/aboutPoof" || urlName == "/contactPoof"){
                     this.props.history.push("/")
                 }
 
@@ -133,10 +133,11 @@ class Header2 extends Component {
     render(){
         
         const user = this.props.storeUserId;
-        
+        let urlName = window.location.pathname;
+
         return (
             
-                <div className="newNavBar">
+                <div className={urlName == "/contactPoof" || urlName == "/aboutPoof" ? "contactNavBar" : "newNavBar"}>
                         
                     <div onClick={() => this.returnHome()} className="poofLogo">
                         <Link className="newPoofLogo" to={'/'}><img src={Poof_White} alt="poofWhiteLogo" style={{width:"85%"}}></img></Link>

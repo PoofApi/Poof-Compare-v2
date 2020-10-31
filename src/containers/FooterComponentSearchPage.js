@@ -54,6 +54,14 @@ class FooterComponentSearchPage extends Component {
         this.handleSubmit3 = this.handleSubmit3.bind(this);
     }
 
+    componentDidMount(){
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+        });
+    }
+
     async handleSubmit3(keyword){
         this.setState({loading: true});
 
