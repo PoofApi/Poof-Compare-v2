@@ -42,7 +42,11 @@ const ContactComponent = () => {
         <div className="container contactPageContainer">
             <form className="form" onSubmit={handleSubmit}>
             <h1 style={{textAlign: "center"}}>Contact Us 🤳</h1>
-
+            <h5>Do you have any comments, suggestions, or questions for Poof? 
+            We value anything and everything our users have to say, good or bad.
+            Or perhaps you're a business interested in having a product featured through us. Either way,
+            we'd love to hear what you have to say! &#128516;
+            </h5>
             
             <div className="row contactRow justify-content-center">
                 <div className="col-4 col-md-3">
@@ -84,8 +88,8 @@ const ContactComponent = () => {
             </div>
 
             <button
+                className="contactSubmitBtn"
                 type="submit"
-                style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
             >
                 Submit
             </button>

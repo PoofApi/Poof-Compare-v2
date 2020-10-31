@@ -3,7 +3,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 ::placeholder {
@@ -43,17 +43,12 @@ textarea:focus {
 .form > button {
   padding: 20px;
   border: none;
-  background-color: rgb(2, 2, 110);
   font-weight: 500;
   font-size: 20px;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-}
-
-.form > button:hover {
-  background-color: rgb(0, 0, 196);
 }
 
 .contactPageContainer {
@@ -77,4 +72,13 @@ textarea:focus {
 
 .contactRow {
     margin-bottom: 0px !important;
+}
+
+.contactSubmitBtn {
+  background: #0C1344;
+}
+
+.contactSubmitBtn:hover {
+  background: #806543;
+  cursor: pointer;
 }
