@@ -100,6 +100,16 @@ class DesktopHeader extends Component {
         this.handleSubmit2 = this.handleSubmit2.bind(this);
     }
 
+    scrollUp(){
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+        });
+
+        console.log("scroller called")
+    }
+
     handleChange(event) {
         this.setState({value: event.target.value});
     }
@@ -137,6 +147,27 @@ class DesktopHeader extends Component {
         }
     }
 
+    async handleSubmit3(searchWord){
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+        });
+
+        this.setState({loading: true});
+
+        try{
+            await getProductsForHome(searchWord);
+            this.props.addSearchWord(searchWord);
+            this.setState({loading:false});
+
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+
     async componentDidMount(){
         getMostPopular();
     }
@@ -156,6 +187,9 @@ class DesktopHeader extends Component {
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
+                        <Link className="aboutLink" to={'/aboutPoof'} >
+                            About
+                        </Link>
                         <div className="desktopContent">
                             <div className="loading-content">
                                 <div className="poofSlothRow">
@@ -166,7 +200,7 @@ class DesktopHeader extends Component {
                                 <div className="row justify-content-center">
                                     <div className="col-6 desktopProgressSearchBar">
                                         <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
-                                            Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
+                                            Perry the Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
                                         </div>
                                         <div className="exampleContainer justify-content-center mb-4">
                                             <div className="desktopLoadBar1"></div>
@@ -178,7 +212,7 @@ class DesktopHeader extends Component {
                             
                             
                             {/* <div className="fillerBody1"></div> */}
-                            <div className="iconContent mb-4 ml-4">
+                            <div className="iconContent mb-4">
                                 <div className="row justify-content-center">
                                     <div className="col-3">
                                         <div className="desktopIcon1 pIcon dIcon ml-4" onClick={() => this.handleSubmit2("electronics")}>
@@ -222,7 +256,34 @@ class DesktopHeader extends Component {
                     </div>
                 </div>
                 <div className="poofDesktopFooter">
-                    
+                    <div className="container footerContainer">
+                        <ul className="footerTitles">
+                            <li>
+                                <h4>Search Categories</h4>
+                                <ul>
+                                    <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
+                                    <li onClick={() => this.handleSubmit3("books")}>Books</li>
+                                    <li onClick={() => this.handleSubmit3("clothes")}>Clothes</li>
+                                    <li onClick={() => this.handleSubmit3("games")}>Games</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Links</h4>
+                                <ul>
+                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
+                                    <li>Features</li>
+                                    <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
+                                    <li>Terms</li>
+                                    <li>Privacy</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className="row justify-content-center">             
+                            <div className="col-auto">
+                                <p>© 2020 Poof! Price Compare</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -233,10 +294,19 @@ class DesktopHeader extends Component {
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
-                        <Link className="aboutLink" to={'/aboutPoof'} >
-                            About
-                        </Link>
                         <div className="desktopContent">
+                        <FadeTransform in
+                            transformProps={{
+                                exitTransform: 'scale(0.5)',
+                            }}
+                            
+                            duration={1000}>
+
+                            <Link className="aboutLink" to={'/aboutPoof'} >
+                                About
+                            </Link>
+
+                        </FadeTransform>
 
                         <FadeTransform in
                             transformProps={{
@@ -289,7 +359,7 @@ class DesktopHeader extends Component {
                         </FadeTransform>
                             
                             {/* <div className="fillerBody1"></div> */}
-                            <div className="iconContent mb-4 ml-4">
+                            <div className="iconContent mb-4">
                                 <div className="row justify-content-center">
                                     <div className="col-3">
                                         <div className="desktopIcon1 pIcon dIcon ml-4" onClick={() => this.handleSubmit2("electronics")}>
@@ -333,7 +403,34 @@ class DesktopHeader extends Component {
                     </div>
                 </div>
                 <div className="poofDesktopFooter">
-                    
+                    <div className="container footerContainer">
+                        <ul className="footerTitles">
+                            <li>
+                                <h4>Search Categories</h4>
+                                <ul>
+                                    <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
+                                    <li onClick={() => this.handleSubmit3("books")}>Books</li>
+                                    <li onClick={() => this.handleSubmit3("clothes")}>Clothes</li>
+                                    <li onClick={() => this.handleSubmit3("games")}>Games</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Links</h4>
+                                <ul>
+                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'} onClick={this.scrollUp}>About</Link></li>
+                                    <li>Features</li>
+                                    <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
+                                    <li>Terms</li>
+                                    <li>Privacy</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div className="row justify-content-center">             
+                            <div className="col-auto">
+                                <p>© 2020 Poof! Price Compare</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             )

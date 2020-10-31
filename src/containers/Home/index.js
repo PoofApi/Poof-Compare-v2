@@ -18,6 +18,7 @@ import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
 import MultiSelectDisabledComponent from '../MultiSelectDisabledComponent';
+import FooterComponentSearchPage from '../FooterComponentSearchPage';
 // import { TransitionGroup } from 'react-transition-group';
 
 
@@ -619,7 +620,7 @@ class Home extends Component {
           </div> */}
 
           <div id="top"></div>
-          <div className="home mt-5" style={{position: "relative", bottom: "35px"}}>
+          <div className="home mt-5">
             {/* <div className="filterAndSort">
               <span className="filterTitle">Filter: </span>
                 <label class="container">Amazon
@@ -640,6 +641,7 @@ class Home extends Component {
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
             </div> */}
+            <FooterComponentSearchPage />
             {this.renderCompare()}
 
            {this.state.compareToolbarOpen && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }

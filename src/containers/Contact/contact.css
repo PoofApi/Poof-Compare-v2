@@ -1,0 +1,84 @@
+/* Contact.js */
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+::placeholder {
+    position: relative;
+    left: 0vw;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+}
+
+.form > div > div > input,
+textarea {
+  position: relative;
+  border-radius: 3px;
+  padding-left: 1vw;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+  border: 1px solid lightgray;
+  /* border: none; */
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.form > div > div > input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.form > div > div > textarea {
+    min-height: 25vh;
+    padding: 2vh;
+    resize: none;
+}
+
+.form > button {
+  padding: 20px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.contactPageContainer {
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+}
+
+.messageText {
+    display: flex;
+    justify-content: center;
+}
+
+.rowItem1 {
+    margin-left: 0vw;
+}
+
+.rowItem {
+    margin-left: 8vw;
+}
+
+.contactRow {
+    margin-bottom: 0px !important;
+}
+
+.contactSubmitBtn {
+  background: #0C1344;
+}
+
+.contactSubmitBtn:hover {
+  background: #806543;
+  cursor: pointer;
+}
