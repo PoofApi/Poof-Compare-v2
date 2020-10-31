@@ -44,7 +44,7 @@ const ContactComponent = () => {
             <h1 style={{textAlign: "center"}}>Contact Us 🤳</h1>
 
             
-            <div className="row" style={{position: "relative", right: "2vw"}}>
+            <div className="row contactRow" style={{position: "relative", right: "2vw"}}>
                 <div className="col-4">
                     <input 
                         placeholder="Name"
@@ -73,7 +73,7 @@ const ContactComponent = () => {
             </div>
 
     
-            <div className="row">
+            <div className="row contactRow">
                 <div className="col-12 messageText">
                     <textarea
                         placeholder="Message"
