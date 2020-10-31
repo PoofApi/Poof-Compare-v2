@@ -6,6 +6,7 @@ import "./contact.css";
 const ContactComponent = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   const [loader, setLoader] = useState(false);
@@ -31,6 +32,7 @@ const ContactComponent = () => {
 
     setName("");
     setEmail("");
+    setSubject("");
     setMessage("");
   };
 
@@ -39,33 +41,40 @@ const ContactComponent = () => {
         <HeaderComponent2 />
         <div className="container contactPageContainer">
             <form className="form" onSubmit={handleSubmit}>
-            <h1>Contact Us 🤳</h1>
+            <h1 style={{textAlign: "center"}}>Contact Us 🤳</h1>
 
-            <label>Name</label>
-            <div className="row justify-content-center no-gutters">
-                <div className="col-7">
+            
+            <div className="row" style={{position: "relative", right: "2vw"}}>
+                <div className="col-4">
                     <input 
                         placeholder="Name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
                 </div>
-            </div>
+            
 
-            <label>Email</label>
-            <div className="row justify-content-center no-gutters">
-                <div className="col-7">
+                <div className="col-4">
                     <input
                         placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
+
+                <div className="col-4">
+                    <input 
+                        placeholder="Subject"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                    />
+                </div>
+
             </div>
 
-            <label>Message</label>
-            <div className="row justify-content-center no-gutters">
-                <div className="col-9 messageText">
+    
+            <div className="row">
+                <div className="col-12 messageText">
                     <textarea
                         placeholder="Message"
                         value={message}

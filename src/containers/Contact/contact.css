@@ -7,6 +7,11 @@
   padding: 7%;
 }
 
+::placeholder {
+    position: relative;
+    left: 0vw;
+}
+
 .form > h1 {
   margin-bottom: 30px;
 }
@@ -14,11 +19,9 @@
 .form > div > div > input,
 textarea {
   position: relative;
-  right: 20px;
-  padding: 5px 20px;
   border-radius: 3px;
+  padding-left: 1vw;
   /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
-  margin-bottom: 20px;
   border: 1px solid lightgray;
   /* border: none; */
   background: #fff;
@@ -33,13 +36,8 @@ textarea:focus {
 }
 
 .form > div > div > textarea {
-  min-height: 15vh;
-}
-
-.form > label {
-  padding-bottom: 10px;
-  color: rgb(0, 0, 32);
-  font-weight: bold;
+    min-height: 25vh;
+    padding: 2vh;
 }
 
 .form > button {
@@ -52,7 +50,6 @@ textarea:focus {
   color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  margin-top: 10px;
 }
 
 .form > button:hover {
@@ -68,4 +65,12 @@ textarea:focus {
 .messageText {
     display: flex;
     justify-content: center;
+}
+
+.rowItem1 {
+    margin-left: 0vw;
+}
+
+.rowItem {
+    margin-left: 8vw;
 }
