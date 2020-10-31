@@ -44,8 +44,8 @@ const ContactComponent = () => {
             <h1 style={{textAlign: "center"}}>Contact Us 🤳</h1>
 
             
-            <div className="row contactRow" style={{position: "relative", right: "2vw"}}>
-                <div className="col-4">
+            <div className="row contactRow justify-content-center">
+                <div className="col-4 col-md-3">
                     <input 
                         placeholder="Name"
                         value={name}
@@ -54,7 +54,7 @@ const ContactComponent = () => {
                 </div>
             
 
-                <div className="col-4">
+                <div className="col-4 col-md-3">
                     <input
                         placeholder="Email"
                         value={email}
@@ -62,7 +62,7 @@ const ContactComponent = () => {
                     />
                 </div>
 
-                <div className="col-4">
+                <div className="col-4 col-md-3">
                     <input 
                         placeholder="Subject"
                         value={subject}
