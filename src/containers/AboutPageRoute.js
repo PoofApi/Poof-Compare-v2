@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HeaderComponent2 from './HeaderComponent2'
 import { withRouter } from 'react-router-dom';
-import FooterComponent from './FooterComponent';
+import FooterComponentSearchPage from './FooterComponentSearchPage';
 
 
 class AboutPageRoute extends Component {
@@ -67,7 +67,7 @@ class AboutPageRoute extends Component {
                     </div>
                 </ul>
             </div>
-            <FooterComponent />
+            <FooterComponentSearchPage />
         </div>
         )
     }
