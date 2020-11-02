@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { db } from "../../firebase";
 import FooterComponent from "../FooterComponent";
 import HeaderComponent2 from "../HeaderComponent2";
 import "./contact.css";
@@ -15,20 +16,21 @@ const ContactComponent = () => {
     e.preventDefault();
     setLoader(true);
 
-    // db.collection("contacts")
-    //   .add({
-    //     name: name,
-    //     email: email,
-    //     message: message,
-    //   })
-    //   .then(() => {
-    //     setLoader(false);
-    //     alert("Your message has been submitted👍");
-    //   })
-    //   .catch((error) => {
-    //     alert(error.message);
-    //     setLoader(false);
-    //   });
+    db.collection("poofContactMessages")
+    .add({
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    })
+    .then(() => {
+      setLoader(false);
+      alert("Your message has been submitted👍");
+    })
+    .catch((error) => {
+      alert(error.message);
+      setLoader(false);
+    });
 
     setName("");
     setEmail("");
@@ -41,7 +43,7 @@ const ContactComponent = () => {
         <HeaderComponent2 />
         <div className="container contactPageContainer">
             <form className="form" onSubmit={handleSubmit}>
-            <h1 style={{textAlign: "center"}}>Contact Us 🤳</h1>
+            <h1 className="mt-4" style={{textAlign: "center"}}>Contact Us 🤳</h1>
             <h5>Do you have any comments, suggestions, or questions for Poof? 
             We value anything and everything our users have to say, good or bad.
             Or perhaps you're a business interested in having a product featured through us. Either way,
@@ -49,7 +51,7 @@ const ContactComponent = () => {
             </h5>
             
             <div className="row contactRow justify-content-center">
-                <div className="col-4 col-md-3">
+                <div className="col-8 col-md-3">
                     <input 
                         placeholder="Name"
                         value={name}
@@ -58,7 +60,7 @@ const ContactComponent = () => {
                 </div>
             
 
-                <div className="col-4 col-md-3">
+                <div className="col-8 col-md-3">
                     <input
                         placeholder="Email"
                         value={email}
@@ -66,7 +68,7 @@ const ContactComponent = () => {
                     />
                 </div>
 
-                <div className="col-4 col-md-3">
+                <div className="col-8 col-md-3">
                     <input 
                         placeholder="Subject"
                         value={subject}

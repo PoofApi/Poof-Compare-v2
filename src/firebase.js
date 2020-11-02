@@ -1,19 +1,19 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD297p6vRVCMI1sV5jgcFbSukBg3qEI1k0",
-    authDomain: "poofbot-604cd.firebaseapp.com",
-    databaseURL: "https://poofbot-604cd.firebaseio.com",
-    projectId: "poofbot-604cd",
-    storageBucket: "poofbot-604cd.appspot.com",
-    messagingSenderId: "770219793050",
-    appId: "1:770219793050:web:375c9b5a64ab7936de5d23",
-    measurementId: "G-LYW9KQM0YS"
-  };
+  apiKey: "AIzaSyBwiWFbzdzLBxDaypek16_XDeRTAYcloVU",
+  authDomain: "poofapibackend.firebaseapp.com",
+  databaseURL: "https://poofapibackend.firebaseio.com",
+  projectId: "poofapibackend",
+  storageBucket: "poofapibackend.appspot.com",
+  messagingSenderId: "245507653791",
+  appId: "1:245507653791:web:b3faef531857119d63a2aa",
+  measurementId: "G-RYQPSKFLHV"
+};
 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 const auth = firebase.auth();
 const db = firebase.firestore();

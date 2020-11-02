@@ -3,7 +3,6 @@ import {bindActionCreators} from 'redux'
 import {Compare, ProductList} from '../../components'
 import * as productActions from '../../actions/product'
 import {connect} from 'react-redux';
-import Header from '../HeaderComponent.js';
 import Header2 from '../HeaderComponent2.js';
 import CompareToolbar from '../compareToolbar.js';
 import WatchList from '../WatchListComponent.js';

@@ -40,6 +40,8 @@
     "react-loader-spinner": "^3.1.14",
     "react-rangeslider": "^2.2.0",
     "react-redux": "^5.0.7",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.0.5",
     "react-simple-tooltip": "^2.6.1",
     "react-tooltip": "^4.2.5",
@@ -77,9 +79,7 @@
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.0.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "eslint-plugin-react": "^7.0.1"
   },
   "jest": {
     "collectCoverageFrom": [
