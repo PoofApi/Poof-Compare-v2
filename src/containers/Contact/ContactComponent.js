@@ -12,6 +12,14 @@ const ContactComponent = () => {
 
   const [loader, setLoader] = useState(false);
 
+  const submitMsgTransition = () => {
+    setTimeout(function(){
+      document.querySelector('.contactSubmitWord').style.display = 'block';
+      document.querySelector('.successSubmit').style.display = 'none';
+    }, 5000);
+
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
@@ -25,7 +33,9 @@ const ContactComponent = () => {
     })
     .then(() => {
       setLoader(false);
-      alert("Your message has been submitted👍");
+      document.querySelector('.contactSubmitWord').style.display = 'none';
+      document.querySelector('.successSubmit').style.display = 'block';
+      submitMsgTransition();
     })
     .catch((error) => {
       alert(error.message);
@@ -93,7 +103,26 @@ const ContactComponent = () => {
                 className="contactSubmitBtn"
                 type="submit"
             >
-                Submit
+                { loader ? 
+                <div className="preloader-wrapper small active">
+                    <div className="spinner-layer spinner-red-only">
+                    <div className="circle-clipper left">
+                        <div className="circle"></div>
+                    </div><div className="gap-patch">
+                        <div className="circle"></div>
+                    </div><div className="circle-clipper right">
+                        <div className="circle"></div>
+                    </div>
+                    </div>
+                </div>
+                :
+                <div>
+                    <span className="contactSubmitWord">Submit</span>
+                    <span className="successSubmit">Message Successfully Sent! &#128077;</span>
+                </div>
+
+                }
+                
             </button>
             </form>
         </div>

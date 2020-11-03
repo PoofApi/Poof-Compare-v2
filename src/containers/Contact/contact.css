@@ -82,3 +82,12 @@ textarea:focus {
   background: #806543;
   cursor: pointer;
 }
+
+.contactSubmitBtn:focus {
+  background-color: #0C1344 !important;
+  outline: none !important;
+}
+
+.successSubmit {
+  display: none;
+}
