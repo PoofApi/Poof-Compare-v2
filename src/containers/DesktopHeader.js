@@ -454,94 +454,103 @@ class DesktopHeader extends Component {
                                         </div>
                                     )}
                                 </div>
-                                <div className="amazonOverlay"></div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
-                                    <img className="img-fluid topSellerLogo barnesTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesTopSellerLogo"/>
+                            <div className="barnesRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                        <img className="img-fluid topSellerLogo barnesTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesTopSellerLogo"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="row">
-                                {preppedItems.map(item => 
-                                    <div className="col-3">
-                                            <div className="card">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                <div className="row">
+                                    {preppedItems.map(item => 
+                                        <div className="col-3">
+                                                <div className="card">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row">
+                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
+                                                        <div className="col-7 watchlistButtons">
+
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row">
-                                                    <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                    <div className="col-7 watchlistButtons">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
-                                    <img className="img-fluid topSellerLogo newEggTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggTopSellerLogo"/>
+                                        </div>
+                                    )}
                                 </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="row">
-                                {preppedItems.map(item => 
-                                    <div className="col-3">
-                                            <div className="card">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                            <div className="newEggRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                        <img className="img-fluid topSellerLogo newEggTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggTopSellerLogo"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    {preppedItems.map(item => 
+                                        <div className="col-3">
+                                                <div className="card">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row">
+                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
+                                                        <div className="col-7 watchlistButtons">
+
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row">
-                                                    <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                    <div className="col-7 watchlistButtons">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
-                                    <img className="img-fluid topSellerLogo ebayTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayTopSellerLogo"/>
+                                        </div>
+                                    )}
                                 </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="row">
-                                {preppedItems.map(item => 
-                                    <div className="col-3">
-                                            <div className="card">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                            <div className="ebayRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                        <img className="img-fluid topSellerLogo ebayTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayTopSellerLogo"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    {preppedItems.map(item => 
+                                        <div className="col-3">
+                                                <div className="card">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row">
+                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
+                                                        <div className="col-7 watchlistButtons">
+
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row">
-                                                    <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                    <div className="col-7 watchlistButtons">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
                         </div>
                     </div>

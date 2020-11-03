@@ -2261,10 +2261,39 @@ form.mobileSearchForm button:hover {
     padding: 10vh 10vw;
 }
 
+.amazonRow {
+    position: relative;
+    z-index: 1;
+}
+
+.barnesRow {
+    position: relative;
+    z-index: 1;
+}
+
+.newEggRow {
+    position: relative;
+    z-index: 1;
+}
+
+.ebayRow {
+    position: relative;
+    z-index: 1;
+}
+
+.topSellerOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: bisque;
+    height: 55%;
+    z-index: -1;
+}
+
 .topSellerLogoRow {
     display: flex;
     justify-content: center;
-    background: bisque;
 }
 
 .topSellerTitle {
