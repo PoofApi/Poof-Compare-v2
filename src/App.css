@@ -2212,7 +2212,7 @@ form.mobileSearchForm button:hover {
 .poofDesktopFooter {
     position: absolute;
     width: 100vw;
-    top: 100vh;
+    top: 340vh;
     background-color: #0C1344;
     color: white;
 }
@@ -2244,6 +2244,54 @@ form.mobileSearchForm button:hover {
 .contactLinkFooter:hover {
     cursor: pointer;
     color: #806543 !important;
+}
+
+/*Top Sellers content of Desktop Header*/
+
+.topSellersDesktop {
+    height: 240vh;
+    background: white;
+}
+
+.topSellerContainer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    height: 100%;
+    padding: 10vh 10vw;
+}
+
+.topSellerLogoRow {
+    display: flex;
+    justify-content: center;
+    background: bisque;
+}
+
+.topSellerTitle {
+    font-weight: 900;
+    font-family: serif;
+}
+
+.topSellerItemImg {
+    position: relative;
+    left: 25%;
+    top: 10%;
+}
+
+.topSellerItemTitle {
+    font-size: 1rem !important;
+    max-height: 7vh !important;
+    overflow-y: hidden;
+}
+
+.amazonTopSeller {
+    width: 100%;
+    height: 100%;
+    max-height: 25vh;
+}
+
+.topSellerLogo {
+    max-height: 20vh;
 }
 
 /*About Poof Page*/
