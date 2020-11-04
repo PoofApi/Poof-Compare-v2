@@ -444,10 +444,10 @@ class DesktopHeader extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                        <div className="col-7 watchlistButtons">
-
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <img className="img-fluid amazonBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonBuyLogo"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -476,10 +476,10 @@ class DesktopHeader extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                        <div className="col-7 watchlistButtons">
-
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <img className="img-fluid barnesBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesBuyLogo"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -508,10 +508,10 @@ class DesktopHeader extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                        <div className="col-7 watchlistButtons">
-
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <img className="img-fluid newEggBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggBuyLogo"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -540,10 +540,10 @@ class DesktopHeader extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="row">
-                                                        <div className="col-5 priceTag2">{`${item.price}`}</div>
-                                                        <div className="col-7 watchlistButtons">
-
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <img className="img-fluid ebayBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayBuyLogo"/>
                                                         </div>
                                                     </div>
                                                 </div>

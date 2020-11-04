@@ -2336,6 +2336,29 @@ form.mobileSearchForm button:hover {
     max-height: 20vh;
 }
 
+.topSellerBuyRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topSellerPrice {
+    font-weight: 600;
+    font-size: 3vh;
+    color: #e64949;
+}
+
+.amazonBuyPic {
+    max-height: 9vh;
+    position: relative;
+    right: 1vw;
+}
+
+.barnesBuyPic {
+    position: relative;
+    right: 1vw;
+}
+
 /*About Poof Page*/
 
 .aboutPoofNavBar {
