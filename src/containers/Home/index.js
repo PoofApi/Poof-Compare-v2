@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
 import {Compare, ProductList} from '../../components'
 import * as productActions from '../../actions/product'
+import * as types from '../../constants/types'
 import {connect} from 'react-redux';
 import Header2 from '../HeaderComponent2.js';
 import CompareToolbar from '../compareToolbar.js';
@@ -30,8 +31,6 @@ const getTitles = (list) => {
   
   return titles;
 }
-
-
 
 async function setWatchList(item, storedList){
 
@@ -259,8 +258,6 @@ class Home extends Component {
         store.dispatch(this.props.actions.loadUsersItems(items));
       }
     }
-
-
   }
 
   
@@ -525,7 +522,8 @@ class Home extends Component {
 
   render() {
 
-    
+    console.log("Home mounted");
+
 
     const {items, actions, isLoading, watchedItems, usersWatchedItems, storeUserId, mobileStoreFilter, comparedItems } = this.props;
 
