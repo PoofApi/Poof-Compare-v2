@@ -167,14 +167,43 @@ class DesktopHeader extends Component {
     }
 
     prepPopItems = (popItems) => {
-        let items = [];
+        let itemCollection = {};
+        let amazonItems = [];
+        let barnesItems = [];
+        let eggItems = [];
+        let ebayItems = [];
 
-        items.push(popItems[4]);
-        items.push(popItems[5]);
-        items.push(popItems[6]);
-        items.push(popItems[7]);
+        let j = 0;
+        let k = 4;
+        let l = 8;
+        let m = 12;
 
-        return items;
+        while( amazonItems.length < 4 ){
+            amazonItems.push(popItems[j])
+            j++;
+        }
+
+        while( barnesItems.length < 4 ){
+            barnesItems.push(popItems[k])
+            k++;
+        }
+
+        while( eggItems.length < 4 ){
+            eggItems.push(popItems[l])
+            l++;
+        }
+
+        while( ebayItems.length < 4 ){
+            ebayItems.push(popItems[m])
+            m++;
+        }
+
+        itemCollection.amazon = amazonItems;
+        itemCollection.barnes = barnesItems;
+        itemCollection.newEgg = eggItems;
+        itemCollection.ebay = ebayItems;
+
+        return itemCollection;
     }
 
     componentDidMount(){
@@ -193,6 +222,7 @@ class DesktopHeader extends Component {
 
         return(
             
+            (preppedItems.amazon[0] !== undefined ?
             (this.state.loading ? 
                 <div className="poofDesktopComponent">
                 <div className="poofDesktopBackground"></div>
@@ -415,12 +445,15 @@ class DesktopHeader extends Component {
                             </div>
                         </div>
                     </div>
-                    {preppedItems[0] !== undefined ? 
+                     
                     <div className="topSellersDesktop">
                     <div className="topSellerContainer">
                         <h2 className="topSellerTitle">
-                            Top Items From: 
+                            Top Selling Items
                         </h2>
+                        <h6 className="topSellerSubTitle">
+                            From your favorite big box retailers
+                        </h6>
                         <div className="amazonRow">
                             <div className="row topSellerLogoRow">
                                 <div className="col-4">
@@ -429,7 +462,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row" style={{position: "relative", bottom: "5vh"}}>
                                 
-                                {preppedItems.map(item => 
+                                {preppedItems.amazon.map(item => 
                                     <div className="col-3">
                                             <div className="card topSellerCard">
                                                 <div className="row">
@@ -462,7 +495,7 @@ class DesktopHeader extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                {preppedItems.map(item => 
+                                {preppedItems.barnes.map(item => 
                                     <div className="col-3">
                                             <div className="card topSellerCard">
                                                 <div className="row">
@@ -494,7 +527,7 @@ class DesktopHeader extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                {preppedItems.map(item => 
+                                {preppedItems.newEgg.map(item => 
                                     <div className="col-3">
                                             <div className="card topSellerCard">
                                                 <div className="row">
@@ -526,7 +559,7 @@ class DesktopHeader extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                {preppedItems.map(item => 
+                                {preppedItems.ebay.map(item => 
                                     <div className="col-3">
                                             <div className="card topSellerCard">
                                                 <div className="row">
@@ -553,13 +586,6 @@ class DesktopHeader extends Component {
                         </div>
                     </div>
                 </div>
-
-                :
-
-                <div>Loading top selling items.....</div>
-                
-                }
-                    
                 </div>
                 <div className="poofDesktopFooterTopSellers">
                     <div className="container footerContainer">
@@ -592,6 +618,11 @@ class DesktopHeader extends Component {
                     </div>
                 </div>
             </div>
+            )
+            
+            :
+            <div></div>
+
             )
         )
     }

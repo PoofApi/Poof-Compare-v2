@@ -2312,11 +2312,20 @@ form.mobileSearchForm button:hover {
 
 .topSellerTitle {
     font-weight: 900;
-    font-family: serif;
+    font-family: revert;
     position: absolute;
     top: 2vh;
-    left: 6vw;
-    font-size: 5vh;
+    left: 11vw;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.topSellerSubTitle {
+    font-family: serif;
+    position: absolute;
+    top: 7vh;
+    left: 11.2vw;
+    font-size: 20px;
     z-index: 2;
 }
 
