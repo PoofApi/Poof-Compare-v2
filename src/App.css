@@ -2267,6 +2267,7 @@ form.mobileSearchForm button:hover {
     /* justify-content: space-around; */
     height: 100%;
     padding: 10vh 10vw;
+    position: relative;
 }
 
 .amazonRow {
@@ -2312,6 +2313,11 @@ form.mobileSearchForm button:hover {
 .topSellerTitle {
     font-weight: 900;
     font-family: serif;
+    position: absolute;
+    top: 2vh;
+    left: 6vw;
+    font-size: 5vh;
+    z-index: 2;
 }
 
 .topSellerItemImg {
@@ -2358,6 +2364,19 @@ form.mobileSearchForm button:hover {
     position: relative;
     right: 1vw;
 }
+
+.newEggBuyPic {
+    max-height: 12vh;
+    position: relative;
+    right: 1vw;
+}
+
+.ebayBuyPic {
+    max-height: 10vh;
+    position: relative;
+    right: 1vw;
+}
+
 
 /*About Poof Page*/
 

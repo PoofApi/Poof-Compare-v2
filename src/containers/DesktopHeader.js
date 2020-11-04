@@ -447,7 +447,7 @@ class DesktopHeader extends Component {
                                                     <div className="row topSellerBuyRow">
                                                         <div className="col-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
-                                                            <img className="img-fluid amazonBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonBuyLogo"/>
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid amazonBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -479,7 +479,7 @@ class DesktopHeader extends Component {
                                                     <div className="row topSellerBuyRow">
                                                         <div className="col-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
-                                                            <img className="img-fluid barnesBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesBuyLogo"/>
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid barnesBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -511,7 +511,7 @@ class DesktopHeader extends Component {
                                                     <div className="row topSellerBuyRow">
                                                         <div className="col-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
-                                                            <img className="img-fluid newEggBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggBuyLogo"/>
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid newEggBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -543,7 +543,7 @@ class DesktopHeader extends Component {
                                                     <div className="row topSellerBuyRow">
                                                         <div className="col-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
-                                                            <img className="img-fluid ebayBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayBuyLogo"/>
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid ebayBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
