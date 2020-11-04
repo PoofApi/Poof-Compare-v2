@@ -433,7 +433,7 @@ class DesktopHeader extends Component {
                                 <div className="row" style={{position: "relative", bottom: "5vh"}}>
                                     {preppedItems.map(item => 
                                         <div className="col-3">
-                                                <div className="card">
+                                                <div className="card topSellerCard">
                                                     <div className="row">
                                                         <div className="col-4">
                                                             <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
@@ -465,7 +465,7 @@ class DesktopHeader extends Component {
                                 <div className="row">
                                     {preppedItems.map(item => 
                                         <div className="col-3">
-                                                <div className="card">
+                                                <div className="card topSellerCard">
                                                     <div className="row">
                                                         <div className="col-4">
                                                             <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
@@ -497,7 +497,7 @@ class DesktopHeader extends Component {
                                 <div className="row">
                                     {preppedItems.map(item => 
                                         <div className="col-3">
-                                                <div className="card">
+                                                <div className="card topSellerCard">
                                                     <div className="row">
                                                         <div className="col-4">
                                                             <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
@@ -529,7 +529,7 @@ class DesktopHeader extends Component {
                                 <div className="row">
                                     {preppedItems.map(item => 
                                         <div className="col-3">
-                                                <div className="card">
+                                                <div className="card topSellerCard">
                                                     <div className="row">
                                                         <div className="col-4">
                                                             <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
@@ -555,7 +555,7 @@ class DesktopHeader extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="poofDesktopFooter">
+                <div className="poofDesktopFooterTopSellers">
                     <div className="container footerContainer">
                         <ul className="footerTitles">
                             <li>

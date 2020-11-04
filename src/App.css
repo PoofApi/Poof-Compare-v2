@@ -2212,6 +2212,14 @@ form.mobileSearchForm button:hover {
 .poofDesktopFooter {
     position: absolute;
     width: 100vw;
+    top: 100vh;
+    background-color: #0C1344;
+    color: white;
+}
+
+.poofDesktopFooterTopSellers {
+    position: absolute;
+    width: 100vw;
     top: 340vh;
     background-color: #0C1344;
     color: white;
@@ -2294,6 +2302,11 @@ form.mobileSearchForm button:hover {
 .topSellerLogoRow {
     display: flex;
     justify-content: center;
+}
+
+.topSellerCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.22);
 }
 
 .topSellerTitle {
