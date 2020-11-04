@@ -10,6 +10,7 @@ import PoofMobileSignIn from './PoofMobileSignIn';
 import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { FadeTransform } from 'react-animation-components';
+import uuid from 'react-uuid';
 
 const axios = require('axios');
 
@@ -208,6 +209,28 @@ class DesktopHeader extends Component {
 
     componentDidMount(){
         getMostPopular();
+
+        // let ele = document.querySelector("body");
+        // let menu = document.getElementById("myID");
+        // ele.addEventListener("scroll", () => {
+        //     let y = ele.scrollTop;
+        //     if (y >= 100) {
+        //     if(menu){
+        //         menu.className = "show"
+        //     }
+        // } else {
+        //     if(menu){
+        //         menu.className = "hide"
+        //     }
+        // }
+        // }, true);
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+        });
+
     }
 
     render(){
@@ -463,7 +486,7 @@ class DesktopHeader extends Component {
                             <div className="row" style={{position: "relative", bottom: "5vh"}}>
                                 
                                 {preppedItems.amazon.map(item => 
-                                    <div className="col-3">
+                                    <div className="col-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -496,7 +519,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row">
                                 {preppedItems.barnes.map(item => 
-                                    <div className="col-3">
+                                    <div className="col-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -528,7 +551,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row">
                                 {preppedItems.newEgg.map(item => 
-                                    <div className="col-3">
+                                    <div className="col-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -560,7 +583,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row">
                                 {preppedItems.ebay.map(item => 
-                                    <div className="col-3">
+                                    <div className="col-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
