@@ -2256,10 +2256,10 @@ form.mobileSearchForm button:hover {
 
 /*Top Sellers content of Desktop Header*/
 
-.topSellersDesktop {
+/* .topSellersDesktop {
     height: 240vh;
     background: white;
-}
+} */
 
 .topSellerContainer {
     display: flex;
@@ -2333,6 +2333,7 @@ form.mobileSearchForm button:hover {
     position: relative;
     left: 25%;
     top: 10%;
+    max-height: 12vh;
 }
 
 .topSellerItemTitle {

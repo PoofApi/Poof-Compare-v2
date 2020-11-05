@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { FadeTransform } from 'react-animation-components';
 import uuid from 'react-uuid';
+import FooterComponentSearchPage from './FooterComponentSearchPage';
 
 const axios = require('axios');
 
@@ -469,7 +470,7 @@ class DesktopHeader extends Component {
                         </div>
                     </div>
                      
-                    <div className="topSellersDesktop">
+                <div className="topSellersDesktop">
                     <div className="topSellerContainer">
                         <h2 className="topSellerTitle">
                             Top Selling Items
@@ -609,8 +610,9 @@ class DesktopHeader extends Component {
                         </div>
                     </div>
                 </div>
+                <FooterComponentSearchPage />
                 </div>
-                <div className="poofDesktopFooterTopSellers">
+                {/* <div className="poofDesktopFooterTopSellers">
                     <div className="container footerContainer">
                         <ul className="footerTitles">
                             <li>
@@ -639,7 +641,7 @@ class DesktopHeader extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             )
             
