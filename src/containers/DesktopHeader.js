@@ -486,7 +486,7 @@ class DesktopHeader extends Component {
                             <div className="row" style={{position: "relative", bottom: "5vh"}}>
                                 
                                 {preppedItems.amazon.map(item => 
-                                    <div className="col-3" key={uuid()}>
+                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -519,7 +519,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row">
                                 {preppedItems.barnes.map(item => 
-                                    <div className="col-3" key={uuid()}>
+                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -551,7 +551,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row">
                                 {preppedItems.newEgg.map(item => 
-                                    <div className="col-3" key={uuid()}>
+                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
@@ -583,7 +583,7 @@ class DesktopHeader extends Component {
                             </div>
                             <div className="row">
                                 {preppedItems.ebay.map(item => 
-                                    <div className="col-3" key={uuid()}>
+                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
                                             <div className="card topSellerCard">
                                                 <div className="row">
                                                     <div className="col-4">
