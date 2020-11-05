@@ -478,136 +478,144 @@ class DesktopHeader extends Component {
                         <h6 className="topSellerSubTitle">
                             From your favorite big box retailers
                         </h6>
-                        <div className="amazonRow">
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4">
-                                    <img className="img-fluid amazonTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonTopSellerLogo"/>
+                        {preppedItems.amazon[0] !== undefined &&
+                            <div className="amazonRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4">
+                                        <img className="img-fluid amazonTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonTopSellerLogo"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="row" style={{position: "relative", bottom: "5vh"}}>
-                                
-                                {preppedItems.amazon.map(item => 
-                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
-                                            <div className="card topSellerCard">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                <div className="row" style={{position: "relative", bottom: "5vh"}}>
+                                    
+                                    {preppedItems.amazon.map(item => 
+                                        <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
+                                                <div className="card topSellerCard">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid amazonBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row topSellerBuyRow">
-                                                    <div className="col-5 topSellerPrice">{`${item.price}`}</div>
-                                                    <div className="col-6 watchlistButtons">
-                                                        <a href={item.itemUrl} target="_blank"><img className="img-fluid amazonBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonBuyLogo"/></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
-                                
-                            </div>
-                            <div className="topSellerOverlay"></div>
-                        </div>
-                        <div className="barnesRow">
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
-                                    <img className="img-fluid topSellerLogo barnesTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesTopSellerLogo"/>
+                                        </div>
+                                    )}
+                                    
                                 </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="row">
-                                {preppedItems.barnes.map(item => 
-                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
-                                            <div className="card topSellerCard">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                        }
+                        {preppedItems.barnes[0] !== undefined &&
+                            <div className="barnesRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                        <img className="img-fluid topSellerLogo barnesTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesTopSellerLogo"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    {preppedItems.barnes.map(item => 
+                                        <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
+                                                <div className="card topSellerCard">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid barnesBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row topSellerBuyRow">
-                                                    <div className="col-5 topSellerPrice">{`${item.price}`}</div>
-                                                    <div className="col-6 watchlistButtons">
-                                                        <a href={item.itemUrl} target="_blank"><img className="img-fluid barnesBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesBuyLogo"/></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="topSellerOverlay"></div>
-                        </div>
-                        <div className="newEggRow">
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
-                                    <img className="img-fluid topSellerLogo newEggTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggTopSellerLogo"/>
+                                        </div>
+                                    )}
                                 </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="row">
-                                {preppedItems.newEgg.map(item => 
-                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
-                                            <div className="card topSellerCard">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                        }
+                        {preppedItems.newEgg[0] !== undefined &&
+                            <div className="newEggRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                        <img className="img-fluid topSellerLogo newEggTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggTopSellerLogo"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    {preppedItems.newEgg.map(item => 
+                                        <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
+                                                <div className="card topSellerCard">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid newEggBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row topSellerBuyRow">
-                                                    <div className="col-5 topSellerPrice">{`${item.price}`}</div>
-                                                    <div className="col-6 watchlistButtons">
-                                                        <a href={item.itemUrl} target="_blank"><img className="img-fluid newEggBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggBuyLogo"/></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
-                            </div>
-                            <div className="topSellerOverlay"></div>
-                        </div>
-                        <div className="ebayRow">
-                            <div className="row topSellerLogoRow">
-                                <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
-                                    <img className="img-fluid topSellerLogo ebayTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayTopSellerLogo"/>
+                                        </div>
+                                    )}
                                 </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="row">
-                                {preppedItems.ebay.map(item => 
-                                    <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
-                                            <div className="card topSellerCard">
-                                                <div className="row">
-                                                    <div className="col-4">
-                                                        <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                        }
+                        {preppedItems.ebay[0] !== undefined &&
+                            <div className="ebayRow">
+                                <div className="row topSellerLogoRow">
+                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                        <img className="img-fluid topSellerLogo ebayTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayTopSellerLogo"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    {preppedItems.ebay.map(item => 
+                                        <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
+                                                <div className="card topSellerCard">
+                                                    <div className="row">
+                                                        <div className="col-4">
+                                                            <img src={item.image} className="img-fluid topSellerItemImg" alt="sample"/>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            <div className="card-body">
+                                                                <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="col-8">
-                                                        <div className="card-body">
-                                                            <h6 className="card-title topSellerItemTitle">{item.title}</h6>
+                                                    <div className="row topSellerBuyRow">
+                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 watchlistButtons">
+                                                            <a href={item.itemUrl} target="_blank"><img className="img-fluid ebayBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayBuyLogo"/></a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="row topSellerBuyRow">
-                                                    <div className="col-5 topSellerPrice">{`${item.price}`}</div>
-                                                    <div className="col-6 watchlistButtons">
-                                                        <a href={item.itemUrl} target="_blank"><img className="img-fluid ebayBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayBuyLogo"/></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                )}
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="topSellerOverlay"></div>
                             </div>
-                            <div className="topSellerOverlay"></div>
-                        </div>
+                        }
                     </div>
                 </div>
                 <FooterComponentSearchPage />

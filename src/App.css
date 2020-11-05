@@ -2387,6 +2387,51 @@ form.mobileSearchForm button:hover {
     right: 1vw;
 }
 
+.show3 {
+    opacity: 1;
+    transition: opacity 4s;
+}
+
+.hide3 {
+    width: 0%;
+    opacity: 0;
+}
+
+.topScroller3 {
+    height: 50px;
+    width: 53px;
+    position: absolute;
+    bottom: 8vh;
+    right: 38px;
+    background: #806543;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0.8;
+    animation: enlarge 0.8s;
+}
+
+.topTool3 {
+    width: 65px;
+    font-size: smaller;
+    font-weight: 400;
+    visibility: hidden;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 16%;
+    left: 97.6%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-break: break-word;
+}
 
 /*About Poof Page*/
 
