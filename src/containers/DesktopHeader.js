@@ -211,26 +211,29 @@ class DesktopHeader extends Component {
     componentDidMount(){
         getMostPopular();
 
-        // let ele = document.querySelector("body");
-        // let menu = document.getElementById("myID");
-        // ele.addEventListener("scroll", () => {
-        //     let y = ele.scrollTop;
-        //     if (y >= 100) {
-        //     if(menu){
-        //         menu.className = "show"
-        //     }
-        // } else {
-        //     if(menu){
-        //         menu.className = "hide"
-        //     }
-        // }
-        // }, true);
+        let ele = document.querySelector("body");
+        let menu = document.querySelector(".hideScroller");
 
         window.scrollTo({
             top: 0,
             left: 0,
             behavior: 'auto'
         });
+
+        let last_known_scroll_position = 0;
+        window.addEventListener('scroll', function(e) {
+            last_known_scroll_position = window.scrollY;
+          
+            if (last_known_scroll_position >= 100) {
+                if(menu){
+                    menu.className = "desktopTopScroller";
+                }
+            } else {
+                if(menu){
+                    menu.className = "hideScroller"
+                }
+            }
+          });
 
     }
 
@@ -620,36 +623,9 @@ class DesktopHeader extends Component {
                 </div>
                 <FooterComponentSearchPage />
                 </div>
-                {/* <div className="poofDesktopFooterTopSellers">
-                    <div className="container footerContainer">
-                        <ul className="footerTitles">
-                            <li>
-                                <h4>Search Categories</h4>
-                                <ul>
-                                    <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
-                                    <li onClick={() => this.handleSubmit3("books")}>Books</li>
-                                    <li onClick={() => this.handleSubmit3("clothes")}>Clothes</li>
-                                    <li onClick={() => this.handleSubmit3("games")}>Games</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h4>Links</h4>
-                                <ul>
-                                    <li><Link className="aboutLinkFooter" to={'/aboutPoof'} onClick={this.scrollUp}>About</Link></li>
-                                    <li>Features</li>
-                                    <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
-                                    <li>Terms</li>
-                                    <li>Privacy</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div className="row justify-content-center">             
-                            <div className="col-auto">
-                                <p>© 2020 Poof! Price Compare</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                <div id="myID" className="hideScroller">
+                    Return to Top
+                </div>
             </div>
             )
             
