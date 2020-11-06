@@ -131,7 +131,7 @@ class FooterComponentSearchPage extends Component {
                             <h4>Links</h4>
                             <ul>
                                 <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
-                                <li>Features</li>
+                                <li><Link className="featureLinkFooter" to={'/featuresPoof'}>Features</Link></li>
                                 <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
                                 <li>Terms</li>
                                 <li>Privacy</li>

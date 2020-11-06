@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HeaderComponent2 from './HeaderComponent2'
-import { withRouter } from 'react-router-dom';
-import FooterComponentSearchPage from './FooterComponentSearchPage';
+import { withRouter } from 'react-router-dom'
+import FooterComponentSearchPage from './FooterComponentSearchPage'
 
 
 class AboutPageRoute extends Component {

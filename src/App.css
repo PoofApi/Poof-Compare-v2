@@ -2254,6 +2254,11 @@ form.mobileSearchForm button:hover {
     color: #806543 !important;
 }
 
+.featureLinkFooter:hover {
+    cursor: pointer;
+    color: #806543 !important;
+}
+
 /*Top Sellers content of Desktop Header*/
 
 /* .topSellersDesktop {
@@ -2470,6 +2475,12 @@ form.mobileSearchForm button:hover {
 
 .aboutRow {
     margin-bottom: unset !important;
+}
+
+/*Feature Component*/
+
+.featureContainer {
+    margin-top: 12vh !important;
 }
 
 /*FooterSearchPage Component*/

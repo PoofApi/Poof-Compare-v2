@@ -623,10 +623,8 @@ class DesktopHeader extends Component {
                 </div>
                 <FooterComponentSearchPage />
                 </div>
-                <a href="#desktopTop">
-                    <div id="myID" className="hideScroller">
-                        Return to Top
-                    </div>
+                <a id="myID" className="hideScroller" href="#desktopTop">
+                    Return to Top
                 </a>
             </div>
             )
