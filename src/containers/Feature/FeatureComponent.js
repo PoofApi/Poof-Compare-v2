@@ -29,6 +29,22 @@ class FeatureComponent extends Component {
                         <p className="featureTitleTextContent">A better, more comprehensive way to shop online! Shop smart, save time, and still find the best value for your dollar!</p>
                     </div>
                 </div>
+                {/* <div className="row">
+                    <div className="col-7">
+                        <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/Iphone+2.png" alt="poofPhonePic"/>
+                    </div>
+                    <div className="col-5">
+                        Search and compare items from major big box retailers!
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-5">
+                        Not sure you want to make a purchase just yet? Simply add it to your watchlist!
+                    </div>
+                    <div className="col-7">
+                        <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/Iphone+1.png" alt="poofPhonePic2"/>
+                    </div>
+                </div> */}
             </div>
             <FooterComponentSearchPage />
         </div>

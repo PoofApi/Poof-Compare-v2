@@ -9,7 +9,7 @@
 
 .featureComponentBanner {
     position: relative;
-    background-image: url(/static/media/featureBanner.5fd07d17.jpg) !important;
+    background-image: url(../../images/featureBanner.jpg) !important;
     background-repeat: no-repeat;
     background-size: 100vw 75vh;
     height: 75vh;
