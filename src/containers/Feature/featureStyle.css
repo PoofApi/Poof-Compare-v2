@@ -42,3 +42,35 @@
     left: 5%;
     width: 30%;
 }
+
+.iphonePic1 {
+    max-height: 89vh;
+    width: 43vw;
+}
+
+.iphone1Text {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    line-height: normal;
+}
+
+.iphonePic2Row {
+    position: relative;
+    justify-content: flex-end;
+    left: 8.5vw;
+}
+
+.iphonePic2 {
+    position: relative;
+    max-height: 90vh;
+    width: 32vw;
+}
+
+.iphone2Text {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    line-height: normal;
+    text-align: center;
+}
