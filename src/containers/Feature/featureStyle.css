@@ -1,18 +1,20 @@
 .featureTitle {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
     line-height: normal;
     font-family: sans-serif;
-    position: relative;
-    left: 9vw;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    color: white;
 }
 
 .featureComponentBanner {
     position: relative;
     background-image: url(../../images/featureBanner.jpg) !important;
     background-repeat: no-repeat;
-    background-size: 100vw 75vh;
-    height: 75vh;
+    background-size: 100vw 80vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -27,7 +29,7 @@
 
 .featureTitleText {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -73,4 +75,43 @@
     font-size: 1.1rem;
     line-height: normal;
     text-align: center;
+    position: relative;
+    right: 5%;
+}
+
+/*For top scroller*/
+
+.desktopTopScroller {
+    z-index: 2;
+    position: fixed;
+    right: 4vw;
+    bottom: 3vh;
+    padding: 20px;
+    background: #806543;
+    border-radius: 7px;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 1s;
+    animation: enlarge 0.8s;
+}
+
+.hideScroller {
+    opacity: 0;
+}
+
+.desktopTopScroller:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: var(--cool-gray-80,#283e4a);
+    border: white solid 1px;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
+#desktopTop2 {
+    position: relative;
+    top: -300px;
 }

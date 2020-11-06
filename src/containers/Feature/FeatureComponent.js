@@ -13,17 +13,37 @@ class FeatureComponent extends Component {
             left: 0,
             behavior: 'auto'
         });
+
+        console.log("features mounted");
+        console.log(window.scrollY);
+    
+        let menu = document.querySelector(".hideScroller");
+        let ele = document.querySelector("body")
+        ele.addEventListener("scroll", () => {
+            let y = ele.scrollTop;
+            
+            if (y >= 100) {
+                if(menu){
+                    menu.className = "desktopTopScroller";
+                }
+            } else {
+                if(menu){
+                    menu.className = "hideScroller"
+                }
+            }
+          }, true);
     }
 
     render() {
         return (
             <div>
-            <HeaderComponent2 />
+            <div id="desktopTop2"></div>
+            <HeaderComponent2/>
             <div className="container-fluid featureContainer">
-                <h2 className="featureTitle">
-                    Features
-                </h2>
                 <div className="featureComponentBanner">
+                    <h2 className="featureTitle">
+                        Features
+                    </h2>
                     <div className="featureTitleBody">
                         <h1 className="featureTitleText">Introducing Poof! Price Compare</h1>
                         <p className="featureTitleTextContent">A better, more comprehensive way to shop online! Shop smart, save time, and find yourself the best value for your dollar!</p>
@@ -46,6 +66,9 @@ class FeatureComponent extends Component {
                     </div>
                 </div>
             </div>
+            <a id="myID" className="hideScroller" href="#desktopTop2">
+                Return to Top
+            </a>
             <FooterComponentSearchPage />
         </div>
         )

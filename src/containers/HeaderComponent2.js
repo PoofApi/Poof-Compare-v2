@@ -137,8 +137,7 @@ class Header2 extends Component {
 
         return (
             
-                <div className={urlName == "/contactPoof" ? "contactNavBar" : "newNavBar"}>
-                        
+                <div className={urlName == "/contactPoof" ? "contactNavBar" : (urlName == "/featuresPoof" ? "featuresNavBar" : "newNavBar")}>
                     <div onClick={() => this.returnHome()} className="poofLogo">
                         <Link className="newPoofLogo" to={'/'}><img src={Poof_White} alt="poofWhiteLogo" style={{width:"85%"}}></img></Link>
                     </div>
