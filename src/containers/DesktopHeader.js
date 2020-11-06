@@ -251,7 +251,7 @@ class DesktopHeader extends Component {
             
             (preppedItems.amazon[0] !== undefined ?
             (this.state.loading ? 
-                <div className="poofDesktopComponent">
+                <div id="desktopTop" className="poofDesktopComponent">
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
@@ -361,7 +361,7 @@ class DesktopHeader extends Component {
             :
 
 
-            <div className="poofDesktopComponent">
+            <div id="desktopTop" className="poofDesktopComponent">
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
@@ -623,9 +623,11 @@ class DesktopHeader extends Component {
                 </div>
                 <FooterComponentSearchPage />
                 </div>
-                <div id="myID" className="hideScroller">
-                    Return to Top
-                </div>
+                <a href="#desktopTop">
+                    <div id="myID" className="hideScroller">
+                        Return to Top
+                    </div>
+                </a>
             </div>
             )
             

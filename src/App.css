@@ -2396,14 +2396,26 @@ form.mobileSearchForm button:hover {
     background: #806543;
     border-radius: 7px;
     color: white;
-    opacity: 1;
+    opacity: 0.8;
     transition: opacity 1s;
+    animation: enlarge 0.8s;
 }
 
 .hideScroller {
     opacity: 0;
 }
 
+.desktopTopScroller:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: var(--cool-gray-80,#283e4a);
+    border: white solid 1px;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
 
 
 /*About Poof Page*/
