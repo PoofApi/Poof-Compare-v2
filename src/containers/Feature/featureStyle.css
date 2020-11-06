@@ -1,5 +1,44 @@
+.featureTitle {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: normal;
+    font-family: sans-serif;
+    position: relative;
+    left: 9vw;
+}
+
 .featureComponentBanner {
-    background-image: url(../../images/featureBanner.jpg) !important;
+    position: relative;
+    background-image: url(/static/media/featureBanner.5fd07d17.jpg) !important;
     background-repeat: no-repeat;
-    background-size: 100vw 30vh;
+    background-size: 100vw 75vh;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.featureContainer {
+    margin-top: 10vh !important;
+}
+
+.featureTitleBody {
+    color: white;
+}
+
+.featureTitleText {
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.featureTitleTextContent {
+    text-align: center;
+    font-size: 15px;
+}
+
+.featureTitleBody {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 30%;
 }

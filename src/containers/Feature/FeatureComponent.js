@@ -21,10 +21,13 @@ class FeatureComponent extends Component {
             <HeaderComponent2 />
             <div className="container-fluid featureContainer">
                 <h2 className="featureTitle">
-                    Poof! Features
+                    Features
                 </h2>
                 <div className="featureComponentBanner">
-
+                    <div className="featureTitleBody">
+                        <h1 className="featureTitleText">Introducing Poof! Price Compare</h1>
+                        <p className="featureTitleTextContent">A better, more comprehensive way to shop online! Shop smart, save time, and still find the best value for your dollar!</p>
+                    </div>
                 </div>
             </div>
             <FooterComponentSearchPage />
