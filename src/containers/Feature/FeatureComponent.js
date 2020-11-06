@@ -13,9 +13,6 @@ class FeatureComponent extends Component {
             left: 0,
             behavior: 'auto'
         });
-
-        console.log("features mounted");
-        console.log(window.scrollY);
     
         let menu = document.querySelector(".hideScroller");
         let ele = document.querySelector("body")
