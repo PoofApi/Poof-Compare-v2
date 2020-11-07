@@ -211,7 +211,6 @@ class DesktopHeader extends Component {
     componentDidMount(){
         getMostPopular();
 
-        let ele = document.querySelector("body");
         let menu = document.querySelector(".hideScroller");
 
         window.scrollTo({
