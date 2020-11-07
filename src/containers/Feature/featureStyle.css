@@ -53,8 +53,13 @@
 .iphone1Text {
     font-weight: 900;
     font-family: sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     line-height: normal;
+}
+
+.iphone1TextBody {
+    position: relative;
+    bottom: 10vh;
 }
 
 .iphonePic2Row {
@@ -72,11 +77,33 @@
 .iphone2Text {
     font-weight: 900;
     font-family: sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     line-height: normal;
     text-align: center;
     position: relative;
     right: 5%;
+}
+
+.iphone2TextBody {
+    position: relative;
+    bottom: 10vh;
+}
+
+.gifInstruction {
+    margin-top: 15vh;
+}
+
+.gifInstructionVid {
+    margin-top: 7vh;
+}
+
+.gifInstructionText {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: normal;
+    text-align: center;
+    position: relative;
 }
 
 /*For top scroller*/
