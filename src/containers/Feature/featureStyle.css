@@ -1,5 +1,144 @@
+.featureTitle {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: normal;
+    font-family: sans-serif;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    color: white;
+}
+
 .featureComponentBanner {
+    position: relative;
     background-image: url(../../images/featureBanner.jpg) !important;
     background-repeat: no-repeat;
-    background-size: 100vw 30vh;
+    background-size: 100vw 80vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.featureContainer {
+    margin-top: 10vh !important;
+}
+
+.featureTitleBody {
+    color: white;
+}
+
+.featureTitleText {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.featureTitleTextContent {
+    text-align: center;
+    font-size: 15px;
+}
+
+.featureTitleBody {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 30%;
+}
+
+.iphonePic1 {
+    max-height: 89vh;
+    width: 43vw;
+}
+
+.iphone1Text {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.iphone1TextBody {
+    position: relative;
+    bottom: 10vh;
+}
+
+.iphonePic2Row {
+    position: relative;
+    justify-content: flex-end;
+    left: 8.5vw;
+}
+
+.iphonePic2 {
+    position: relative;
+    max-height: 90vh;
+    width: 32vw;
+}
+
+.iphone2Text {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    right: 5%;
+}
+
+.iphone2TextBody {
+    position: relative;
+    bottom: 10vh;
+}
+
+.gifInstruction {
+    margin-top: 15vh;
+}
+
+.gifInstructionVid {
+    margin-top: 7vh;
+}
+
+.gifInstructionText {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+}
+
+/*For top scroller*/
+
+.desktopTopScroller {
+    z-index: 2;
+    position: fixed;
+    right: 4vw;
+    bottom: 3vh;
+    padding: 20px;
+    background: #806543;
+    border-radius: 7px;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 1s;
+    animation: enlarge 0.8s;
+}
+
+.hideScroller {
+    opacity: 0;
+}
+
+.desktopTopScroller:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: var(--cool-gray-80,#283e4a);
+    border: white solid 1px;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
+#desktopTop2 {
+    position: relative;
+    top: -300px;
 }

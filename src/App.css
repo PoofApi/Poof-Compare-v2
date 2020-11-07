@@ -236,7 +236,11 @@ input::placeholder{
     }
 
     .newNavBar{
-        left: -16px !important;
+        left: -17px !important;
+    }
+
+    .featuresNavBar {
+        left: -17px !important;
     }
 }
 
@@ -951,6 +955,21 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     background-color: #0C1344;
+}
+
+.featuresNavBar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 1s;
+    z-index: 2;
+    border-bottom: 1px solid;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C1344;
+    height: 10vh;
 }
 
 .newNavBar2{
@@ -2475,12 +2494,6 @@ form.mobileSearchForm button:hover {
 
 .aboutRow {
     margin-bottom: unset !important;
-}
-
-/*Feature Component*/
-
-.featureContainer {
-    margin-top: 12vh !important;
 }
 
 /*FooterSearchPage Component*/
