@@ -269,9 +269,18 @@ class DesktopHeader extends Component {
                                         <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
                                             Perry the Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
                                         </div>
-                                        <div className="exampleContainer justify-content-center mb-4">
+                                        {/* <div className="exampleContainer justify-content-center mb-4">
                                             <div className="desktopLoadBar1"></div>
                                             <div className="desktopLoadBar2"></div>
+                                        </div> */}
+                                        <div className="poofLoading">
+                                            <ul className="poofLoadingList">
+                                                <li className="poofLoadingItem">P</li>
+                                                <li className="poofLoadingItem">O</li>
+                                                <li className="poofLoadingItem">O</li>
+                                                <li className="poofLoadingItem">F</li>
+                                                <li className="poofLoadingItem">!</li>
+                                            </ul>
                                         </div>
                                     </div>                   
                                 </div>
@@ -320,9 +329,6 @@ class DesktopHeader extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="topSellersDesktop">
-                        <img src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonTopSellerLogo"/>
                     </div>
                 </div>
                 <div className="poofDesktopFooter">
