@@ -2,4 +2,42 @@
     position: relative;
     top: 10vh;
     margin-top: 5vh;
+    margin-bottom: 15vh;
+}
+
+/*For top scroller*/
+
+.desktopTopScrollerTerms {
+    z-index: 2;
+    position: fixed;
+    right: 4vw;
+    bottom: 3vh;
+    padding: 20px;
+    background: #806543;
+    border-radius: 7px;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 1s;
+    animation: enlarge 0.8s;
+}
+
+.hideScrollerTerms {
+    opacity: 0;
+}
+
+.desktopTopScrollerTerms:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: var(--cool-gray-80,#283e4a);
+    border: white solid 1px;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
+#desktopTopTerms {
+    position: relative;
+    top: -300px;
 }

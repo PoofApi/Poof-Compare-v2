@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import FooterComponentSearchPage from '../FooterComponentSearchPage';
 import HeaderComponent2 from '../HeaderComponent2';
 import './terms.css';
 
 const TermsComponent = () => {
+
+  useEffect(() => {
+    document.querySelector('body').scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'auto'
+    });
+
+    let menu = document.querySelector(".hideScrollerTerms");
+    let ele = document.querySelector("body");
+
+    ele.addEventListener("scroll", () => {
+        let y = ele.scrollTop;
+        
+        if (y >= 100) {
+            if(menu){
+                menu.className = "desktopTopScrollerTerms";
+            }
+        } else {
+            if(menu){
+                menu.className = "hideScrollerTerms"
+            }
+        }
+      }, true);
+
+  }); 
+
   return (
     <div className="termsComponentPage">
+      <div id="desktopTopTerms"></div>
       <HeaderComponent2 />
       <div className="container termsPageContainer">
       <style dangerouslySetInnerHTML={{__html: "\n  [data-custom-class='body'], [data-custom-class='body'] * {\n          background: transparent !important;\n        }\n[data-custom-class='title'], [data-custom-class='title'] * {\n          font-family: Arial !important;\nfont-size: 26px !important;\ncolor: #000000 !important;\n        }\n[data-custom-class='subtitle'], [data-custom-class='subtitle'] * {\n          font-family: Arial !important;\ncolor: #595959 !important;\nfont-size: 14px !important;\n        }\n[data-custom-class='heading_1'], [data-custom-class='heading_1'] * {\n          font-family: Arial !important;\nfont-size: 19px !important;\ncolor: #000000 !important;\n        }\n[data-custom-class='heading_2'], [data-custom-class='heading_2'] * {\n          font-family: Arial !important;\nfont-size: 17px !important;\ncolor: #000000 !important;\n        }\n[data-custom-class='body_text'], [data-custom-class='body_text'] * {\n          color: #595959 !important;\nfont-size: 14px !important;\nfont-family: Arial !important;\n        }\n[data-custom-class='link'], [data-custom-class='link'] * {\n          color: #3030F1 !important;\nfont-size: 14px !important;\nfont-family: Arial !important;\nword-break: break-word !important;\n        }\n" }} />
@@ -129,7 +158,10 @@ const TermsComponent = () => {
               445-1254.</span></div><div className="MsoNormal" style={{lineHeight: '1.5'}}><br /></div><div className="MsoNormal" style={{lineHeight: '1.5'}}><br /></div><div className="MsoNormal" style={{lineHeight: '1.5'}}><span style={{fontSize: '11.0pt', lineHeight: '115%', fontFamily: 'Arial', color: '#595959', msoThemecolor: 'text1', msoThemetint: 166}}><span style={{fontSize: '11.0pt', lineHeight: '115%', fontFamily: 'Arial', color: '#595959', msoThemecolor: 'text1', msoThemetint: 166}}><bdt className="statement-end-if-in-editor" /></span></span></div><div className="MsoNormal" data-custom-class="heading_1" style={{lineHeight: '115%'}}><a name="_d4jvmcnxg0wt" /><strong><span style={{lineHeight: '115%', fontFamily: 'Arial', fontSize: '19px'}}>MISCELLANEOUS</span></strong></div></div><div align="center" style={{textAlign: 'left', lineHeight: 1}}><br /></div><div align="center" style={{textAlign: 'left'}}><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{fontSize: '11.0pt', lineHeight: '115%', fontFamily: 'Arial', color: '#595959', msoThemecolor: 'text1', msoThemetint: 166}}>These Terms of Use and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Site. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.<bdt className="block-component" /></span></div></div><div align="center" style={{textAlign: 'left', lineHeight: '1.5'}}><br /></div><div align="center" style={{textAlign: 'left'}}><div className="MsoNormal" style={{lineHeight: '1.5'}}><br /></div><div className="MsoNormal" data-custom-class="heading_1" style={{lineHeight: '1.5'}}><a name="_t4pq5cwn486q" /><strong><span style={{lineHeight: '115%', fontFamily: 'Arial'}}><span style={{fontSize: '19px'}}>CONTACT US</span>&nbsp;</span></strong></div></div><div align="center" style={{textAlign: 'left', lineHeight: 1}}><br /></div><div align="center" style={{textAlign: 'left'}}><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{fontSize: '11.0pt', lineHeight: '115%', fontFamily: 'Arial', color: '#595959', msoThemecolor: 'text1', msoThemetint: 166}}>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:&nbsp;</span></div></div><div align="center" style={{textAlign: 'left', lineHeight: 1}}><br /></div><div align="center" style={{textAlign: 'left'}}><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{fontSize: '15px', lineHeight: '115%', fontFamily: 'Arial', color: 'rgb(89, 89, 89)'}}><bdt className="block-container question question-in-editor" data-id="8a6919c4-2010-e7d6-2305-d74dfb08909d" data-type="question"><strong>Poof! Price Compare</strong></bdt></span><span style={{color: 'rgb(89, 89, 89)'}}><strong><span style={{fontSize: '15px'}}><bdt className="block-component" /></span></strong></span></div><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{color: 'rgb(89, 89, 89)'}}><strong><span style={{fontSize: '15px'}}><bdt className="question">32 Taft Street</bdt><bdt className="statement-end-if-in-editor" /><bdt className="block-component" /></span></strong></span></div><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{color: 'rgb(89, 89, 89)'}}><strong><span style={{fontSize: '15px'}}><bdt className="question">Nutley</bdt><bdt className="block-component" /></span></strong><strong><span style={{fontSize: '15px'}}><bdt className="block-component" />, <bdt className="question">NJ</bdt><bdt className="statement-end-if-in-editor" /></span></strong><strong><span style={{fontSize: '15px'}}><bdt className="block-component" /></span></strong><strong><span style={{fontSize: '15px'}}><bdt className="block-component" /></span></strong></span> <span style={{color: 'rgb(89, 89, 89)'}}><strong><span style={{fontSize: '15px'}}><bdt className="question">07110</bdt><bdt className="statement-end-if-in-editor" /> <bdt className="block-component" /><bdt className="block-component" /><bdt className="block-component" /></span></strong></span></div><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{color: 'rgb(89, 89, 89)'}}><strong><span style={{fontSize: '15px'}}><bdt className="question">United States</bdt><bdt className="statement-end-if-in-editor" /><bdt className="else-block" /><bdt className="statement-end-if-in-editor" /></span></strong></span></div><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{color: 'rgb(89, 89, 89)'}}><strong><span style={{fontSize: '15px'}}>Phone:&nbsp;</span></strong><strong><span style={{fontSize: '15px'}}><span style={{lineHeight: '115%', fontFamily: 'Arial'}}><bdt className="block-container question question-in-editor" data-id="dd6f266f-438b-bfdc-9204-0b17e109e270" data-type="question">973-901-2579</bdt></span></span></strong></span><span style={{fontSize: '15px'}}><strong><span style={{color: 'rgb(89, 89, 89)'}}><bdt className="block-component" /></span></strong></span></div><div className="MsoNormal" data-custom-class="body_text" style={{lineHeight: '1.5'}}><span style={{fontSize: '15px', lineHeight: '115%', fontFamily: 'Arial', color: 'rgb(89, 89, 89)'}}><bdt className="block-container question question-in-editor" data-id="fdc2b5b8-c95f-244b-23a7-287f82541348" data-type="question"><strong>epalumbo@poofapi.com</strong></bdt></span></div><br /></div><style dangerouslySetInnerHTML={{__html: "\n      ul {\n        list-style-type: square;\n      }\n      ul > li > ul {\n        list-style-type: circle;\n      }\n      ul > li > ul > li > ul {\n        list-style-type: square;\n      }\n      ol li {\n        font-family: Arial ;\n      }\n    " }} />
       </div>
       </div>
-      
+      <a id="myID" className="hideScrollerTerms" href="#desktopTopTerms">
+          Return to Top
+      </a>
+      <FooterComponentSearchPage />
     </div>
   );
 }

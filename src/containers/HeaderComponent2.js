@@ -98,7 +98,7 @@ class Header2 extends Component {
             event.preventDefault();
             
             let urlName = window.location.pathname;
-                if (urlName == "/aboutPoof" || urlName == "/contactPoof"){
+                if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || urlName == "/poof-terms-and-conditions"){
                     this.props.history.push("/")
                 }
 

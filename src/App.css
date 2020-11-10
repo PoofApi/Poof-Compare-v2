@@ -2278,6 +2278,11 @@ form.mobileSearchForm button:hover {
     color: #806543 !important;
 }
 
+.termsLinkFooter:hover {
+    cursor: pointer;
+    color: #806543 !important;
+}
+
 /*Top Sellers content of Desktop Header*/
 
 /* .topSellersDesktop {
