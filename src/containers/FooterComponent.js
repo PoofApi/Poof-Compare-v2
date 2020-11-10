@@ -131,7 +131,7 @@ class FooterComponent extends Component {
                                 <li><Link className="featureLinkFooter" to={'/featuresPoof'}>Features</Link></li>
                                 <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
                                 <li><Link className="termsLinkFooter" to={'/poof-terms-and-conditions'}>Terms</Link></li>
-                                <li>Privacy</li>
+                                <li><Link className="privacyLinkFooter" to={'/poof-privacy-policy'}>Privacy</Link></li>
                             </ul>
                         </li>
                     </ul>

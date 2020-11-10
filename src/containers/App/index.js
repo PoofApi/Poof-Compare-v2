@@ -10,6 +10,7 @@ import "materialize-css/dist/js/materialize.min.js";
 import ContactComponent from '../Contact/ContactComponent';
 import FeatureComponent from '../Feature/FeatureComponent';
 import TermsComponent from '../Terms/TermsComponent';
+import PrivacyComponent from '../Privacy/PrivacyComponent';
 
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
               <Route exact path="/contactPoof" component={ContactComponent} />
               <Route exact path="/featuresPoof" component={FeatureComponent} />
               <Route exact path="/poof-terms-and-conditions" component={TermsComponent} />
+              <Route exact path="/poof-privacy-policy" component={PrivacyComponent} />
               <Route component={NotFound}/>
             </Switch>
           </div>
