@@ -269,10 +269,13 @@ class DesktopHeader extends Component {
                                         <div className="mb-4" style={{fontSize: "20px", color: "white", textAlign: "center"}}>
                                             Perry the Poof! Sloth is surfing the web waves hard to find you the best deals! Just one moment while he finds you your products.
                                         </div>
+                                        {/*Previous Loader*/}
+
                                         {/* <div className="exampleContainer justify-content-center mb-4">
                                             <div className="desktopLoadBar1"></div>
                                             <div className="desktopLoadBar2"></div>
                                         </div> */}
+                                        
                                         <div className="poofLoading">
                                             <ul className="poofLoadingList">
                                                 <li className="poofLoadingItem">P</li>
