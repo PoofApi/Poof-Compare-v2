@@ -39,7 +39,7 @@
     top: -300px;
 }
 
-.poofSiteLink:hover {
+.poofPrivacyLink:hover {
     color: blue !important;
     text-decoration: underline !important;
 }
