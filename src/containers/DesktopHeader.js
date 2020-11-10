@@ -275,7 +275,7 @@ class DesktopHeader extends Component {
                                             <div className="desktopLoadBar1"></div>
                                             <div className="desktopLoadBar2"></div>
                                         </div> */}
-                                        
+
                                         <div className="poofLoading">
                                             <ul className="poofLoadingList">
                                                 <li className="poofLoadingItem">P</li>
