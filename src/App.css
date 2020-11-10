@@ -390,6 +390,11 @@ a:hover{
     text-decoration: none !important;
 }
 
+.poofSiteLink:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
 .toggleButton{
     margin-left: 5px;
     color: white;
