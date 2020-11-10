@@ -98,7 +98,7 @@ class Header2 extends Component {
             event.preventDefault();
             
             let urlName = window.location.pathname;
-                if (urlName == "/aboutPoof" || urlName == "/contactPoof"){
+                if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || urlName == "/poof-terms-and-conditions"){
                     this.props.history.push("/")
                 }
 
@@ -137,7 +137,7 @@ class Header2 extends Component {
 
         return (
             
-                <div className={urlName == "/contactPoof" ? "contactNavBar" : (urlName == "/featuresPoof" ? "featuresNavBar" : "newNavBar")}>
+                <div className={urlName == "/contactPoof" ? "contactNavBar" : (urlName == "/featuresPoof" || urlName == "/poof-terms-and-conditions" ? "featuresNavBar" : "newNavBar")}>
                     <div onClick={() => this.returnHome()} className="poofLogo">
                         <Link className="newPoofLogo" to={'/'}><img src={Poof_White} alt="poofWhiteLogo" style={{width:"85%"}}></img></Link>
                     </div>

@@ -130,7 +130,7 @@ class FooterComponent extends Component {
                                 <li><Link className="aboutLinkFooter" to={'/aboutPoof'} onClick={() => this.scrollUp()}>About</Link></li>
                                 <li><Link className="featureLinkFooter" to={'/featuresPoof'}>Features</Link></li>
                                 <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
-                                <li>Terms</li>
+                                <li><Link className="termsLinkFooter" to={'/poof-terms-and-conditions'}>Terms</Link></li>
                                 <li>Privacy</li>
                             </ul>
                         </li>
