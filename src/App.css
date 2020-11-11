@@ -2219,7 +2219,8 @@ form.mobileSearchForm button:hover {
 }
 
 .dIcon {
-    border: 2px solid black;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 20px;
     display: flex;
     height: 25vh;
@@ -2345,10 +2346,9 @@ form.mobileSearchForm button:hover {
 
 /*Top Sellers content of Desktop Header*/
 
-/* .topSellersDesktop {
-    height: 240vh;
-    background: white;
-} */
+.topSellersDesktop {
+    background: #0C1344;
+}
 
 .topSellerContainer {
     display: flex;
@@ -2367,6 +2367,7 @@ form.mobileSearchForm button:hover {
 .barnesRow {
     position: relative;
     z-index: 1;
+    margin-bottom: 15vh;
 }
 
 .newEggRow {
@@ -2382,16 +2383,22 @@ form.mobileSearchForm button:hover {
 .topSellerOverlay {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    background: bisque;
-    height: 55%;
+    left: -6.5%;
+    width: 112%;
+    background: white;
+    height: 40vh;
     z-index: -1;
+    border: #0C1344 5px solid;
+    border-radius: 20px;
 }
 
 .topSellerLogoRow {
     display: flex;
     justify-content: center;
+}
+
+.topSellerCard {
+    border-radius: 15px !important;
 }
 
 .topSellerCard:hover {
@@ -2400,22 +2407,27 @@ form.mobileSearchForm button:hover {
 }
 
 .topSellerTitle {
-    font-weight: 900;
-    font-family: revert;
-    position: absolute;
-    top: 2vh;
-    left: 11vw;
-    font-size: 28px;
+    font-weight: 700;
+    font-family: ui-sans-serif;
+    color: white;
     z-index: 2;
+    position: relative;
+    top: 5px;
+}
+
+@media screen and (max-width: 1090px) {
+    .topSellerTitle {
+        font-size: 1.8rem;
+    }
 }
 
 .topSellerSubTitle {
-    font-family: serif;
-    position: absolute;
-    top: 7vh;
-    left: 11.2vw;
-    font-size: 20px;
+    font-weight: 700;
+    font-family: ui-sans-serif;
+    color: white;
     z-index: 2;
+    position: relative;
+    bottom: 10px;
 }
 
 .topSellerItemImg {
@@ -2434,7 +2446,7 @@ form.mobileSearchForm button:hover {
 .amazonTopSeller {
     width: 100%;
     height: 100%;
-    max-height: 25vh;
+    max-height: 28vh;
 }
 
 .topSellerLogo {
