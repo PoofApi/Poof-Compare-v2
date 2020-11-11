@@ -483,12 +483,46 @@ class DesktopHeader extends Component {
                      
                 <div className="topSellersDesktop">
                     <div className="topSellerContainer">
-                        <h2 className="topSellerTitle">
-                            Top Selling Items
-                        </h2>
-                        <h6 className="topSellerSubTitle">
-                            From your favorite big box retailers
-                        </h6>
+                        <div className="topSellerHeader">
+                            <div className="row justify-content-center align-items-center">
+                                <div className="col-4">
+                                    <div className="row">
+                                        <div className="col-9" style={{display: "flex", alignItems: "center"}}>
+                                            <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/pinkline.png" alt="pinkLinePic" style={{height: "1vh"}}/>
+                                        </div>
+                                        <div className="col-3">
+                                            <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/firework2.png" alt="fireworkPic"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-4">
+                                    <div className="row justify-content-center align-items-center">
+                                        <div className="col-12" style={{textAlign: "center"}}>
+                                            <h1 className="topSellerTitle">
+                                                Top Selling Items
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div className="row justify-content-center align-items-center">
+                                        <div className="col-12" style={{textAlign: "center"}}>
+                                            <h5 className="topSellerSubTitle">
+                                                From your favorite big box retailers
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-4">
+                                    <div className="row">
+                                        <div className="col-3">
+                                            <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/firework2.png" alt="fireworkPic"/>
+                                        </div>
+                                        <div className="col-9" style={{display: "flex", alignItems: "center"}}>
+                                            <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/pinkline.png" alt="pinkLinePic" style={{height: "1vh"}}/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         {preppedItems.amazon[0] !== undefined &&
                             <div className="amazonRow">
                                 <div className="row topSellerLogoRow">
@@ -527,12 +561,12 @@ class DesktopHeader extends Component {
                         }
                         {preppedItems.barnes[0] !== undefined &&
                             <div className="barnesRow">
-                                <div className="row topSellerLogoRow">
+                                <div className="row topSellerLogoRow" style={{position: "relative", top: "8vh"}}>
                                     <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
                                         <img className="img-fluid topSellerLogo barnesTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesTopSellerLogo"/>
                                     </div>
                                 </div>
-                                <div className="row">
+                                <div className="row" style={{position: "relative", top: "14vh"}}>
                                     {preppedItems.barnes.map(item => 
                                         <div className="col-4 col-md-6 col-lg-3" key={uuid()}>
                                                 <div className="card topSellerCard">
