@@ -89,16 +89,56 @@ class FooterComponentSearchPage extends Component {
         }
     }
 
+    renderFooterName(){
+        let urlName = window.location.pathname;
+
+        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+            return "poofSearchPageFooter";
+        }
+
+        else{
+            return "poofSearchPageFooterDesktop"
+        }
+    }
+
+    renderFooterTitles(){
+        let urlName = window.location.pathname;
+
+        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+            return "footerTitles";
+        }
+
+        else{
+            return "footerTitlesDesktop"
+        }
+    }
+
+    renderFooterLinks(){
+        let urlName = window.location.pathname;
+
+        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+            return "footerLinks";
+        }
+
+        else{
+            return "footerLinksDesktop"
+        }
+    }
+
     render() {
+
         return (
-            <div className="poofSearchPageFooter">
+            <div className={this.renderFooterName()}>
                 <div className="container footerContainer">
-                    <ul className="footerTitles">
+                    <ul className={this.renderFooterTitles()}>
                         <li>
                             {!this.state.loading ? 
 
                             <div>
-                                <h4>Search Categories</h4>
+                                <h4 className={this.renderFooterTitles()}>Search Categories</h4>
                                 <ul>
                                     <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
                                     <li onClick={() => this.handleSubmit3("books")}>Books</li>
@@ -130,11 +170,11 @@ class FooterComponentSearchPage extends Component {
                         <li>
                             <h4>Links</h4>
                             <ul>
-                                <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
-                                <li><Link className="featureLinkFooter" to={'/featuresPoof'}>Features</Link></li>
-                                <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
-                                <li><Link className="termsLinkFooter" to={'/poof-terms-and-conditions'}>Terms</Link></li>
-                                <li><Link className="privacyLinkFooter" to={'/poof-privacy-policy'}>Privacy</Link></li>
+                                <li><Link className="aboutLinkFooter" id={this.renderFooterLinks()} to={'/aboutPoof'}>About</Link></li>
+                                <li><Link className="featureLinkFooter" id={this.renderFooterLinks()} to={'/featuresPoof'}>Features</Link></li>
+                                <li><Link className="contactLinkFooter" id={this.renderFooterLinks()} to={'/contactPoof'}>Contact Us</Link></li>
+                                <li><Link className="termsLinkFooter" id={this.renderFooterLinks()} to={'/poof-terms-and-conditions'}>Terms</Link></li>
+                                <li><Link className="privacyLinkFooter" id={this.renderFooterLinks()} to={'/poof-privacy-policy'}>Privacy</Link></li>
                             </ul>
                         </li>
                     </ul>

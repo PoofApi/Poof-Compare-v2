@@ -245,7 +245,6 @@ class DesktopHeader extends Component {
 
         console.log("preppedItems", preppedItems);
 
-
         return(
             
             (preppedItems.amazon[0] !== undefined ?

@@ -2265,6 +2265,21 @@ form.mobileSearchForm button:hover {
     color: #806543;
 }
 
+.footerTitlesDesktop {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerTitlesDesktop li h4 {
+    color: white;
+    font-weight: 600;
+}
+
+.footerTitlesDesktop li ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .footerContainer {
     padding: 45px 0px 12px 0px;
 }
@@ -2292,6 +2307,12 @@ form.mobileSearchForm button:hover {
 .privacyLinkFooter:hover {
     cursor: pointer;
     color: #806543 !important;
+}
+
+#footerLinksDesktop:hover {
+    cursor: pointer;
+    color: unset !important;
+    text-decoration: underline;
 }
 
 /*Poof Loader v2*/
@@ -2422,7 +2443,6 @@ form.mobileSearchForm button:hover {
 }
 
 .topSellerSubTitle {
-    font-weight: 700;
     font-family: ui-sans-serif;
     color: white;
     z-index: 2;
@@ -2579,6 +2599,11 @@ form.mobileSearchForm button:hover {
     background-color: #0C1344;
     color: white;
     margin-top: 8vh;
+}
+
+.poofSearchPageFooterDesktop {
+    background-color: #806543;
+    color: white;
 }
 
 /*Mobile Search Page*/
