@@ -2360,19 +2360,19 @@ form.mobileSearchForm button:hover {
 }
 
 .poofLoadingList li:nth-child(1){
-    animation-delay: .2s;
+    animation-delay: 0s;
 }
 .poofLoadingList li:nth-child(2){
-    animation-delay: .4s;
+    animation-delay: .2s;
 }
 .poofLoadingList li:nth-child(3){
-    animation-delay: .6s;
+    animation-delay: .4s;
 }
 .poofLoadingList li:nth-child(4){
-    animation-delay: .8s;
+    animation-delay: .6s;
 }
 .poofLoadingList li:nth-child(5){
-    animation-delay: 1s;
+    animation-delay: .8s;
 }
 
 /*Top Sellers content of Desktop Header*/

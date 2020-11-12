@@ -94,12 +94,27 @@ class FooterComponentSearchPage extends Component {
         let urlName = window.location.pathname;
 
         if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
-        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" ||
+        this.props.items.length > 0 ){
             return "poofSearchPageFooter";
         }
 
         else{
             return "poofSearchPageFooterDesktop"
+        }
+    }
+
+    renderReturnHome(){
+        let urlName = window.location.pathname;
+
+        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" ||
+        this.props.items.length > 0 ){
+            return <div><Link className="returnToHomeFromFooter" to={'/'}>Return To Home</Link></div>;
+        }
+
+        else{
+            return <a href="#desktopTop"><h5 style={{fontWeight: "900"}}>Return To Home</h5></a>
         }
     }
 
@@ -130,6 +145,8 @@ class FooterComponentSearchPage extends Component {
     }
 
     render() {
+
+        
 
         return (
             <div className={this.renderFooterName()}>
@@ -186,7 +203,7 @@ class FooterComponentSearchPage extends Component {
                             <div><h6>epalumbo@poofapi.com</h6></div>
                         </div>
                         <div className="col-2">
-                            <div style={{display: "flex", justifyContent: "center"}}><h5 style={{fontWeight: "900"}}>Return To Home</h5></div>
+                            <div style={{display: "flex", justifyContent: "center"}}>{this.renderReturnHome()}</div>
                             <div style={{display: "flex", justifyContent: "center"}}><img className="img-fluid" style={{height: "7vh"}} src="https://scrapping-logos.s3.amazonaws.com/V1/perry_face.png" alt="perryPic"/></div>
                             <div style={{display: "flex", justifyContent: "center"}}>© 2020 Poof! Price Compare</div>
                         </div>
@@ -199,7 +216,8 @@ class FooterComponentSearchPage extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        searchWord: state.item.searchWord
+        searchWord: state.item.searchWord,
+        items: state.item.items
     }
 }
 
