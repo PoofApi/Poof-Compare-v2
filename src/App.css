@@ -2265,6 +2265,16 @@ form.mobileSearchForm button:hover {
     color: #806543;
 }
 
+.footerTitleV2 li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footerLinkV2:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
 .footerTitlesDesktop {
     display: flex;
     justify-content: space-around;
@@ -2281,10 +2291,10 @@ form.mobileSearchForm button:hover {
 }
 
 .footerContainer {
-    padding: 45px 0px 12px 0px;
+    padding: 45px 0px 40px 0px;
 }
 
-.aboutLinkFooter:hover {
+/* .aboutLinkFooter:hover {
     cursor: pointer;
     color: #806543 !important;
 }
@@ -2307,7 +2317,7 @@ form.mobileSearchForm button:hover {
 .privacyLinkFooter:hover {
     cursor: pointer;
     color: #806543 !important;
-}
+} */
 
 #footerLinksDesktop:hover {
     cursor: pointer;
@@ -2513,7 +2523,7 @@ form.mobileSearchForm button:hover {
     position: fixed;
     right: 2vw;
     bottom: 3vh;
-    padding: 20px;
+    padding: 7px;
     background: #d48a8a !important;
     border-radius: 7px;
     color: white;
