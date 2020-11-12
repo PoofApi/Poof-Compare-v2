@@ -225,7 +225,7 @@ class DesktopHeader extends Component {
           
             if (last_known_scroll_position >= 100) {
                 if(menu){
-                    menu.className = "desktopTopScroller";
+                    menu.className = "desktopTopScrollerV3";
                 }
             } else {
                 if(menu){

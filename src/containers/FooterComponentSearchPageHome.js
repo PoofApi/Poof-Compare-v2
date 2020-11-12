@@ -43,7 +43,7 @@ async function getProductsForHome(keywords){
   }
 }
 
-class FooterComponentSearchPage extends Component {
+class FooterComponentSearchPageHome extends Component {
     constructor(props){
         super(props);
 
@@ -69,8 +69,7 @@ class FooterComponentSearchPage extends Component {
             await getProductsForHome(keyword);
             
             let urlName = window.location.pathname;
-                if (urlName == "/aboutPoof" || urlName == "/featuresPoof" || urlName == "/contactPoof" || urlName == "/poof-terms-and-conditions"
-                || urlName == "/poof-privacy-policy"){
+                if (urlName == "/aboutPoof" ){
                     this.props.history.push("/")
                 }
 
@@ -132,14 +131,14 @@ class FooterComponentSearchPage extends Component {
     render() {
 
         return (
-            <div className={this.renderFooterName()}>
+            <div className="poofSearchPageFooter">
                 <div className="container footerContainer">
-                    <ul className={this.renderFooterTitles()}>
+                    <ul className="footerTitles">
                         <li>
                             {!this.state.loading ? 
 
                             <div>
-                                <h4 className={this.renderFooterTitles()}>Search Categories</h4>
+                                <h4 className="footerTitles">Search Categories</h4>
                                 <ul>
                                     <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
                                     <li onClick={() => this.handleSubmit3("books")}>Books</li>
@@ -171,11 +170,11 @@ class FooterComponentSearchPage extends Component {
                         <li>
                             <h4>Links</h4>
                             <ul>
-                                <li><Link className="aboutLinkFooter" id={this.renderFooterLinks()} to={'/aboutPoof'}>About</Link></li>
-                                <li><Link className="featureLinkFooter" id={this.renderFooterLinks()} to={'/featuresPoof'}>Features</Link></li>
-                                <li><Link className="contactLinkFooter" id={this.renderFooterLinks()} to={'/contactPoof'}>Contact Us</Link></li>
-                                <li><Link className="termsLinkFooter" id={this.renderFooterLinks()} to={'/poof-terms-and-conditions'}>Terms</Link></li>
-                                <li><Link className="privacyLinkFooter" id={this.renderFooterLinks()} to={'/poof-privacy-policy'}>Privacy</Link></li>
+                                <li><Link className="aboutLinkFooter" to={'/aboutPoof'}>About</Link></li>
+                                <li><Link className="featureLinkFooter" to={'/featuresPoof'}>Features</Link></li>
+                                <li><Link className="contactLinkFooter" to={'/contactPoof'}>Contact Us</Link></li>
+                                <li><Link className="termsLinkFooter" to={'/poof-terms-and-conditions'}>Terms</Link></li>
+                                <li><Link className="privacyLinkFooter" to={'/poof-privacy-policy'}>Privacy</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -202,4 +201,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(FooterComponentSearchPage))
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(FooterComponentSearchPageHome))

@@ -2508,13 +2508,13 @@ form.mobileSearchForm button:hover {
     right: 1vw;
 }
 
-.desktopTopScroller {
+.desktopTopScrollerV3 {
     z-index: 2;
     position: fixed;
     right: 2vw;
     bottom: 3vh;
     padding: 20px;
-    background: #806543;
+    background: #8d8900 !important;
     border-radius: 7px;
     color: white;
     opacity: 0.8;
@@ -2526,10 +2526,10 @@ form.mobileSearchForm button:hover {
     opacity: 0;
 }
 
-.desktopTopScroller:hover {
+.desktopTopScrollerV3:hover {
     opacity: 1 !important;
     cursor: pointer;
-    background-color: var(--cool-gray-80,#283e4a);
+    background-color: var(--cool-gray-80,#283e4a) !important;
     border: white solid 1px;
 }
 
