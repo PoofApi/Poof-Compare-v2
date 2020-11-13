@@ -36,8 +36,8 @@ const TermsComponent = () => {
       <div id="desktopTopTerms"></div>
       <HeaderComponent2 />
       <div className="container termsPageContainer">
-        <p>
-<h1>TERMS OF USE</h1>
+      <p>
+    <h1>TERMS OF USE</h1>
 
     <h4>Last updated November 09, 2020</h4>
 
@@ -253,7 +253,7 @@ const TermsComponent = () => {
         These terms of use were created using Termly’s Terms and Conditions Generator.
     </p>
     
-</p>
+  </p>
       </div>
       <a id="myID" className="hideScrollerTerms" href="#desktopTopTerms">
           Return to Top
