@@ -18,7 +18,7 @@ import MobileHeader from '../MobileHeader';
 import DesktopHeader from '../DesktopHeader';
 import MultiSelectComponent from '../MultiSelectComponent';
 import MultiSelectDisabledComponent from '../MultiSelectDisabledComponent';
-import FooterComponentSearchPageHome from '../FooterComponentSearchPageHome';
+import FooterComponentSearchPage from '../FooterComponentSearchPage';
 // import { TransitionGroup } from 'react-transition-group';
 
 
@@ -638,7 +638,7 @@ class Home extends Component {
               <Link className="mobile-watchlist2" to={'/watchlist'}><p data-tip={"My Poof! Watchlist"} ><i className="material-icons mobile-watchlist-icon">view_list</i></p></Link>
               <ReactTooltip />
             </div> */}
-            <FooterComponentSearchPageHome />
+            <FooterComponentSearchPage />
             {this.renderCompare()}
 
            {this.state.compareToolbarOpen && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }

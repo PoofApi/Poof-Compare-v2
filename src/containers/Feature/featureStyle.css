@@ -46,8 +46,8 @@
 }
 
 .iphonePic1 {
-    max-height: 89vh;
-    width: 43vw;
+    max-height: 105vh;
+    width: 38vw;
 }
 
 .iphone1Text {
@@ -71,8 +71,8 @@
 
 .iphonePic2 {
     position: relative;
-    max-height: 90vh;
-    width: 32vw;
+    max-height: 105vh;
+    width: 30vw;
 }
 
 .iphone2Text {
@@ -115,7 +115,7 @@
     position: fixed;
     right: 4vw;
     bottom: 3vh;
-    padding: 20px;
+    padding: 7px;
     background: #806543;
     border-radius: 7px;
     color: white;

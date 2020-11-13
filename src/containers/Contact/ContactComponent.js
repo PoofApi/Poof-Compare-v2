@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../../firebase";
-import FooterComponent from "../FooterComponent";
+import FooterComponentSearchPage from "../FooterComponentSearchPage";
 import HeaderComponent2 from "../HeaderComponent2";
 import "./contact.css";
 
@@ -126,7 +126,7 @@ const ContactComponent = () => {
             </button>
             </form>
         </div>
-        <FooterComponent />
+        <FooterComponentSearchPage />
     </div>
   );
 };

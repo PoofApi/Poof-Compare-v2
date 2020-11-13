@@ -2237,7 +2237,7 @@ form.mobileSearchForm button:hover {
 .poofDesktopFooter {
     position: absolute;
     width: 100vw;
-    top: 100vh;
+    top: 110vh;
     background-color: #0C1344;
     color: white;
 }
@@ -2265,6 +2265,16 @@ form.mobileSearchForm button:hover {
     color: #806543;
 }
 
+.footerTitleV2 li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footerLinkV2:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
 .footerTitlesDesktop {
     display: flex;
     justify-content: space-around;
@@ -2281,10 +2291,10 @@ form.mobileSearchForm button:hover {
 }
 
 .footerContainer {
-    padding: 45px 0px 12px 0px;
+    padding: 45px 0px 45px 0px;
 }
 
-.aboutLinkFooter:hover {
+/* .aboutLinkFooter:hover {
     cursor: pointer;
     color: #806543 !important;
 }
@@ -2307,7 +2317,7 @@ form.mobileSearchForm button:hover {
 .privacyLinkFooter:hover {
     cursor: pointer;
     color: #806543 !important;
-}
+} */
 
 #footerLinksDesktop:hover {
     cursor: pointer;
@@ -2350,19 +2360,19 @@ form.mobileSearchForm button:hover {
 }
 
 .poofLoadingList li:nth-child(1){
-    animation-delay: .2s;
+    animation-delay: 0s;
 }
 .poofLoadingList li:nth-child(2){
-    animation-delay: .4s;
+    animation-delay: .2s;
 }
 .poofLoadingList li:nth-child(3){
-    animation-delay: .6s;
+    animation-delay: .4s;
 }
 .poofLoadingList li:nth-child(4){
-    animation-delay: .8s;
+    animation-delay: .6s;
 }
 .poofLoadingList li:nth-child(5){
-    animation-delay: 1s;
+    animation-delay: .8s;
 }
 
 /*Top Sellers content of Desktop Header*/
@@ -2513,7 +2523,7 @@ form.mobileSearchForm button:hover {
     position: fixed;
     right: 2vw;
     bottom: 3vh;
-    padding: 20px;
+    padding: 7px;
     background: #d48a8a !important;
     border-radius: 7px;
     color: white;
@@ -2599,6 +2609,37 @@ form.mobileSearchForm button:hover {
     background-color: #0C1344;
     color: white;
     margin-top: 8vh;
+}
+
+.returnToHomeFromFooter {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.returnToHomeFromFooter:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.returnToHomeFromSearchPage {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.returnToHomeFromSearchPage:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.returnToHomeFromDesktop:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
 }
 
 .poofSearchPageFooterDesktop {
