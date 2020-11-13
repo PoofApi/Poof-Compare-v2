@@ -259,8 +259,8 @@
     height: 50px;
     width: 53px;
     position: absolute;
-    bottom: 8vh;
-    right: 38px;
+    bottom: 2vh;
+    right: 4vw;
     background: #806543;
     z-index: 2;
     display: flex;
