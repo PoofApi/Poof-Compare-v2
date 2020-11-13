@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { db } from "../../firebase";
 import FooterComponentSearchPage from "../FooterComponentSearchPage";
 import HeaderComponent2 from "../HeaderComponent2";
@@ -11,6 +11,14 @@ const ContactComponent = () => {
   const [message, setMessage] = useState("");
 
   const [loader, setLoader] = useState(false);
+
+  useEffect(() => {
+    document.querySelector('body').scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+      });
+  })
 
   const submitMsgTransition = () => {
     setTimeout(function(){
