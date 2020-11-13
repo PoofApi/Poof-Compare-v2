@@ -4,7 +4,7 @@ import {store} from '../index.js';
 import * as types from '../constants/types';
 import { withRouter } from 'react-router-dom';
 import {connect} from 'react-redux';
-import {addSearchWord} from '../actions/product';
+import { addSearchWord, resetSearch } from '../actions/product';
 
 
 const axios = require('axios');
@@ -107,13 +107,20 @@ class FooterComponentSearchPage extends Component {
     renderReturnHome(){
         let urlName = window.location.pathname;
 
-        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
-        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" ||
-        this.props.items.length > 0 ){
-            return <div><Link className="returnToHomeFromFooter" to={'/'}>Return To Home</Link></div>;
+        const returnHome = () => {
+            this.props.resetSearch();
         }
 
-        else{
+        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+            return <div onClick={() => returnHome()}><Link className="returnToHomeFromFooter" to={'/'}>Return To Home</Link></div>;
+        }
+
+        else if(urlName == "/" && this.props.items.length > 0){
+            return <div onClick={() => returnHome()}>Return To Home</div>
+        }
+
+        else {
             return <a href="#desktopTop"><h5 style={{fontWeight: "900"}}>Return To Home</h5></a>
         }
     }
@@ -223,7 +230,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addSearchWord: (word) => {dispatch(addSearchWord(word))}
+        addSearchWord: (word) => {dispatch(addSearchWord(word))},
+        resetSearch: () => {dispatch(resetSearch())}
     }
 }
 
