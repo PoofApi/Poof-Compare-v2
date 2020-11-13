@@ -2237,7 +2237,7 @@ form.mobileSearchForm button:hover {
 .poofDesktopFooter {
     position: absolute;
     width: 100vw;
-    top: 100vh;
+    top: 110vh;
     background-color: #0C1344;
     color: white;
 }
@@ -2609,6 +2609,37 @@ form.mobileSearchForm button:hover {
     background-color: #0C1344;
     color: white;
     margin-top: 8vh;
+}
+
+.returnToHomeFromFooter {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.returnToHomeFromFooter:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+
+.returnToHomeFromSearchPage {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.returnToHomeFromSearchPage:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.returnToHomeFromDesktop:hover {
+    cursor: pointer;
+    text-decoration: underline !important;
 }
 
 .poofSearchPageFooterDesktop {

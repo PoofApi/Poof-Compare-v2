@@ -93,10 +93,14 @@ class FooterComponentSearchPage extends Component {
     renderFooterName(){
         let urlName = window.location.pathname;
 
-        if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
+        if (urlName == "/aboutPoof" || urlName == "/featuresPoof" || 
         urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" ||
         this.props.items.length > 0 ){
             return "poofSearchPageFooter";
+        }
+
+        else if(urlName == "/contactPoof"){
+            return "poofDesktopFooter"
         }
 
         else{
@@ -117,11 +121,11 @@ class FooterComponentSearchPage extends Component {
         }
 
         else if(urlName == "/" && this.props.items.length > 0){
-            return <div onClick={() => returnHome()}>Return To Home</div>
+            return <div className="returnToHomeFromSearchPage" onClick={() => returnHome()}>Return To Home</div>
         }
 
         else {
-            return <a href="#desktopTop"><h5 style={{fontWeight: "900"}}>Return To Home</h5></a>
+            return <a className="returnToHomeFromDesktop" href="#desktopTop"><h5 style={{fontWeight: "900"}}>Return To Home</h5></a>
         }
     }
 
@@ -152,8 +156,6 @@ class FooterComponentSearchPage extends Component {
     }
 
     render() {
-
-        
 
         return (
             <div className={this.renderFooterName()}>
