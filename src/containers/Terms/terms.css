@@ -19,6 +19,19 @@
     color: #000000;
 }
 
+.termsSubHeading {
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+}
+
+.termsParagraph {
+    font-size: 14px;
+    font-family: Arial;
+    color: #595959;
+}
+
 .dateUpdatedAndContactInfo {
     font-size: 14px;
     color: #595959;
