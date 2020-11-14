@@ -5,6 +5,50 @@
     margin-bottom: 15vh;
 }
 
+.termsTitle {
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #000000;
+    margin-bottom: 3.5vh;
+}
+
+.termsHeading {
+    font-size: 19px;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #000000;
+    margin-top: 7vh;
+}
+
+.termsSubHeading {
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+}
+
+.termsParagraph {
+    font-size: 14px;
+    font-family: Arial;
+    color: #595959;
+}
+
+.termsLink {
+    color: blue !important;
+}
+
+.termsLink:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.dateUpdatedAndContactInfo {
+    font-size: 14px;
+    color: #595959;
+    font-family: Arial;
+}
+
 /*For top scroller*/
 
 .desktopTopScrollerTerms {
