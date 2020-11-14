@@ -243,13 +243,18 @@ const TermsComponent = () => {
 
 
         <h4 className="termsHeading">CONTACT US </h4>
-        <p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at: 
+        <p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us through our contact page: 
           <p>
             <strong className="dateUpdatedAndContactInfo">
-                Poof! Price Compare
-                epalumbo@poofapi.com
+                Poof! Contact Page
             </strong>
           </p>
+        <p>Or email us at:</p>
+        <p>
+          <strong className="dateUpdatedAndContactInfo">
+              epalumbo@poofapi.com
+          </strong>
+        </p>
         </p>
       
     </div>
