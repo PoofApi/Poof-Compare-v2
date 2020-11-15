@@ -26,6 +26,26 @@ ul.privacyUnorderedListItem li{
     list-style-type: square;
 }
 
+ol.tableList li a {
+    color: blue !important;
+}
+
+ol.tableList li a:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+/*Due to fixed navbar, created a class for PROPERLY targeting the table of content links*/
+
+.parentTarget {
+    position: relative;
+}
+
+.targetID {
+    position: absolute;
+    top: -10vh;
+}
+
 /*For top scroller*/
 
 .desktopTopScrollerPrivacy {

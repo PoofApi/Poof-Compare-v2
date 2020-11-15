@@ -42,44 +42,47 @@ const PrivacyComponent = () => {
                     Last updated November 10, 2020
                 </strong>
 
+                    <div className="privacyParagraph">
+                        <p>
+                            Thank you for choosing to be part of our community at Poof! Price Compare, doing business as Poof! ("<strong>Poof!</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at epalumbo@poofapi.com.
+                        </p>
+                        <p>
+                            When you visit our website https://www.poofpricecompare.com (the "<strong>Website</strong>"), and more generally, use any of our services (the "<strong>Services</strong>", which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.
 
-                <p>
-                    Thank you for choosing to be part of our community at Poof! Price Compare, doing business as Poof! ("<strong>Poof!</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at epalumbo@poofapi.com.
-                </p>
-                <p>
-                    When you visit our website https://www.poofpricecompare.com (the "<strong>Website</strong>"), and more generally, use any of our services (the "<strong>Services</strong>", which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.
-
-                </p>
-                <p>
-                    This privacy notice applies to all information collected through our Services (which, as described above, includes our Website), as well as, any related services, sales, marketing or events.
-                </p>
-                <strong>
-                    Please read this privacy notice carefully as it will help you understand what we do with the information that we collect.
-                </strong>
+                        </p>
+                        <p>
+                            This privacy notice applies to all information collected through our Services (which, as described above, includes our Website), as well as, any related services, sales, marketing or events.
+                        </p>
+                        <strong>
+                            Please read this privacy notice carefully as it will help you understand what we do with the information that we collect.
+                        </strong>
+                    </div>
 
                 <h4 className="privacyHeading">
                     TABLE OF CONTENTS
                 </h4>
-                    <ol>
-                        <li>WHAT INFORMATION DO WE COLLECT?</li>
-                        <li>HOW DO WE USE YOUR INFORMATION?</li>
-                        <li>WILL YOUR INFORMATION BE SHARED WITH ANYONE?</li>
-                        <li>DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</li>
-                        <li>IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</li>
-                        <li>WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?</li>
-                        <li>HOW LONG DO WE KEEP YOUR INFORMATION?</li>
-                        <li>DO WE COLLECT INFORMATION FROM MINORS?</li>
-                        <li>WHAT ARE YOUR PRIVACY RIGHTS?</li>
-                        <li>CONTROLS FOR DO-NOT-TRACK FEATURES</li>
-                        <li>DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</li>
-                        <li>DO WE MAKE UPDATES TO THIS NOTICE?</li>
-                        <li>HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</li>
-                        <li>HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?</li>
+                    <ol className="tableList">
+                        <li><a href="#1">WHAT INFORMATION DO WE COLLECT?</a></li>
+                        <li><a href="#2">HOW DO WE USE YOUR INFORMATION?</a></li>
+                        <li><a href="#3">WILL YOUR INFORMATION BE SHARED WITH ANYONE?</a></li>
+                        <li><a href="#4">DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</a></li>
+                        <li><a href="#5">IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</a></li>
+                        <li><a href="#6">WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?</a></li>
+                        <li><a href="#7">HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
+                        <li><a href="#8">DO WE COLLECT INFORMATION FROM MINORS?</a></li>
+                        <li><a href="#9">WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+                        <li><a href="#10">CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+                        <li><a href="#11">DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+                        <li><a href="#12">DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+                        <li><a href="#13">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+                        <li><a href="#14">HOW CAN YOU REVIEW, UPDATE OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
                     </ol>
-
-                <h4 className="privacyHeading">
-                    1. WHAT INFORMATION DO WE COLLECT?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading" >
+                        1. WHAT INFORMATION DO WE COLLECT?
+                    </h4>
+                    <div className="targetID" id="1"></div>
+                </div>
                 <h6 className="privacySubHeading">
                     Personal information you disclose to us
                 </h6>
@@ -126,9 +129,12 @@ const PrivacyComponent = () => {
                     </ul>
                 </div>
 
-                <h4 className="privacyHeading">
-                    2. HOW DO WE USE YOUR INFORMATION?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        2. HOW DO WE USE YOUR INFORMATION?
+                    </h4>
+                    <div className="targetID" id="2"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.</em>
@@ -161,9 +167,12 @@ const PrivacyComponent = () => {
                     
                 </div>
                     
-                <h4 className="privacyHeading">
-                    3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+                    </h4>
+                    <div className="targetID" id="3"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.</em>
@@ -186,10 +195,12 @@ const PrivacyComponent = () => {
                         </ul>         
                 </div>
                     
-                    
-                <h4 className="privacyHeading">
-                    4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+                    </h4>
+                    <div className="targetID" id="4"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We may use cookies and other tracking technologies to collect and store your information.</em>
@@ -200,9 +211,12 @@ const PrivacyComponent = () => {
 
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    5. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?     
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        5. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?     
+                    </h4>
+                    <div className="targetID" id="5"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We may transfer, store, and process your information in countries other than your own.</em>
@@ -215,9 +229,12 @@ const PrivacyComponent = () => {
                         If you are a resident in the European Economic Area, then these countries may not necessarily have data protection laws or other similar laws as comprehensive as those in your country. We will however take all necessary measures to protect your personal information in accordance with this privacy notice and applicable law.
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    6. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        6. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
+                    </h4>
+                    <div className="targetID" id="6"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We are not responsible for the safety of any information that you share with third-party providers who advertise, but are not affiliated with, our Website.</em>
@@ -227,9 +244,12 @@ const PrivacyComponent = () => {
                         The Website may contain advertisements from third parties that are not affiliated with us and which may link to other websites, online services or mobile applications. We cannot guarantee the safety and privacy of data you provide to any third parties. Any data collected by third parties is not covered by this privacy notice. We are not responsible for the content or privacy and security practices and policies of any third parties, including other websites, services or applications that may be linked to or from the Website. You should review the policies of such third parties and contact them directly to respond to your questions.
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    7. HOW LONG DO WE KEEP YOUR INFORMATION?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        7. HOW LONG DO WE KEEP YOUR INFORMATION?
+                    </h4>
+                    <div className="targetID" id="7"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.</em>
@@ -242,9 +262,12 @@ const PrivacyComponent = () => {
                         When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    8. DO WE COLLECT INFORMATION FROM MINORS?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        8. DO WE COLLECT INFORMATION FROM MINORS?
+                    </h4>
+                    <div className="targetID" id="8"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>We do not knowingly collect data from or market to children under 18 years of age.</em>
@@ -254,9 +277,12 @@ const PrivacyComponent = () => {
                         We do not knowingly solicit data from or market to children under 18 years of age. By using the Website, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Website. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at __________.
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    9. WHAT ARE YOUR PRIVACY RIGHTS?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        9. WHAT ARE YOUR PRIVACY RIGHTS?
+                    </h4>
+                    <div className="targetID" id="9"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>You may review, change, or terminate your account at any time.</em>
@@ -290,17 +316,23 @@ const PrivacyComponent = () => {
                         Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list — however, we may still communicate with you, for example to send you service-related emails that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes. To otherwise opt-out, you may:
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    10. CONTROLS FOR DO-NOT-TRACK FEATURES
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        10. CONTROLS FOR DO-NOT-TRACK FEATURES
+                    </h4>
+                    <div className="targetID" id="10"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice. 
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+                    </h4>
+                    <div className="targetID" id="11"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</em>
@@ -312,9 +344,12 @@ const PrivacyComponent = () => {
                         If you are under 18 years of age, reside in California, and have a registered account with the Website, you have the right to request removal of unwanted data that you publicly post on the Website. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Website, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g. backups, etc.).
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    12. DO WE MAKE UPDATES TO THIS NOTICE?     
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        12. DO WE MAKE UPDATES TO THIS NOTICE?     
+                    </h4>
+                    <div className="targetID" id="12"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         <strong><em>In Short: </em></strong> <em>Yes, we will update this notice as necessary to stay compliant with relevant laws.</em>
@@ -324,9 +359,12 @@ const PrivacyComponent = () => {
                         We may update this privacy notice from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?     
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?     
+                    </h4>
+                    <div className="targetID" id="13"></div>
+                </div>
                 <div className="privacyParagraph">
                     <p>
                         If you have questions or comments about this notice, you may email us at __________ or by post to:
@@ -335,9 +373,12 @@ const PrivacyComponent = () => {
                         Poof! Price Compare
                     </p>
                 </div>
-                <h4 className="privacyHeading">
-                    14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?     
-                </h4>
+                <div className="parentTarget">
+                    <h4 className="privacyHeading">
+                        14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?     
+                    </h4>
+                    <div className="targetID" id="14"></div>
+                </div>
                     Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking here. We will respond to your request within 30 days.
                     This privacy policy was created using Termly’s Privacy Policy Generator.
             </div>
