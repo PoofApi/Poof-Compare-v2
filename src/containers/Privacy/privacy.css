@@ -2,6 +2,30 @@
     margin-top: 15vh;
 }
 
+.privacyHeading {
+    font-size: 19px;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+}
+
+.privacySubHeading {
+    font-size: 17px;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+}
+
+.privacyParagraph {
+    color: #595959;
+    font-size: 14px;
+}
+
+ul.privacyUnorderedListItem li{
+    display: list-item;
+    list-style-type: square;
+}
+
 /*For top scroller*/
 
 .desktopTopScrollerPrivacy {
