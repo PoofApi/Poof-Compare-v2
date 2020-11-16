@@ -47,7 +47,7 @@ const PrivacyComponent = () => {
                             Thank you for choosing to be part of our community at Poof! Price Compare, doing business as Poof! ("<strong>Poof!</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at epalumbo@poofapi.com.
                         </p>
                         <p>
-                            When you visit our website https://www.poofpricecompare.com (the "<strong>Website</strong>"), and more generally, use any of our services (the "<strong>Services</strong>", which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.
+                            When you visit our website <a className="poofPrivacyLink" href="https://www.poofpricecompare.com">https://www.poofpricecompare.com</a> (the "<strong>Website</strong>"), and more generally, use any of our services (the "<strong>Services</strong>", which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.
 
                         </p>
                         <p>
@@ -160,7 +160,7 @@ const PrivacyComponent = () => {
                             <li><strong>Administer prize draws and competitions.</strong> We may use your information to administer prize draws and competitions when you elect to participate in our competitions.</li>
                             <li><strong>To deliver and facilitate delivery of services to the user.</strong> We may use your information to provide you with the requested service.</li>
                             <li><strong>To respond to user inquiries/offer support to users.</strong> We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.</li>
-                            <li><strong>To send you marketing and promotional communications.</strong> We and/or our third-party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. For example, when expressing an interest in obtaining information about us or our Website, subscribing to marketing or otherwise contacting us, we will collect personal information from you. You can opt-out of our marketing emails at any time (see the "WHAT ARE YOUR PRIVACY RIGHTS" below).</li>
+                            <li><strong>To send you marketing and promotional communications.</strong> We and/or our third-party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. For example, when expressing an interest in obtaining information about us or our Website, subscribing to marketing or otherwise contacting us, we will collect personal information from you. You can opt-out of our marketing emails at any time (see the "<a className="poofPrivacyLink" href="#9">WHAT ARE YOUR PRIVACY RIGHTS</a>" below).</li>
                             <li><strong>Deliver targeted advertising to you.</strong> We may use your information to develop and display personalized content and advertising (and work with third parties who do so) tailored to your interests and/or location and to measure its effectiveness.</li>
                             <li><strong>For other business purposes.</strong> We may use your information for other business purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Website, products, marketing and your experience. We may use and store this information in aggregated and anonymized form so that it is not associated with individual end users and does not include personal information. We will not use identifiable personal information without your consent.</li>
                         </ul>
@@ -223,7 +223,7 @@ const PrivacyComponent = () => {
                     </p>
                         
                     <p>
-                        Our servers are located in. If you are accessing our Website from outside, please be aware that your information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information (see "WILL YOUR INFORMATION BE SHARED WITH ANYONE?" above), in and other countries.
+                        Our servers are located in. If you are accessing our Website from outside, please be aware that your information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information (see "<a className="poofPrivacyLink" href="#3">WILL YOUR INFORMATION BE SHARED WITH ANYONE?</a>" above), in and other countries.
                     </p>
                     <p>
                         If you are a resident in the European Economic Area, then these countries may not necessarily have data protection laws or other similar laws as comprehensive as those in your country. We will however take all necessary measures to protect your personal information in accordance with this privacy notice and applicable law.
@@ -289,11 +289,11 @@ const PrivacyComponent = () => {
                     </p>
                         
                     <p>
-                        If you are a resident in the European Economic Area and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm.
+                        If you are a resident in the European Economic Area and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: <a className="poofPrivacyLink" target="_blank" href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm</a>.
 
                     </p>
                     <p>
-                        If you are a resident in Switzerland, the contact details for the data protection authorities are available here: https://www.edoeb.admin.ch/edoeb/en/home.html.
+                        If you are a resident in Switzerland, the contact details for the data protection authorities are available here: <a className="poofPrivacyLink" target="_blank" href="https://www.edoeb.admin.ch/edoeb/en/home.html">https://www.edoeb.admin.ch/edoeb/en/home.html</a>.
 
                     </p>
                     <p>
@@ -310,10 +310,10 @@ const PrivacyComponent = () => {
                         Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with applicable legal requirements.
                     </p>
                     <p>
-                        Cookies and similar technologies: Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Website. To opt-out of interest-based advertising by advertisers on our Website visit http://www.aboutads.info/choices/.
+                        <strong><u>Cookies and similar technologies:</u></strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Website. To opt-out of interest-based advertising by advertisers on our Website visit <a className="poofPrivacyLink" href="http://www.aboutads.info/choices/" target="_blank">http://www.aboutads.info/choices/</a>.
                     </p>
                     <p>
-                        Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list — however, we may still communicate with you, for example to send you service-related emails that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes. To otherwise opt-out, you may:
+                        <strong><u>Opting out of email marketing:</u></strong> You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list — however, we may still communicate with you, for example to send you service-related emails that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes. To otherwise opt-out, you may:
                     </p>
                 </div>
                 <div className="parentTarget">
@@ -367,10 +367,7 @@ const PrivacyComponent = () => {
                 </div>
                 <div className="privacyParagraph">
                     <p>
-                        If you have questions or comments about this notice, you may email us at __________ or by post to:
-                    </p>
-                    <p>
-                        Poof! Price Compare
+                        If you have questions or comments about this notice, you may email us at epalumbo@poofapi.com
                     </p>
                 </div>
                 <div className="parentTarget">
@@ -379,7 +376,7 @@ const PrivacyComponent = () => {
                     </h4>
                     <div className="targetID" id="14"></div>
                 </div>
-                    Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking here. We will respond to your request within 30 days.
+                    Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking <a className="poofPrivacyLink" href="https://app.termly.io/notify/9994e722-a234-42eb-af84-3cb42af0d8d4" target="_blank">here</a>. We will respond to your request within 30 days.
                     This privacy policy was created using Termly’s Privacy Policy Generator.
             </div>
         </div>

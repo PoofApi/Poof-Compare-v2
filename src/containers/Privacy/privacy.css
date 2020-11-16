@@ -2,11 +2,20 @@
     margin-top: 15vh;
 }
 
+.privacyTitle {
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #000000;
+    margin-bottom: 3.5vh;
+}
+
 .privacyHeading {
     font-size: 19px;
     font-family: Arial;
     color: #000000;
     font-weight: bold;
+    margin-top: 4vh;
 }
 
 .privacySubHeading {
@@ -14,6 +23,7 @@
     font-family: Arial;
     color: #000000;
     font-weight: bold;
+    margin-top: 4vh;
 }
 
 .privacyParagraph {
@@ -21,9 +31,18 @@
     font-size: 14px;
 }
 
+.privacyParagraph p {
+    margin-top: 4vh;
+}
+
+ul.privacyUnorderedListItem {
+    margin-left: 4vh;
+}
+
 ul.privacyUnorderedListItem li{
     display: list-item;
     list-style-type: square;
+    margin-top: 2vh;
 }
 
 ol.tableList li a {
@@ -33,6 +52,10 @@ ol.tableList li a {
 ol.tableList li a:hover {
     color: blue !important;
     text-decoration: underline !important;
+}
+
+.poofPrivacyLink {
+    color: blue !important;
 }
 
 /*Due to fixed navbar, created a class for PROPERLY targeting the table of content links*/
