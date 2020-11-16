@@ -1,0 +1,116 @@
+.cookiesPageContainer {
+    margin-top: 15vh;
+}
+
+.cookiesTitle {
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #000000;
+    margin-bottom: 3.5vh;
+}
+
+.cookiesHeading {
+    font-size: 19px;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 4vh;
+}
+
+.cookiesSubHeading {
+    font-size: 17px;
+    font-family: Arial;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 4vh;
+}
+
+.cookiesParagraph {
+    color: #595959;
+    font-size: 14px;
+}
+
+.cookiesParagraph p {
+    margin-top: 4vh;
+}
+
+ul.cookiesUnorderedListItem {
+    margin-left: 4vh;
+}
+
+ul.cookiesUnorderedListItem li{
+    display: list-item;
+    list-style-type: square;
+    margin-top: 2vh;
+}
+
+ol.tableList {
+    margin-top: 3.5vh;
+}
+
+ol.tableList li a {
+    color: blue !important;
+}
+
+ol.tableList li a:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.poofCookiesLink {
+    color: blue !important;
+}
+
+/*Due to fixed navbar, created a class for PROPERLY targeting the table of content links*/
+
+.parentTarget {
+    position: relative;
+}
+
+.targetID {
+    position: absolute;
+    top: -10vh;
+}
+
+/*For top scroller*/
+
+.desktopTopScrollerPrivacy {
+    z-index: 2;
+    position: fixed;
+    right: 4vw;
+    bottom: 3vh;
+    padding: 7px;
+    background: #806543;
+    border-radius: 7px;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 1s;
+    animation: enlarge 0.8s;
+}
+
+.hideScrollerPrivacy {
+    opacity: 0;
+}
+
+.desktopTopScrollerPrivacy:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: var(--cool-gray-80,#283e4a);
+    border: white solid 1px;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
+#desktopTopPrivacy {
+    position: relative;
+    top: -300px;
+}
+
+.poofCookiesLink:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}

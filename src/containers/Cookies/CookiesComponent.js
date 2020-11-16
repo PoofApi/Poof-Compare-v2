@@ -32,10 +32,10 @@ const CookiesComponent = () => {
       }); 
 
     return(
-        <div className="privacyComponentPage">
+        <div className="cookiesComponentPage">
             <div id="desktopTopPrivacy"></div>
             <HeaderComponent2 />
-            <div className="container privacyPageContainer">
+            <div className="container cookiesPageContainer">
                 COOKIE POLICY
 
                 Last updated November 15, 2020
