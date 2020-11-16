@@ -11,6 +11,7 @@ import ContactComponent from '../Contact/ContactComponent';
 import FeatureComponent from '../Feature/FeatureComponent';
 import TermsComponent from '../Terms/TermsComponent';
 import PrivacyComponent from '../Privacy/PrivacyComponent';
+import CookiesComponent from '../Cookies/CookiesComponent';
 
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
               <Route exact path="/featuresPoof" component={FeatureComponent} />
               <Route exact path="/poof-terms-and-conditions" component={TermsComponent} />
               <Route exact path="/poof-privacy-policy" component={PrivacyComponent} />
+              <Route exact path="/poof-cookies-policy" component={CookiesComponent} />
               <Route component={NotFound}/>
             </Switch>
           </div>

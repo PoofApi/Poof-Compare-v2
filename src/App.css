@@ -2097,8 +2097,9 @@ form.mobileSearchForm button:hover {
     position: relative;
     bottom: 24vh;
     right: 9px;
-    -webkit-animation: surf 1.5s infinite;
-    animation: surf 1.5s infinite;
+    /*Animation effect for surfing Perry version 1*/
+    /* -webkit-animation: surf 1.5s infinite;
+    animation: surf 1.5s infinite; */
 }
 
 @keyframes surf {

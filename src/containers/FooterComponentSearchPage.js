@@ -70,7 +70,7 @@ class FooterComponentSearchPage extends Component {
             
             let urlName = window.location.pathname;
                 if (urlName == "/aboutPoof" || urlName == "/featuresPoof" || urlName == "/contactPoof" || urlName == "/poof-terms-and-conditions"
-                || urlName == "/poof-privacy-policy"){
+                || urlName == "/poof-privacy-policy" || urlName == "/poof-cookies-policy"){
                     this.props.history.push("/")
                 }
 
@@ -94,8 +94,8 @@ class FooterComponentSearchPage extends Component {
         let urlName = window.location.pathname;
 
         if (urlName == "/aboutPoof" || urlName == "/featuresPoof" || 
-        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" ||
-        this.props.items.length > 0 ){
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" || 
+        this.props.items.length > 0 || urlName == "/poof-cookies-policy"){
             return "poofSearchPageFooter";
         }
 
@@ -116,7 +116,7 @@ class FooterComponentSearchPage extends Component {
         }
 
         if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
-        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" || urlName == "/poof-cookies-policy"){
             return <div onClick={() => returnHome()}><Link className="returnToHomeFromFooter" to={'/'}>Return To Home</Link></div>;
         }
 
@@ -133,7 +133,7 @@ class FooterComponentSearchPage extends Component {
         let urlName = window.location.pathname;
 
         if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
-        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" || urlName == "/poof-cookies-policy"){
             return "footerTitles";
         }
 
@@ -146,7 +146,7 @@ class FooterComponentSearchPage extends Component {
         let urlName = window.location.pathname;
 
         if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
-        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy"){
+        urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" || urlName == "/poof-cookies-policy"){
             return "footerLinks";
         }
 
@@ -202,6 +202,7 @@ class FooterComponentSearchPage extends Component {
                                 <li><Link className="featureLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/featuresPoof'}>Features</Link></li>
                                 <li><Link className="termsLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/poof-terms-and-conditions'}>Terms</Link></li>
                                 <li><Link className="privacyLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/poof-privacy-policy'}>Privacy</Link></li>
+                                <li><Link className="cookiesLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/poof-cookies-policy'}>Cookies</Link></li>
                             </ul>
                         </div>
                         <div className="col-2 justify-content-center" style={{display: "flex"}}>
