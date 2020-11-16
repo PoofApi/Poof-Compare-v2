@@ -24,11 +24,18 @@
     color: #000000;
     font-weight: bold;
     margin-top: 4vh;
+    text-decoration: underline;
 }
 
 .cookiesParagraph {
     color: #595959;
     font-size: 14px;
+}
+
+.cookiesBox {
+    padding: 8px 13px;
+    border: 1px solid #e6e6e6;
+    margin-top: 1.5vh;
 }
 
 .cookiesParagraph p {

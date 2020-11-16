@@ -44,7 +44,7 @@ const CookiesComponent = () => {
 
             <div className="cookiesParagraph">
                 <p>
-                    This Cookie Policy explains how Poof! ("Company", "we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our websites at https://www.poofpricecompare.com, ("Websites"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+                    This Cookie Policy explains how Poof! ("<strong>Company</strong>", "<strong>we</strong>", "<strong>us</strong>", and "<strong>our</strong>") uses cookies and similar technologies to recognize you when you visit our websites at <a href="https://www.poofpricecompare.com" target="_blank" className="poofCookiesLink">https://www.poofpricecompare.com</a>, ("<strong>Websites</strong>"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
                 </p>
                 <p>
                     In some cases we may use cookies to collect personal information, or that becomes personal information if we combine it with other information.
@@ -64,12 +64,14 @@ const CookiesComponent = () => {
             <h4 className="cookiesHeading">
                 Why do we use cookies?
             </h4>
-            <p>
-                We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. Third parties serve cookies through our Websites for advertising, analytics and other purposes. This is described in more detail below.
-            </p>
-            <p>
-                The specific types of first and third party cookies served through our Websites and the purposes they perform are described below (please note that the specific cookies served may vary depending on the specific Online Properties you visit):
-            </p>
+            <div className="cookiesParagraph">
+                <p>
+                    We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. Third parties serve cookies through our Websites for advertising, analytics and other purposes. This is described in more detail below.
+                </p>
+                <p>
+                    The specific types of first and third party cookies served through our Websites and the purposes they perform are described below (please note that the specific cookies served may vary depending on the specific Online Properties you visit):
+                </p>
+            </div>
             <h4 className="cookiesHeading">
                 How can I control cookies?
             </h4>
@@ -81,7 +83,7 @@ const CookiesComponent = () => {
                     The Cookie Consent Manager can be found in the notification banner and on our website. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. You may also set or amend your web browser controls to accept or refuse cookies. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser's help menu for more information.
                 </p>
                 <p>
-                    In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit http://www.aboutads.info/choices/ or http://www.youronlinechoices.com.
+                    In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit <a className="poofCookiesLink" href="http://www.aboutads.info/choices/" target="_blank">http://www.aboutads.info/choices/</a> or <a className="poofCookiesLink" href="http://www.aboutads.info/choices/" target="_blank"></a><a className="poofCookiesLink" href="http://www.youronlinechoices.com" target="_blank">http://www.youronlinechoices.com</a>.
                 </p>
                 <p>
                     The specific types of first and third party cookies served through our Websites and the purposes they perform are described in the table below (please note that the specific cookies served may vary depending on the specific Online Properties you visit):
@@ -95,14 +97,14 @@ const CookiesComponent = () => {
         These cookies are strictly necessary to provide you with services available through our Websites and to use some of its features, such as access to secure areas.
     </p>
     <div className="cookiesBox">
-        <ul>
-            <li>Name:__tlbcpv</li>
-            <li>Purpose:Used to record unique visitor views of the consent banner.</li>
-            <li>Provider:.termly.io</li>
-            <li>Service:Termly View Service Privacy Policy  </li>
-            <li>Country:United States</li>
-            <li>Type:http_cookie</li>
-            <li>Expires in:1 year</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: __tlbcpv</li>
+            <li>Purpose: Used to record unique visitor views of the consent banner.</li>
+            <li>Provider: .termly.io</li>
+            <li>Service: Termly <a className="poofCookiesLink" href="https://termly.io/our-privacy-policy/" target="_blank">View Service Privacy Policy</a></li>
+            <li>Country: United States</li>
+            <li>Type: http_cookie</li>
+            <li>Expires in: 1 year</li>
         </ul>
     </div>
 </div>
@@ -114,38 +116,38 @@ const CookiesComponent = () => {
         These cookies collect information that is used either in aggregate form to help us understand how our Websites are being used or how effective our marketing campaigns are, or to help us customize our Websites for you.
     </p>
     <div className="cookiesBox">
-        <ul>
-            <li>Name:_ga</li>
-            <li>Purpose:It records a particular ID used to come up with data about website usage by the user. It is a HTTP cookie that expires after 2 years.</li>
-            <li>Provider:.poofpricecompare.com</li>
-            <li>Service:Google Analytics View Service Privacy Policy  </li>
-            <li>Country:United States</li>
-            <li>Type:http_cookie</li>
-            <li>Expires in:1 year 11 months 29 days</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: _ga</li>
+            <li>Purpose: It records a particular ID used to come up with data about website usage by the user. It is a HTTP cookie that expires after 2 years.</li>
+            <li>Provider: .poofpricecompare.com</li>
+            <li>Service: Google Analytics <a className="poofCookiesLink" href="https://policies.google.com/privacy" target="_blank">View Service Privacy Policy</a></li>
+            <li>Country: United States</li>
+            <li>Type: http_cookie</li>
+            <li>Expires in: 1 year 11 months 29 days</li>
         </ul>
     </div>
 
     <div className="cookiesBox">
-        <ul>
-            <li>Name:_gid</li>
-            <li>Purpose:Keeps an entry of unique ID which is then used to come up with statistical data on website usage by visitors. It is a HTTP cookie type and expires after a browsing session.</li>
-            <li>Provider:.poofpricecompare.com</li>
-            <li>Service:Google Analytics View Service Privacy Policy  </li>
-            <li>Country:United States</li>
-            <li>Type:http_cookie</li>
-            <li>Expires in:1 day</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: _gid</li>
+            <li>Purpose: Keeps an entry of unique ID which is then used to come up with statistical data on website usage by visitors. It is a HTTP cookie type and expires after a browsing session.</li>
+            <li>Provider: .poofpricecompare.com</li>
+            <li>Service: Google Analytics <a className="poofCookiesLink" href="https://policies.google.com/privacy" target="_blank">View Service Privacy Policy</a></li>
+            <li>Country: United States</li>
+            <li>Type: http_cookie</li>
+            <li>Expires in: 1 day</li>
         </ul>
     </div>
 
     <div className="cookiesBox">
-        <ul>
-            <li>Name:_gat#</li>
-            <li>Purpose:Enables Google Analytics regulate the rate of requesting. It is a HTTP cookie type that lasts for a session.</li>
-            <li>Provider:.poofpricecompare.com</li>
-            <li>Service:Google Analytics View Service Privacy Policy  </li>
-            <li>Country:United States</li>
-            <li>Type:http_cookie</li>
-            <li>Expires in:1 minute</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: _gat#</li>
+            <li>Purpose: Enables Google Analytics regulate the rate of requesting. It is a HTTP cookie type that lasts for a session.</li>
+            <li>Provider: .poofpricecompare.com</li>
+            <li>Service: Google Analytics <a className="poofCookiesLink" href="https://policies.google.com/privacy" target="_blank">View Service Privacy Policy</a></li>
+            <li>Country: United States</li>
+            <li>Type: http_cookie</li>
+            <li>Expires in: 1 minute</li>
         </ul>
     </div>
 </div>
@@ -159,36 +161,36 @@ const CookiesComponent = () => {
     </p>
 
     <div className="cookiesBox">
-        <ul>
-            <li>Name:__gads</li>
-            <li>Purpose:Set by Google Ad Manager on a site to help with measuring how a user interacts with the ads on that domain and preventing the same ads from being shown to the user too many times.</li>
-            <li>Provider:.poofpricecompare.com</li>
-            <li>Service:Google AD Manager View Service Privacy Policy  </li>
-            <li>Country:United States</li>
-            <li>Type:http_cookie</li>
-            <li>Expires in:1 year 24 days</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: __gads</li>
+            <li>Purpose: Set by Google Ad Manager on a site to help with measuring how a user interacts with the ads on that domain and preventing the same ads from being shown to the user too many times.</li>
+            <li>Provider: .poofpricecompare.com</li>
+            <li>Service: Google AD Manager <a className="poofCookiesLink" href="https://policies.google.com/privacy" target="_blank">View Service Privacy Policy</a></li>
+            <li>Country: United States</li>
+            <li>Type: http_cookie</li>
+            <li>Expires in: 1 year 24 days</li>
         </ul>
     </div>
     <div className="cookiesBox">
-        <ul>
-            <li>Name:test_cookie</li>
-            <li>Purpose:A session cookie used to check if the user’s browser supports cookies.</li>
-            <li>Provider:.doubleclick.net</li>
-            <li>Service:DoubleClick View Service Privacy Policy  </li>
-            <li>Country:United States</li>
-            <li>Type:http_cookie</li>
-            <li>Expires in:15 minutes</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: test_cookie</li>
+            <li>Purpose: A session cookie used to check if the user’s browser supports cookies.</li>
+            <li>Provider: .doubleclick.net</li>
+            <li>Service: DoubleClick <a className="poofCookiesLink" href="https://policies.google.com/privacy" target="_blank">View Service Privacy Policy</a></li>
+            <li>Country: United States</li>
+            <li>Type: http_cookie</li>
+            <li>Expires in: 15 minutes</li>
         </ul>
     </div>
     <div className="cookiesBox">
-        <ul>
-            <li>Name:google_experiment_mod</li>
-            <li>Purpose:Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.</li>
-            <li>Provider:www.poofpricecompare.com</li>
-            <li>Service:Google  </li>
-            <li>Country:United States</li>
-            <li>Type:html_local_storage</li>
-            <li>Expires in:persistent</li>
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: google_experiment_mod</li>
+            <li>Purpose: Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.</li>
+            <li>Provider: www.poofpricecompare.com</li>
+            <li>Service: Google  </li>
+            <li>Country: United States</li>
+            <li>Type: html_local_storage</li>
+            <li>Expires in: persistent</li>
         </ul>
     </div>
 </div>
@@ -201,7 +203,7 @@ const CookiesComponent = () => {
             These are cookies that have not yet been categorized. We are in the process of classifying these cookies with the help of their providers.
         </p>
         <div className="cookiesBox">
-            <ul>
+            <ul className="cookiesUnorderedListItem">
                 <li>Name: goog_pem_mod</li>
                 <li>Purpose: __________</li>
                 <li>Provider: www.poofpricecompare.com</li>
@@ -229,7 +231,7 @@ const CookiesComponent = () => {
             Websites may also use so-called "Flash Cookies" (also known as Local Shared Objects or "LSOs") to, among other things, collect and store information about your use of our services, fraud prevention and for other site operations.
         </p>
         <p>
-            If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the Website Storage Settings Panel. You can also control Flash Cookies by going to the Global Storage Settings Panel and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to "information" on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).
+            If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the <a className="poofCookiesLink" href="https://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html" target="_blank">Website Storage Settings Panel</a>. You can also control Flash Cookies by going to the <a className="poofCookiesLink" href="https://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html" target="_blank">Global Storage Settings Panel</a> and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to "information" on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).
         </p>
         <p>
             Please note that setting the Flash Player to restrict or limit acceptance of Flash Cookies may reduce or impede the functionality of some Flash applications, including, potentially, Flash applications used in connection with our services or online content.
