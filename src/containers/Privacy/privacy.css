@@ -45,6 +45,10 @@ ul.privacyUnorderedListItem li{
     margin-top: 2vh;
 }
 
+ol.tableList {
+    margin-top: 3.5vh;
+}
+
 ol.tableList li a {
     color: blue !important;
 }
