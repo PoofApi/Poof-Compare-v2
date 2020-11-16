@@ -260,7 +260,7 @@ class DesktopHeader extends Component {
                             <div className="loading-content">
                                 <div className="poofSlothRow">
                                     <div className="poofSlothPic">
-                                        <img className="img-fluid" src={poof_sloth_white} alt="poofSloth"/>
+                                        <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/MovingPerry2.gif" alt="poofSloth"/>
                                     </div>
                                 </div>
                                 <div className="row justify-content-center">
