@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import FooterComponentSearchPage from '../FooterComponentSearchPage';
 import HeaderComponent2 from '../HeaderComponent2';
 import './privacy.css'
@@ -148,7 +149,7 @@ const PrivacyComponent = () => {
                     
                         <ul className="privacyUnorderedListItem">
                             <li><strong>To facilitate account creation and logon process.</strong> If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.</li>
-                            <li><strong>To post testimonials.</strong> We post testimonials on our Website that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please contact us at __________ and be sure to include your name, testimonial location, and contact information.</li>
+                            <li><strong>To post testimonials.</strong> We post testimonials on our Website that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please email us at epalumbo@poofapi.com and be sure to include your name, testimonial location, and contact information.</li>
                             <li><strong>Request feedback.</strong> We may use your information to request feedback and to contact you about your use of our Website.</li>
                             <li><strong>To enable user-to-user communications.</strong>                 We may use your information in order to enable user-to-user communications with each user's consent.</li>
                             <li><strong>To manage user accounts.</strong>                 We may use your iformation for the purposes of managing our account and keeping it in working order.</li>
@@ -255,8 +256,15 @@ const PrivacyComponent = () => {
                     </p>
                         
                     <p>
-                        We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than __________.
+                        We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements).
                     </p>
+
+                    {/*Previous full disclaimer*/}
+
+                    {/* <p>
+                        We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than __________.
+                    </p> */}
+
                     <p>
                         When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
                     </p>
@@ -273,7 +281,7 @@ const PrivacyComponent = () => {
                     </p>
                         
                     <p>
-                        We do not knowingly solicit data from or market to children under 18 years of age. By using the Website, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Website. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at __________.
+                        We do not knowingly solicit data from or market to children under 18 years of age. By using the Website, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Website. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at epalumbo@poofapi.com
                     </p>
                 </div>
                 <div className="parentTarget">
@@ -297,7 +305,6 @@ const PrivacyComponent = () => {
                     </p>
                     <p>
                         If you have questions or comments about your privacy rights, you may email us at epalumbo@poofapi.com.
-
                     </p>
                 </div>
                 <h6 className="privacySubHeading">
@@ -366,7 +373,7 @@ const PrivacyComponent = () => {
                 </div>
                 <div className="privacyParagraph">
                     <p>
-                        If you have questions or comments about this notice, you may email us at epalumbo@poofapi.com
+                        If you have questions or comments about this notice, you may email us at epalumbo@poofapi.com or message us through our contact page: <Link className="contactPageLink" to={'/contactPoof'}>here</Link>.
                     </p>
                 </div>
                 <div className="parentTarget">
@@ -375,8 +382,17 @@ const PrivacyComponent = () => {
                     </h4>
                     <div className="targetID" id="14"></div>
                 </div>
-                    Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking <a className="poofPrivacyLink" href="https://app.termly.io/notify/9994e722-a234-42eb-af84-3cb42af0d8d4" target="_blank">here</a>. We will respond to your request within 30 days.
-                    This privacy policy was created using Termly’s Privacy Policy Generator.
+                <div className="privacyParagraph">
+                    <p>
+                        Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking <a className="poofPrivacyLink" href="https://app.termly.io/notify/9994e722-a234-42eb-af84-3cb42af0d8d4" target="_blank">here</a>.
+                    </p>
+
+                    {/*Previous un-edited disclaimer*/}
+
+                    {/* <p>
+                        Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking <a className="poofPrivacyLink" href="https://app.termly.io/notify/9994e722-a234-42eb-af84-3cb42af0d8d4" target="_blank">here</a>. We will respond to your request within 30 days.
+                    </p> */}
+                </div>
             </div>
         </div>
         <a id="myID" className="hideScrollerPrivacy" href="#desktopTopPrivacy">

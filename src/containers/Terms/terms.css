@@ -49,6 +49,15 @@
     font-family: Arial;
 }
 
+.contactPageLink {
+    color: blue !important;
+}
+
+.contactPageLink:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
 /*For top scroller*/
 
 .desktopTopScrollerTerms {
