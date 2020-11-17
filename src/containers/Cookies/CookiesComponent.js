@@ -193,27 +193,28 @@ const CookiesComponent = () => {
             <li>Expires in: persistent</li>
         </ul>
     </div>
+    <div className="cookiesBox">
+        <ul className="cookiesUnorderedListItem">
+            <li>Name: goog_pem_mod</li>
+            <li>Purpose: Used to send data to Google Analytics about the visitor’s device and behaviour. It tracks the visitor across devices and marketing channels.</li>
+            <li>Provider: www.poofpricecompare.com</li>
+            <li>Service: Google  </li>
+            <li>Country: United States</li>
+            <li>Type: html_local_storage</li>
+            <li>Expires in: persistent</li>
+        </ul>
+    </div>
 </div>
 
-    <h6 className="cookiesSubHeading">
+    {/* <h6 className="cookiesSubHeading">
         Unclassified cookies:
     </h6>
     <div className="cookiesParagraph">
         <p>
             These are cookies that have not yet been categorized. We are in the process of classifying these cookies with the help of their providers.
         </p>
-        <div className="cookiesBox">
-            <ul className="cookiesUnorderedListItem">
-                <li>Name: goog_pem_mod</li>
-                <li>Purpose: __________</li>
-                <li>Provider: www.poofpricecompare.com</li>
-                <li>Service: __________  </li>
-                <li>Country: United States</li>
-                <li>Type: html_local_storage</li>
-                <li>Expires in: persistent</li>
-            </ul>
-        </div>
-    </div>
+        
+    </div> */}
     <h4 className="cookiesHeading">
         What about other tracking technologies, like web beacons?
     </h4>
