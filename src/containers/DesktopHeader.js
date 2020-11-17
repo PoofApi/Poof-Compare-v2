@@ -384,12 +384,11 @@ class DesktopHeader extends Component {
             <div id="desktopTop" className="poofDesktopComponent">
                 <div className="cookie-container">
                     <p>
-                    We use cookies in this website to give you the best experience while using our
-                    site and to show you relevant ads. To find out more, please read our <Link className="consentLink" to={'/poof-privacy-policy'} target="_blank">privacy policy</Link> and <Link className="consentLink" to={'/poof-cookies-policy'} target="_blank">cookies policy</Link>.
+                    We use cookies to provide you with the best user experience, to show you relevant ads, and to analyze website traffic. To find out more, please read our <Link className="consentLink" to={'/poof-privacy-policy'} target="_blank">privacy policy</Link> and <Link className="consentLink" to={'/poof-cookies-policy'} target="_blank">cookies policy</Link>.
                     </p>
 
                     <button className="cookie-btn">
-                        Okay
+                        Got It!
                     </button>
                 </div>
                 <div className="poofDesktopBackground"></div>
