@@ -2376,6 +2376,61 @@ form.mobileSearchForm button:hover {
     animation-delay: .8s;
 }
 
+/*Cookie Consent Banner*/
+
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(3 3 2 / 94%);
+    color: #f5f6fa;
+    padding: 30px 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+    z-index: 3;
+    transition: 600ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.cookie-container.active {
+    bottom: 0;
+}
+
+.consentLink {
+    color: #00e7ff !important;
+    background-color: transparent;
+}
+
+.consentLink:hover {
+    color: #00e7ff !important;
+    background-color: transparent;
+    text-decoration: underline !important;
+}
+
+.cookie-btn {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cookie-btn:hover {
+    background: darkred;
+}
+
+.cookie-btn:focus {
+    background: #806543 !important;
+    outline: unset !important;
+}
+
+
 /*Top Sellers content of Desktop Header*/
 
 .topSellersDesktop {

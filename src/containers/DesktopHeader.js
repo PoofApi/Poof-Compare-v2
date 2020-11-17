@@ -212,6 +212,19 @@ class DesktopHeader extends Component {
         getMostPopular();
 
         let menu = document.querySelector(".hideScroller");
+        const cookieContainer = document.querySelector(".cookie-container");
+        const cookieButton = document.querySelector(".cookie-btn");
+
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieBannerDisplayed", "true");
+        });
+          
+        setTimeout(() => {
+        if (!localStorage.getItem("cookieBannerDisplayed")) {
+            cookieContainer.classList.add("active");
+        }
+        }, 2000);
 
         window.scrollTo({
             top: 0,
@@ -369,6 +382,16 @@ class DesktopHeader extends Component {
 
 
             <div id="desktopTop" className="poofDesktopComponent">
+                <div className="cookie-container">
+                    <p>
+                    We use cookies in this website to give you the best experience while using our
+                    site and to show you relevant ads. To find out more, please read our <Link className="consentLink" to={'/poof-privacy-policy'} target="_blank">privacy policy</Link> and <Link className="consentLink" to={'/poof-cookies-policy'} target="_blank">cookies policy</Link>.
+                    </p>
+
+                    <button className="cookie-btn">
+                        Okay
+                    </button>
+                </div>
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
