@@ -1726,6 +1726,10 @@ form.mobileSearchForm button:hover {
     align-items: center;
 }
 
+.topSellersMobile {
+    background: #0C1344;
+}
+
 /*topSearchCards*/
 
 .topSearchCard {
