@@ -1728,6 +1728,7 @@ form.mobileSearchForm button:hover {
 
 .topSellersMobile {
     background: #0C1344;
+    margin-top: 6vh;
 }
 
 /*topSearchCards*/
@@ -2532,6 +2533,12 @@ form.mobileSearchForm button:hover {
     overflow-y: hidden;
 }
 
+@media screen and (max-width: 615px) {
+    .topSellerItemTitle {
+        max-height: 11vh !important;
+    }
+}
+
 .amazonTopSeller {
     width: 100%;
     height: 100%;
@@ -2578,6 +2585,42 @@ form.mobileSearchForm button:hover {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .topSellerPrice {
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .topSellerPrice {
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .topSellerPrice {
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .topSellerPrice {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .topSellerPrice {
+        position: relative;
+        left: 2vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .topSellerPrice {
+        font-size: 1.7vh;
+    }
+}
 
 .amazonBuyPic {
     max-height: 9vh;

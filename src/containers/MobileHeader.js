@@ -354,7 +354,7 @@ class MobileHeader extends Component {
                         {preppedItems.amazon[0] !== undefined &&
                             <div className="amazonRow">
                                 <div className="row topSellerLogoRow">
-                                    <div className="col-4">
+                                    <div className="col-8">
                                         <img className="img-fluid amazonTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonTopSellerLogo"/>
                                     </div>
                                 </div>
@@ -374,7 +374,7 @@ class MobileHeader extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="row topSellerBuyRow">
-                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 col-sm-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
                                                             <a href={item.itemUrl} target="_blank"><img className="img-fluid amazonBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/amazon.png" alt="amazonBuyLogo"/></a>
                                                         </div>
@@ -390,7 +390,7 @@ class MobileHeader extends Component {
                         {preppedItems.barnes[0] !== undefined &&
                             <div className="barnesRow">
                                 <div className="row topSellerLogoRow" style={{position: "relative", top: "8vh"}}>
-                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                    <div className="col-8" style={{display: "flex", justifyContent: "center"}}>
                                         <img className="img-fluid topSellerLogo barnesTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesTopSellerLogo"/>
                                     </div>
                                 </div>
@@ -409,7 +409,7 @@ class MobileHeader extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="row topSellerBuyRow">
-                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 col-sm-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
                                                             <a href={item.itemUrl} target="_blank"><img className="img-fluid barnesBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/barnes-and-noble-png-logo-hq-5295.png" alt="barnesBuyLogo"/></a>
                                                         </div>
@@ -424,7 +424,7 @@ class MobileHeader extends Component {
                         {preppedItems.newEgg[0] !== undefined &&
                             <div className="newEggRow">
                                 <div className="row topSellerLogoRow">
-                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                    <div className="col-6" style={{display: "flex", justifyContent: "center"}}>
                                         <img className="img-fluid topSellerLogo newEggTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggTopSellerLogo"/>
                                     </div>
                                 </div>
@@ -443,7 +443,7 @@ class MobileHeader extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="row topSellerBuyRow">
-                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 col-sm-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
                                                             <a href={item.itemUrl} target="_blank"><img className="img-fluid newEggBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/newegg.png" alt="newEggBuyLogo"/></a>
                                                         </div>
@@ -458,7 +458,7 @@ class MobileHeader extends Component {
                         {preppedItems.ebay[0] !== undefined &&
                             <div className="ebayRow">
                                 <div className="row topSellerLogoRow">
-                                    <div className="col-4" style={{display: "flex", justifyContent: "center"}}>
+                                    <div className="col-7" style={{display: "flex", justifyContent: "center"}}>
                                         <img className="img-fluid topSellerLogo ebayTopSeller" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayTopSellerLogo"/>
                                     </div>
                                 </div>
@@ -477,7 +477,7 @@ class MobileHeader extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="row topSellerBuyRow">
-                                                        <div className="col-5 topSellerPrice">{`${item.price}`}</div>
+                                                        <div className="col-6 col-sm-5 topSellerPrice">{`${item.price}`}</div>
                                                         <div className="col-6 watchlistButtons">
                                                             <a href={item.itemUrl} target="_blank"><img className="img-fluid ebayBuyPic" src="https://scrapping-logos.s3.amazonaws.com/V1/ebay.png" alt="ebayBuyLogo"/></a>
                                                         </div>
