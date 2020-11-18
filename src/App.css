@@ -2120,7 +2120,6 @@ form.mobileSearchForm button:hover {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: 15vh;
 }
 
 .searchContent {
