@@ -261,7 +261,7 @@ class DesktopHeader extends Component {
         return(
             
             (preppedItems.amazon[0] !== undefined ?
-            (!this.state.loading ? 
+            (this.state.loading ? 
                 <div id="desktopTop" className="poofDesktopComponent">
                 <div className="cookie-container">
                     <p>
