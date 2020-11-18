@@ -117,15 +117,15 @@ class FooterComponentSearchPage extends Component {
 
         if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
         urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" || urlName == "/poof-cookies-policy"){
-            return <div onClick={() => returnHome()}><Link className="returnToHomeFromFooter" to={'/'}>Return To Home</Link></div>;
+            return <div onClick={() => returnHome()}><Link className="returnToHomeFromFooter footerReturn" to={'/'}>Return To Home</Link></div>;
         }
 
         else if(urlName == "/" && this.props.items.length > 0){
-            return <div className="returnToHomeFromSearchPage" onClick={() => returnHome()}>Return To Home</div>
+            return <div className="returnToHomeFromSearchPage footerReturn" onClick={() => returnHome()}>Return To Home</div>
         }
 
         else {
-            return <a className="returnToHomeFromDesktop" href="#desktopTop"><h5 style={{fontWeight: "900"}}>Return To Home</h5></a>
+            return <a className="returnToHomeFromDesktop" href="#desktopTop"><h5 className="footerReturn" style={{fontWeight: "900"}}>Return To Home</h5></a>
         }
     }
 
@@ -134,11 +134,11 @@ class FooterComponentSearchPage extends Component {
 
         if (urlName == "/aboutPoof" || urlName == "/contactPoof" || urlName == "/featuresPoof" || 
         urlName == "/poof-terms-and-conditions" || urlName == "/poof-privacy-policy" || urlName == "/poof-cookies-policy"){
-            return "footerTitles";
+            return "footerTitles footerSearchTitle";
         }
 
         else{
-            return "footerTitlesDesktop"
+            return "footerTitlesDesktop footerSearchTitle"
         }
     }
 
@@ -194,7 +194,7 @@ class FooterComponentSearchPage extends Component {
 
                         </div>
                         <div className="col-1 justify-content-center" style={{display: "flex"}}>
-                            <h5 style={{fontWeight: "900"}}>Information</h5>
+                            <h5 className="footerInfo" style={{fontWeight: "900"}}>Information</h5>
                         </div>
                         <div className="col-1 justify-content-center" style={{display: "flex"}}>
                             <ul>
@@ -206,16 +206,16 @@ class FooterComponentSearchPage extends Component {
                             </ul>
                         </div>
                         <div className="col-2 justify-content-center" style={{display: "flex"}}>
-                            <h5 style={{fontWeight: "900"}}>Hi! Contact Us</h5>
+                            <h5 className="footerContact" style={{fontWeight: "900"}}>Hi! Contact Us</h5>
                         </div>
                         <div className="col-2">
                             <div><Link className="contactLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/contactPoof'}>Poof! Contact Page</Link></div>
-                            <div><h6>epalumbo@poofapi.com</h6></div>
+                            <div><h6 className="footerEmail">epalumbo@poofapi.com</h6></div>
                         </div>
                         <div className="col-2">
                             <div style={{display: "flex", justifyContent: "center"}}>{this.renderReturnHome()}</div>
                             <div style={{display: "flex", justifyContent: "center"}}><img className="img-fluid" style={{height: "7vh"}} src="https://scrapping-logos.s3.amazonaws.com/V1/perry_face.png" alt="perryPic"/></div>
-                            <div style={{display: "flex", justifyContent: "center"}}>© 2020 Poof! Price Compare</div>
+                            <div style={{display: "flex", justifyContent: "center", textAlign: "center"}}>© 2020 Poof! Price Compare</div>
                         </div>
                     </div>
                 </div>

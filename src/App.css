@@ -2703,6 +2703,38 @@ form.mobileSearchForm button:hover {
     color: white;
 }
 
+@media screen and (max-width: 992px) {
+    .footerInfo {
+        font-size: 1rem;
+    }
+
+    .footerContact {
+        font-size: 1rem;
+    }
+
+    .footerTitleV2 li {
+        font-size: .9rem;
+        position: relative;
+        right: 10px;
+    }
+
+    .footerLinkV2 {
+        font-size: .9rem;
+    }
+
+    .footerEmail {
+        font-size: .9rem;
+    }
+    
+    .footerReturn {
+        font-size: 1rem;
+    }
+
+    .footerSearchTitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
 /*Mobile Search Page*/
 
 
