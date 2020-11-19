@@ -1731,6 +1731,43 @@ form.mobileSearchForm button:hover {
     margin-top: 6vh;
 }
 
+/*top Scroller for Mobile Header*/
+
+.mobileTopScroller {
+    z-index: 2;
+    position: fixed;
+    right: 7vw;
+    bottom: 3vh;
+    padding: 7px;
+    background: #d48a8a;
+    border-radius: 7px;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 1s;
+    animation: enlarge 0.8s;
+}
+
+.hideMobileScroller {
+    opacity: 0;
+}
+
+.mobileTopScroller:hover {
+    opacity: 1 !important;
+    cursor: pointer;
+    background-color: var(--cool-gray-80,#283e4a);
+    border: white solid 1px;
+}
+
+@keyframes enlarge {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+
+#mobileTop {
+    position: relative;
+    top: -300px;
+}
+
 /*topSearchCards*/
 
 .topSearchCard {
@@ -2585,27 +2622,21 @@ form.mobileSearchForm button:hover {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 870px) {
     .topSellerPrice {
-        font-size: 3vh;
+        font-size: 2.3vh;
     }
 }
 
 @media screen and (max-width: 750px) {
     .topSellerPrice {
-        font-size: 2.5vh;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .topSellerPrice {
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 }
 
 @media screen and (max-width: 680px) {
     .topSellerPrice {
-        font-size: 2vh;
+        font-size: 1.8vh;
     }
 }
 
