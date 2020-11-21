@@ -9,6 +9,7 @@ import PoofMobileSignIn from './PoofMobileSignIn';
 import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import uuid from 'react-uuid';
+import FooterComponentSearchPage from './FooterComponentSearchPage';
 
 
 const axios = require('axios');
@@ -145,6 +146,27 @@ class MobileHeader extends Component {
         return itemCollection;
     }
 
+    componentDidMount(){
+        let menu = document.querySelector(".hideMobileScroller");
+        let ele = document.querySelector("body");
+
+        ele.addEventListener("scroll", () => {
+            let y = ele.scrollTop;
+            
+            if (y >= 100) {
+                if(menu){
+                    menu.className = "mobileTopScroller";
+                }
+            } else {
+                if(menu){
+                    menu.className = "hideMobileScroller"
+                }
+            }
+        }, true);
+
+
+    }
+
     render(){
 
         let urlName = window.location.pathname;
@@ -240,6 +262,7 @@ class MobileHeader extends Component {
             :
 
             <div className="poofMobileComponent">
+                <div id="mobileTop"></div>
                 <div className="container poofMobileContainer">
                     <div className="row justify-content-center">
                         <div className="col-7 mb-2">
@@ -491,24 +514,10 @@ class MobileHeader extends Component {
                         }
                     </div>
                 </div>
-                <div className="poofMobileFooter">
-
-                <PoofMobileSignIn /> 
-                        
-                {/* {
-                
-                this.props.storeUserId !== "" && urlName === "/" ?
-                    
-                <Link className="poof-mobile-watchlist" to={'/watchlist'}>
-                    <i className="material-icons poofMobileWatchlistIcon">view_list</i>
-                </Link> 
-                
-                :
-
-                <div></div>
-                } */}
-                    
-                </div>
+                <a className="hideMobileScroller" href="#mobileTop">
+                    Return to Top
+                </a>
+                <FooterComponentSearchPage />
             </div>
             ) 
         )
