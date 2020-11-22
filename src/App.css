@@ -1951,7 +1951,7 @@ form.mobileSearchForm button:hover {
 }
 
 .poofMobileContainer {
-    margin-top: 15px !important;
+    margin-top: 5vh !important;
 }
 
 .poofMobileSearchIcon{
@@ -2151,9 +2151,9 @@ form.mobileSearchForm button:hover {
 }
 
 @keyframes surfMobile {
-    0% {transform: rotate(-30deg)}
-    50% {transform: rotate(30deg)}
-    100% {transform: rotate(-30deg)}
+    0% {transform: rotate(-15deg)}
+    50% {transform: rotate(15deg)}
+    100% {transform: rotate(-15deg)}
 }
 
 .loading-content {
