@@ -454,7 +454,7 @@ class Home extends Component {
   renderWatchToolbar(){
     if(this.props.comparedItems){
       return(
-        <WatchToolbar isCompareActive={this.state.compareTableOpen && this.props.comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} />
+        <WatchToolbar isCompareActive={this.state.compareTableOpen && this.props.comparedItems && this.props.comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} />
       )
     }
     else{
@@ -564,7 +564,7 @@ class Home extends Component {
     && (this.state.watchListOpen) ? <WatchList alert={this.setAlert} items={this.props.storeUserId !== "" ? 
     usersWatchedItems : storeWatchProducts} products={this.props.items} user={this.props.storeUserId} toggleClick={this.closeWatchList} saveClick={this.saveList} 
     watch={actions.watch} /> : <div></div>} {(this.props.storeUserId !== "" ? usersWatchedItems.length > 0 : storeWatchProducts.length > 0) 
-    && !this.state.watchListOpen ? (this.props.comparedItems ? <WatchToolbar isCompareActive={this.state.compareTableOpen && comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} /> : <div></div>) : <div></div> } </div>: 
+    && !this.state.watchListOpen ? (this.props.comparedItems ? <WatchToolbar isCompareActive={this.state.compareTableOpen && comparedItems && comparedItems.length > 0} toggleClick={this.toggleWatchToolbar} /> : <div></div>) : <div></div> } </div>: 
         <div style={{height: "100vh"}}>
           
           <div className="d-block d-sm-block d-md-none d-lg-none mobileHeaderContainer" style={{height: "100vh"}}>
@@ -641,12 +641,12 @@ class Home extends Component {
             <FooterComponentSearchPage />
             {this.renderCompare()}
 
-           {this.state.compareToolbarOpen && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
+           {this.state.compareToolbarOpen && comparedItems && comparedItems.length >= 1 ? <CompareToolbar toggleToolbar={this.toggleCompareToolbar} /> : <div></div> }
           </div>
           <div id="myID" className={this.state.watchListOpen && (storeWatchProducts.length > 0 || usersWatchedItems.length > 0 ) ? "topSideTool hide" : "topTool hide"}>
             <span className={this.state.watchListOpen ? "topSideTooltipText" : "topTooltipText"}></span>
             <a href="#top"><div className={this.state.watchListOpen && (storeWatchProducts && storeWatchProducts.length > 0 || (usersWatchedItems && usersWatchedItems.length > 0) ) ? "topScrollerSide" : (this.state.compareTableOpen 
-              && this.props.comparedItems.length > 0 ? "topScrollerUp" : "topScroller")}><i className="material-icons">expand_less</i></div></a>
+              && this.props.comparedItems && this.props.comparedItems.length > 0 ? "topScrollerUp" : "topScroller")}><i className="material-icons">expand_less</i></div></a>
           </div>
         </div>
         }
