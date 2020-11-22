@@ -150,6 +150,12 @@ class MobileHeader extends Component {
         let menu = document.querySelector(".hideMobileScroller");
         let ele = document.querySelector("body");
 
+        ele.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'auto'
+          });
+
         ele.addEventListener("scroll", () => {
             let y = ele.scrollTop;
             
@@ -177,7 +183,7 @@ class MobileHeader extends Component {
             (
             this.state.loading?
             
-                <div className="poofMobileComponent">
+                <div id="desktopTop" className="poofMobileComponent">
                 <div className="container poofMobileContainer">                
                     <div className="loading-content-mobile">
                         <div className="poofSlothRow">
@@ -239,29 +245,17 @@ class MobileHeader extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="poofMobileFooter">
+                {/* <div className="poofMobileFooter">
 
                 <PoofMobileSignIn /> 
-                        
-                {/* {
-                
-                this.props.storeUserId !== "" && urlName === "/" ?
                     
-                <Link className="poof-mobile-watchlist" to={'/watchlist'}>
-                    <i className="material-icons poofMobileWatchlistIcon">view_list</i>
-                </Link> 
-                
-                :
-
-                <div></div>
-                } */}
-                    
-                </div>
+                </div> */}
+                <FooterComponentSearchPage />
             </div>
 
             :
 
-            <div className="poofMobileComponent">
+            <div id="desktopTop" className="poofMobileComponent">
                 <div id="mobileTop"></div>
                 <div className="container poofMobileContainer">
                     <div className="row justify-content-center">

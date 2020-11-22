@@ -76,6 +76,7 @@ class Header2 extends Component {
 
     returnHome(){
         store.dispatch(resetSearch());
+        this.props.history.push("/");
     }
 
     async resetWatch(){
