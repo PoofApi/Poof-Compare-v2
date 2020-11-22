@@ -2837,6 +2837,20 @@ form.mobileSearchForm button:hover {
         text-align: center;
     }
 }
+
+.mobileTitle {
+    font-weight: 900;
+    text-decoration: underline;
+    margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 700px) {
+    .mobileSearchTitle {
+        position: relative;
+        right: 5px;
+    }
+}
+
 /*Mobile Search Page*/
 
 
