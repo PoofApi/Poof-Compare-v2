@@ -2838,6 +2838,12 @@ form.mobileSearchForm button:hover {
     }
 }
 
+@media screen and (max-width: 860px) {
+    .footerInfo {
+        font-size: .9rem;
+    }
+}
+
 .mobileTitle {
     font-weight: 900;
     text-decoration: underline;
