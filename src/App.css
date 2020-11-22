@@ -2814,11 +2814,11 @@ form.mobileSearchForm button:hover {
         font-size: 1rem;
     }
 
-    .footerTitleV2 li {
+    /* .footerTitleV2 li {
         font-size: .9rem;
         position: relative;
         right: 10px;
-    }
+    } */
 
     .footerLinkV2 {
         font-size: .9rem;
