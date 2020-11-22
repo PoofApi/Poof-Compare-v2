@@ -263,6 +263,15 @@ class DesktopHeader extends Component {
             (preppedItems.amazon[0] !== undefined ?
             (this.state.loading ? 
                 <div id="desktopTop" className="poofDesktopComponent">
+                <div className="cookie-container">
+                    <p>
+                    We use cookies to provide you with the best user experience, to show you relevant ads, and to analyze website traffic. To find out more, please read our <Link className="consentLink" to={'/poof-privacy-policy'} target="_blank">privacy policy</Link> and <Link className="consentLink" to={'/poof-cookies-policy'} target="_blank">cookies policy</Link>.
+                    </p>
+
+                    <button className="cookie-btn">
+                        Got It!
+                    </button>
+                </div>
                 <div className="poofDesktopBackground"></div>
                 <div className="poofOverlay">
                     <div className="container-fluid poofDesktopContainer">
@@ -271,8 +280,8 @@ class DesktopHeader extends Component {
                         </Link>
                         <div className="desktopContent">
                             <div className="loading-content">
-                                <div className="poofSlothRow">
-                                    <div className="poofSlothPic">
+                                <div className="poofSlothRow row">
+                                    <div className="col-md-5 col-lg-4 col-xl-3">
                                         <img className="img-fluid" src="https://scrapping-logos.s3.amazonaws.com/V1/MovingPerry2.gif" alt="poofSloth"/>
                                     </div>
                                 </div>

@@ -161,17 +161,20 @@ class FooterComponentSearchPage extends Component {
             <div className={this.renderFooterName()}>
                 <div className="container-fluid footerContainer">
                     <div className="row no-gutters" style={{justifyContent: "space-between"}}>
-                        <div className="col-2 justify-content-center" style={{display: "flex"}}>
+                        <div className="d-none d-sm-none d-md-block col-2 justify-content-center" style={{display: "flex"}}>
                             <h5 className={this.renderFooterTitles()} style={{fontWeight: "900"}}>Search Categories</h5>
                         </div>
-                        <div className="col-1">
+                        <div className="col-2 col-md-1 align-items-center" style={{display: "flex", flexDirection: "column"}}>
+                            <div className="d-block d-sm-block d-md-none mobileSearchTitle mobileTitle">Search</div>
                             {!this.state.loading ?
-                                <ul className="footerTitleV2">
-                                    <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
-                                    <li onClick={() => this.handleSubmit3("books")}>Books</li>
-                                    <li onClick={() => this.handleSubmit3("clothes")}>Clothes</li>
-                                    <li onClick={() => this.handleSubmit3("games")}>Games</li>
-                                </ul>
+                                <div>
+                                    <ul className="footerTitleV2">
+                                        <li onClick={() => this.handleSubmit3("electronics")}>Electronics</li>
+                                        <li onClick={() => this.handleSubmit3("books")}>Books</li>
+                                        <li onClick={() => this.handleSubmit3("clothes")}>Clothes</li>
+                                        <li onClick={() => this.handleSubmit3("games")}>Games</li>
+                                    </ul>
+                                </div>
                             
                             :
 
@@ -193,11 +196,12 @@ class FooterComponentSearchPage extends Component {
                             }
 
                         </div>
-                        <div className="col-1 justify-content-center" style={{display: "flex"}}>
+                        <div className="d-none d-sm-none d-md-block col-1 justify-content-center" style={{display: "flex"}}>
                             <h5 className="footerInfo" style={{fontWeight: "900"}}>Information</h5>
                         </div>
-                        <div className="col-1 justify-content-center" style={{display: "flex"}}>
+                        <div className="col-2 col-md-1 justify-content-center" style={{display: "flex"}}>
                             <ul>
+                                <li className="d-block d-sm-block d-md-none mobileInfoTitle mobileTitle">Info</li>
                                 <li><Link className="aboutLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/aboutPoof'}>About</Link></li>
                                 <li><Link className="featureLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/featuresPoof'}>Features</Link></li>
                                 <li><Link className="termsLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/poof-terms-and-conditions'}>Terms</Link></li>
@@ -205,14 +209,15 @@ class FooterComponentSearchPage extends Component {
                                 <li><Link className="cookiesLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/poof-cookies-policy'}>Cookies</Link></li>
                             </ul>
                         </div>
-                        <div className="col-2 justify-content-center" style={{display: "flex"}}>
+                        <div className="d-none d-sm-none d-md-flex col-2 justify-content-center" style={{display: "flex"}}>
                             <h5 className="footerContact" style={{fontWeight: "900"}}>Hi! Contact Us</h5>
                         </div>
-                        <div className="col-2">
+                        <div className="col-4 col-md-2 align-items-center" style={{display: "flex", flexDirection: "column"}}>
+                            <div className="d-block d-sm-block d-md-none mobileContactTitle mobileTitle">Hi! Contact Us</div>
                             <div><Link className="contactLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/contactPoof'}>Poof! Contact Page</Link></div>
                             <div><h6 className="footerEmail">epalumbo@poofapi.com</h6></div>
                         </div>
-                        <div className="col-2">
+                        <div className="col-4 col-md-2">
                             <div style={{display: "flex", justifyContent: "center"}}>{this.renderReturnHome()}</div>
                             <div style={{display: "flex", justifyContent: "center"}}><img className="img-fluid" style={{height: "7vh"}} src="https://scrapping-logos.s3.amazonaws.com/V1/perry_face.png" alt="perryPic"/></div>
                             <div style={{display: "flex", justifyContent: "center", textAlign: "center"}}>© 2020 Poof! Price Compare</div>
