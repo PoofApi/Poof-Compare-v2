@@ -205,7 +205,7 @@ class FooterComponentSearchPage extends Component {
                                 <li><Link className="cookiesLinkFooter footerLinkV2" id={this.renderFooterLinks()} to={'/poof-cookies-policy'}>Cookies</Link></li>
                             </ul>
                         </div>
-                        <div className="d-none d-sm-none d-md-block col-2 justify-content-center" style={{display: "flex"}}>
+                        <div className="d-none d-sm-none d-md-flex col-2 justify-content-center" style={{display: "flex"}}>
                             <h5 className="footerContact" style={{fontWeight: "900"}}>Hi! Contact Us</h5>
                         </div>
                         <div className="col-4 col-md-2">
