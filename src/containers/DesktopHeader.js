@@ -266,7 +266,8 @@ class DesktopHeader extends Component {
             
             (preppedItems.amazon[0] !== undefined ?
             (this.state.loading ? 
-                <div id="desktopTop" className="poofDesktopComponent">
+                <div className="poofDesktopComponent">
+                <div id="desktopTop"></div>
                 <div className="cookie-container">
                     <p>
                     We use cookies to provide you with the best user experience, to show you relevant ads, and to analyze website traffic. To find out more, please read our <Link className="consentLink" to={'/poof-privacy-policy'} target="_blank">privacy policy</Link> and <Link className="consentLink" to={'/poof-cookies-policy'} target="_blank">cookies policy</Link>.
@@ -394,7 +395,8 @@ class DesktopHeader extends Component {
             :
 
 
-            <div id="desktopTop" className="poofDesktopComponent">
+            <div className="poofDesktopComponent">
+            <div id="desktopTop"></div>
                 <div className="cookie-container">
                     <p>
                     We use cookies to provide you with the best user experience, to show you relevant ads, and to analyze website traffic. To find out more, please read our <Link className="consentLink" to={'/poof-privacy-policy'} target="_blank">privacy policy</Link> and <Link className="consentLink" to={'/poof-cookies-policy'} target="_blank">cookies policy</Link>.

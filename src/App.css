@@ -2706,6 +2706,11 @@ form.mobileSearchForm button:hover {
     100% {transform: scale(1)}
 }
 
+#desktopTop {
+    position: relative;
+    top: -300px;
+}
+
 
 /*About Poof Page*/
 

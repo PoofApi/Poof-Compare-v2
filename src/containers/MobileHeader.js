@@ -183,7 +183,8 @@ class MobileHeader extends Component {
             (
             this.state.loading?
             
-                <div id="desktopTop" className="poofMobileComponent">
+                <div className="poofMobileComponent">
+                <div id="mobileTop"></div>
                 <div className="container poofMobileContainer">                
                     <div className="loading-content-mobile">
                         <div className="poofSlothRow">
@@ -255,7 +256,7 @@ class MobileHeader extends Component {
 
             :
 
-            <div id="desktopTop" className="poofMobileComponent">
+            <div className="poofMobileComponent">
                 <div id="mobileTop"></div>
                 <div className="container poofMobileContainer">
                     <div className="row justify-content-center">
